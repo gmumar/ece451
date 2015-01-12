@@ -18,9 +18,9 @@ v:counter:_1#branch                          0
 vdd#branch                        -1.04053e-09
 vgnd#branch                        6.10511e-10
 
-CPU time since last call: 0.044 seconds.
+CPU time since last call: 0.048 seconds.
 
-Total CPU time: 0.044 seconds.
+Total CPU time: 0.048 seconds.
 
 Current dynamic memory usage = 135168,
 Dynamic memory limit = -135169.
