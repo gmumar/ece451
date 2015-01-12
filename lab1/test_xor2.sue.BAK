@@ -1,0 +1,9 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_test_xor2 {} {
+  make xor2 -origin {510 380}
+  make input -name A -origin {430 360}
+  make input -name B -origin {430 380}
+  make output -name out -origin {590 380}
+}
+

@@ -1,0 +1,11 @@
+set NETLIST_CACHE(test_xor2,cells) {{schematic Counter /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab1/Counter.sue} {schematic xor2 /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab1/xor2.sue}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(test_xor2,level) main
+set NETLIST_CACHE(test_xor2,globals) {}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(test_xor2,warnings) {{NETLIST WARNING: Unconnected net on terminal "out" in icon xor2 "" (1) in schematic "test_xor2".}}
+set NETLIST_CACHE(test_xor2,version) MMI_SUE5.5.4
+set NETLIST_CACHE(test_xor2) {{* start main CELL test_xor2} {* .SUBCKT test_xor2  } {Xxor2 net_2 net_1 uc_net_3 xor2 } {XCounter net_2 net_1 Counter } {* .ENDS	$ test_xor2} {}}
+set NETLIST_CACHE(test_xor2,names) {{460 330 {0 net_1}} {360 390 {0 XCounter}} {650 330 {0 uc_net_3}} {490 310 {0 net_2}} {570 330 {0 Xxor2}} {460 310 {0 net_2}} {490 330 {0 net_1}}}
+set NETLIST_CACHE(test_xor2,wires) {{460 310 490 310 net_2} {460 330 490 330 net_1}}

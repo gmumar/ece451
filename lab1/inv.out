@@ -1,0 +1,27 @@
+
+Circuit: * FILE: inv.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+
+Transient solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+gnd                                               0          5.48979e-53
+vdd                                               0         -1.96114e-52
+out                                     5.66934e-44          1.41216e-52
+a                                                 0                    0
+vdd#branch                             -5.51831e-52                    0
+vgnd#branch                             5.37203e-52                    0
+
+
+CPU time since last call: 0.004 seconds.
+
+Total CPU time: 0.004 seconds.
+
+Current dynamic memory usage = 135168,
+Dynamic memory limit = -135041.
+
