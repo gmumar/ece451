@@ -1,11 +1,7 @@
-vector INPUT A B
-ana A B out
+vector INPUT A
+ana A out
 stepsize 100
-setvector INPUT 00
+setvector INPUT 0
 s
-setvector INPUT 01
-s
-setvector INPUT 10
-s
-setvector INPUT 11 
+setvector INPUT 1 
 s
