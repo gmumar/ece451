@@ -1,0 +1,11 @@
+set NETLIST_CACHE(test_nor,cells) {{schematic Counter /nfs/ug/homes-2/u/umarghul/ece451/lab1/Counter.sue} {schematic nor /nfs/ug/homes-2/u/umarghul/ece451/lab1/nor.sue}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(test_nor,level) main
+set NETLIST_CACHE(test_nor,globals) {}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(test_nor,warnings) {{NETLIST WARNING: Unconnected net on terminal "out" in icon nor "" (1) in schematic "test_nor".}}
+set NETLIST_CACHE(test_nor,version) MMI_SUE5.5.4
+set NETLIST_CACHE(test_nor) {{* start main CELL test_nor} {* .SUBCKT test_nor  } {Xnor net_1 net_3 uc_net_2 nor } {XCounter net_1 net_3 Counter } {* .ENDS	$ test_nor} {}}
+set NETLIST_CACHE(test_nor,names) {{350 480 {0 XCounter}} {530 400 {0 net_1}} {610 420 {0 Xnor}} {450 400 {0 net_1}} {690 420 {0 uc_net_2}} {530 420 {0 net_3}} {450 420 {0 net_3}}}
+set NETLIST_CACHE(test_nor,wires) {{450 420 530 420 net_3} {450 400 530 400 net_1}}
