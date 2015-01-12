@@ -1,0 +1,33 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_inv {} {
+  make pmos -origin {440 220}
+  make nmos -origin {440 380}
+  make input -name A -origin {340 300}
+  make output -name out -origin {440 300}
+  make global -name gnd -origin {440 450}
+  make global -orient RXY -name vdd -origin {440 170}
+  make inv -origin {280 110}
+  make_wire 440 420 440 450
+  make_wire 380 220 340 220
+  make_wire 340 380 380 380
+  make_wire 340 300 340 220
+  make_wire 340 300 340 380
+  make_wire 440 300 440 260
+  make_wire 440 300 440 340
+  make_wire 440 170 440 180
+}
+
+proc ICON_inv args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-80 0} -name A
+  icon_term -type output -origin {80 0} -name out
+  icon_property -origin {0 0} -size large -anchor center -label inv
+  icon_line -80 -40 80 -40 80 40 -80 40 -80 -40
+  icon_property -origin {-70 0} -label A
+  icon_property -origin {70 0} -anchor e -label out
+  icon_property -origin {-80 260} -type user -name name
+  icon_property -origin {-80 280} -type user -name M
+  icon_property -origin {-80 300} -type user -name dpc
+}
+

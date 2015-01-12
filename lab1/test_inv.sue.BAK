@@ -1,0 +1,8 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_test_inv {} {
+  make Counter -origin {260 420}
+  make inv -origin {570 340}
+  make_wire 360 340 490 340
+}
+

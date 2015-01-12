@@ -1,0 +1,9 @@
+set NETLIST_CACHE(inv,cells) {{icon nmos /cad2/mmi_110708/sue/schematics/mspice/nmos.sue {}} {icon pmos /cad2/mmi_110708/sue/schematics/mspice/pmos.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(inv,globals) {gnd vdd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(inv,version) MMI_SUE5.5.4
+set NETLIST_CACHE(inv) {{.SUBCKT inv A out } {M_1 out A vdd vdd p W='2*1u' L=lp_min ad='areap(2,sdd)' } {+ as='areap(2,sdd)' pd='perip(2,sdd)' ps='perip(2,sdd)' } {M_2 out A gnd gnd n W='1*1u' L=ln_min ad='arean(1,sdd)' } {+ as='arean(1,sdd)' pd='perin(1,sdd)' ps='perin(1,sdd)' } {.ENDS	$ inv} {}}
+set NETLIST_CACHE(inv,names) {{440 260 {0 out}} {440 180 {0 vdd}} {440 380 {0 M_2}} {380 380 {0 A}} {440 170 {1 vdd}} {440 450 {1 gnd}} {340 300 {1 A}} {440 300 {1 out}} {440 220 {0 M_1}} {440 420 {0 gnd}} {380 220 {0 A}} {440 340 {0 out}}}
+set NETLIST_CACHE(inv,wires) {{440 420 440 450 gnd} {340 220 380 220 A} {340 380 380 380 A} {340 220 340 300 A} {340 300 340 380 A} {440 260 440 300 out} {440 300 440 340 out} {440 170 440 180 vdd}}

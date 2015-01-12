@@ -1,0 +1,11 @@
+set NETLIST_CACHE(test_inv,cells) {{schematic Counter /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab1/Counter.sue} {schematic inv /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab1/inv.sue}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(test_inv,level) main
+set NETLIST_CACHE(test_inv,globals) {gnd vdd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(test_inv,warnings) {{NETLIST WARNING: Unconnected net on terminal "OUT2" in icon Counter "" (1) in schematic "test_inv".} {NETLIST WARNING: Unconnected net on terminal "out" in icon inv "" (10) in schematic "test_inv".}}
+set NETLIST_CACHE(test_inv,version) MMI_SUE5.5.4
+set NETLIST_CACHE(test_inv) {{* start main CELL test_inv} {* .SUBCKT test_inv  } {XCounter net_1 uc_net_2 Counter } {Xinv net_1 uc_net_3 inv } {* .ENDS	$ test_inv} {}}
+set NETLIST_CACHE(test_inv,names) {{480 350 {0 net_1}} {360 340 {0 net_1}} {260 420 {0 XCounter}} {640 350 {0 uc_net_3}} {360 360 {0 uc_net_2}} {560 350 {0 Xinv}}}
+set NETLIST_CACHE(test_inv,wires) {{360 340 450 340 net_1} {450 340 450 350 net_1} {450 350 480 350 net_1}}
