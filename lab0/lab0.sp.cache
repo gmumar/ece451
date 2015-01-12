@@ -1,0 +1,10 @@
+set NETLIST_CACHE(lab0,cells) {{icon pulse /cad2/mmi_110708/sue/schematics/mspice/pulse.sue {}} {schematic nand2 /cad2/mmi_110708/sue/schematics/mspice/nand2.sue {}} {schematic inverter /cad2/mmi_110708/sue/schematics/mspice/inverter.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(lab0,level) main
+set NETLIST_CACHE(lab0,globals) {gnd vdd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(lab0,version) MMI_SUE5.5.4
+set NETLIST_CACHE(lab0) {{* start main CELL lab0} {* .SUBCKT lab0 in out0_H out1_H my_name=Umar} {Xinverter in net_2 inverter } {Xinverter_1 net_2 net_1 inverter } {Xinverter_2 net_1 out0_H inverter WP=8 WN=4} {Vpulse in gnd pulse 0 vddp 0ns 200ps 200ps 3ns 6ns } {Xnand2 out0_H in out1_H nand2 } {* .ENDS	$ lab0} {}}
+set NETLIST_CACHE(lab0,names) {{790 440 {0 Xnand2}} {460 420 {0 net_2}} {770 460 {0 in}} {900 440 {1 out1_H}} {820 360 {1 out0_H}} {410 420 {0 net_2}} {250 570 {0 gnd}} {330 420 {0 in}} {680 420 {0 out0_H}} {250 490 {0 in}} {860 440 {0 out1_H}} {630 420 {0 Xinverter_2}} {250 620 {1 gnd}} {250 460 {1 in}} {490 420 {0 Xinverter_1}} {600 420 {0 net_1}} {770 420 {0 out0_H}} {250 530 {0 Vpulse}} {360 420 {0 Xinverter}} {540 420 {0 net_1}}}
+set NETLIST_CACHE(lab0,wires) {{250 420 330 420 in} {410 420 460 420 net_2} {540 420 600 420 net_1} {250 460 770 460 in} {250 420 250 460 in} {250 460 250 490 in} {250 570 250 620 gnd} {860 440 900 440 out1_H} {730 360 730 420 out0_H} {680 420 730 420 out0_H} {730 420 770 420 out0_H} {730 360 820 360 out0_H}}

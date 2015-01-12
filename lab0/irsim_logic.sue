@@ -1,0 +1,51 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_irsim_logic {} {
+  make nmos -orient RXY -origin {490 660}
+  make nmos -orient RXY -origin {440 830}
+  make nmos -origin {350 660}
+  make pmos -origin {350 380}
+  make pmos -origin {350 510}
+  make pmos -orient RXY -origin {490 440}
+  make input -orient RXY -name c -origin {600 440}
+  make input -name a -origin {200 380}
+  make input -name b -origin {210 510}
+  make output -name out -origin {530 540}
+  make global -name gnd -origin {530 230}
+  make global -name gnd -origin {440 960}
+  make input -orient RXY -name b -origin {640 660}
+  make input -orient RXY -name c -origin {570 830}
+  make input -name a -origin {210 660}
+  make input -name vdd -origin {350 280}
+  make dc_supply -orient RXY -name vdd -origin {430 240}
+  make_wire 350 420 350 470
+  make_wire 350 760 440 760
+  make_wire 350 760 350 700
+  make_wire 490 700 490 760
+  make_wire 490 760 440 760
+  make_wire 350 300 350 340
+  make_wire 490 300 490 400
+  make_wire 490 560 350 560
+  make_wire 490 560 490 620
+  make_wire 350 560 350 550
+  make_wire 350 560 350 620
+  make_wire 550 440 600 440
+  make_wire 550 660 640 660
+  make_wire 290 660 210 660
+  make_wire 290 510 210 510
+  make_wire 290 380 200 380
+  make_wire 430 300 350 300
+  make_wire 430 300 490 300
+  make_wire 530 230 530 180
+  make_wire 430 180 430 210
+  make_wire 430 180 530 180
+  make_wire 430 280 430 300
+  make_wire 490 480 490 540
+  make_wire 490 540 490 560
+  make_wire 490 540 530 540
+  make_wire 440 760 440 790
+  make_wire 440 870 440 960
+  make_wire 500 830 570 830
+  make_wire 350 280 430 280
+}
+
