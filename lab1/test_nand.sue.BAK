@@ -1,0 +1,10 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_test_nand {} {
+  make nand -origin {430 360}
+  make Counter -origin {190 420}
+  make_wire 290 340 280 340
+  make_wire 290 340 350 340
+  make_wire 290 360 350 360
+}
+

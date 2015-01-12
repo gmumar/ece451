@@ -1,0 +1,9 @@
+set NETLIST_CACHE(nand,cells) {{icon nmos /cad2/mmi_110708/sue/schematics/mspice/nmos.sue {}} {icon pmos /cad2/mmi_110708/sue/schematics/mspice/pmos.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(nand,globals) {gnd vdd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(nand,version) MMI_SUE5.5.4
+set NETLIST_CACHE(nand) {{.SUBCKT nand A B out } {M_1 out A vdd vdd p W='2*1u' L=lp_min ad='areap(2,sdd)' } {+ as='areap(2,sdd)' pd='perip(2,sdd)' ps='perip(2,sdd)' } {M_2 out B vdd vdd p W='2*1u' L=lp_min ad='areap(2,sdd)' } {+ as='areap(2,sdd)' pd='perip(2,sdd)' ps='perip(2,sdd)' } {M_3 out B net_1 gnd n W='2*1u' L=ln_min ad='arean(2,sdd)' } {+ as='arean(2,sdd)' pd='perin(2,sdd)' ps='perin(2,sdd)' } {M_4 net_1 A gnd gnd n W='2*1u' L=ln_min ad='arean(2,sdd)' } {+ as='arean(2,sdd)' pd='perin(2,sdd)' ps='perin(2,sdd)' } {.ENDS	$ nand} {}}
+set NETLIST_CACHE(nand,names) {{620 260 {0 vdd}} {550 610 {1 gnd}} {430 300 {0 A} {2 A}} {650 370 {1 out}} {550 400 {0 out}} {550 500 {0 net_1}} {490 300 {0 M_1}} {550 440 {0 M_3}} {550 540 {0 M_4}} {620 300 {0 M_2}} {490 340 {0 out}} {490 260 {0 vdd}} {490 440 {1 B} {2 B}} {540 220 {1 vdd}} {560 300 {0 B} {2 B}} {490 540 {1 A} {2 A}} {550 480 {0 net_1}} {550 580 {0 gnd}} {620 340 {0 out}}}
+set NETLIST_CACHE(nand,wires) {{550 370 550 400 out} {490 340 490 370 out} {490 370 550 370 out} {490 240 490 260 vdd} {540 220 540 240 vdd} {550 580 550 610 gnd} {550 480 550 500 net_1} {620 340 620 370 out} {620 370 650 370 out} {550 370 620 370 out} {620 240 620 260 vdd} {490 240 540 240 vdd} {540 240 620 240 vdd}}
