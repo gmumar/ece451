@@ -2,9 +2,7 @@
 
 proc SCHEMATIC_test_nor {} {
   make nor -origin {610 420}
-  make input -name A -origin {450 400}
-  make input -name B -origin {450 420}
-  make output -name out -origin {690 420}
+  make Counter -origin {350 480}
   make_wire 450 420 530 420
   make_wire 450 400 530 400
 }

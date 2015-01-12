@@ -1,4 +1,4 @@
-# SUE version MMI_SUE5.5.4
+# SUE version MMI_SUE5.5.4 (auto-save)
 
 proc SCHEMATIC_test_nand {} {
   make nand -origin {430 360}
