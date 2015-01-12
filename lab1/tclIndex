@@ -8,11 +8,13 @@
 
 # Special SUE version which includes file modification times.
 
-set auto_index(SCHEMATIC_inv) [list source [file join $dir inv.sue]]
-set auto_index(ICON_inv) [list source [file join $dir inv.sue]]
 set auto_index(SCHEMATIC_nor) [list source [file join $dir nor.sue]]
-set auto_index(SCHEMATIC_nand) [list source [file join $dir nand.sue]]
-set auto_index(ICON_nand) [list source [file join $dir nand.sue]]
+set auto_index(ICON_nor) [list source [file join $dir nor.sue]]
 set auto_index(SCHEMATIC_Counter) [list source [file join $dir Counter.sue]]
 set auto_index(ICON_Counter) [list source [file join $dir Counter.sue]]
-set mtimes {{inv.sue 1421076252} {nor.sue 1421076186} {nand.sue 1421076186} {Counter.sue 1421076186}}
+set auto_index(SCHEMATIC_nand) [list source [file join $dir nand.sue]]
+set auto_index(ICON_nand) [list source [file join $dir nand.sue]]
+set auto_index(SCHEMATIC_inv) [list source [file join $dir inv.sue]]
+set auto_index(ICON_inv) [list source [file join $dir inv.sue]]
+set auto_index(SCHEMATIC_test_nand) [list source [file join $dir test_nand.sue]]
+set mtimes {{nor.sue 1421076304} {Counter.sue 1421075747} {nand.sue 1421075795} {inv.sue 1421076351} {test_nand.sue 1421076810}}
