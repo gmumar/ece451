@@ -1,0 +1,28 @@
+
+Circuit: * FILE: test_nor.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+gnd                                          0
+vdd                                        2.5
+uc_net_2                               2.49999
+net_1                                        0
+net_3                                        0
+nor:net_1                                  2.5
+v:counter:_2#branch                          0
+v:counter:_1#branch                          0
+vdd#branch                        -2.08095e-09
+vgnd#branch                        1.22102e-09
+
+CPU time since last call: 0.076 seconds.
+
+Total CPU time: 0.076 seconds.
+
+Current dynamic memory usage = 135168,
+Dynamic memory limit = -135041.
+

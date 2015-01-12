@@ -12,9 +12,11 @@ set auto_index(SCHEMATIC_nor) [list source [file join $dir nor.sue]]
 set auto_index(ICON_nor) [list source [file join $dir nor.sue]]
 set auto_index(SCHEMATIC_Counter) [list source [file join $dir Counter.sue]]
 set auto_index(ICON_Counter) [list source [file join $dir Counter.sue]]
+set auto_index(SCHEMATIC_test_nor) [list source [file join $dir test_nor.sue]]
 set auto_index(SCHEMATIC_nand) [list source [file join $dir nand.sue]]
 set auto_index(ICON_nand) [list source [file join $dir nand.sue]]
+set auto_index(SCHEMATIC_test_inv) [list source [file join $dir test_inv.sue]]
 set auto_index(SCHEMATIC_inv) [list source [file join $dir inv.sue]]
 set auto_index(ICON_inv) [list source [file join $dir inv.sue]]
 set auto_index(SCHEMATIC_test_nand) [list source [file join $dir test_nand.sue]]
-set mtimes {{nor.sue 1421076304} {Counter.sue 1421075747} {nand.sue 1421075795} {inv.sue 1421076351} {test_nand.sue 1421076810}}
+set mtimes {{nor.sue 1421076304} {Counter.sue 1421075747} {test_nor.sue 1421077979} {nand.sue 1421075795} {test_inv.sue 1421077970} {inv.sue 1421076351} {test_nand.sue 1421077042}}

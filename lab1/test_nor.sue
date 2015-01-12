@@ -1,0 +1,9 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_test_nor {} {
+  make nor -origin {610 420}
+  make Counter -origin {350 480}
+  make_wire 450 420 530 420
+  make_wire 450 400 530 400
+}
+
