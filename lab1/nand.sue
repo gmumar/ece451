@@ -1,0 +1,44 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_nand {} {
+  make pmos -origin {490 300}
+  make pmos -origin {620 300}
+  make input -name A -origin {490 540}
+  make input -name A -origin {430 300}
+  make input -name B -origin {560 300}
+  make input -name B -origin {490 440}
+  make output -name out -origin {650 370}
+  make global -name gnd -origin {550 610}
+  make global -orient RXY -name vdd -origin {540 220}
+  make nmos -W 2 -origin {550 440}
+  make nmos -W 2 -origin {550 540}
+  make_wire 550 400 550 370
+  make_wire 490 340 490 370
+  make_wire 490 370 550 370
+  make_wire 490 260 490 240
+  make_wire 540 220 540 240
+  make_wire 550 580 550 610
+  make_wire 550 480 550 500
+  make_wire 620 340 620 370
+  make_wire 620 370 650 370
+  make_wire 620 370 550 370
+  make_wire 620 240 620 260
+  make_wire 490 240 540 240
+  make_wire 540 240 620 240
+}
+
+proc ICON_nand args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-80 -20} -name A
+  icon_term -type input -origin {-80 0} -name B
+  icon_term -type output -origin {80 0} -name out
+  icon_property -origin {0 0} -size large -anchor center -label nand
+  icon_line -80 -40 80 -40 80 40 -80 40 -80 -40
+  icon_property -origin {-70 -20} -label A
+  icon_property -origin {-70 0} -label B
+  icon_property -origin {70 0} -anchor e -label out
+  icon_property -origin {-80 260} -type user -name name
+  icon_property -origin {-80 280} -type user -name M
+  icon_property -origin {-80 300} -type user -name dpc
+}
+

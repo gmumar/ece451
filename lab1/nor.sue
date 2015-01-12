@@ -1,0 +1,9 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_nor {} {
+  make nmos -origin {380 520}
+  make nmos -origin {520 520}
+  make pmos -origin {450 250}
+  make pmos -origin {450 360}
+}
+
