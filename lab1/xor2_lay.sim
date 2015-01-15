@@ -1,0 +1,14 @@
+| units: 1.0  tech: mmi25  format: UCB
+A A input
+A B input
+A out_2 output
+p B #fet_91/s pdif_1590_680# 24 200 135 68
+p A pdif_1590_680# vdd 24 200 209 68
+p A #fet_79/s vdd 24 400 406 57
+p B vdd #fet_79/s 24 400 504 57
+p #fet_91/s #fet_79/s out_2 24 400 602 57
+n B gnd #fet_91/s 24 100 125 -166
+n A #fet_91/s gnd 24 100 223 -166
+n A out_2 ndif_4450_n2640# 24 200 421 -264
+n B ndif_4450_n2640# gnd 24 200 495 -264
+n #fet_91/s out_2 gnd 24 100 693 -225

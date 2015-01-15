@@ -1,0 +1,6 @@
+magic
+tech scmos
+use /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab1/xor2.lvs /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab1/xor2.lvs_0
+transform 1 0 0 0 1 0
+box 0 0 10 10
+<< end >>

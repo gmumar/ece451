@@ -1,0 +1,11 @@
+; Dictionary file for matching names in
+; xor2_lay.sim and ./xor2.sim
+= #fet_91/s net_2
+= out_2 out_2
+= gnd gnd
+= ndif_4450_n2640# net_3
+= pdif_1590_680# nor.net_1
+= #fet_79/s net_1
+= B B
+= A A
+= vdd vdd

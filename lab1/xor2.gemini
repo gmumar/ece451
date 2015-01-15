@@ -1,0 +1,16 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "xor2_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 10
+	Number of nets: 10
+
+Graph "./xor2.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+	Number of devices: 10
+	Number of nets: 10
+
+9 entries written to the dictionary file.
+14 (70%) matches were found by local matching
+All nodes were matched in 6 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab1/xor2.lvs.err.mag

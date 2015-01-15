@@ -1,4 +1,4 @@
-# SUE version MMI_SUE5.5.4
+# SUE version MMI_SUE5.5.4 (auto-save)
 
 proc SCHEMATIC_xor2 {} {
   make nor -origin {170 430}
@@ -17,6 +17,7 @@ proc SCHEMATIC_xor2 {} {
   make nmos -W 2 -origin {600 510}
   make nmos -W 2 -origin {600 590}
   make output -name out_2 -origin {520 400}
+  make name_net_s -name nor_out -origin {290 430}
   make_wire 460 500 460 460
   make_wire 250 430 290 430
   make_wire 290 540 400 540
