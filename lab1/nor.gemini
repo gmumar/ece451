@@ -1,0 +1,15 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "nor_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 4
+	Number of nets: 7
+
+Graph "./nor.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+	Number of devices: 4
+	Number of nets: 7
+
+6 entries written to the dictionary file.
+6 (54%) matches were found by local matching
+All nodes were matched in 6 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab1/nor.lvs.err.mag

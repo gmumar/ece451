@@ -1,8 +1,8 @@
 ; Dictionary file for matching names in
-; nand_lay.sim and ./nand.sim
-= ndif_n250_n4270# net_1
+; nor_lay.sim and ./nor.sim
 = out out
-= gnd gnd
 = vdd vdd
+= gnd gnd
+= pdif_n2600_n1730# net_1
 = B B
 = A A

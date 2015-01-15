@@ -1,0 +1,6 @@
+# SUE version MMI_SUE5.5.4 (auto-save)
+
+proc SCHEMATIC_no_name {} {
+  make nand -origin {420 270}
+}
+
