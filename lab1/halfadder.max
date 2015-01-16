@@ -1,0 +1,106 @@
+# MAX version Max5.7.11 OpenGL Accelerated , compiled 11:21:30  Jul  8 2011.
+
+# WARNING:
+#
+# The .max file format continues to evolve.
+#
+# Micro Magic, Inc. recommends you do not write or parse .max files directly.
+# Instead use the Max API (e.g. 'db_search' and 'db_paint' commands).
+# The API is also easier to interface to.  See 'Text Commands/Variables' under
+# the Max 'Help' menu for full documentation on the API.
+
+max 5
+tech mmi25
+resolution 0.001
+
+
+DEF #via!-type!ct_poly!-_version!686360247 "via (S)" "ct_poly"
+
+SECTION VERSIONS {
+vMAIN 1421428413 32
+vDRC 686360247 1000
+vBBOX 1421428413 32
+} SECTION VERSIONS
+
+SECTION RECTS {
+layer poly
+-290 -290 290 290
+layer ct
+-150 -150 150 150
+layer m1
+-240 -240 240 240
+} SECTION RECTS
+
+SECTION LABELS {
+lab poly 0 0 0 0 0 1 bot
+lab m1 0 0 0 0 0 1 top
+} SECTION LABELS
+
+
+DEF
+
+SECTION VERSIONS {
+vMAIN 1421430461 1
+vDRC 1421430461 9
+vBBOX 1421430461 1
+} SECTION VERSIONS
+
+SECTION RECTS {
+layer poly
+3910 -210 4150 90
+2640 -5110 2880 -4220
+4670 -7630 4910 -5950
+3380 -7870 4910 -7630
+3780 -10960 4020 -10690
+layer m1
+-970 3590 -300 3910
+7540 920 9360 1240
+3910 -190 4910 130
+-1100 -2560 -510 -2240
+4590 -5950 4910 -190
+4590 -6270 4950 -5950
+3900 -8080 7020 -7760
+-670 -9690 760 -9370
+440 -9980 760 -9690
+-680 -11420 760 -11100
+} SECTION RECTS
+
+SECTION LABELS {
+lab m1 40 -11260 40 -11260 0 4 A
+lab m1 -120 -9530 -120 -9530 0 4 B
+lab m1 -810 -2400 -810 -2400 0 4 B
+lab m1 -640 3750 -640 3750 0 4 A
+lab m1 6640 -7920 6640 -7920 0 5 carry
+lab m1 9040 1080 9040 1080 0 5 sum
+} SECTION LABELS
+
+SECTION GROUPS {
+} SECTION GROUPS
+
+SECTION INSTANCES {
+gcell 686360247 #via!-type!ct_poly
+bbox -290 -290 290 290
+bbox_user -290 -290 290 290
+uses {
+	_78 1 0 4790 0 1 -6110
+	_79 1 0 4030 0 1 -30
+}
+def nand
+vMAIN 1421428413 89
+vDRC 1421429977 7
+vBBOX 1421428413 89
+bbox -3020 -6650 1930 4860
+bbox_user -3020 -6650 1930 4860
+uses {
+	_91 1 0 3130 0 -1 -9470
+}
+def xor2
+vMAIN 1421428413 48
+vDRC 1421430460 31
+vBBOX 1421428413 48
+bbox -860 -4800 9070 7090
+bbox_user -860 -4800 9070 7090
+uses {
+	_99 1 0 -20 0 1 -20
+}
+} SECTION INSTANCES

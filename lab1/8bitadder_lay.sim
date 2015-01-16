@@ -1,0 +1,283 @@
+| units: 1.0  tech: mmi25  format: UCB
+A Cin input
+A A0 input
+A B0 input
+A A1 input
+A B1 input
+A B2 input
+A A2 input
+A B3 input
+A A3 input
+A B4 input
+A A4 input
+A B5 input
+A B6 input
+A B7 input
+A A5 input
+A A6 input
+A A7 input
+A Cout output
+A Sum0 output
+A Sum1 output
+A Sum2 output
+A Sum3 output
+A Sum4 output
+A Sum5 output
+A Sum6 output
+A Sum7 output
+p A0 fulladder_62/halfadder_95/xor2_99/#fet_91/s pdif_8920_n9550# 24 200 868 -955
+p Cin pdif_8920_n9550# vdd 24 200 942 -955
+p Cin fulladder_62/halfadder_95/xor2_99/#fet_79/s vdd 24 400 1139 -966
+p A0 vdd fulladder_62/halfadder_95/xor2_99/#fet_79/s 24 400 1237 -966
+p fulladder_62/halfadder_95/xor2_99/#fet_91/s fulladder_62/halfadder_95/xor2_99/#fet_79/s fulladder_62/halfadder_95/sum 24 400 1335 -966
+p B0 fulladder_62/halfadder_94/xor2_99/#fet_91/s pdif_18460_n9570# 24 200 1822 -957
+p fulladder_62/halfadder_95/sum pdif_18460_n9570# vdd 24 200 1896 -957
+p fulladder_62/halfadder_95/sum fulladder_62/halfadder_94/xor2_99/#fet_79/s vdd 24 400 2093 -968
+p B0 vdd fulladder_62/halfadder_94/xor2_99/#fet_79/s 24 400 2191 -968
+p fulladder_62/halfadder_94/xor2_99/#fet_91/s fulladder_62/halfadder_94/xor2_99/#fet_79/s Sum0 24 400 2289 -968
+p A1 fulladder_63/halfadder_95/xor2_99/#fet_91/s pdif_32720_n9550# 24 200 3248 -955
+p fulladder_63/Cn_1 pdif_32720_n9550# vdd 24 200 3322 -955
+p fulladder_63/Cn_1 fulladder_63/halfadder_95/xor2_99/#fet_79/s vdd 24 400 3519 -966
+p A1 vdd fulladder_63/halfadder_95/xor2_99/#fet_79/s 24 400 3617 -966
+p fulladder_63/halfadder_95/xor2_99/#fet_91/s fulladder_63/halfadder_95/xor2_99/#fet_79/s fulladder_63/halfadder_95/sum 24 400 3715 -966
+p B1 fulladder_63/halfadder_94/xor2_99/#fet_91/s pdif_42260_n9570# 24 200 4202 -957
+p fulladder_63/halfadder_95/sum pdif_42260_n9570# vdd 24 200 4276 -957
+p fulladder_63/halfadder_95/sum fulladder_63/halfadder_94/xor2_99/#fet_79/s vdd 24 400 4473 -968
+p B1 vdd fulladder_63/halfadder_94/xor2_99/#fet_79/s 24 400 4571 -968
+p fulladder_63/halfadder_94/xor2_99/#fet_91/s fulladder_63/halfadder_94/xor2_99/#fet_79/s Sum1 24 400 4669 -968
+p A2 fulladder_60/halfadder_95/xor2_99/#fet_91/s pdif_56650_n9520# 24 200 5641 -952
+p fulladder_60/Cn_1 pdif_56650_n9520# vdd 24 200 5715 -952
+p fulladder_60/Cn_1 fulladder_60/halfadder_95/xor2_99/#fet_79/s vdd 24 400 5912 -963
+p A2 vdd fulladder_60/halfadder_95/xor2_99/#fet_79/s 24 400 6010 -963
+p fulladder_60/halfadder_95/xor2_99/#fet_91/s fulladder_60/halfadder_95/xor2_99/#fet_79/s fulladder_60/halfadder_95/sum 24 400 6108 -963
+p B2 fulladder_60/halfadder_94/xor2_99/#fet_91/s pdif_66190_n9540# 24 200 6595 -954
+p fulladder_60/halfadder_95/sum pdif_66190_n9540# vdd 24 200 6669 -954
+p fulladder_60/halfadder_95/sum fulladder_60/halfadder_94/xor2_99/#fet_79/s vdd 24 400 6866 -965
+p B2 vdd fulladder_60/halfadder_94/xor2_99/#fet_79/s 24 400 6964 -965
+p fulladder_60/halfadder_94/xor2_99/#fet_91/s fulladder_60/halfadder_94/xor2_99/#fet_79/s Sum2 24 400 7062 -965
+p A3 fulladder_61/halfadder_95/xor2_99/#fet_91/s pdif_80450_n9520# 24 200 8021 -952
+p fulladder_60/Cn pdif_80450_n9520# vdd 24 200 8095 -952
+p fulladder_60/Cn fulladder_61/halfadder_95/xor2_99/#fet_79/s vdd 24 400 8292 -963
+p A3 vdd fulladder_61/halfadder_95/xor2_99/#fet_79/s 24 400 8390 -963
+p fulladder_61/halfadder_95/xor2_99/#fet_91/s fulladder_61/halfadder_95/xor2_99/#fet_79/s fulladder_61/halfadder_95/sum 24 400 8488 -963
+p B3 fulladder_61/halfadder_94/xor2_99/#fet_91/s pdif_89990_n9540# 24 200 8975 -954
+p fulladder_61/halfadder_95/sum pdif_89990_n9540# vdd 24 200 9049 -954
+p fulladder_61/halfadder_95/sum fulladder_61/halfadder_94/xor2_99/#fet_79/s vdd 24 400 9246 -965
+p B3 vdd fulladder_61/halfadder_94/xor2_99/#fet_79/s 24 400 9344 -965
+p fulladder_61/halfadder_94/xor2_99/#fet_91/s fulladder_61/halfadder_94/xor2_99/#fet_79/s Sum3 24 400 9442 -965
+p A4 fulladder_31/halfadder_95/xor2_99/#fet_91/s pdif_103960_n9540# 24 200 10372 -954
+p fulladder_61/Cn pdif_103960_n9540# vdd 24 200 10446 -954
+p fulladder_61/Cn fulladder_31/halfadder_95/xor2_99/#fet_79/s vdd 24 400 10643 -965
+p A4 vdd fulladder_31/halfadder_95/xor2_99/#fet_79/s 24 400 10741 -965
+p fulladder_31/halfadder_95/xor2_99/#fet_91/s fulladder_31/halfadder_95/xor2_99/#fet_79/s fulladder_31/halfadder_95/sum 24 400 10839 -965
+p B4 fulladder_31/halfadder_94/xor2_99/#fet_91/s pdif_113500_n9560# 24 200 11326 -956
+p fulladder_31/halfadder_95/sum pdif_113500_n9560# vdd 24 200 11400 -956
+p fulladder_31/halfadder_95/sum fulladder_31/halfadder_94/xor2_99/#fet_79/s vdd 24 400 11597 -967
+p B4 vdd fulladder_31/halfadder_94/xor2_99/#fet_79/s 24 400 11695 -967
+p fulladder_31/halfadder_94/xor2_99/#fet_91/s fulladder_31/halfadder_94/xor2_99/#fet_79/s Sum4 24 400 11793 -967
+p A5 fulladder_30/halfadder_95/xor2_99/#fet_91/s pdif_127760_n9540# 24 200 12752 -954
+p fulladder_31/Cn pdif_127760_n9540# vdd 24 200 12826 -954
+p fulladder_31/Cn fulladder_30/halfadder_95/xor2_99/#fet_79/s vdd 24 400 13023 -965
+p A5 vdd fulladder_30/halfadder_95/xor2_99/#fet_79/s 24 400 13121 -965
+p fulladder_30/halfadder_95/xor2_99/#fet_91/s fulladder_30/halfadder_95/xor2_99/#fet_79/s fulladder_30/halfadder_95/sum 24 400 13219 -965
+p B5 fulladder_30/halfadder_94/xor2_99/#fet_91/s pdif_137300_n9560# 24 200 13706 -956
+p fulladder_30/halfadder_95/sum pdif_137300_n9560# vdd 24 200 13780 -956
+p fulladder_30/halfadder_95/sum fulladder_30/halfadder_94/xor2_99/#fet_79/s vdd 24 400 13977 -967
+p B5 vdd fulladder_30/halfadder_94/xor2_99/#fet_79/s 24 400 14075 -967
+p fulladder_30/halfadder_94/xor2_99/#fet_91/s fulladder_30/halfadder_94/xor2_99/#fet_79/s Sum5 24 400 14173 -967
+p A6 fulladder_28/halfadder_95/xor2_99/#fet_91/s pdif_151690_n9510# 24 200 15145 -951
+p fulladder_30/Cn pdif_151690_n9510# vdd 24 200 15219 -951
+p fulladder_30/Cn fulladder_28/halfadder_95/xor2_99/#fet_79/s vdd 24 400 15416 -962
+p A6 vdd fulladder_28/halfadder_95/xor2_99/#fet_79/s 24 400 15514 -962
+p fulladder_28/halfadder_95/xor2_99/#fet_91/s fulladder_28/halfadder_95/xor2_99/#fet_79/s fulladder_28/halfadder_95/sum 24 400 15612 -962
+p B6 fulladder_28/halfadder_94/xor2_99/#fet_91/s pdif_161230_n9530# 24 200 16099 -953
+p fulladder_28/halfadder_95/sum pdif_161230_n9530# vdd 24 200 16173 -953
+p fulladder_28/halfadder_95/sum fulladder_28/halfadder_94/xor2_99/#fet_79/s vdd 24 400 16370 -964
+p B6 vdd fulladder_28/halfadder_94/xor2_99/#fet_79/s 24 400 16468 -964
+p fulladder_28/halfadder_94/xor2_99/#fet_91/s fulladder_28/halfadder_94/xor2_99/#fet_79/s Sum6 24 400 16566 -964
+p A7 fulladder_29/halfadder_95/xor2_99/#fet_91/s pdif_175490_n9510# 24 200 17525 -951
+p fulladder_29/Cn_1 pdif_175490_n9510# vdd 24 200 17599 -951
+p fulladder_29/Cn_1 fulladder_29/halfadder_95/xor2_99/#fet_79/s vdd 24 400 17796 -962
+p A7 vdd fulladder_29/halfadder_95/xor2_99/#fet_79/s 24 400 17894 -962
+p fulladder_29/halfadder_95/xor2_99/#fet_91/s fulladder_29/halfadder_95/xor2_99/#fet_79/s fulladder_29/halfadder_95/sum 24 400 17992 -962
+p B7 fulladder_29/halfadder_94/xor2_99/#fet_91/s pdif_185030_n9530# 24 200 18479 -953
+p fulladder_29/halfadder_95/sum pdif_185030_n9530# vdd 24 200 18553 -953
+p fulladder_29/halfadder_95/sum fulladder_29/halfadder_94/xor2_99/#fet_79/s vdd 24 400 18750 -964
+p B7 vdd fulladder_29/halfadder_94/xor2_99/#fet_79/s 24 400 18848 -964
+p fulladder_29/halfadder_94/xor2_99/#fet_91/s fulladder_29/halfadder_94/xor2_99/#fet_79/s Sum7 24 400 18946 -964
+p A0 fulladder_62/halfadder_95/carry vdd 24 200 975 -2063
+p Cin vdd fulladder_62/halfadder_95/carry 24 200 1073 -2063
+p B0 fulladder_62/halfadder_94/carry vdd 24 200 1929 -2065
+p fulladder_62/halfadder_95/sum vdd fulladder_62/halfadder_94/carry 24 200 2027 -2065
+p fulladder_62/halfadder_95/carry fulladder_63/Cn_1 vdd 24 200 2643 -2064
+p fulladder_62/halfadder_94/carry vdd fulladder_63/Cn_1 24 200 2741 -2064
+p A1 fulladder_63/halfadder_95/carry vdd 24 200 3355 -2063
+p fulladder_63/Cn_1 vdd fulladder_63/halfadder_95/carry 24 200 3453 -2063
+p B1 fulladder_63/halfadder_94/carry vdd 24 200 4309 -2065
+p fulladder_63/halfadder_95/sum vdd fulladder_63/halfadder_94/carry 24 200 4407 -2065
+p fulladder_63/halfadder_95/carry fulladder_60/Cn_1 vdd 24 200 5023 -2064
+p fulladder_63/halfadder_94/carry vdd fulladder_60/Cn_1 24 200 5121 -2064
+p A2 fulladder_60/halfadder_95/carry vdd 24 200 5748 -2060
+p fulladder_60/Cn_1 vdd fulladder_60/halfadder_95/carry 24 200 5846 -2060
+p B2 fulladder_60/halfadder_94/carry vdd 24 200 6702 -2062
+p fulladder_60/halfadder_95/sum vdd fulladder_60/halfadder_94/carry 24 200 6800 -2062
+p fulladder_60/halfadder_95/carry fulladder_60/Cn vdd 24 200 7416 -2061
+p fulladder_60/halfadder_94/carry vdd fulladder_60/Cn 24 200 7514 -2061
+p A3 fulladder_61/halfadder_95/carry vdd 24 200 8128 -2060
+p fulladder_60/Cn vdd fulladder_61/halfadder_95/carry 24 200 8226 -2060
+p B3 fulladder_61/halfadder_94/carry vdd 24 200 9082 -2062
+p fulladder_61/halfadder_95/sum vdd fulladder_61/halfadder_94/carry 24 200 9180 -2062
+p fulladder_61/halfadder_95/carry fulladder_61/Cn vdd 24 200 9796 -2061
+p fulladder_61/halfadder_94/carry vdd fulladder_61/Cn 24 200 9894 -2061
+p A4 fulladder_31/halfadder_95/carry vdd 24 200 10479 -2062
+p fulladder_61/Cn vdd fulladder_31/halfadder_95/carry 24 200 10577 -2062
+p B4 fulladder_31/halfadder_94/carry vdd 24 200 11433 -2064
+p fulladder_31/halfadder_95/sum vdd fulladder_31/halfadder_94/carry 24 200 11531 -2064
+p fulladder_31/halfadder_95/carry fulladder_31/Cn vdd 24 200 12147 -2063
+p fulladder_31/halfadder_94/carry vdd fulladder_31/Cn 24 200 12245 -2063
+p A5 fulladder_30/halfadder_95/carry vdd 24 200 12859 -2062
+p fulladder_31/Cn vdd fulladder_30/halfadder_95/carry 24 200 12957 -2062
+p B5 fulladder_30/halfadder_94/carry vdd 24 200 13813 -2064
+p fulladder_30/halfadder_95/sum vdd fulladder_30/halfadder_94/carry 24 200 13911 -2064
+p fulladder_30/halfadder_95/carry fulladder_30/Cn vdd 24 200 14527 -2063
+p fulladder_30/halfadder_94/carry vdd fulladder_30/Cn 24 200 14625 -2063
+p A6 fulladder_28/halfadder_95/carry vdd 24 200 15252 -2059
+p fulladder_30/Cn vdd fulladder_28/halfadder_95/carry 24 200 15350 -2059
+p B6 fulladder_28/halfadder_94/carry vdd 24 200 16206 -2061
+p fulladder_28/halfadder_95/sum vdd fulladder_28/halfadder_94/carry 24 200 16304 -2061
+p fulladder_28/halfadder_95/carry fulladder_29/Cn_1 vdd 24 200 16920 -2060
+p fulladder_28/halfadder_94/carry vdd fulladder_29/Cn_1 24 200 17018 -2060
+p A7 fulladder_29/halfadder_95/carry vdd 24 200 17632 -2059
+p fulladder_29/Cn_1 vdd fulladder_29/halfadder_95/carry 24 200 17730 -2059
+p B7 fulladder_29/halfadder_94/carry vdd 24 200 18586 -2061
+p fulladder_29/halfadder_95/sum vdd fulladder_29/halfadder_94/carry 24 200 18684 -2061
+p fulladder_29/halfadder_95/carry Cout vdd 24 200 19300 -2060
+p fulladder_29/halfadder_94/carry vdd Cout 24 200 19398 -2060
+n A0 gnd fulladder_62/halfadder_95/xor2_99/#fet_91/s 24 100 858 -1189
+n Cin fulladder_62/halfadder_95/xor2_99/#fet_91/s gnd 24 100 956 -1189
+n Cin fulladder_62/halfadder_95/sum ndif_11780_n12870# 24 200 1154 -1287
+n A0 ndif_11780_n12870# gnd 24 200 1228 -1287
+n fulladder_62/halfadder_95/xor2_99/#fet_91/s fulladder_62/halfadder_95/sum gnd 24 100 1426 -1248
+n B0 gnd fulladder_62/halfadder_94/xor2_99/#fet_91/s 24 100 1812 -1191
+n fulladder_62/halfadder_95/sum fulladder_62/halfadder_94/xor2_99/#fet_91/s gnd 24 100 1910 -1191
+n fulladder_62/halfadder_95/sum Sum0 ndif_21320_n12890# 24 200 2108 -1289
+n B0 ndif_21320_n12890# gnd 24 200 2182 -1289
+n fulladder_62/halfadder_94/xor2_99/#fet_91/s Sum0 gnd 24 100 2380 -1250
+n A1 gnd fulladder_63/halfadder_95/xor2_99/#fet_91/s 24 100 3238 -1189
+n fulladder_63/Cn_1 fulladder_63/halfadder_95/xor2_99/#fet_91/s gnd 24 100 3336 -1189
+n fulladder_63/Cn_1 fulladder_63/halfadder_95/sum ndif_35580_n12870# 24 200 3534 -1287
+n A1 ndif_35580_n12870# gnd 24 200 3608 -1287
+n fulladder_63/halfadder_95/xor2_99/#fet_91/s fulladder_63/halfadder_95/sum gnd 24 100 3806 -1248
+n B1 gnd fulladder_63/halfadder_94/xor2_99/#fet_91/s 24 100 4192 -1191
+n fulladder_63/halfadder_95/sum fulladder_63/halfadder_94/xor2_99/#fet_91/s gnd 24 100 4290 -1191
+n fulladder_63/halfadder_95/sum Sum1 ndif_45120_n12890# 24 200 4488 -1289
+n B1 ndif_45120_n12890# gnd 24 200 4562 -1289
+n fulladder_63/halfadder_94/xor2_99/#fet_91/s Sum1 gnd 24 100 4760 -1250
+n A2 gnd fulladder_60/halfadder_95/xor2_99/#fet_91/s 24 100 5631 -1186
+n fulladder_60/Cn_1 fulladder_60/halfadder_95/xor2_99/#fet_91/s gnd 24 100 5729 -1186
+n fulladder_60/Cn_1 fulladder_60/halfadder_95/sum ndif_59510_n12840# 24 200 5927 -1284
+n A2 ndif_59510_n12840# gnd 24 200 6001 -1284
+n fulladder_60/halfadder_95/xor2_99/#fet_91/s fulladder_60/halfadder_95/sum gnd 24 100 6199 -1245
+n B2 gnd fulladder_60/halfadder_94/xor2_99/#fet_91/s 24 100 6585 -1188
+n fulladder_60/halfadder_95/sum fulladder_60/halfadder_94/xor2_99/#fet_91/s gnd 24 100 6683 -1188
+n fulladder_60/halfadder_95/sum Sum2 ndif_69050_n12860# 24 200 6881 -1286
+n B2 ndif_69050_n12860# gnd 24 200 6955 -1286
+n fulladder_60/halfadder_94/xor2_99/#fet_91/s Sum2 gnd 24 100 7153 -1247
+n A3 gnd fulladder_61/halfadder_95/xor2_99/#fet_91/s 24 100 8011 -1186
+n fulladder_60/Cn fulladder_61/halfadder_95/xor2_99/#fet_91/s gnd 24 100 8109 -1186
+n fulladder_60/Cn fulladder_61/halfadder_95/sum ndif_83310_n12840# 24 200 8307 -1284
+n A3 ndif_83310_n12840# gnd 24 200 8381 -1284
+n fulladder_61/halfadder_95/xor2_99/#fet_91/s fulladder_61/halfadder_95/sum gnd 24 100 8579 -1245
+n B3 gnd fulladder_61/halfadder_94/xor2_99/#fet_91/s 24 100 8965 -1188
+n fulladder_61/halfadder_95/sum fulladder_61/halfadder_94/xor2_99/#fet_91/s gnd 24 100 9063 -1188
+n fulladder_61/halfadder_95/sum Sum3 ndif_92850_n12860# 24 200 9261 -1286
+n B3 ndif_92850_n12860# gnd 24 200 9335 -1286
+n fulladder_61/halfadder_94/xor2_99/#fet_91/s Sum3 gnd 24 100 9533 -1247
+n A4 gnd fulladder_31/halfadder_95/xor2_99/#fet_91/s 24 100 10362 -1188
+n fulladder_61/Cn fulladder_31/halfadder_95/xor2_99/#fet_91/s gnd 24 100 10460 -1188
+n fulladder_61/Cn fulladder_31/halfadder_95/sum ndif_106820_n12860# 24 200 10658 -1286
+n A4 ndif_106820_n12860# gnd 24 200 10732 -1286
+n fulladder_31/halfadder_95/xor2_99/#fet_91/s fulladder_31/halfadder_95/sum gnd 24 100 10930 -1247
+n B4 gnd fulladder_31/halfadder_94/xor2_99/#fet_91/s 24 100 11316 -1190
+n fulladder_31/halfadder_95/sum fulladder_31/halfadder_94/xor2_99/#fet_91/s gnd 24 100 11414 -1190
+n fulladder_31/halfadder_95/sum Sum4 ndif_116360_n12880# 24 200 11612 -1288
+n B4 ndif_116360_n12880# gnd 24 200 11686 -1288
+n fulladder_31/halfadder_94/xor2_99/#fet_91/s Sum4 gnd 24 100 11884 -1249
+n A5 gnd fulladder_30/halfadder_95/xor2_99/#fet_91/s 24 100 12742 -1188
+n fulladder_31/Cn fulladder_30/halfadder_95/xor2_99/#fet_91/s gnd 24 100 12840 -1188
+n fulladder_31/Cn fulladder_30/halfadder_95/sum ndif_130620_n12860# 24 200 13038 -1286
+n A5 ndif_130620_n12860# gnd 24 200 13112 -1286
+n fulladder_30/halfadder_95/xor2_99/#fet_91/s fulladder_30/halfadder_95/sum gnd 24 100 13310 -1247
+n B5 gnd fulladder_30/halfadder_94/xor2_99/#fet_91/s 24 100 13696 -1190
+n fulladder_30/halfadder_95/sum fulladder_30/halfadder_94/xor2_99/#fet_91/s gnd 24 100 13794 -1190
+n fulladder_30/halfadder_95/sum Sum5 ndif_140160_n12880# 24 200 13992 -1288
+n B5 ndif_140160_n12880# gnd 24 200 14066 -1288
+n fulladder_30/halfadder_94/xor2_99/#fet_91/s Sum5 gnd 24 100 14264 -1249
+n A6 gnd fulladder_28/halfadder_95/xor2_99/#fet_91/s 24 100 15135 -1185
+n fulladder_30/Cn fulladder_28/halfadder_95/xor2_99/#fet_91/s gnd 24 100 15233 -1185
+n fulladder_30/Cn fulladder_28/halfadder_95/sum ndif_154550_n12830# 24 200 15431 -1283
+n A6 ndif_154550_n12830# gnd 24 200 15505 -1283
+n fulladder_28/halfadder_95/xor2_99/#fet_91/s fulladder_28/halfadder_95/sum gnd 24 100 15703 -1244
+n B6 gnd fulladder_28/halfadder_94/xor2_99/#fet_91/s 24 100 16089 -1187
+n fulladder_28/halfadder_95/sum fulladder_28/halfadder_94/xor2_99/#fet_91/s gnd 24 100 16187 -1187
+n fulladder_28/halfadder_95/sum Sum6 ndif_164090_n12850# 24 200 16385 -1285
+n B6 ndif_164090_n12850# gnd 24 200 16459 -1285
+n fulladder_28/halfadder_94/xor2_99/#fet_91/s Sum6 gnd 24 100 16657 -1246
+n A7 gnd fulladder_29/halfadder_95/xor2_99/#fet_91/s 24 100 17515 -1185
+n fulladder_29/Cn_1 fulladder_29/halfadder_95/xor2_99/#fet_91/s gnd 24 100 17613 -1185
+n fulladder_29/Cn_1 fulladder_29/halfadder_95/sum ndif_178350_n12830# 24 200 17811 -1283
+n A7 ndif_178350_n12830# gnd 24 200 17885 -1283
+n fulladder_29/halfadder_95/xor2_99/#fet_91/s fulladder_29/halfadder_95/sum gnd 24 100 18083 -1244
+n B7 gnd fulladder_29/halfadder_94/xor2_99/#fet_91/s 24 100 18469 -1187
+n fulladder_29/halfadder_95/sum fulladder_29/halfadder_94/xor2_99/#fet_91/s gnd 24 100 18567 -1187
+n fulladder_29/halfadder_95/sum Sum7 ndif_187890_n12850# 24 200 18765 -1285
+n B7 ndif_187890_n12850# gnd 24 200 18839 -1285
+n fulladder_29/halfadder_94/xor2_99/#fet_91/s Sum7 gnd 24 100 19037 -1246
+n A0 fulladder_62/halfadder_95/carry ndif_10230_n17410# 24 200 999 -1741
+n Cin ndif_10230_n17410# gnd 24 200 1073 -1741
+n B0 fulladder_62/halfadder_94/carry ndif_19770_n17430# 24 200 1953 -1743
+n fulladder_62/halfadder_95/sum ndif_19770_n17430# gnd 24 200 2027 -1743
+n fulladder_62/halfadder_95/carry gnd ndif_26670_n17420# 24 200 2643 -1742
+n fulladder_62/halfadder_94/carry ndif_26670_n17420# fulladder_63/Cn_1 24 200 2717 -1742
+n A1 fulladder_63/halfadder_95/carry ndif_34030_n17410# 24 200 3379 -1741
+n fulladder_63/Cn_1 ndif_34030_n17410# gnd 24 200 3453 -1741
+n B1 fulladder_63/halfadder_94/carry ndif_43570_n17430# 24 200 4333 -1743
+n fulladder_63/halfadder_95/sum ndif_43570_n17430# gnd 24 200 4407 -1743
+n fulladder_63/halfadder_95/carry gnd ndif_50470_n17420# 24 200 5023 -1742
+n fulladder_63/halfadder_94/carry ndif_50470_n17420# fulladder_60/Cn_1 24 200 5097 -1742
+n A2 fulladder_60/halfadder_95/carry ndif_57960_n17380# 24 200 5772 -1738
+n fulladder_60/Cn_1 ndif_57960_n17380# gnd 24 200 5846 -1738
+n B2 fulladder_60/halfadder_94/carry ndif_67500_n17400# 24 200 6726 -1740
+n fulladder_60/halfadder_95/sum ndif_67500_n17400# gnd 24 200 6800 -1740
+n fulladder_60/halfadder_95/carry gnd ndif_74400_n17390# 24 200 7416 -1739
+n fulladder_60/halfadder_94/carry ndif_74400_n17390# fulladder_60/Cn 24 200 7490 -1739
+n A3 fulladder_61/halfadder_95/carry ndif_81760_n17380# 24 200 8152 -1738
+n fulladder_60/Cn ndif_81760_n17380# gnd 24 200 8226 -1738
+n B3 fulladder_61/halfadder_94/carry ndif_91300_n17400# 24 200 9106 -1740
+n fulladder_61/halfadder_95/sum ndif_91300_n17400# gnd 24 200 9180 -1740
+n fulladder_61/halfadder_95/carry gnd ndif_98200_n17390# 24 200 9796 -1739
+n fulladder_61/halfadder_94/carry ndif_98200_n17390# fulladder_61/Cn 24 200 9870 -1739
+n A4 fulladder_31/halfadder_95/carry ndif_105270_n17400# 24 200 10503 -1740
+n fulladder_61/Cn ndif_105270_n17400# gnd 24 200 10577 -1740
+n B4 fulladder_31/halfadder_94/carry ndif_114810_n17420# 24 200 11457 -1742
+n fulladder_31/halfadder_95/sum ndif_114810_n17420# gnd 24 200 11531 -1742
+n fulladder_31/halfadder_95/carry gnd ndif_121710_n17410# 24 200 12147 -1741
+n fulladder_31/halfadder_94/carry ndif_121710_n17410# fulladder_31/Cn 24 200 12221 -1741
+n A5 fulladder_30/halfadder_95/carry ndif_129070_n17400# 24 200 12883 -1740
+n fulladder_31/Cn ndif_129070_n17400# gnd 24 200 12957 -1740
+n B5 fulladder_30/halfadder_94/carry ndif_138610_n17420# 24 200 13837 -1742
+n fulladder_30/halfadder_95/sum ndif_138610_n17420# gnd 24 200 13911 -1742
+n fulladder_30/halfadder_95/carry gnd ndif_145510_n17410# 24 200 14527 -1741
+n fulladder_30/halfadder_94/carry ndif_145510_n17410# fulladder_30/Cn 24 200 14601 -1741
+n A6 fulladder_28/halfadder_95/carry ndif_153000_n17370# 24 200 15276 -1737
+n fulladder_30/Cn ndif_153000_n17370# gnd 24 200 15350 -1737
+n B6 fulladder_28/halfadder_94/carry ndif_162540_n17390# 24 200 16230 -1739
+n fulladder_28/halfadder_95/sum ndif_162540_n17390# gnd 24 200 16304 -1739
+n fulladder_28/halfadder_95/carry gnd ndif_169440_n17380# 24 200 16920 -1738
+n fulladder_28/halfadder_94/carry ndif_169440_n17380# fulladder_29/Cn_1 24 200 16994 -1738
+n A7 fulladder_29/halfadder_95/carry ndif_176800_n17370# 24 200 17656 -1737
+n fulladder_29/Cn_1 ndif_176800_n17370# gnd 24 200 17730 -1737
+n B7 fulladder_29/halfadder_94/carry ndif_186340_n17390# 24 200 18610 -1739
+n fulladder_29/halfadder_95/sum ndif_186340_n17390# gnd 24 200 18684 -1739
+n fulladder_29/halfadder_95/carry gnd ndif_193240_n17380# 24 200 19300 -1738
+n fulladder_29/halfadder_94/carry ndif_193240_n17380# Cout 24 200 19374 -1738

@@ -1,0 +1,19 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "8bitadder_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 256
+	Number of nets: 148
+
+Graph "./8bitadder.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+	Number of devices: 256
+	Number of nets: 148
+
+147 entries written to the dictionary file.
+360 (89%) matches were found by local matching
+All nodes were matched in 72 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab1/8bitadder.lvs.err.mag

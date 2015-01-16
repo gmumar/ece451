@@ -1,0 +1,18 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "fulladder_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 32
+	Number of nets: 22
+
+Graph "./fulladder.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+	Number of devices: 32
+	Number of nets: 22
+
+21 entries written to the dictionary file.
+48 (88%) matches were found by local matching
+All nodes were matched in 10 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab1/fulladder.lvs.err.mag

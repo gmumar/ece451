@@ -1,0 +1,38 @@
+| units: 1.0  tech: mmi25  format: UCB
+A Cn_1 input
+A A input
+A B input
+A sum output
+A Cn output
+p A halfadder_95/xor2_99/#fet_91/s pdif_1570_n4550# 24 200 133 -455
+p Cn_1 pdif_1570_n4550# vdd 24 200 207 -455
+p Cn_1 halfadder_95/xor2_99/#fet_79/s vdd 24 400 404 -466
+p A vdd halfadder_95/xor2_99/#fet_79/s 24 400 502 -466
+p halfadder_95/xor2_99/#fet_91/s halfadder_95/xor2_99/#fet_79/s halfadder_95/sum 24 400 600 -466
+p B halfadder_94/xor2_99/#fet_91/s pdif_11110_n4570# 24 200 1087 -457
+p halfadder_95/sum pdif_11110_n4570# vdd 24 200 1161 -457
+p halfadder_95/sum halfadder_94/xor2_99/#fet_79/s vdd 24 400 1358 -468
+p B vdd halfadder_94/xor2_99/#fet_79/s 24 400 1456 -468
+p halfadder_94/xor2_99/#fet_91/s halfadder_94/xor2_99/#fet_79/s sum 24 400 1554 -468
+p A halfadder_95/carry vdd 24 200 240 -1563
+p Cn_1 vdd halfadder_95/carry 24 200 338 -1563
+p B halfadder_94/carry vdd 24 200 1194 -1565
+p halfadder_95/sum vdd halfadder_94/carry 24 200 1292 -1565
+p halfadder_95/carry Cn vdd 24 200 1908 -1564
+p halfadder_94/carry vdd Cn 24 200 2006 -1564
+n A gnd halfadder_95/xor2_99/#fet_91/s 24 100 123 -689
+n Cn_1 halfadder_95/xor2_99/#fet_91/s gnd 24 100 221 -689
+n Cn_1 halfadder_95/sum ndif_4430_n7870# 24 200 419 -787
+n A ndif_4430_n7870# gnd 24 200 493 -787
+n halfadder_95/xor2_99/#fet_91/s halfadder_95/sum gnd 24 100 691 -748
+n B gnd halfadder_94/xor2_99/#fet_91/s 24 100 1077 -691
+n halfadder_95/sum halfadder_94/xor2_99/#fet_91/s gnd 24 100 1175 -691
+n halfadder_95/sum sum ndif_13970_n7890# 24 200 1373 -789
+n B ndif_13970_n7890# gnd 24 200 1447 -789
+n halfadder_94/xor2_99/#fet_91/s sum gnd 24 100 1645 -750
+n A halfadder_95/carry ndif_2880_n12410# 24 200 264 -1241
+n Cn_1 ndif_2880_n12410# gnd 24 200 338 -1241
+n B halfadder_94/carry ndif_12420_n12430# 24 200 1218 -1243
+n halfadder_95/sum ndif_12420_n12430# gnd 24 200 1292 -1243
+n halfadder_95/carry gnd ndif_19320_n12420# 24 200 1908 -1242
+n halfadder_94/carry ndif_19320_n12420# Cn 24 200 1982 -1242

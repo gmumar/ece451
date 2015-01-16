@@ -1,0 +1,17 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "halfadder_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 14
+	Number of nets: 12
+
+Graph "./halfadder.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+	Number of devices: 14
+	Number of nets: 12
+
+11 entries written to the dictionary file.
+18 (69%) matches were found by local matching
+All nodes were matched in 6 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab1/halfadder.lvs.err.mag

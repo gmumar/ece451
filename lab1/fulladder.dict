@@ -1,0 +1,23 @@
+; Dictionary file for matching names in
+; fulladder_lay.sim and ./fulladder.sim
+= vdd vdd
+= Cn Cn
+= halfadder_95/sum net_1
+= sum sum
+= gnd gnd
+= ndif_19320_n12420# nand.net_1
+= halfadder_94/carry net_2
+= halfadder_95/xor2_99/#fet_79/s halfadder.xor2.net_2
+= halfadder_95/xor2_99/#fet_91/s halfadder.xor2.net_1
+= ndif_13970_n7890# halfadder_1.xor2.net_3
+= halfadder_94/xor2_99/#fet_79/s halfadder_1.xor2.net_2
+= halfadder_94/xor2_99/#fet_91/s halfadder_1.xor2.net_1
+= halfadder_95/carry net_3
+= ndif_12420_n12430# halfadder_1.nand.net_1
+= B B
+= pdif_1570_n4550# halfadder.xor2.nor.net_1
+= A A
+= pdif_11110_n4570# halfadder_1.xor2.nor.net_1
+= ndif_2880_n12410# halfadder.nand.net_1
+= Cn_1 Cn_1
+= ndif_4430_n7870# halfadder.xor2.net_3
