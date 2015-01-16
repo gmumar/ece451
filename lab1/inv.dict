@@ -1,0 +1,6 @@
+; Dictionary file for matching names in
+; inv_lay.sim and ./inv.sim
+= gnd gnd
+= out out
+= A A
+= vdd vdd

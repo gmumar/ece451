@@ -1,0 +1,5 @@
+| units: 1.0  tech: mmi25  format: UCB
+A A input
+A out output
+p A vdd out 24 200 29 -48
+n A gnd out 24 100 29 -271
