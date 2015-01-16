@@ -1,0 +1,43 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_fulladder {} {
+  make halfadder -origin {570 330}
+  make halfadder -origin {570 450}
+  make nand -origin {870 400}
+  make input -name A -origin {430 330}
+  make input -name B -origin {430 450}
+  make output -name sum -origin {710 430}
+  make output -name Cn -origin {950 400}
+  make input -name Cn_1 -origin {430 310}
+  make_wire 710 330 770 330
+  make_wire 770 330 770 380
+  make_wire 770 380 790 380
+  make_wire 710 450 770 450
+  make_wire 770 450 770 400
+  make_wire 770 400 790 400
+  make_wire 710 310 750 310
+  make_wire 750 310 750 390
+  make_wire 750 390 410 390
+  make_wire 410 390 410 430
+  make_wire 410 430 430 430
+}
+
+proc ICON_fulladder args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-130 0} -name Cn_1
+  icon_term -type input -origin {-20 -70} -orient R90 -name A
+  icon_term -type input -origin {0 -70} -orient R90 -name B
+  icon_term -type output -origin {130 0} -name Cn
+  icon_term -type output -origin {0 70} -orient R90 -name sum
+  icon_property -origin {0 0} -size large -anchor center -label fulladder
+  icon_line -130 -70 130 -70 130 70 -130 70 -130 -70
+  icon_property -origin {-120 0} -label Cn_1
+  icon_property -origin {-20 -60} -rotate 1 -label A
+  icon_property -origin {0 -60} -rotate 1 -label B
+  icon_property -origin {120 0} -anchor e -label Cn
+  icon_property -origin {0 60} -anchor e -rotate 1 -label sum
+  icon_property -origin {-130 290} -type user -name name
+  icon_property -origin {-130 310} -type user -name M
+  icon_property -origin {-130 330} -type user -name dpc
+}
+

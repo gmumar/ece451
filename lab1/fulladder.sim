@@ -1,0 +1,88 @@
+| units: 1.0  tech: sue  format: MIT
+A A input
+A B input
+A Cn_1 input
+A Cn output
+A sum output
+| begin halfadder 570 330
+| begin halfadder.xor2 370 310
+| begin halfadder.xor2.nor 170 430
+| device halfadder.xor2.nor.nmos 380 520
+n Cn_1 gnd halfadder.xor2.net_1 24 100
+| device halfadder.xor2.nor.nmos_1 520 520
+n A gnd halfadder.xor2.net_1 24 100
+| device halfadder.xor2.nor.pmos 450 250
+p Cn_1 vdd halfadder.xor2.nor.net_1 24 200
+| device halfadder.xor2.nor.pmos_1 450 360
+p A halfadder.xor2.nor.net_1 halfadder.xor2.net_1 24 200
+| end halfadder.xor2.nor
+| device halfadder.xor2.nmos 460 540
+n halfadder.xor2.net_1 gnd net_1 24 100
+| device halfadder.xor2.pmos 650 230
+p A vdd halfadder.xor2.net_2 24 400
+| device halfadder.xor2.pmos_1 410 230
+p Cn_1 vdd halfadder.xor2.net_2 24 400
+| device halfadder.xor2.pmos_2 520 360
+p halfadder.xor2.net_1 halfadder.xor2.net_2 net_1 24 400
+| device halfadder.xor2.nmos_1 600 510
+n Cn_1 halfadder.xor2.net_3 net_1 24 200
+| device halfadder.xor2.nmos_2 600 590
+n A gnd halfadder.xor2.net_3 24 200
+| end halfadder.xor2
+| begin halfadder.nand 370 390
+| device halfadder.nand.pmos 490 300
+p Cn_1 vdd net_3 24 200
+| device halfadder.nand.pmos_1 620 300
+p A vdd net_3 24 200
+| device halfadder.nand.nmos 550 440
+n A halfadder.nand.net_1 net_3 24 200
+| device halfadder.nand.nmos_1 550 540
+n Cn_1 gnd halfadder.nand.net_1 24 200
+| end halfadder.nand
+| end halfadder
+| begin halfadder_1 570 450
+| begin halfadder_1.xor2 370 310
+| begin halfadder_1.xor2.nor 170 430
+| device halfadder_1.xor2.nor.nmos 380 520
+n net_1 gnd halfadder_1.xor2.net_1 24 100
+| device halfadder_1.xor2.nor.nmos_1 520 520
+n B gnd halfadder_1.xor2.net_1 24 100
+| device halfadder_1.xor2.nor.pmos 450 250
+p net_1 vdd halfadder_1.xor2.nor.net_1 24 200
+| device halfadder_1.xor2.nor.pmos_1 450 360
+p B halfadder_1.xor2.nor.net_1 halfadder_1.xor2.net_1 24 200
+| end halfadder_1.xor2.nor
+| device halfadder_1.xor2.nmos 460 540
+n halfadder_1.xor2.net_1 gnd sum 24 100
+| device halfadder_1.xor2.pmos 650 230
+p B vdd halfadder_1.xor2.net_2 24 400
+| device halfadder_1.xor2.pmos_1 410 230
+p net_1 vdd halfadder_1.xor2.net_2 24 400
+| device halfadder_1.xor2.pmos_2 520 360
+p halfadder_1.xor2.net_1 halfadder_1.xor2.net_2 sum 24 400
+| device halfadder_1.xor2.nmos_1 600 510
+n net_1 halfadder_1.xor2.net_3 sum 24 200
+| device halfadder_1.xor2.nmos_2 600 590
+n B gnd halfadder_1.xor2.net_3 24 200
+| end halfadder_1.xor2
+| begin halfadder_1.nand 370 390
+| device halfadder_1.nand.pmos 490 300
+p net_1 vdd net_2 24 200
+| device halfadder_1.nand.pmos_1 620 300
+p B vdd net_2 24 200
+| device halfadder_1.nand.nmos 550 440
+n B halfadder_1.nand.net_1 net_2 24 200
+| device halfadder_1.nand.nmos_1 550 540
+n net_1 gnd halfadder_1.nand.net_1 24 200
+| end halfadder_1.nand
+| end halfadder_1
+| begin nand 870 400
+| device nand.pmos 490 300
+p net_3 vdd Cn 24 200
+| device nand.pmos_1 620 300
+p net_2 vdd Cn 24 200
+| device nand.nmos 550 440
+n net_2 nand.net_1 Cn 24 200
+| device nand.nmos_1 550 540
+n net_3 gnd nand.net_1 24 200
+| end nand

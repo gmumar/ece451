@@ -1,0 +1,39 @@
+| units: 1.0  tech: sue  format: MIT
+A A input
+A B input
+A carry output
+A sum output
+| begin xor2 370 310
+| begin xor2.nor 170 430
+| device xor2.nor.nmos 380 520
+n A gnd xor2.net_1 24 100
+| device xor2.nor.nmos_1 520 520
+n B gnd xor2.net_1 24 100
+| device xor2.nor.pmos 450 250
+p A vdd xor2.nor.net_1 24 200
+| device xor2.nor.pmos_1 450 360
+p B xor2.nor.net_1 xor2.net_1 24 200
+| end xor2.nor
+| device xor2.nmos 460 540
+n xor2.net_1 gnd sum 24 100
+| device xor2.pmos 650 230
+p B vdd xor2.net_2 24 400
+| device xor2.pmos_1 410 230
+p A vdd xor2.net_2 24 400
+| device xor2.pmos_2 520 360
+p xor2.net_1 xor2.net_2 sum 24 400
+| device xor2.nmos_1 600 510
+n A xor2.net_3 sum 24 200
+| device xor2.nmos_2 600 590
+n B gnd xor2.net_3 24 200
+| end xor2
+| begin nand 370 390
+| device nand.pmos 490 300
+p A vdd carry 24 200
+| device nand.pmos_1 620 300
+p B vdd carry 24 200
+| device nand.nmos 550 440
+n B nand.net_1 carry 24 200
+| device nand.nmos_1 550 540
+n A gnd nand.net_1 24 200
+| end nand

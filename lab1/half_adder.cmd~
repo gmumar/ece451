@@ -1,0 +1,13 @@
+vector INPUT A B
+ana  A B sum carry
+stepsize 100
+setvector INPUT 00000000000000000
+s
+setvector INPUT 10000000000000000
+s
+setvector INPUT 00000100000000000
+s
+setvector INPUT 11100000000000000
+s
+setvector INPUT 11111111111111111
+s

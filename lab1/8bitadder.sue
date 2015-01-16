@@ -1,0 +1,39 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_8bitadder {} {
+  make fulladder -origin {280 410}
+  make fulladder -origin {540 410}
+  make fulladder -origin {800 410}
+  make fulladder -origin {1060 410}
+  make fulladder -origin {1320 410}
+  make fulladder -origin {1580 410}
+  make fulladder -origin {1840 410}
+  make fulladder -origin {2100 410}
+  make output -name Cout -origin {2230 410}
+  make output -orient R90 -name Sum7 -origin {2100 480}
+  make output -orient R90 -name Sum6 -origin {1840 480}
+  make output -orient R90 -name Sum5 -origin {1580 480}
+  make output -orient R90 -name Sum4 -origin {1320 480}
+  make output -orient R90 -name Sum3 -origin {1060 480}
+  make output -orient R90 -name Sum2 -origin {800 480}
+  make output -orient R90 -name Sum1 -origin {540 480}
+  make output -orient R90 -name Sum0 -origin {280 480}
+  make input -name Cin -origin {150 410}
+  make input -orient R90 -name A0 -origin {260 340}
+  make input -orient R90 -name B0 -origin {280 340}
+  make input -orient R90 -name A1 -origin {520 340}
+  make input -orient R90 -name B1 -origin {540 340}
+  make input -orient R90 -name A2 -origin {780 340}
+  make input -orient R90 -name B2 -origin {800 340}
+  make input -orient R90 -name A3 -origin {1040 340}
+  make input -orient R90 -name B3 -origin {1060 340}
+  make input -orient R90 -name A4 -origin {1300 340}
+  make input -orient R90 -name B4 -origin {1320 340}
+  make input -orient R90 -name A5 -origin {1560 340}
+  make input -orient R90 -name B5 -origin {1580 340}
+  make input -orient R90 -name A6 -origin {1820 340}
+  make input -orient R90 -name B6 -origin {1840 340}
+  make input -orient R90 -name A7 -origin {2080 340}
+  make input -orient R90 -name B7 -origin {2100 340}
+}
+
