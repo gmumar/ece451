@@ -8,4 +8,21 @@
 
 # Special SUE version which includes file modification times.
 
-set mtimes {}
+set auto_index(SCHEMATIC_Func) [list source [file join $dir Func.sue]]
+set auto_index(ICON_Func) [list source [file join $dir Func.sue]]
+set auto_index(SCHEMATIC_RegFile) [list source [file join $dir RegFile.sue]]
+set auto_index(ICON_RegFile) [list source [file join $dir RegFile.sue]]
+set auto_index(SCHEMATIC_no_name) [list source [file join $dir no_name.sue]]
+set auto_index(SCHEMATIC_TFunc) [list source [file join $dir TFunc.sue]]
+set auto_index(ICON_TFunc) [list source [file join $dir TFunc.sue]]
+set auto_index(SCHEMATIC_Carry) [list source [file join $dir Carry.sue]]
+set auto_index(ICON_Carry) [list source [file join $dir Carry.sue]]
+set auto_index(SCHEMATIC_OpSel) [list source [file join $dir OpSel.sue]]
+set auto_index(ICON_OpSel) [list source [file join $dir OpSel.sue]]
+set auto_index(SCHEMATIC_RamCell) [list source [file join $dir RamCell.sue]]
+set auto_index(ICON_RamCell) [list source [file join $dir RamCell.sue]]
+set auto_index(SCHEMATIC_ALU) [list source [file join $dir ALU.sue]]
+set auto_index(ICON_ALU) [list source [file join $dir ALU.sue]]
+set auto_index(SCHEMATIC_Shifter) [list source [file join $dir Shifter.sue]]
+set auto_index(ICON_Shifter) [list source [file join $dir Shifter.sue]]
+set mtimes {{Func.sue 1421778598} {RegFile.sue 1421781505} {no_name.sue 1421781505} {TFunc.sue 1421778642} {Carry.sue 1421779901} {OpSel.sue 1421781505} {RamCell.sue 1421781505} {ALU.sue 1421781476} {Shifter.sue 1421781505}}

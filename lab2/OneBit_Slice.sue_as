@@ -1,0 +1,71 @@
+# SUE version MMI_SUE5.5.4 (auto-save)
+
+proc SCHEMATIC_OneBit_Slice {} {
+  make OpSel -origin {400 310}
+  make OpSel -origin {400 520}
+  make RegFile -origin {-30 390}
+  make Shifter -origin {-490 410}
+  make global -name gnd -origin {230 410}
+  make input -orient R270 -name D -origin {150 550}
+  make inout -name SL -origin {-490 540}
+  make inout -orient R90 -name SR -origin {-270 410}
+  make ALU -origin {790 380}
+  make input -name Phi1 -origin {-220 860}
+  make input -name Phi2 -origin {910 860}
+  make input -name shl -origin {-650 390}
+  make input -name notshl -origin {-650 430}
+  make input -orient RXY -name shr -origin {-330 370}
+  make input -orient RXY -name notshr -origin {-330 430}
+  make input -orient R270 -origin {-10 550}
+  make input -orient R270 -origin {10 550}
+  make input -orient R270 -name notFBE -origin {-70 550}
+  make input -orient R270 -name FBE -origin {-50 550}
+  make input -orient R270 -name WriteEn -origin {-30 550}
+  make_wire -170 390 -350 390
+  make_wire 110 370 150 370
+  make_wire 150 370 150 270
+  make_wire 150 270 250 270
+  make_wire 550 310 660 310
+  make_wire 110 390 160 390
+  make_wire 160 390 160 480
+  make_wire 160 480 250 480
+  make_wire 580 520 550 520
+  make_wire 980 380 980 90
+  make_wire 980 90 -700 90
+  make_wire -700 90 -700 410
+  make_wire -700 410 -630 410
+  make_wire -630 430 -650 430
+  make_wire -490 520 -490 540
+  make_wire -350 410 -270 410
+  make_wire -350 430 -330 430
+  make_wire -350 370 -330 370
+  make_wire -650 390 -630 390
+  make_wire 880 380 860 380
+  make_wire 880 380 980 380
+  make_wire 660 310 660 360
+  make_wire 660 360 700 360
+  make_wire 700 340 580 340
+  make_wire 580 520 580 340
+  make_wire 550 290 650 290
+  make_wire 650 290 650 380
+  make_wire 650 380 700 380
+  make_wire 550 500 640 500
+  make_wire 640 500 640 400
+  make_wire 640 400 700 400
+  make_wire -170 370 -220 370
+  make_wire -220 370 -220 860
+  make_wire 180 560 180 860
+  make_wire 790 270 790 220
+  make_wire 130 350 130 860
+  make_wire 910 220 910 860
+  make_wire 790 220 910 220
+  make_wire 230 310 230 410
+  make_wire 230 310 250 310
+  make_wire 150 520 150 550
+  make_wire 150 520 250 520
+  make_wire 180 560 250 560
+  make_wire 130 860 -220 860
+  make_wire 130 860 180 860
+  make_wire 130 350 250 350
+}
+
