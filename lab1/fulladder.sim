@@ -31,11 +31,11 @@ n A gnd halfadder.xor2.net_3 24 200
 | end halfadder.xor2
 | begin halfadder.nand 370 390
 | device halfadder.nand.pmos 490 300
-p Cn_1 vdd net_3 24 200
+p Cn_1 vdd net_2 24 200
 | device halfadder.nand.pmos_1 620 300
-p A vdd net_3 24 200
+p A vdd net_2 24 200
 | device halfadder.nand.nmos 550 440
-n A halfadder.nand.net_1 net_3 24 200
+n A halfadder.nand.net_1 net_2 24 200
 | device halfadder.nand.nmos_1 550 540
 n Cn_1 gnd halfadder.nand.net_1 24 200
 | end halfadder.nand
@@ -67,22 +67,22 @@ n B gnd halfadder_1.xor2.net_3 24 200
 | end halfadder_1.xor2
 | begin halfadder_1.nand 370 390
 | device halfadder_1.nand.pmos 490 300
-p net_1 vdd net_2 24 200
+p net_1 vdd net_3 24 200
 | device halfadder_1.nand.pmos_1 620 300
-p B vdd net_2 24 200
+p B vdd net_3 24 200
 | device halfadder_1.nand.nmos 550 440
-n B halfadder_1.nand.net_1 net_2 24 200
+n B halfadder_1.nand.net_1 net_3 24 200
 | device halfadder_1.nand.nmos_1 550 540
 n net_1 gnd halfadder_1.nand.net_1 24 200
 | end halfadder_1.nand
 | end halfadder_1
 | begin nand 870 400
 | device nand.pmos 490 300
-p net_3 vdd Cn 24 200
-| device nand.pmos_1 620 300
 p net_2 vdd Cn 24 200
+| device nand.pmos_1 620 300
+p net_3 vdd Cn 24 200
 | device nand.nmos 550 440
-n net_2 nand.net_1 Cn 24 200
+n net_3 nand.net_1 Cn 24 200
 | device nand.nmos_1 550 540
-n net_3 gnd nand.net_1 24 200
+n net_2 gnd nand.net_1 24 200
 | end nand

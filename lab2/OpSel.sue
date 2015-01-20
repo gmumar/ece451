@@ -1,0 +1,76 @@
+# SUE version MMI_SUE5.5.4
+
+proc SCHEMATIC_OpSel {} {
+  make pmos -origin {380 250}
+  make nmos -orient R270 -origin {280 380}
+  make nmos -orient R270 -origin {330 480}
+  make nmos -orient R270 -origin {110 480}
+  make inverter -origin {480 380}
+  make pmos -orient R90 -origin {600 380}
+  make nmos -orient R270 -origin {600 380}
+  make inverter -origin {710 380}
+  make inverter -origin {820 380}
+  make global -orient RXY -name vdd -origin {380 190}
+  make input -name notPhi1 -origin {40 310}
+  make input -name In1 -origin {40 380}
+  make input -name In1Select -origin {40 440}
+  make input -name In2 -origin {40 480}
+  make input -name In2Select -origin {40 570}
+  make input -name Phi1 -origin {40 620}
+  make output -name notOut -origin {920 380}
+  make output -name Out -origin {920 440}
+  make_wire 380 190 380 210
+  make_wire 600 620 600 440
+  make_wire 450 380 380 380
+  make_wire 320 250 180 250
+  make_wire 180 620 600 620
+  make_wire 370 480 380 480
+  make_wire 380 290 380 380
+  make_wire 380 380 380 480
+  make_wire 180 540 180 250
+  make_wire 180 540 180 620
+  make_wire 150 480 290 480
+  make_wire 110 540 180 540
+  make_wire 320 380 380 380
+  make_wire 70 480 40 480
+  make_wire 330 540 330 570
+  make_wire 330 570 40 570
+  make_wire 280 440 40 440
+  make_wire 240 380 40 380
+  make_wire 180 620 40 620
+  make_wire 40 310 600 310
+  make_wire 600 310 600 320
+  make_wire 640 380 680 380
+  make_wire 530 380 560 380
+  make_wire 770 380 760 380
+  make_wire 770 380 790 380
+  make_wire 870 380 920 380
+  make_wire 770 440 920 440
+  make_wire 770 380 770 440
+}
+
+proc ICON_OpSel args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-150 -60} -name notPhi1
+  icon_term -type input -origin {-150 -40} -name In1
+  icon_term -type input -origin {-150 -20} -name In1Select
+  icon_term -type input -origin {-150 0} -name In2
+  icon_term -type input -origin {-150 20} -name In2Select
+  icon_term -type input -origin {-150 40} -name Phi1
+  icon_term -type output -origin {150 -20} -name notOut
+  icon_term -type output -origin {150 0} -name Out
+  icon_property -origin {0 0} -size large -anchor center -label OpSel
+  icon_line -150 -80 150 -80 150 80 -150 80 -150 -80
+  icon_property -origin {-140 -60} -label notPhi1
+  icon_property -origin {-140 -40} -label In1
+  icon_property -origin {-140 -20} -label In1Select
+  icon_property -origin {-140 0} -label In2
+  icon_property -origin {-140 20} -label In2Select
+  icon_property -origin {-140 40} -label Phi1
+  icon_property -origin {140 -20} -anchor e -label notOut
+  icon_property -origin {140 0} -anchor e -label Out
+  icon_property -origin {-150 300} -type user -name name
+  icon_property -origin {-150 320} -type user -name M
+  icon_property -origin {-150 340} -type user -name dpc
+}
+

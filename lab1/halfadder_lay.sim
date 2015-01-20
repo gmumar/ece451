@@ -1,8 +1,8 @@
 | units: 1.0  tech: mmi25  format: UCB
 A A input
 A B input
-A sum output
 A carry output
+A sum output
 p B xor2_99/#fet_91/s pdif_1570_660# 24 200 133 66
 p A pdif_1570_660# vdd 24 200 207 66
 p A xor2_99/#fet_79/s vdd 24 400 404 55
