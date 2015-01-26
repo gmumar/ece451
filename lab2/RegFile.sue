@@ -1,8 +1,6 @@
 # SUE version MMI_SUE5.5.4
 
 proc SCHEMATIC_RegFile {} {
-  make pmos -origin {-10 90}
-  make pmos -origin {140 160}
   make global -orient RXY -name vdd -origin {60 0}
   make RamCell -origin {300 380}
   make RamCell -origin {670 380}
@@ -32,6 +30,8 @@ proc SCHEMATIC_RegFile {} {
   make input -orient R270 -name {notFBEn[1]} -origin {610 490}
   make output -name Ai -origin {1580 180}
   make output -name Bi -origin {1580 210}
+  make pmos -W 1 -origin {140 160}
+  make pmos -W 1 -origin {-10 90}
   make_wire 650 180 280 180
   make_wire 670 210 300 210
   make_wire 1010 180 650 180

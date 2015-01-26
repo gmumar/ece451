@@ -1,0 +1,35 @@
+
+Circuit: * FILE: Carry_test.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+gnd                                          0
+vdd                                        2.5
+net_4                                        0
+net_2                                        0
+ci_1                                       2.5
+p                                          2.5
+carry:net_1                        2.48164e-07
+net_1                                      2.5
+notci                                0.0708047
+net_3                                      2.5
+notci_1                              0.0708047
+vbla#branch                        8.27181e-25
+vclk#branch                                  0
+vnotci#branch                      1.94528e-10
+vci#branch                                   0
+vdd#branch                        -3.08914e-09
+vgnd#branch                        1.79999e-09
+
+CPU time since last call: 10.092 seconds.
+
+Total CPU time: 10.092 seconds.
+
+Current dynamic memory usage = 135168,
+Dynamic memory limit = -135169.
+

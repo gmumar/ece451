@@ -1,0 +1,33 @@
+
+Circuit: * FILE: Carry.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+
+Transient solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+gnd                                               0          2.25302e-51
+vdd                                               0         -9.61724e-51
+ci_1                                   -8.96787e-44         -2.23379e-52
+notci_1                                 2.78193e-42          2.36897e-52
+p                                       5.71864e-44          1.42444e-52
+notp                                   -1.47372e-44         -5.09791e-53
+net_1                                   5.71864e-44          1.42444e-52
+notg                                   -1.47372e-44         -5.09791e-53
+notci                                   2.78497e-42          7.16777e-51
+phi                                               0                    0
+vdd#branch                             -2.59187e-50                    0
+vgnd#branch                             2.49568e-50                    0
+
+
+CPU time since last call: 0.008 seconds.
+
+Total CPU time: 0.008 seconds.
+
+Current dynamic memory usage = 131072,
+Dynamic memory limit = -9441281.
+

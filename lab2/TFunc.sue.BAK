@@ -1,14 +1,6 @@
 # SUE version MMI_SUE5.5.4
 
 proc SCHEMATIC_TFunc {} {
-  make nmos -origin {400 390}
-  make nmos -origin {400 470}
-  make nmos -origin {590 470}
-  make nmos -origin {590 550}
-  make nmos -origin {730 390}
-  make nmos -origin {730 630}
-  make nmos -origin {850 550}
-  make nmos -origin {850 630}
   make output -name Y -origin {1530 670}
   make input -name R -origin {250 630}
   make input -name S -origin {240 550}
@@ -16,16 +8,24 @@ proc SCHEMATIC_TFunc {} {
   make input -orient R90 -name {X[1]} -origin {590 230}
   make input -orient R90 -name {X[2]} -origin {730 170}
   make input -orient R90 -name {X[3]} -origin {850 130}
-  make pmos -origin {990 630}
-  make pmos -origin {990 550}
-  make pmos -origin {1120 630}
-  make pmos -origin {1230 550}
-  make pmos -origin {1230 470}
-  make pmos -origin {1340 470}
-  make pmos -origin {1340 390}
-  make pmos -origin {1120 390}
-  make inverter -orient R270 -origin {330 560}
-  make inverter -orient R270 -origin {260 470}
+  make nmos -W 2 -origin {400 390}
+  make nmos -W 2 -origin {400 470}
+  make nmos -W 2 -origin {590 470}
+  make nmos -W 2 -origin {590 550}
+  make nmos -W 2 -origin {730 390}
+  make nmos -W 2 -origin {730 630}
+  make nmos -W 2 -origin {850 550}
+  make nmos -W 2 -origin {850 630}
+  make pmos -W 4 -origin {990 550}
+  make pmos -W 4 -origin {990 630}
+  make pmos -W 4 -origin {1120 630}
+  make pmos -W 4 -origin {1230 550}
+  make pmos -W 4 -origin {1230 470}
+  make pmos -W 4 -origin {1120 390}
+  make pmos -W 4 -origin {1340 470}
+  make pmos -W 4 -origin {1340 390}
+  make input -name notR -origin {340 470}
+  make input -name notS -origin {260 420}
   make_wire 340 390 670 390
   make_wire 340 390 260 390
   make_wire 730 430 730 590
@@ -74,35 +74,27 @@ proc SCHEMATIC_TFunc {} {
   make_wire 730 670 730 700
   make_wire 1230 590 1230 700
   make_wire 400 700 400 510
-  make_wire 330 590 330 630
-  make_wire 330 630 250 630
-  make_wire 670 630 330 630
-  make_wire 330 510 330 470
-  make_wire 330 470 340 470
-  make_wire 260 500 260 550
-  make_wire 260 550 530 550
-  make_wire 260 550 240 550
   make_wire 260 420 260 390
+  make_wire 530 550 240 550
+  make_wire 670 630 250 630
 }
 
 proc ICON_TFunc args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
-  icon_term -type input -origin {-100 -40} -name notS
-  icon_term -type input -origin {-100 -20} -name notR
-  icon_term -type input -origin {-100 0} -name S
-  icon_term -type input -origin {-100 20} -name R
-  icon_term -type output -origin {100 0} -name Y
+  icon_term -type input -origin {-70 -20} -name S
+  icon_term -type input -origin {-70 0} -name R
+  icon_term -type output -origin {70 0} -name Y
   icon_term -type input -origin {0 -100} -orient R90 -name {X[3:0]}
+  icon_term -type input -origin {0 0} -name notR
+  icon_term -type input -origin {0 0} -name notS
   icon_property -origin {0 0} -size large -anchor center -label TFunc
-  icon_line -100 -100 100 -100 100 100 -100 100 -100 -100
-  icon_property -origin {-90 -40} -label notS
-  icon_property -origin {-90 -20} -label notR
-  icon_property -origin {-90 0} -label S
-  icon_property -origin {-90 20} -label R
-  icon_property -origin {90 0} -anchor e -label Y
+  icon_line -70 -100 70 -100 70 100 -70 100 -70 -100
+  icon_property -origin {-60 -20} -label S
+  icon_property -origin {-60 0} -label R
+  icon_property -origin {60 0} -anchor e -label Y
   icon_property -origin {0 -90} -rotate 1 -label X
-  icon_property -origin {-100 320} -type user -name name
-  icon_property -origin {-100 340} -type user -name M
-  icon_property -origin {-100 360} -type user -name dpc
+  icon_property -origin {-70 320} -type user -name name
+  icon_property -origin {-70 340} -type user -name M
+  icon_property -origin {-70 360} -type user -name dpc
 }
 

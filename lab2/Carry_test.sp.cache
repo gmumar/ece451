@@ -1,0 +1,10 @@
+set NETLIST_CACHE(Carry_test,cells) {{schematic Carry /nfs/ug/homes-2/u/umarghul/ece451/lab2/Carry.sue} {icon pwl_source /cad2/mmi_110708/sue/schematics/mspice/pwl_source.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(Carry_test,level) main
+set NETLIST_CACHE(Carry_test,globals) gnd
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(Carry_test,version) MMI_SUE5.5.4
+set NETLIST_CACHE(Carry_test) {{* start main CELL Carry_test} {* .SUBCKT Carry_test Ci_1 P notCi } {Vci net_4 gnd PWL(0 0 599.9n 0 600.1n vddp) } {Vnotci net_2 gnd PWL(0 0 199.9n 0 200.1n vddp 599.9n vddp 600.1n 0 } {+ 799.9n 0 800.1n vddp) } {XCarry Ci_1 P net_3 notCi net_4 net_1 net_2 Carry } {Vclk net_3 gnd PWL(0 vddp 99.9n vddp 100.1n 0 199.9n 0 200.1n vddp } {+ 299.9n vddp 300.1n 0 399.9n 0 400.1n vddp 499.9n vddp 500.1n 0 599.9n } {+ 0 600.1n vddp 699.9n vddp 700.1n 0 799.9n 0 800.1n vddp 899.9n vddp } {+ 900.1n 0 999.9n 0 1.0001u vddp 1.0999u vddp 1.1001u 0 1.1999u 0 } {+ 1.2001u vddp 1.2999u vddp 1.3001u 0 1.3999u 0 1.4001u vddp) } {Vbla net_1 gnd PWL(0 vddp 199.9n vddp 200.1n 0 399.9n 0 400.1n vddp } {+ 799.9n vddp 800.1n 0 999.9n 0 1.0001u vddp) } {* .ENDS	$ Carry_test} {}}
+set NETLIST_CACHE(Carry_test,names) {{400 130 {0 Vnotci}} {260 -30 {0 net_3}} {260 10 {0 Vclk}} {470 250 {0 gnd}} {750 -20 {0 notCi}} {470 170 {0 net_1}} {470 350 {1 gnd}} {750 0 {0 P}} {490 -20 {0 net_4}} {400 170 {0 gnd}} {750 -40 {0 Ci_1}} {490 0 {0 net_2}} {260 50 {1 gnd} {2 gnd}} {400 90 {0 net_2}} {770 -20 {1 Ci_1}} {490 -40 {0 net_3}} {770 0 {1 notCi}} {330 10 {0 net_4}} {620 0 {0 XCarry}} {770 20 {1 P}} {330 130 {1 gnd}} {330 50 {0 Vci}} {400 260 {1 gnd}} {470 210 {0 Vbla}} {490 20 {0 net_1}} {330 90 {0 gnd}}}
+set NETLIST_CACHE(Carry_test,wires) {{260 -40 260 -30 net_3} {260 -40 490 -40 net_3} {330 90 330 130 gnd} {400 170 400 260 gnd} {470 250 470 350 gnd} {330 -20 330 10 net_4} {400 0 400 90 net_2} {470 20 470 170 net_1} {330 -20 490 -20 net_4} {400 0 490 0 net_2} {470 20 490 20 net_1} {750 -20 770 -20 Ci_1} {750 0 770 0 notCi} {750 20 770 20 P}}

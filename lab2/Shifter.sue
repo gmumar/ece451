@@ -12,7 +12,7 @@ proc SCHEMATIC_Shifter {} {
   make input -name F -origin {200 420}
   make output -name RAMIN -origin {790 420}
   make inout -orient R90 -name FiPlus1 -origin {480 210}
-  make inout -name Fi_1 -origin {480 530}
+  make inout -name Fi_1 -origin {480 570}
   make input -name shl -origin {180 140}
   make input -orient RXY -name shr -origin {790 130}
   make input -name notshl -origin {220 610}
@@ -70,7 +70,7 @@ proc SCHEMATIC_Shifter {} {
   make_wire 480 500 530 500
   make_wire 530 500 530 520
   make_wire 530 480 530 500
-  make_wire 480 500 480 530
+  make_wire 480 500 480 570
 }
 
 proc ICON_Shifter args {

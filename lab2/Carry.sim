@@ -1,0 +1,36 @@
+| units: 1.0  tech: sue  format: MIT
+A Phi input
+A notCi_1 input
+A notG input
+A notP input
+A Ci_1 output
+A P output
+A notCi output
+| begin inverter 730 390
+| device inverter.nmos 550 360
+n notCi_1 gnd Ci_1 24 100
+| device inverter.pmos 550 200
+p notCi_1 vdd Ci_1 24 200
+| end inverter
+| begin inverter_1 600 550
+| device inverter_1.nmos 550 360
+n notP gnd P 24 100
+| device inverter_1.pmos 550 200
+p notP vdd P 24 200
+| end inverter_1
+| begin inverter_2 600 660
+| device inverter_2.nmos 550 360
+n notG gnd net_1 24 100
+| device inverter_2.pmos 550 200
+p notG vdd net_1 24 200
+| end inverter_2
+| device pmos 860 250
+p Phi vdd notCi 24 200
+| device pmos_1 510 250
+p Phi vdd notP 24 200
+| device pmos_2 370 250
+p Phi vdd notG 24 200
+| device nmos 730 490
+n P notCi notCi_1 24 100
+| device nmos_1 860 660
+n net_1 gnd notCi 24 100

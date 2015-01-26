@@ -1,14 +1,6 @@
 # SUE version MMI_SUE5.5.4
 
 proc SCHEMATIC_Func {} {
-  make nmos -origin {470 250}
-  make nmos -origin {470 330}
-  make nmos -origin {660 330}
-  make nmos -origin {660 410}
-  make nmos -origin {800 250}
-  make nmos -origin {800 490}
-  make nmos -origin {920 410}
-  make nmos -origin {920 490}
   make output -name Y -origin {990 530}
   make input -name R -origin {320 490}
   make input -name S -origin {310 410}
@@ -18,6 +10,14 @@ proc SCHEMATIC_Func {} {
   make input -orient R90 -name {X[1]} -origin {660 170}
   make input -orient R90 -name {X[2]} -origin {800 170}
   make input -orient R90 -name {X[3]} -origin {920 170}
+  make nmos -W 2 -origin {470 250}
+  make nmos -W 2 -origin {470 330}
+  make nmos -W 2 -origin {660 330}
+  make nmos -W 2 -origin {800 250}
+  make nmos -W 2 -origin {660 410}
+  make nmos -W 2 -origin {800 490}
+  make nmos -W 2 -origin {920 490}
+  make nmos -W 2 -origin {920 410}
   make_wire 410 250 740 250
   make_wire 410 250 330 250
   make_wire 410 330 320 330
