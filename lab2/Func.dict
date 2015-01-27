@@ -1,0 +1,15 @@
+; Dictionary file for matching names in
+; Func_lay.sim and ./Func.sim
+= Y Y
+= R R
+= notS notS
+= ndif_8910_7190# net_3
+= ndif_8910_11610# net_4
+= ndif_8910_8910# net_2
+= ndif_8910_13330# net_1
+= X[3] X[3]
+= S S
+= X[1] X[1]
+= notR notR
+= X[2] X[2]
+= X[0] X[0]
