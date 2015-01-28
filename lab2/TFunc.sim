@@ -1,0 +1,42 @@
+| units: 1.0  tech: sue  format: MIT
+A R input
+A S input
+A X[0] input
+A X[1] input
+A X[2] input
+A X[3] input
+A notR input
+A notS input
+A Y output
+| device nmos 400 390
+n notS net_4 X[0] 24 200
+| device nmos_1 400 470
+n notR Y net_4 24 200
+| device nmos_2 590 470
+n notR net_5 X[1] 24 200
+| device nmos_3 590 550
+n S Y net_5 24 200
+| device nmos_4 730 390
+n notS net_6 X[2] 24 200
+| device nmos_5 730 630
+n R Y net_6 24 200
+| device nmos_6 850 550
+n S net_1 X[3] 24 200
+| device nmos_7 850 630
+n R Y net_1 24 200
+| device pmos 990 550
+p S X[0] net_2 24 400
+| device pmos_1 990 630
+p R net_2 Y 24 400
+| device pmos_2 1120 630
+p R net_7 Y 24 400
+| device pmos_3 1230 550
+p S net_3 Y 24 400
+| device pmos_4 1230 470
+p notR X[2] net_3 24 400
+| device pmos_5 1120 390
+p notS X[1] net_7 24 400
+| device pmos_6 1340 470
+p notR net_8 Y 24 400
+| device pmos_7 1340 390
+p notS X[3] net_8 24 400

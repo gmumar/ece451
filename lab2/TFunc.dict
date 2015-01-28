@@ -1,0 +1,19 @@
+; Dictionary file for matching names in
+; TFunc_lay.sim and ./TFunc.sim
+= Y Y
+= R R
+= notS notS
+= pdif_n4250_8890# net_3
+= pdif_n4250_11590# net_7
+= ndif_8960_7170# net_1
+= pdif_n4250_7170# net_8
+= ndif_8960_11590# net_5
+= ndif_8960_8890# net_6
+= pdif_n4250_13310# net_2
+= ndif_8960_13310# net_4
+= X[2] X[2]
+= notR notR
+= S S
+= X[1] X[1]
+= X[3] X[3]
+= X[0] X[0]

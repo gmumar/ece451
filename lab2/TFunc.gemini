@@ -1,0 +1,15 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "TFunc_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 16
+	Number of nets: 18
+
+Graph "./TFunc.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+	Number of devices: 16
+	Number of nets: 18
+
+17 entries written to the dictionary file.
+22 (64%) matches were found by local matching
+All nodes were matched in 9 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/TFunc.lvs.err.mag
