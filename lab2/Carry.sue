@@ -2,53 +2,53 @@
 
 proc SCHEMATIC_Carry {} {
   make inverter -origin {730 390}
-  make inverter -origin {600 550}
-  make inverter -origin {600 660}
-  make nmos -orient R270 -origin {730 490}
-  make nmos -origin {860 660}
-  make global -name vdd -origin {670 190}
-  make output -name Ci_1 -origin {960 390}
-  make output -name notCi -origin {970 490}
-  make output -name P -origin {1030 550}
-  make global -name gnd -origin {860 700}
-  make input -name Phi -origin {250 250}
-  make input -name notCi_1 -origin {290 490}
+  make inverter -origin {620 550}
+  make inverter -origin {620 670}
+  make nmos -orient R270 -origin {730 470}
+  make nmos -origin {860 670}
+  make output -name Ci_1 -origin {980 390}
+  make output -name notCi -origin {980 470}
+  make output -name P -origin {980 550}
+  make global -name gnd -origin {860 710}
+  make input -name Phi -origin {260 250}
+  make input -name notCi_1 -origin {270 470}
   make input -name notP -origin {270 550}
-  make input -name notG -origin {260 660}
+  make input -name notG -origin {270 670}
   make pmos -W 1 -origin {860 250}
   make pmos -W 1 -origin {510 250}
   make pmos -W 1 -origin {370 250}
-  make output -name notP -origin {1030 600}
+  make output -name notP -origin {980 600}
+  make global -orient RXY -name vdd -origin {670 190}
   make_wire 450 250 310 250
   make_wire 800 250 450 250
   make_wire 510 190 370 190
-  make_wire 370 660 370 290
-  make_wire 570 490 690 490
-  make_wire 570 490 290 490
   make_wire 860 190 860 210
   make_wire 370 190 370 210
   make_wire 510 190 510 210
-  make_wire 570 390 700 390
-  make_wire 570 390 570 490
-  make_wire 780 390 960 390
-  make_wire 510 550 570 550
-  make_wire 510 290 510 550
-  make_wire 650 550 730 550
-  make_wire 730 550 1030 550
-  make_wire 260 660 370 660
-  make_wire 370 660 570 660
-  make_wire 650 660 800 660
-  make_wire 310 250 250 250
   make_wire 670 190 510 190
   make_wire 670 190 860 190
-  make_wire 860 490 860 290
-  make_wire 860 490 860 620
-  make_wire 770 490 860 490
-  make_wire 860 490 970 490
-  make_wire 430 550 430 600
-  make_wire 430 550 510 550
-  make_wire 430 550 270 550
-  make_wire 430 600 1030 600
+  make_wire 730 530 730 550
+  make_wire 860 290 860 470
+  make_wire 270 550 510 550
+  make_wire 510 550 590 550
+  make_wire 370 290 370 670
+  make_wire 670 670 800 670
+  make_wire 860 470 860 630
+  make_wire 670 550 730 550
+  make_wire 730 550 980 550
+  make_wire 510 600 980 600
+  make_wire 510 550 510 600
+  make_wire 770 470 860 470
+  make_wire 860 470 980 470
+  make_wire 780 390 980 390
+  make_wire 270 670 370 670
+  make_wire 370 670 590 670
+  make_wire 260 250 310 250
+  make_wire 510 550 510 290
+  make_wire 700 390 620 390
+  make_wire 620 390 620 470
+  make_wire 620 470 270 470
+  make_wire 620 470 690 470
 }
 
 proc ICON_Carry args {

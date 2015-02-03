@@ -64,32 +64,30 @@ proc SCHEMATIC_ALU {} {
 
 proc ICON_ALU args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
-  icon_term -type input -origin {-100 -40} -name Ri
-  icon_term -type input -origin {-100 -20} -name Si
-  icon_term -type input -origin {-100 0} -name notS
-  icon_term -type input -origin {-100 20} -name notR
-  icon_term -type output -origin {100 -20} -name notCi
-  icon_term -type output -origin {100 0} -name Fi
+  icon_term -type input -origin {-90 -40} -name Ri
+  icon_term -type input -origin {-90 -20} -name Si
+  icon_term -type input -origin {-90 0} -name notS
+  icon_term -type input -origin {-90 20} -name notR
+  icon_term -type output -origin {90 0} -name Fi
   icon_term -type input -origin {-40 -110} -orient R90 -name {L[3:0]}
   icon_term -type input -origin {-20 -110} -orient R90 -name {M[3:0]}
   icon_term -type input -origin {0 -110} -orient R90 -name notCi_1
   icon_term -type input -origin {20 -110} -orient R90 -name Phi2
   icon_term -type input -origin {40 -110} -orient R90 -name {N[3:0]}
   icon_property -origin {0 0} -size large -anchor center -label ALU
-  icon_line -100 -110 100 -110 100 110 -100 110 -100 -110
-  icon_property -origin {-90 -40} -label Ri
-  icon_property -origin {-90 -20} -label Si
-  icon_property -origin {-90 0} -label notS
-  icon_property -origin {-90 20} -label notR
-  icon_property -origin {90 -20} -anchor e -label notCi
-  icon_property -origin {90 0} -anchor e -label Fi
+  icon_line -90 -110 90 -110 90 110 -90 110 -90 -110
+  icon_property -origin {-80 -40} -label Ri
+  icon_property -origin {-80 -20} -label Si
+  icon_property -origin {-80 0} -label notS
+  icon_property -origin {-80 20} -label notR
+  icon_property -origin {80 0} -anchor e -label Fi
   icon_property -origin {-40 -100} -rotate 1 -label L
   icon_property -origin {-20 -100} -rotate 1 -label M
   icon_property -origin {0 -100} -rotate 1 -label notCi_1
   icon_property -origin {20 -100} -rotate 1 -label Phi2
   icon_property -origin {40 -100} -rotate 1 -label N
-  icon_property -origin {-100 330} -type user -name name
-  icon_property -origin {-100 350} -type user -name M
-  icon_property -origin {-100 370} -type user -name dpc
+  icon_property -origin {-90 330} -type user -name name
+  icon_property -origin {-90 350} -type user -name M
+  icon_property -origin {-90 370} -type user -name dpc
 }
 
