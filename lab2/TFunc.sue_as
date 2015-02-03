@@ -1,4 +1,4 @@
-# SUE version MMI_SUE5.5.4
+# SUE version MMI_SUE5.5.4 (auto-save)
 
 proc SCHEMATIC_TFunc {} {
   make output -name Y -origin {1530 670}
@@ -50,7 +50,6 @@ proc SCHEMATIC_TFunc {} {
   make_wire 1060 390 670 390
   make_wire 1060 390 1280 390
   make_wire 400 320 400 350
-  make_wire 400 260 400 320
   make_wire 990 320 990 510
   make_wire 400 320 990 320
   make_wire 1120 290 590 290
@@ -77,6 +76,9 @@ proc SCHEMATIC_TFunc {} {
   make_wire 260 420 260 390
   make_wire 530 550 240 550
   make_wire 670 630 250 630
+  make_wire 400 290 590 290
+  make_wire 400 290 400 260
+  make_wire 400 290 400 320
 }
 
 proc ICON_TFunc args {

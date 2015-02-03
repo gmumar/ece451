@@ -1,0 +1,135 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "ALU_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 43
+	Number of nets: 47
+
+Graph "./ALU.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+	Number of devices: 45
+	Number of nets: 45
+The circuits are different.
+
+These circuits contain some symmetry (17% nodes not yet matched).
+Gemini will attempt to find a valid match for symmetrical nodes.
+######
+36 entries written to the dictionary file.
+48 (53%) matches were found by local matching
+
+	Graph number 1: ALU_lay.sim 
+	--------------------------
+10 NETS definitely do not match:
+NET "Func_82/Y" (index 28) 4 connections
+  n: (index 37) [g] Func_83/R :: [s,d] ndif_n48790_10730#, Func_82/Y
+  n: (index 29) [g] Func_83/R :: [s,d] Func_82/Y, ndif_n48790_12450#
+  n: (index 20) [g] Func_83/S :: [s,d] ndif_n48790_15150#, Func_82/Y
+  n: (index 17) [g] Func_83/notR :: [s,d] Func_82/Y, ndif_n48790_16870#
+NET "Carry_99/notCi" (index 5) 3 connections
+  n: (index 35) [g] TFunc_95/R :: [s,d] Carry_99/notCi, Carry_99/notCi_1
+  n: (index 34) [g] Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s :: [s,d] gnd, Carry_99/notCi
+  p: (index 2) [g] Carry_99/Phi :: [s,d] vdd, Carry_99/notCi
+NET "TFunc_95/Y" (index 10) 8 connections
+  n: (index 39) [g] TFunc_95/R :: [s,d] ndif_2190_10720#, TFunc_95/Y
+  n: (index 36) [g] TFunc_95/R :: [s,d] TFunc_95/Y, ndif_2190_12440#
+  n: (index 22) [g] TFunc_95/S :: [s,d] ndif_2190_15140#, TFunc_95/Y
+  n: (index 19) [g] TFunc_95/notR :: [s,d] TFunc_95/Y, ndif_2190_16860#
+  p: (index 12) [g] TFunc_95/notR :: [s,d] pdif_n11020_10720#, TFunc_95/Y
+  p: (index 11) [g] TFunc_95/S :: [s,d] TFunc_95/Y, pdif_n11020_12440#
+  p: (index 8) [g] TFunc_95/R :: [s,d] pdif_n11020_15140#, TFunc_95/Y
+  p: (index 4) [g] TFunc_95/R :: [s,d] TFunc_95/Y, pdif_n11020_16860#
+NET "gnd" (index 41) 4 connections
+  n: (index 34) [g] Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s :: [s,d] gnd, Carry_99/notCi
+  n: (index 33) [g] Carry_99/#fet_83/d :: [s,d] TFunc_95/R, gnd
+  n: (index 32) [g] Carry_99/notCi_1 :: [s,d] gnd, TFunc_95/S
+  n: (index 31) [g] Func_83/Y :: [s,d] Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s, gnd
+NET "TFunc_95/notR" (index 16) 4 connections
+  n: (index 25) [g] TFunc_95/notR :: [s,d] TFunc_95/X[1], ndif_2190_15140#
+  n: (index 19) [g] TFunc_95/notR :: [s,d] TFunc_95/Y, ndif_2190_16860#
+  p: (index 12) [g] TFunc_95/notR :: [s,d] pdif_n11020_10720#, TFunc_95/Y
+  p: (index 10) [g] TFunc_95/notR :: [s,d] pdif_n11020_12440#, TFunc_95/X[2]
+NET "TFunc_95/X[3]" (index 20) 2 connections
+  n: (index 42) [g] TFunc_95/S :: [s,d] TFunc_95/X[3], ndif_2190_10720#
+  p: (index 13) [g] TFunc_95/notS :: [s,d] TFunc_95/X[3], pdif_n11020_10720#
+NET "TFunc_95/X[0]" (index 8) 2 connections
+  n: (index 16) [g] TFunc_95/notS :: [s,d] ndif_2190_16860#, TFunc_95/X[0]
+  p: (index 3) [g] TFunc_95/S :: [s,d] pdif_n11020_16860#, TFunc_95/X[0]
+NET "vdd" (index 2) 6 connections
+  p: (index 7) [g] Carry_99/#fet_83/d :: [s,d] vdd, TFunc_95/R
+  p: (index 6) [g] Carry_99/notCi_1 :: [s,d] vdd, TFunc_95/S
+  p: (index 5) [g] Func_83/Y :: [s,d] Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s, vdd
+  p: (index 2) [g] Carry_99/Phi :: [s,d] vdd, Carry_99/notCi
+  p: (index 1) [g] Carry_99/Phi :: [s,d] vdd, Carry_99/#fet_83/d
+  p: (index 0) [g] Carry_99/Phi :: [s,d] Func_83/Y, vdd
+NET "Carry_99/#fet_83/d" (index 4) 3 connections
+  n: (index 33) [g] Carry_99/#fet_83/d :: [s,d] TFunc_95/R, gnd
+  p: (index 7) [g] Carry_99/#fet_83/d :: [s,d] vdd, TFunc_95/R
+  p: (index 1) [g] Carry_99/Phi :: [s,d] vdd, Carry_99/#fet_83/d
+NET "TFunc_95/notS" (index 14) 4 connections
+  n: (index 28) [g] TFunc_95/notS :: [s,d] ndif_2190_12440#, TFunc_95/X[2]
+  n: (index 16) [g] TFunc_95/notS :: [s,d] ndif_2190_16860#, TFunc_95/X[0]
+  p: (index 13) [g] TFunc_95/notS :: [s,d] TFunc_95/X[3], pdif_n11020_10720#
+  p: (index 9) [g] TFunc_95/notS :: [s,d] TFunc_95/X[1], pdif_n11020_15140#
+
+	Graph number 2: ./ALU.sim 
+	--------------------------
+8 NETS definitely do not match:
+NET "net_5" (index 5) 11 connections
+  p: (index 44) [g] net_5 :: [s,d] N[3], TFunc.net_8
+  p: (index 42) [g] net_5 :: [s,d] N[1], TFunc.net_2
+  n: (index 33) [g] net_5 :: [s,d] TFunc.net_6, N[2]
+  n: (index 29) [g] net_5 :: [s,d] TFunc.net_4, N[0]
+  p: (index 27) [g] Phi2 :: [s,d] vdd, net_5
+  p: (index 21) [g] net_5 :: [s,d] vdd, net_4
+  n: (index 20) [g] net_5 :: [s,d] gnd, net_4
+  n: (index 6) [g] Ri :: [s,d] net_5, Func.net_3
+  n: (index 5) [g] Ri :: [s,d] net_5, Func.net_2
+  n: (index 4) [g] Si :: [s,d] net_5, Func.net_4
+  n: (index 1) [g] notR :: [s,d] net_5, Func.net_1
+NET "vdd" (index 26) 7 connections
+  p: (index 28) [g] Phi2 :: [s,d] vdd, net_3
+  p: (index 27) [g] Phi2 :: [s,d] vdd, net_5
+  p: (index 26) [g] Phi2 :: [s,d] vdd, net_1
+  p: (index 23) [g] net_3 :: [s,d] vdd, Carry.net_1
+  p: (index 21) [g] net_5 :: [s,d] vdd, net_4
+  p: (index 19) [g] notCi_1 :: [s,d] vdd, net_2
+  p: (index 17) [g] net_6 :: [s,d] vdd, Fi
+NET "gnd" (index 24) 5 connections
+  n: (index 25) [g] Carry.net_1 :: [s,d] gnd, net_1
+  n: (index 22) [g] net_3 :: [s,d] gnd, Carry.net_1
+  n: (index 20) [g] net_5 :: [s,d] gnd, net_4
+  n: (index 18) [g] notCi_1 :: [s,d] gnd, net_2
+  n: (index 16) [g] net_6 :: [s,d] gnd, Fi
+NET "N[0]" (index 34) 2 connections
+  p: (index 37) [g] net_4 :: [s,d] N[0], TFunc.net_3
+  n: (index 29) [g] net_5 :: [s,d] TFunc.net_4, N[0]
+NET "Fi" (index 25) 2 connections
+  p: (index 17) [g] net_6 :: [s,d] vdd, Fi
+  n: (index 16) [g] net_6 :: [s,d] gnd, Fi
+NET "net_6" (index 23) 10 connections
+  p: (index 43) [g] net_1 :: [s,d] TFunc.net_8, net_6
+  p: (index 40) [g] net_4 :: [s,d] TFunc.net_5, net_6
+  p: (index 39) [g] net_2 :: [s,d] TFunc.net_2, net_6
+  p: (index 38) [g] net_2 :: [s,d] TFunc.net_3, net_6
+  n: (index 36) [g] net_2 :: [s,d] net_6, TFunc.net_7
+  n: (index 34) [g] net_2 :: [s,d] net_6, TFunc.net_6
+  n: (index 32) [g] net_4 :: [s,d] net_6, TFunc.net_1
+  n: (index 30) [g] net_1 :: [s,d] net_6, TFunc.net_4
+  p: (index 17) [g] net_6 :: [s,d] vdd, Fi
+  n: (index 16) [g] net_6 :: [s,d] gnd, Fi
+NET "net_1" (index 31) 7 connections
+  p: (index 43) [g] net_1 :: [s,d] TFunc.net_8, net_6
+  p: (index 41) [g] net_1 :: [s,d] N[2], TFunc.net_5
+  n: (index 31) [g] net_1 :: [s,d] TFunc.net_1, N[1]
+  n: (index 30) [g] net_1 :: [s,d] net_6, TFunc.net_4
+  p: (index 26) [g] Phi2 :: [s,d] vdd, net_1
+  n: (index 25) [g] Carry.net_1 :: [s,d] gnd, net_1
+  n: (index 24) [g] net_4 :: [s,d] net_1, notCi_1
+NET "N[3]" (index 40) 2 connections
+  p: (index 44) [g] net_5 :: [s,d] N[3], TFunc.net_8
+  n: (index 35) [g] net_4 :: [s,d] TFunc.net_7, N[3]
+
+2 DEVICES definitely do not match:
+DEVICE p:     connections: (index 17) [g] net_6 :: [s,d] vdd, Fi
+DEVICE n:     connections: (index 16) [g] net_6 :: [s,d] gnd, Fi
+0 devices and 10 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/ALU.lvs.err.mag
