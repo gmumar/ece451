@@ -1,0 +1,16 @@
+; Dictionary file for matching names in
+; OpSel_lay.sim and ./OpSel.sim
+= #fet_75/s net_3
+= notOut notOut
+= gnd gnd
+= #fet_74/d net_1
+= ndif_5030_7010# net_4
+= Phi1 Phi1
+= vdd vdd
+= notPhi1 notPhi1
+= Out Out
+= #fet_73/d net_2
+= In2Select In2Select
+= In2 In2
+= In1 In1
+= In1Select In1Select

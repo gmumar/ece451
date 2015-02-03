@@ -28,45 +28,21 @@ proc SCHEMATIC_RegFile {} {
   make input -orient R270 -name {WriteEn[1]} -origin {670 490}
   make input -orient R270 -name {FBEn[1]} -origin {630 490}
   make input -orient R270 -name {notFBEn[1]} -origin {610 490}
-  make output -name Ai -origin {1580 180}
-  make output -name Bi -origin {1580 210}
   make pmos -W 1 -origin {140 160}
   make pmos -W 1 -origin {-10 90}
-  make_wire 650 180 280 180
+  make output -name Ai -origin {1580 180}
+  make output -name Bi -origin {1580 210}
   make_wire 670 210 300 210
   make_wire 1010 180 650 180
   make_wire 1030 210 670 210
-  make_wire 280 240 280 180
-  make_wire 300 270 300 300
-  make_wire 300 270 300 210
   make_wire 60 0 60 20
-  make_wire 280 270 300 270
-  make_wire 280 270 280 240
-  make_wire 280 270 280 300
-  make_wire 670 270 670 300
   make_wire 670 270 670 210
-  make_wire 650 270 650 300
   make_wire 650 270 650 180
-  make_wire 1030 270 1030 300
-  make_wire 1030 270 1030 210
-  make_wire 1010 270 1010 300
   make_wire 1010 270 1010 180
-  make_wire 1370 270 1370 300
-  make_wire 1370 270 1370 210
-  make_wire 1350 270 1350 300
-  make_wire 1350 270 1350 180
   make_wire 1010 720 1350 720
   make_wire 650 720 1010 720
   make_wire 280 720 650 720
-  make_wire 1010 180 1350 180
-  make_wire 1350 180 1580 180
-  make_wire 1030 210 1370 210
-  make_wire 1370 210 1580 210
-  make_wire 140 200 140 240
-  make_wire 140 240 280 240
   make_wire 140 20 140 120
-  make_wire -10 130 -10 270
-  make_wire -10 270 280 270
   make_wire -10 20 -10 50
   make_wire -10 20 60 20
   make_wire 60 20 140 20
@@ -79,19 +55,35 @@ proc SCHEMATIC_RegFile {} {
   make_wire 650 490 650 720
   make_wire 1350 490 1350 720
   make_wire 1010 490 1010 720
+  make_wire -10 130 -10 250
+  make_wire 140 200 140 220
+  make_wire 280 180 650 180
+  make_wire 1030 270 1030 210
+  make_wire 1350 270 1350 180
+  make_wire 1350 180 1010 180
+  make_wire 1350 180 1580 180
+  make_wire 1370 270 1370 210
+  make_wire 1370 210 1030 210
+  make_wire 1370 210 1580 210
+  make_wire 140 220 280 220
+  make_wire 280 220 280 180
+  make_wire 280 220 280 270
+  make_wire -10 250 300 250
+  make_wire 300 250 300 270
+  make_wire 300 250 300 210
 }
 
 proc ICON_RegFile args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
   icon_term -type input -origin {-140 -20} -name Phi1
   icon_term -type input -origin {-140 0} -name RAMINi
-  icon_term -type output -origin {140 -20} -name Ai
-  icon_term -type output -origin {140 0} -name Bi
   icon_term -type input -origin {-40 160} -orient R90Y -name {notFBEn[3:0]}
   icon_term -type input -origin {-20 160} -orient R90Y -name {FBEn[3:0]}
   icon_term -type input -origin {0 160} -orient R90Y -name {WriteEn[3:0]}
   icon_term -type input -origin {20 160} -orient R90Y -name {ARdEn[3:0]}
   icon_term -type input -origin {40 160} -orient R90Y -name {BRdEn[3:0]}
+  icon_term -type output -origin {140 -20} -name {Ai[3:0]}
+  icon_term -type output -origin {140 0} -name {Bi[3:0]}
   icon_property -origin {0 0} -size large -anchor center -label RegFile
   icon_line -140 -160 140 -160 140 160 -140 160 -140 -160
   icon_property -origin {-130 -20} -label Phi1

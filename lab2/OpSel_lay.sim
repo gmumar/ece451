@@ -1,0 +1,20 @@
+| units: 1.0  tech: mmi25  format: UCB
+A notPhi1 input
+A Phi1 input
+A In1Select input
+A In2Select input
+A In2 input
+A In1 input
+A notOut output
+p Phi1 vdd #fet_75/s 24 100 581 1324
+p #fet_75/s vdd #fet_74/d 24 200 867 1329
+p notPhi1 #fet_74/d #fet_73/d 24 200 1163 1320
+p #fet_73/d vdd Out 24 200 1309 973
+p Out vdd notOut 24 200 1509 972
+n In1Select In1 #fet_75/s 24 100 521 1076
+n #fet_75/s gnd #fet_74/d 24 100 867 1109
+n In2Select #fet_75/s ndif_5030_7010# 24 200 479 701
+n Phi1 ndif_5030_7010# In2 24 200 553 701
+n Phi1 #fet_74/d #fet_73/d 24 100 1033 884
+n #fet_73/d gnd Out 24 100 1309 739
+n Out gnd notOut 24 100 1509 738

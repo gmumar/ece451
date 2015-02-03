@@ -1,0 +1,31 @@
+| units: 1.0  tech: sue  format: MIT
+A ARdEn input
+A BRdEn input
+A FBEn input
+A RAMINi input
+A WriteEn input
+A notFBEn input
+A Ai output
+A Bi output
+| device pmos 470 290
+p notFBEn net_1 net_2 24 200
+| device nmos 470 330
+n FBEn net_1 net_2 24 100
+| device nmos_1 740 360
+n ARdEn Ai net_1 24 100
+| device nmos_2 810 460
+n BRdEn Bi net_1 24 100
+| device nmos_3 340 460
+n WriteEn net_2 RAMINi 24 100
+| begin inverter 490 460
+| device inverter.nmos 550 360
+n net_2 gnd net_3 24 100
+| device inverter.pmos 550 200
+p net_2 vdd net_3 24 200
+| end inverter
+| begin inverter_1 610 460
+| device inverter_1.nmos 550 360
+n net_3 gnd net_1 24 100
+| device inverter_1.pmos 550 200
+p net_3 vdd net_1 24 200
+| end inverter_1
