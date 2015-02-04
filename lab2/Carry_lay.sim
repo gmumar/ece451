@@ -1,11 +1,11 @@
 | units: 1.0  tech: mmi25  format: UCB
-A notCi_1 input
 A Phi input
 A notCi input
-A notG input
+A notCi_1 input
 A notP input
-A Ci_1 output
+A notG input
 A P output
+A Ci_1 output
 p Phi notG vdd 24 100 2286 1440
 p Phi vdd notP 24 100 2384 1440
 p Phi vdd notCi 24 100 2590 1441

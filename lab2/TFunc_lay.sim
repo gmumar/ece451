@@ -1,13 +1,13 @@
 | units: 1.0  tech: mmi25  format: UCB
-A notS input
-A notR input
-A S input
-A R input
 A F input
-A X[0] input
-A X[1] input
-A X[2] input
+A R input
+A S input
+A notR input
+A notS input
 A X[3] input
+A X[2] input
+A X[1] input
+A X[0] input
 A Y output
 p S pdif_n4250_13310# X[0] 24 400 -425 1381
 p R Y pdif_n4250_13310# 24 400 -425 1307
