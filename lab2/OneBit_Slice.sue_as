@@ -1,13 +1,9 @@
 # SUE version MMI_SUE5.5.4 (auto-save)
 
 proc SCHEMATIC_OneBit_Slice {} {
-  make OpSel -origin {400 310}
-  make OpSel -origin {400 520}
-  make RegFile -origin {-30 390}
   make Shifter -origin {-490 410}
   make input -orient R270 -name D -origin {150 550}
   make input -name Phi1 -origin {-220 860}
-  make input -name Phi2 -origin {910 860}
   make input -name shl -origin {-650 390}
   make input -name notshl -origin {-650 430}
   make input -orient RXY -name shr -origin {-330 370}
@@ -30,17 +26,14 @@ proc SCHEMATIC_OneBit_Slice {} {
   make input -orient RXY -name SR -origin {-270 410}
   make input -orient R270 -name SL -origin {-490 540}
   make input -orient RXY -name notshr -origin {-330 430}
-  make output -name notCi -origin {890 360}
+  make OpSel -origin {400 310}
+  make OpSel -origin {400 520}
+  make RegFile -origin {-30 390}
+  make input -name notCi_1 -origin {910 860}
   make_wire -170 390 -350 390
   make_wire 110 370 150 370
-  make_wire 150 370 150 270
-  make_wire 150 270 250 270
   make_wire 550 310 660 310
-  make_wire 110 390 160 390
-  make_wire 160 390 160 480
-  make_wire 160 480 250 480
   make_wire 580 520 550 520
-  make_wire 980 380 980 90
   make_wire 980 90 -700 90
   make_wire -700 90 -700 410
   make_wire -700 410 -630 410
@@ -48,13 +41,9 @@ proc SCHEMATIC_OneBit_Slice {} {
   make_wire -490 520 -490 540
   make_wire -350 410 -270 410
   make_wire -350 370 -330 370
-  make_wire -650 390 -630 390
   make_wire 660 310 660 360
-  make_wire 580 520 580 340
   make_wire 550 290 650 290
-  make_wire 650 290 650 380
   make_wire 550 500 640 500
-  make_wire 640 500 640 400
   make_wire -170 370 -220 370
   make_wire -220 370 -220 860
   make_wire 180 560 180 860
@@ -62,8 +51,6 @@ proc SCHEMATIC_OneBit_Slice {} {
   make_wire 130 350 130 860
   make_wire 910 220 910 860
   make_wire 790 220 910 220
-  make_wire 150 520 150 550
-  make_wire 150 520 250 520
   make_wire 180 560 250 560
   make_wire 130 860 -220 860
   make_wire 130 860 180 860
@@ -73,18 +60,30 @@ proc SCHEMATIC_OneBit_Slice {} {
   make_wire 200 250 250 250
   make_wire 200 250 200 460
   make_wire 200 460 200 940
-  make_wire 170 310 250 310
-  make_wire 170 200 170 310
   make_wire 750 260 750 270
   make_wire 770 260 770 270
   make_wire 810 260 810 270
   make_wire 830 260 830 270
-  make_wire 690 360 660 360
-  make_wire 690 340 580 340
-  make_wire 890 380 980 380
-  make_wire 690 400 640 400
-  make_wire 690 380 650 380
   make_wire -350 430 -330 430
+  make_wire 880 380 980 380
+  make_wire 980 90 980 380
+  make_wire 640 400 700 400
+  make_wire 640 400 640 500
+  make_wire 650 380 700 380
+  make_wire 650 290 650 380
+  make_wire 660 360 700 360
+  make_wire 580 340 700 340
+  make_wire 580 340 580 520
+  make_wire 150 370 150 310
+  make_wire 150 310 250 310
+  make_wire 250 270 170 270
+  make_wire 170 270 170 200
+  make_wire 150 550 150 480
+  make_wire 250 480 150 480
+  make_wire 110 390 180 390
+  make_wire -650 390 -630 390
+  make_wire 180 390 180 520
+  make_wire 180 520 250 520
 }
 
 proc ICON_OneBit_Slice args {
@@ -112,6 +111,7 @@ proc ICON_OneBit_Slice args {
   icon_term -type input -origin {0 0} -name SR
   icon_term -type input -origin {0 0} -name SL
   icon_term -type output -origin {0 0} -name notCi
+  icon_term -type input -origin {0 0} -name notCi_1
   icon_property -origin {0 0} -size large -anchor center -label OneBit_Slice
   icon_line -250 -160 250 -160 250 160 -250 160 -250 -160
   icon_property -origin {-240 -60} -label In1Select

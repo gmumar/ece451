@@ -14,8 +14,8 @@ proc SCHEMATIC_ALU {} {
   make input -orient R90 -name {L[3:0]} -origin {490 290}
   make input -orient R90 -name {N[3:0]} -origin {1300 390}
   make input -orient R90 -name {M[3:0]} -origin {490 650}
-  make Carry -origin {900 530}
   make TFunc -origin {1300 550}
+  make Carry -origin {900 530}
   make_wire 400 430 270 430
   make_wire 400 410 180 410
   make_wire 490 290 490 310

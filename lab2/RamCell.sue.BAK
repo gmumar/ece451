@@ -1,15 +1,15 @@
 # SUE version MMI_SUE5.5.4
 
 proc SCHEMATIC_RamCell {} {
-  make pmos -orient R90 -origin {470 310}
-  make nmos -orient R270 -origin {470 310}
-  make nmos -orient R270 -origin {730 360}
-  make nmos -orient R270 -origin {790 460}
+  make pmos -orient R90 -origin {470 290}
+  make nmos -orient R270 -origin {470 330}
+  make nmos -orient R270 -origin {740 360}
+  make nmos -orient R270 -origin {810 460}
   make nmos -orient R270 -origin {340 460}
   make inverter -origin {490 460}
   make inverter -origin {610 460}
   make input -name notFBEn -origin {220 220}
-  make input -name FBEn -origin {220 370}
+  make input -name FBEn -origin {210 390}
   make input -name RAMINi -origin {220 460}
   make input -name WriteEn -origin {220 530}
   make input -name ARdEn -origin {220 580}
@@ -21,24 +21,28 @@ proc SCHEMATIC_RamCell {} {
   make_wire 410 310 410 460
   make_wire 410 460 380 460
   make_wire 410 460 460 460
-  make_wire 470 250 470 220
-  make_wire 470 220 220 220
   make_wire 300 460 220 460
-  make_wire 470 370 220 370
-  make_wire 680 460 660 460
-  make_wire 680 460 750 460
   make_wire 510 310 680 310
-  make_wire 680 360 690 360
   make_wire 680 360 680 460
   make_wire 680 310 680 360
-  make_wire 730 420 730 580
-  make_wire 220 580 730 580
   make_wire 220 530 340 530
   make_wire 340 520 340 530
-  make_wire 220 610 790 610
-  make_wire 790 520 790 610
-  make_wire 770 360 880 360
-  make_wire 830 460 880 460
+  make_wire 430 290 430 310
+  make_wire 510 290 510 310
+  make_wire 470 220 470 230
+  make_wire 220 220 470 220
+  make_wire 430 310 430 330
+  make_wire 510 310 510 330
+  make_wire 210 390 470 390
+  make_wire 740 420 740 580
+  make_wire 220 580 740 580
+  make_wire 780 360 880 360
+  make_wire 680 360 700 360
+  make_wire 850 460 880 460
+  make_wire 660 460 680 460
+  make_wire 680 460 770 460
+  make_wire 810 520 810 610
+  make_wire 220 610 810 610
 }
 
 proc ICON_RamCell args {

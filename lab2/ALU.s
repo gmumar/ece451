@@ -14,12 +14,19 @@ proc SCHEMATIC_ALU {} {
   make input -orient R90 -name {L[3:0]} -origin {490 290}
   make input -orient R90 -name {N[3:0]} -origin {1300 390}
   make input -orient R90 -name {M[3:0]} -origin {490 650}
-  make TFunc -origin {1300 550}
   make Carry -origin {900 530}
+  make TFunc -origin {1300 550}
   make_wire 400 430 270 430
   make_wire 400 410 180 410
   make_wire 490 290 490 310
-  make_wire 620 550 770 550
+  make_wire 620 410 620 530
+  make_wire 620 530 770 530
+  make_wire 580 410 620 410
+  make_wire 580 750 620 750
+  make_wire 650 400 650 510
+  make_wire 650 510 770 510
+  make_wire 700 390 700 490
+  make_wire 700 490 770 490
   make_wire 1300 390 1300 450
   make_wire 1540 550 1570 550
   make_wire 400 390 330 390
@@ -36,6 +43,8 @@ proc SCHEMATIC_ALU {} {
   make_wire 180 750 400 750
   make_wire 180 410 180 540
   make_wire 180 540 180 750
+  make_wire 620 550 620 750
+  make_wire 620 550 770 550
   make_wire 1400 550 1460 550
   make_wire 1060 550 1060 530
   make_wire 1060 530 1030 530
@@ -51,16 +60,6 @@ proc SCHEMATIC_ALU {} {
   make_wire 1160 510 1200 510
   make_wire 1040 550 1040 590
   make_wire 1030 550 1040 550
-  make_wire 580 750 620 750
-  make_wire 620 660 620 750
-  make_wire 1040 660 1040 590
-  make_wire 1040 660 620 660
-  make_wire 620 410 620 550
-  make_wire 580 410 620 410
-  make_wire 700 510 770 510
-  make_wire 700 390 700 510
-  make_wire 650 530 770 530
-  make_wire 650 530 650 400
 }
 
 proc ICON_ALU args {

@@ -1,9 +1,9 @@
 | units: 1.0  tech: mmi25  format: UCB
+A F input
 A notshl input
 A shr input
 A notshr input
 A shl input
-A F input
 A RAMIN output
 A FiPlus1 inout
 A Fi_1 inout

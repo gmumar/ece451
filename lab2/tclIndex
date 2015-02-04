@@ -31,8 +31,4 @@ set auto_index(SCHEMATIC_Shifter) [list source [file join $dir Shifter.sue]]
 set auto_index(ICON_Shifter) [list source [file join $dir Shifter.sue]]
 set auto_index(SCHEMATIC_Counter) [list source [file join $dir Counter.sue]]
 set auto_index(ICON_Counter) [list source [file join $dir Counter.sue]]
-set auto_index(SCHEMATIC_Carry) [list source [file join $dir Carry.s]]
-set auto_index(ICON_Carry) [list source [file join $dir Carry.s]]
-set auto_index(SCHEMATIC_Carry_test) [list source [file join $dir Carry_test.s]]
-set auto_index(ICON_Carry_test) [list source [file join $dir Carry_test.s]]
-set mtimes {{Carry_test.sue 1422286496} {Func.sue 1422288428} {RegFile.sue 1423006677} {no_name.sue 1421781505} {TFunc.sue 1422379446} {Carry.sue 1422933465} {OpSel.sue 1422289074} {OneBit_Slice.sue 1422289132} {RamCell.sue 1422288217} {ALU.sue 1422996907} {Shifter.sue 1422288296} {Counter.sue 1422284703} {Carry.s 1422931540} {Carry_test.s 1422289134}}
+set mtimes {{Carry_test.sue 1422286496} {Func.sue 1422288428} {RegFile.sue 1423079556} {no_name.sue 1421781505} {TFunc.sue 1422379446} {Carry.sue 1423076048} {OpSel.sue 1423078731} {OneBit_Slice.sue 1423079837} {RamCell.sue 1423079284} {ALU.sue 1423076030} {Shifter.sue 1423079566} {Counter.sue 1422284703}}
