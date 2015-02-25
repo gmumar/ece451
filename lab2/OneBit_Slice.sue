@@ -21,9 +21,7 @@ proc SCHEMATIC_OneBit_Slice {} {
   make input -orient R90 -name {M[3:0]} -origin {770 260}
   make input -orient R90 -name {N[3:0]} -origin {830 260}
   make input -orient R90 -name Phi2 -origin {810 260}
-  make ALU -origin {790 380}
   make input -orient RXY -name notshr -origin {-330 430}
-  make input -name notCi_1 -origin {910 860}
   make input -name Phi1 -origin {250 560}
   make input -name Phi1 -origin {250 350}
   make input -name notPhi1 -origin {240 250}
@@ -31,29 +29,21 @@ proc SCHEMATIC_OneBit_Slice {} {
   make inout -name SR -origin {-270 410}
   make OpSel -origin {400 310}
   make OpSel -origin {400 520}
-  make RegFile -origin {-30 390}
   make Shifter -origin {-490 410}
+  make ALU -origin {790 380}
+  make input -orient R90 -name notCi_1 -origin {790 260}
+  make output -name notCi -origin {890 380}
+  make RegFile -origin {-30 390}
   make_wire 580 520 550 520
-  make_wire 980 90 -700 90
   make_wire -700 90 -700 410
   make_wire -700 410 -630 410
   make_wire -630 430 -650 430
   make_wire -490 520 -490 540
-  make_wire -350 410 -270 410
   make_wire -350 370 -330 370
   make_wire 660 310 660 360
   make_wire 550 500 640 500
-  make_wire 790 270 790 220
-  make_wire 910 220 910 860
-  make_wire 790 220 910 220
   make_wire -350 430 -330 430
-  make_wire 880 380 980 380
-  make_wire 980 90 980 380
-  make_wire 640 400 700 400
   make_wire 640 400 640 500
-  make_wire 650 380 700 380
-  make_wire 650 290 650 380
-  make_wire 660 360 700 360
   make_wire 580 340 580 520
   make_wire 250 270 170 270
   make_wire 170 270 170 200
@@ -74,8 +64,17 @@ proc SCHEMATIC_OneBit_Slice {} {
   make_wire 830 260 830 270
   make_wire 770 260 770 270
   make_wire 550 310 660 310
-  make_wire 700 340 580 340
   make_wire -350 390 -170 390
+  make_wire 690 360 660 360
+  make_wire 690 340 580 340
+  make_wire 690 400 640 400
+  make_wire 980 360 890 360
+  make_wire 980 90 980 360
+  make_wire -700 90 980 90
+  make_wire 650 290 650 380
+  make_wire 650 380 690 380
+  make_wire 790 260 790 270
+  make_wire -350 410 -270 410
 }
 
 proc ICON_OneBit_Slice args {
@@ -86,15 +85,16 @@ proc ICON_OneBit_Slice args {
   icon_term -type input -origin {-250 0} -name Phi1
   icon_term -type input -origin {-250 20} -name shl
   icon_term -type input -origin {-250 40} -name notshl
-  icon_term -type input -origin {-250 60} -name notCi_1
   icon_term -type input -origin {250 -40} -orient RX -name shr
-  icon_term -type inout -origin {250 -20} -name SR
-  icon_term -type input -origin {250 0} -orient RX -name notshr
-  icon_term -type inout -origin {250 20} -name SL
+  icon_term -type output -origin {250 -20} -name notCi
+  icon_term -type inout -origin {250 0} -name SR
+  icon_term -type input -origin {250 20} -orient RX -name notshr
+  icon_term -type inout -origin {250 40} -name SL
   icon_term -type input -origin {-40 -160} -orient R90 -name {L[3:0]}
   icon_term -type input -origin {-20 -160} -orient R90 -name {M[3:0]}
-  icon_term -type input -origin {0 -160} -orient R90 -name Phi2
-  icon_term -type input -origin {20 -160} -orient R90 -name {N[3:0]}
+  icon_term -type input -origin {0 -160} -orient R90 -name notCi_1
+  icon_term -type input -origin {20 -160} -orient R90 -name Phi2
+  icon_term -type input -origin {40 -160} -orient R90 -name {N[3:0]}
   icon_term -type input -origin {-60 160} -orient R90Y -name {notFBEn[3:0]}
   icon_term -type input -origin {-40 160} -orient R90Y -name {FBEn[3:0]}
   icon_term -type input -origin {-20 160} -orient R90Y -name {WriteEn[3:0]}
@@ -109,15 +109,16 @@ proc ICON_OneBit_Slice args {
   icon_property -origin {-240 0} -label Phi1
   icon_property -origin {-240 20} -label shl
   icon_property -origin {-240 40} -label notshl
-  icon_property -origin {-240 60} -label notCi_1
   icon_property -origin {240 -40} -anchor e -label shr
-  icon_property -origin {240 -20} -anchor e -label SR
-  icon_property -origin {240 0} -anchor e -label notshr
-  icon_property -origin {240 20} -anchor e -label SL
+  icon_property -origin {240 -20} -anchor e -label notCi
+  icon_property -origin {240 0} -anchor e -label SR
+  icon_property -origin {240 20} -anchor e -label notshr
+  icon_property -origin {240 40} -anchor e -label SL
   icon_property -origin {-40 -150} -rotate 1 -label L
   icon_property -origin {-20 -150} -rotate 1 -label M
-  icon_property -origin {0 -150} -rotate 1 -label Phi2
-  icon_property -origin {20 -150} -rotate 1 -label N
+  icon_property -origin {0 -150} -rotate 1 -label notCi_1
+  icon_property -origin {20 -150} -rotate 1 -label Phi2
+  icon_property -origin {40 -150} -rotate 1 -label N
   icon_property -origin {-60 150} -anchor e -rotate 1 -label notFBEn
   icon_property -origin {-40 150} -anchor e -rotate 1 -label FBEn
   icon_property -origin {-20 150} -anchor e -rotate 1 -label WriteEn

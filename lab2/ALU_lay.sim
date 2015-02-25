@@ -1,62 +1,63 @@
 | units: 1.0  tech: mmi25  format: UCB
-A M[3] input
-A M[2] input
-A M[1] input
-A M[0] input
-A L[3] input
-A L[2] input
-A L[1] input
-A L[0] input
-A N[0] input
-A N[1] input
-A N[2] input
-A N[3] input
-A notR input
-A notS input
-A Ri input
-A Si input
-A Phi2 input
 A notCi_1 input
+A Phi2 input
+A Si input
+A Ri input
+A notS input
+A notR input
+A N[3] input
+A N[2] input
+A N[1] input
+A N[0] input
+A L[0] input
+A L[1] input
+A L[2] input
+A L[3] input
+A M[0] input
+A M[1] input
+A M[2] input
+A M[3] input
+A notCi output
 A Fi output
 p Phi2 Func_83/Y vdd 24 100 -2278 1793
-p Phi2 vdd Func_82/Y 24 100 -2180 1793
-p Phi2 vdd TFunc_95/notR 24 100 -1974 1794
+p Phi2 vdd TFunc_95/notS 24 100 -2180 1793
+p Phi2 vdd notCi 24 100 -1974 1794
 p TFunc_95/S pdif_n13340_16860# N[0] 24 400 -1334 1736
 p TFunc_95/R TFunc_95/Y pdif_n13340_16860# 24 400 -1334 1662
 p Func_83/Y Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 -2280 1441
 p notCi_1 vdd TFunc_95/R 24 200 -2182 1441
-p Func_82/Y vdd TFunc_95/S 24 200 -1981 1442
+p TFunc_95/notS vdd TFunc_95/S 24 200 -1981 1442
 p TFunc_95/R pdif_n13340_15140# TFunc_95/Y 24 400 -1334 1564
-p Func_82/Y N[1] pdif_n13340_15140# 24 400 -1334 1490
-p TFunc_95/notR pdif_n13340_12440# N[2] 24 400 -1334 1294
+p TFunc_95/notS N[1] pdif_n13340_15140# 24 400 -1334 1490
+p notCi_1 pdif_n13340_12440# N[2] 24 400 -1334 1294
 p TFunc_95/S TFunc_95/Y pdif_n13340_12440# 24 400 -1334 1220
-p TFunc_95/notR pdif_n13340_10720# TFunc_95/Y 24 400 -1334 1122
-p Func_82/Y N[3] pdif_n13340_10720# 24 400 -1334 1048
+p notCi_1 pdif_n13340_10720# TFunc_95/Y 24 400 -1334 1122
+p TFunc_95/notS N[3] pdif_n13340_10720# 24 400 -1334 1048
 p TFunc_95/Y Fi vdd 24 200 751 830
 n notS ndif_n48790_16870# M[0] 24 200 -4879 1737
 n notS ndif_n34620_16870# L[0] 24 200 -3462 1737
-n Func_82/Y ndif_n130_16860# N[0] 24 200 -13 1736
-n notR Func_82/Y ndif_n48790_16870# 24 200 -4879 1663
+n TFunc_95/notS ndif_n130_16860# N[0] 24 200 -13 1736
+n notR TFunc_95/notS ndif_n48790_16870# 24 200 -4879 1663
 n notR Func_83/Y ndif_n34620_16870# 24 200 -3462 1663
-n TFunc_95/notR TFunc_95/Y ndif_n130_16860# 24 200 -13 1662
-n Si ndif_n48790_15150# Func_82/Y 24 200 -4879 1565
+n notCi_1 TFunc_95/Y ndif_n130_16860# 24 200 -13 1662
+n Si ndif_n48790_15150# TFunc_95/notS 24 200 -4879 1565
 n Si ndif_n34620_15150# Func_83/Y 24 200 -3462 1565
 n TFunc_95/S ndif_n130_15140# TFunc_95/Y 24 200 -13 1564
 n notR M[1] ndif_n48790_15150# 24 200 -4879 1491
 n notR L[1] ndif_n34620_15150# 24 200 -3462 1491
-n TFunc_95/notR N[1] ndif_n130_15140# 24 200 -13 1490
+n notCi_1 N[1] ndif_n130_15140# 24 200 -13 1490
 n notS ndif_n48790_12450# M[2] 24 200 -4879 1295
 n notS ndif_n34620_12450# L[2] 24 200 -3462 1295
-n Func_82/Y ndif_n130_12440# N[2] 24 200 -13 1294
-n Ri Func_82/Y ndif_n48790_12450# 24 200 -4879 1221
+n TFunc_95/notS ndif_n130_12440# N[2] 24 200 -13 1294
+n Ri TFunc_95/notS ndif_n48790_12450# 24 200 -4879 1221
 n Ri Func_83/Y ndif_n34620_12450# 24 200 -3462 1221
 n Func_83/Y Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 -2280 1182
 n notCi_1 gnd TFunc_95/R 24 100 -2182 1182
-n Func_82/Y TFunc_95/S gnd 24 100 -1981 1184
-n Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd TFunc_95/notR 24 100 -1883 1184
-n TFunc_95/S TFunc_95/notR notCi_1 24 100 -1785 1184
+n TFunc_95/notS TFunc_95/S gnd 24 100 -1981 1184
+n Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd notCi 24 100 -1883 1184
+n TFunc_95/S notCi notCi_1 24 100 -1785 1184
 n TFunc_95/R TFunc_95/Y ndif_n130_12440# 24 200 -13 1220
-n Ri ndif_n48790_10730# Func_82/Y 24 200 -4879 1123
+n Ri ndif_n48790_10730# TFunc_95/notS 24 200 -4879 1123
 n Ri ndif_n34620_10730# Func_83/Y 24 200 -3462 1123
 n TFunc_95/R ndif_n130_10720# TFunc_95/Y 24 200 -13 1122
 n Si M[3] ndif_n48790_10730# 24 200 -4879 1049
