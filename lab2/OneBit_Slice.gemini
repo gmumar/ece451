@@ -1,8 +1,8 @@
 Gemini 2.7.2	1994/3/15
 
 Graph "OneBit_Slice_lay.sim": unit scale = 1, format = UCB
-	Number of devices: 115
-	Number of nets: 101
+	Number of devices: 113
+	Number of nets: 95
 
 Graph "./OneBit_Slice.sim": unit scale = 1, format = MIT
 format = NULL (assume MIT)
@@ -10,11 +10,264 @@ format = NULL (assume MIT)
 format = NULL (assume MIT)
 	Number of devices: 115
 	Number of nets: 101
+The circuits are different.
 
 These circuits contain some symmetry (37% nodes not yet matched).
 Gemini will attempt to find a valid match for symmetrical nodes.
-M##M#M#M##
-100 entries written to the dictionary file.
-180 (83%) matches were found by local matching
-All nodes were matched in 51 passes
-0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/OneBit_Slice.lvs.err.mag
+M##M#M#M##M#M#M#M#M#M#M#M#M#M#M##x
+85 entries written to the dictionary file.
+122 (58%) matches were found by local matching
+
+	Graph number 1: OneBit_Slice_lay.sim 
+	--------------------------
+9 NETS definitely do not match:
+NET "gnd" (index 70) 19 connections
+  n: (index 114) [g] ALU_91/TFunc_95/Y :: [s,d] Shifter_87/F, gnd
+  n: (index 105) [g] ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s :: [s,d] gnd, ALU_91/Carry_99/notCi
+  n: (index 104) [g] ALU_91/TFunc_95/notS :: [s,d] ALU_91/TFunc_95/S, gnd
+  n: (index 103) [g] notCi_1 :: [s,d] gnd, ALU_91/TFunc_95/R
+  n: (index 102) [g] ALU_91/Func_83/Y :: [s,d] ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s, gnd
+  n: (index 96) [g] OpSel_74/#fet!-type!pfet!-width!2.0_0/d :: [s,d] ALU_91/Si, gnd
+  n: (index 94) [g] OpSel_74/#fet!-fingers!2!-width!2.0_0/d :: [s,d] gnd, OpSel_74/#fet!-fingers!2!-contacts!all_2/d
+  n: (index 93) [g] ALU_91/Si :: [s,d] ALU_91/notS, gnd
+  n: (index 90) [g] In1Select[0] :: [s,d] gnd, OpSel_74/#fet!-fingers!2!-width!2.0_0/d
+  n: (index 89) [g] OpSel_75/#fet!-type!pfet!-width!2.0_0/d :: [s,d] ALU_91/Ri, gnd
+  n: (index 87) [g] OpSel_75/#fet!-fingers!2!-width!2.0_0/d :: [s,d] gnd, OpSel_75/#fet!-fingers!2!-contacts!all_2/d
+  n: (index 86) [g] ALU_91/Ri :: [s,d] ALU_91/notR, gnd
+  n: (index 79) [g] D :: [s,d] D, gnd
+  n: (index 78) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, gnd
+  n: (index 77) [g] RegFile_79/RamCell_2/#fet_75/d :: [s,d] RegFile_79/RamCell_2/#fet_87/s, gnd
+  n: (index 76) [g] RegFile_79/RamCell_45/#fet_75/d :: [s,d] RegFile_79/RamCell_45/#fet_87/s, gnd
+  n: (index 68) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] gnd, RegFile_79/RamCell_4/#fet_75/d
+  n: (index 67) [g] RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s :: [s,d] gnd, RegFile_79/RamCell_2/#fet_75/d
+  n: (index 66) [g] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s :: [s,d] gnd, RegFile_79/RamCell_45/#fet_75/d
+NET "RegFile_79/RamCell_4/#fet_75/d" (index 40) 4 connections
+  n: (index 78) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, gnd
+  n: (index 68) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] gnd, RegFile_79/RamCell_4/#fet_75/d
+  p: (index 34) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, vdd
+  p: (index 27) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] vdd, RegFile_79/RamCell_4/#fet_75/d
+NET "RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s" (index 35) 5 connections
+  n: (index 80) [g] WriteEn[0] :: [s,d] D, RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s
+  n: (index 71) [g] FBEn[0] :: [s,d] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_45/#fet_87/s
+  n: (index 66) [g] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s :: [s,d] gnd, RegFile_79/RamCell_45/#fet_75/d
+  p: (index 37) [g] notFBEn[0] :: [s,d] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_45/#fet_87/s
+  p: (index 25) [g] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s :: [s,d] vdd, RegFile_79/RamCell_45/#fet_75/d
+NET "RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s" (index 39) 5 connections
+  n: (index 82) [g] WriteEn[2] :: [s,d] D, RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s
+  n: (index 73) [g] FBEn[2] :: [s,d] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_4/#fet_87/s
+  n: (index 68) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] gnd, RegFile_79/RamCell_4/#fet_75/d
+  p: (index 39) [g] notFBEn[2] :: [s,d] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_4/#fet_87/s
+  p: (index 27) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] vdd, RegFile_79/RamCell_4/#fet_75/d
+NET "notFBEn[2]" (index 50) 1 connections
+  p: (index 39) [g] notFBEn[2] :: [s,d] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_4/#fet_87/s
+NET "RegFile_79/RamCell_2/#fet_87/s" (index 45) 6 connections
+  n: (index 77) [g] RegFile_79/RamCell_2/#fet_75/d :: [s,d] RegFile_79/RamCell_2/#fet_87/s, gnd
+  n: (index 72) [g] FBEn[1] :: [s,d] RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_2/#fet_87/s
+  n: (index 62) [g] BRdEn[1] :: [s,d] D, RegFile_79/RamCell_2/#fet_87/s
+  n: (index 55) [g] ARdEn[1] :: [s,d] RegFile_79/RamCell_2/#fet_87/s, OpSel_75/In1_1
+  p: (index 38) [g] notFBEn[1] :: [s,d] RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_2/#fet_87/s
+  p: (index 33) [g] RegFile_79/RamCell_2/#fet_75/d :: [s,d] RegFile_79/RamCell_2/#fet_87/s, vdd
+NET "RegFile_79/RamCell_4/#fet_87/s" (index 46) 6 connections
+  n: (index 78) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, gnd
+  n: (index 73) [g] FBEn[2] :: [s,d] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_4/#fet_87/s
+  n: (index 63) [g] BRdEn[2] :: [s,d] D, RegFile_79/RamCell_4/#fet_87/s
+  n: (index 56) [g] ARdEn[2] :: [s,d] RegFile_79/RamCell_4/#fet_87/s, OpSel_75/In1_1
+  p: (index 39) [g] notFBEn[2] :: [s,d] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_4/#fet_87/s
+  p: (index 34) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, vdd
+NET "vdd" (index 6) 24 connections
+  p: (index 42) [g] ALU_91/TFunc_95/Y :: [s,d] Shifter_87/F, vdd
+  p: (index 35) [g] D :: [s,d] D, vdd
+  p: (index 34) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, vdd
+  p: (index 33) [g] RegFile_79/RamCell_2/#fet_75/d :: [s,d] RegFile_79/RamCell_2/#fet_87/s, vdd
+  p: (index 32) [g] RegFile_79/RamCell_45/#fet_75/d :: [s,d] RegFile_79/RamCell_45/#fet_87/s, vdd
+  p: (index 27) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] vdd, RegFile_79/RamCell_4/#fet_75/d
+  p: (index 26) [g] RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s :: [s,d] vdd, RegFile_79/RamCell_2/#fet_75/d
+  p: (index 25) [g] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s :: [s,d] vdd, RegFile_79/RamCell_45/#fet_75/d
+  p: (index 21) [g] ALU_91/TFunc_95/notS :: [s,d] vdd, ALU_91/TFunc_95/S
+  p: (index 20) [g] notCi_1 :: [s,d] vdd, ALU_91/TFunc_95/R
+  p: (index 19) [g] ALU_91/Func_83/Y :: [s,d] ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s, vdd
+  p: (index 18) [g] Phi1 :: [s,d] vdd, OpSel_74/#fet!-fingers!2!-width!2.0_0/d
+  p: (index 17) [g] Phi1 :: [s,d] vdd, OpSel_75/#fet!-fingers!2!-width!2.0_0/d
+  p: (index 13) [g] Phi2 :: [s,d] vdd, ALU_91/Carry_99/notCi
+  p: (index 12) [g] Phi2 :: [s,d] vdd, ALU_91/TFunc_95/notS
+  p: (index 11) [g] Phi2 :: [s,d] ALU_91/Func_83/Y, vdd
+  p: (index 10) [g] OpSel_74/#fet!-type!pfet!-width!2.0_0/d :: [s,d] ALU_91/Si, vdd
+  p: (index 8) [g] OpSel_74/#fet!-fingers!2!-width!2.0_0/d :: [s,d] vdd, OpSel_74/#fet!-fingers!2!-contacts!all_2/d
+  p: (index 7) [g] ALU_91/Si :: [s,d] ALU_91/notS, vdd
+  p: (index 6) [g] OpSel_75/#fet!-type!pfet!-width!2.0_0/d :: [s,d] ALU_91/Ri, vdd
+  p: (index 4) [g] OpSel_75/#fet!-fingers!2!-width!2.0_0/d :: [s,d] vdd, OpSel_75/#fet!-fingers!2!-contacts!all_2/d
+  p: (index 3) [g] ALU_91/Ri :: [s,d] ALU_91/notR, vdd
+  p: (index 2) [g] Phi1 :: [s,d] vdd, D
+  p: (index 1) [g] Phi1 :: [s,d] OpSel_75/In1_1, vdd
+NET "D" (index 2) 27 connections
+  n: (index 85) [g] Phi1 :: [s,d] ndif_n45120_37610#, D
+  n: (index 83) [g] WriteEn[3] :: [s,d] D, D
+  n: (index 83) [g] WriteEn[3] :: [s,d] D, D
+  n: (index 82) [g] WriteEn[2] :: [s,d] D, RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s
+  n: (index 81) [g] WriteEn[1] :: [s,d] D, RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s
+  n: (index 80) [g] WriteEn[0] :: [s,d] D, RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s
+  n: (index 79) [g] D :: [s,d] D, gnd
+  n: (index 79) [g] D :: [s,d] D, gnd
+  n: (index 75) [g] In1Select[1] :: [s,d] D, OpSel_75/#fet!-fingers!2!-width!2.0_0/d
+  n: (index 74) [g] FBEn[3] :: [s,d] D, D
+  n: (index 74) [g] FBEn[3] :: [s,d] D, D
+  n: (index 65) [g] shr :: [s,d] SL, D
+  n: (index 64) [g] BRdEn[3] :: [s,d] D, D
+  n: (index 64) [g] BRdEn[3] :: [s,d] D, D
+  n: (index 63) [g] BRdEn[2] :: [s,d] D, RegFile_79/RamCell_4/#fet_87/s
+  n: (index 62) [g] BRdEn[1] :: [s,d] D, RegFile_79/RamCell_2/#fet_87/s
+  n: (index 61) [g] BRdEn[0] :: [s,d] D, RegFile_79/RamCell_45/#fet_87/s
+  n: (index 57) [g] ARdEn[3] :: [s,d] D, OpSel_75/In1_1
+  n: (index 46) [g] notshr :: [s,d] SR, D
+  p: (index 40) [g] D :: [s,d] D, D
+  p: (index 40) [g] D :: [s,d] D, D
+  p: (index 40) [g] D :: [s,d] D, D
+  p: (index 35) [g] D :: [s,d] D, vdd
+  p: (index 35) [g] D :: [s,d] D, vdd
+  p: (index 24) [g] shr :: [s,d] SR, D
+  p: (index 2) [g] Phi1 :: [s,d] vdd, D
+  p: (index 0) [g] notshr :: [s,d] SL, D
+8 DEVICES could not be matched, possibly because of other unmatched devices:
+DEVICE p:     connections: (index 35) [g] D :: [s,d] D, vdd
+DEVICE p:     connections: (index 39) [g] notFBEn[2] :: [s,d] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s, RegFile_79/RamCell_4/#fet_87/s
+DEVICE p:     connections: (index 34) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, vdd
+DEVICE p:     connections: (index 27) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] vdd, RegFile_79/RamCell_4/#fet_75/d
+DEVICE p:     connections: (index 40) [g] D :: [s,d] D, D
+DEVICE n:     connections: (index 68) [g] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s :: [s,d] gnd, RegFile_79/RamCell_4/#fet_75/d
+DEVICE n:     connections: (index 78) [g] RegFile_79/RamCell_4/#fet_75/d :: [s,d] RegFile_79/RamCell_4/#fet_87/s, gnd
+DEVICE n:     connections: (index 79) [g] D :: [s,d] D, gnd
+
+	Graph number 2: ./OneBit_Slice.sim 
+	--------------------------
+11 NETS definitely do not match:
+NET "gnd" (index 24) 20 connections
+  n: (index 105) [g] RegFile.RamCell_3.net_3 :: [s,d] gnd, RegFile.RamCell_3.net_1
+  n: (index 103) [g] RegFile.RamCell_3.net_2 :: [s,d] gnd, RegFile.RamCell_3.net_3
+  n: (index 96) [g] RegFile.RamCell_2.net_3 :: [s,d] gnd, RegFile.RamCell_2.net_1
+  n: (index 94) [g] RegFile.RamCell_2.net_2 :: [s,d] gnd, RegFile.RamCell_2.net_3
+  n: (index 87) [g] RegFile.RamCell_1.net_3 :: [s,d] gnd, RegFile.RamCell_1.net_1
+  n: (index 85) [g] RegFile.RamCell_1.net_2 :: [s,d] gnd, RegFile.RamCell_1.net_3
+  n: (index 78) [g] RegFile.RamCell.net_3 :: [s,d] gnd, RegFile.RamCell.net_1
+  n: (index 76) [g] RegFile.RamCell.net_2 :: [s,d] gnd, RegFile.RamCell.net_3
+  n: (index 64) [g] net_8 :: [s,d] gnd, net_3
+  n: (index 62) [g] OpSel_1.net_2 :: [s,d] gnd, net_8
+  n: (index 58) [g] OpSel_1.net_1 :: [s,d] gnd, OpSel_1.net_3
+  n: (index 52) [g] net_6 :: [s,d] gnd, net_4
+  n: (index 50) [g] OpSel.net_2 :: [s,d] gnd, net_6
+  n: (index 46) [g] OpSel.net_1 :: [s,d] gnd, OpSel.net_3
+  n: (index 45) [g] In1Select[0] :: [s,d] OpSel.net_1, gnd
+  n: (index 41) [g] ALU.Carry.net_1 :: [s,d] gnd, ALU.net_1
+  n: (index 38) [g] ALU.net_2 :: [s,d] gnd, ALU.Carry.net_1
+  n: (index 36) [g] ALU.net_4 :: [s,d] gnd, ALU.net_3
+  n: (index 34) [g] notCi_1 :: [s,d] gnd, ALU.net_5
+  n: (index 16) [g] ALU.net_6 :: [s,d] gnd, net_5
+NET "net_1" (index 60) 6 connections
+  n: (index 101) [g] BRdEn[3] :: [s,d] net_1, RegFile.RamCell_3.net_1
+  n: (index 92) [g] BRdEn[2] :: [s,d] net_1, RegFile.RamCell_2.net_1
+  n: (index 83) [g] BRdEn[1] :: [s,d] net_1, RegFile.RamCell_1.net_1
+  n: (index 74) [g] BRdEn[0] :: [s,d] net_1, RegFile.RamCell.net_1
+  p: (index 70) [g] Phi1 :: [s,d] vdd, net_1
+  n: (index 66) [g] Phi1 :: [s,d] OpSel_1.net_4, net_1
+NET "vdd" (index 26) 25 connections
+  p: (index 106) [g] RegFile.RamCell_3.net_3 :: [s,d] vdd, RegFile.RamCell_3.net_1
+  p: (index 104) [g] RegFile.RamCell_3.net_2 :: [s,d] vdd, RegFile.RamCell_3.net_3
+  p: (index 97) [g] RegFile.RamCell_2.net_3 :: [s,d] vdd, RegFile.RamCell_2.net_1
+  p: (index 95) [g] RegFile.RamCell_2.net_2 :: [s,d] vdd, RegFile.RamCell_2.net_3
+  p: (index 88) [g] RegFile.RamCell_1.net_3 :: [s,d] vdd, RegFile.RamCell_1.net_1
+  p: (index 86) [g] RegFile.RamCell_1.net_2 :: [s,d] vdd, RegFile.RamCell_1.net_3
+  p: (index 79) [g] RegFile.RamCell.net_3 :: [s,d] vdd, RegFile.RamCell.net_1
+  p: (index 77) [g] RegFile.RamCell.net_2 :: [s,d] vdd, RegFile.RamCell.net_3
+  p: (index 70) [g] Phi1 :: [s,d] vdd, net_1
+  p: (index 69) [g] Phi1 :: [s,d] vdd, net_7
+  p: (index 68) [g] Phi1 :: [s,d] vdd, OpSel_1.net_1
+  p: (index 65) [g] net_8 :: [s,d] vdd, net_3
+  p: (index 63) [g] OpSel_1.net_2 :: [s,d] vdd, net_8
+  p: (index 59) [g] OpSel_1.net_1 :: [s,d] vdd, OpSel_1.net_3
+  p: (index 56) [g] Phi1 :: [s,d] vdd, OpSel.net_1
+  p: (index 53) [g] net_6 :: [s,d] vdd, net_4
+  p: (index 51) [g] OpSel.net_2 :: [s,d] vdd, net_6
+  p: (index 47) [g] OpSel.net_1 :: [s,d] vdd, OpSel.net_3
+  p: (index 44) [g] Phi2 :: [s,d] vdd, ALU.net_2
+  p: (index 43) [g] Phi2 :: [s,d] vdd, ALU.net_4
+  p: (index 42) [g] Phi2 :: [s,d] vdd, ALU.net_1
+  p: (index 39) [g] ALU.net_2 :: [s,d] vdd, ALU.Carry.net_1
+  p: (index 37) [g] ALU.net_4 :: [s,d] vdd, ALU.net_3
+  p: (index 35) [g] notCi_1 :: [s,d] vdd, ALU.net_5
+  p: (index 17) [g] ALU.net_6 :: [s,d] vdd, net_5
+NET "net_2" (index 69) 8 connections
+  n: (index 114) [g] notshr :: [s,d] net_2, SR
+  p: (index 113) [g] shr :: [s,d] net_2, SR
+  n: (index 110) [g] shr :: [s,d] net_2, SL
+  p: (index 109) [g] notshr :: [s,d] net_2, SL
+  n: (index 102) [g] WriteEn[3] :: [s,d] RegFile.RamCell_3.net_2, net_2
+  n: (index 93) [g] WriteEn[2] :: [s,d] RegFile.RamCell_2.net_2, net_2
+  n: (index 84) [g] WriteEn[1] :: [s,d] RegFile.RamCell_1.net_2, net_2
+  n: (index 75) [g] WriteEn[0] :: [s,d] RegFile.RamCell.net_2, net_2
+NET "RegFile.RamCell_1.net_1" (index 72) 6 connections
+  p: (index 88) [g] RegFile.RamCell_1.net_3 :: [s,d] vdd, RegFile.RamCell_1.net_1
+  n: (index 87) [g] RegFile.RamCell_1.net_3 :: [s,d] gnd, RegFile.RamCell_1.net_1
+  n: (index 83) [g] BRdEn[1] :: [s,d] net_1, RegFile.RamCell_1.net_1
+  n: (index 82) [g] ARdEn[1] :: [s,d] net_7, RegFile.RamCell_1.net_1
+  n: (index 81) [g] FBEn[1] :: [s,d] RegFile.RamCell_1.net_1, RegFile.RamCell_1.net_2
+  p: (index 80) [g] notFBEn[1] :: [s,d] RegFile.RamCell_1.net_1, RegFile.RamCell_1.net_2
+NET "RegFile.RamCell_3.net_1" (index 88) 6 connections
+  p: (index 106) [g] RegFile.RamCell_3.net_3 :: [s,d] vdd, RegFile.RamCell_3.net_1
+  n: (index 105) [g] RegFile.RamCell_3.net_3 :: [s,d] gnd, RegFile.RamCell_3.net_1
+  n: (index 101) [g] BRdEn[3] :: [s,d] net_1, RegFile.RamCell_3.net_1
+  n: (index 100) [g] ARdEn[3] :: [s,d] net_7, RegFile.RamCell_3.net_1
+  n: (index 99) [g] FBEn[3] :: [s,d] RegFile.RamCell_3.net_1, RegFile.RamCell_3.net_2
+  p: (index 98) [g] notFBEn[3] :: [s,d] RegFile.RamCell_3.net_1, RegFile.RamCell_3.net_2
+NET "RegFile.RamCell_3.net_2" (index 89) 5 connections
+  p: (index 104) [g] RegFile.RamCell_3.net_2 :: [s,d] vdd, RegFile.RamCell_3.net_3
+  n: (index 103) [g] RegFile.RamCell_3.net_2 :: [s,d] gnd, RegFile.RamCell_3.net_3
+  n: (index 102) [g] WriteEn[3] :: [s,d] RegFile.RamCell_3.net_2, net_2
+  n: (index 99) [g] FBEn[3] :: [s,d] RegFile.RamCell_3.net_1, RegFile.RamCell_3.net_2
+  p: (index 98) [g] notFBEn[3] :: [s,d] RegFile.RamCell_3.net_1, RegFile.RamCell_3.net_2
+NET "RegFile.RamCell.net_2" (index 64) 5 connections
+  p: (index 77) [g] RegFile.RamCell.net_2 :: [s,d] vdd, RegFile.RamCell.net_3
+  n: (index 76) [g] RegFile.RamCell.net_2 :: [s,d] gnd, RegFile.RamCell.net_3
+  n: (index 75) [g] WriteEn[0] :: [s,d] RegFile.RamCell.net_2, net_2
+  n: (index 72) [g] FBEn[0] :: [s,d] RegFile.RamCell.net_1, RegFile.RamCell.net_2
+  p: (index 71) [g] notFBEn[0] :: [s,d] RegFile.RamCell.net_1, RegFile.RamCell.net_2
+NET "D" (index 56) 1 connections
+  n: (index 57) [g] In1Select[1] :: [s,d] OpSel_1.net_1, D
+NET "RegFile.RamCell_2.net_1" (index 80) 6 connections
+  p: (index 97) [g] RegFile.RamCell_2.net_3 :: [s,d] vdd, RegFile.RamCell_2.net_1
+  n: (index 96) [g] RegFile.RamCell_2.net_3 :: [s,d] gnd, RegFile.RamCell_2.net_1
+  n: (index 92) [g] BRdEn[2] :: [s,d] net_1, RegFile.RamCell_2.net_1
+  n: (index 91) [g] ARdEn[2] :: [s,d] net_7, RegFile.RamCell_2.net_1
+  n: (index 90) [g] FBEn[2] :: [s,d] RegFile.RamCell_2.net_1, RegFile.RamCell_2.net_2
+  p: (index 89) [g] notFBEn[2] :: [s,d] RegFile.RamCell_2.net_1, RegFile.RamCell_2.net_2
+NET "RegFile.RamCell_2.net_2" (index 81) 5 connections
+  p: (index 95) [g] RegFile.RamCell_2.net_2 :: [s,d] vdd, RegFile.RamCell_2.net_3
+  n: (index 94) [g] RegFile.RamCell_2.net_2 :: [s,d] gnd, RegFile.RamCell_2.net_3
+  n: (index 93) [g] WriteEn[2] :: [s,d] RegFile.RamCell_2.net_2, net_2
+  n: (index 90) [g] FBEn[2] :: [s,d] RegFile.RamCell_2.net_1, RegFile.RamCell_2.net_2
+  p: (index 89) [g] notFBEn[2] :: [s,d] RegFile.RamCell_2.net_1, RegFile.RamCell_2.net_2
+4 NETS could not be matched, possibly because of other unmatched nets:
+NET "RegFile.RamCell_2.net_3" (index 86) 4 connections
+  p: (index 97) [g] RegFile.RamCell_2.net_3 :: [s,d] vdd, RegFile.RamCell_2.net_1
+  n: (index 96) [g] RegFile.RamCell_2.net_3 :: [s,d] gnd, RegFile.RamCell_2.net_1
+  p: (index 95) [g] RegFile.RamCell_2.net_2 :: [s,d] vdd, RegFile.RamCell_2.net_3
+  n: (index 94) [g] RegFile.RamCell_2.net_2 :: [s,d] gnd, RegFile.RamCell_2.net_3
+NET "RegFile.RamCell_3.net_3" (index 94) 4 connections
+  p: (index 106) [g] RegFile.RamCell_3.net_3 :: [s,d] vdd, RegFile.RamCell_3.net_1
+  n: (index 105) [g] RegFile.RamCell_3.net_3 :: [s,d] gnd, RegFile.RamCell_3.net_1
+  p: (index 104) [g] RegFile.RamCell_3.net_2 :: [s,d] vdd, RegFile.RamCell_3.net_3
+  n: (index 103) [g] RegFile.RamCell_3.net_2 :: [s,d] gnd, RegFile.RamCell_3.net_3
+NET "notFBEn[2]" (index 79) 1 connections
+  p: (index 89) [g] notFBEn[2] :: [s,d] RegFile.RamCell_2.net_1, RegFile.RamCell_2.net_2
+NET "notFBEn[3]" (index 87) 1 connections
+  p: (index 98) [g] notFBEn[3] :: [s,d] RegFile.RamCell_3.net_1, RegFile.RamCell_3.net_2
+10 DEVICES could not be matched, possibly because of other unmatched devices:
+DEVICE p:     connections: (index 89) [g] notFBEn[2] :: [s,d] RegFile.RamCell_2.net_1, RegFile.RamCell_2.net_2
+DEVICE p:     connections: (index 95) [g] RegFile.RamCell_2.net_2 :: [s,d] vdd, RegFile.RamCell_2.net_3
+DEVICE p:     connections: (index 97) [g] RegFile.RamCell_2.net_3 :: [s,d] vdd, RegFile.RamCell_2.net_1
+DEVICE p:     connections: (index 104) [g] RegFile.RamCell_3.net_2 :: [s,d] vdd, RegFile.RamCell_3.net_3
+DEVICE p:     connections: (index 106) [g] RegFile.RamCell_3.net_3 :: [s,d] vdd, RegFile.RamCell_3.net_1
+DEVICE p:     connections: (index 98) [g] notFBEn[3] :: [s,d] RegFile.RamCell_3.net_1, RegFile.RamCell_3.net_2
+DEVICE n:     connections: (index 94) [g] RegFile.RamCell_2.net_2 :: [s,d] gnd, RegFile.RamCell_2.net_3
+DEVICE n:     connections: (index 96) [g] RegFile.RamCell_2.net_3 :: [s,d] gnd, RegFile.RamCell_2.net_1
+DEVICE n:     connections: (index 103) [g] RegFile.RamCell_3.net_2 :: [s,d] gnd, RegFile.RamCell_3.net_3
+DEVICE n:     connections: (index 105) [g] RegFile.RamCell_3.net_3 :: [s,d] gnd, RegFile.RamCell_3.net_1
+8 devices and 9 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/OneBit_Slice.lvs.err.mag

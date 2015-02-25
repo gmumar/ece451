@@ -7,7 +7,7 @@
 = Ai Ai
 = Bi Bi
 = notFBEn[0] notFBEn[0]
-= RamCell_45/#fet!-contacts!all_0/d RamCell.net_1
+= RamCell_45/#fet_87/s RamCell.net_1
 = RamCell_45/#fet!-type!pfet!-width!2.0_0/s RamCell.net_2
 = RamCell_45/#fet_75/d RamCell.net_3
 = BRdEn[0] BRdEn[0]
@@ -15,7 +15,7 @@
 = FBEn[0] FBEn[0]
 = WriteEn[0] WriteEn[0]
 = notFBEn[1] notFBEn[1]
-= RamCell_2/#fet!-contacts!all_0/d RamCell_1.net_1
+= RamCell_2/#fet_87/s RamCell_1.net_1
 = RamCell_2/#fet!-type!pfet!-width!2.0_0/s RamCell_1.net_2
 = RamCell_2/#fet_75/d RamCell_1.net_3
 = BRdEn[1] BRdEn[1]
@@ -24,9 +24,9 @@
 = WriteEn[1] WriteEn[1]
 = FBEn[3] FBEn[3]
 = FBEn[2] FBEn[2]
-= RamCell_27/#fet!-contacts!all_0/d RamCell_3.net_1
+= RamCell_27/#fet_87/s RamCell_3.net_1
 = RamCell_27/#fet!-type!pfet!-width!2.0_0/s RamCell_3.net_2
-= RamCell_4/#fet!-contacts!all_0/d RamCell_2.net_1
+= RamCell_4/#fet_87/s RamCell_2.net_1
 = RamCell_4/#fet!-type!pfet!-width!2.0_0/s RamCell_2.net_2
 = RamCell_27/#fet_75/d RamCell_3.net_3
 = BRdEn[3] BRdEn[3]
