@@ -16,6 +16,7 @@ proc SCHEMATIC_ALU {} {
   make input -orient R90 -name {M[3:0]} -origin {490 650}
   make TFunc -origin {1300 550}
   make Carry -origin {900 530}
+  make output -name notCi -origin {1120 750}
   make_wire 400 430 270 430
   make_wire 400 410 180 410
   make_wire 490 290 490 310
@@ -43,8 +44,6 @@ proc SCHEMATIC_ALU {} {
   make_wire 1090 490 1030 490
   make_wire 1090 570 1200 570
   make_wire 1090 490 1090 570
-  make_wire 1200 530 1120 530
-  make_wire 1120 530 1120 510
   make_wire 1120 510 1030 510
   make_wire 1040 590 1160 590
   make_wire 1160 510 1160 590
@@ -59,8 +58,14 @@ proc SCHEMATIC_ALU {} {
   make_wire 580 410 620 410
   make_wire 700 510 770 510
   make_wire 700 390 700 510
-  make_wire 650 530 770 530
   make_wire 650 530 650 400
+  make_wire 1120 510 1120 750
+  make_wire 730 530 730 410
+  make_wire 730 410 1150 410
+  make_wire 1150 410 1150 530
+  make_wire 1150 530 1200 530
+  make_wire 730 530 650 530
+  make_wire 730 530 770 530
 }
 
 proc ICON_ALU args {
@@ -75,6 +80,7 @@ proc ICON_ALU args {
   icon_term -type input -origin {0 -110} -orient R90 -name notCi_1
   icon_term -type input -origin {20 -110} -orient R90 -name Phi2
   icon_term -type input -origin {40 -110} -orient R90 -name {N[3:0]}
+  icon_term -type output -origin {0 0} -name notCi
   icon_property -origin {0 0} -size large -anchor center -label ALU
   icon_line -90 -110 90 -110 90 110 -90 110 -90 -110
   icon_property -origin {-80 -40} -label Ri

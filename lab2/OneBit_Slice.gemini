@@ -7,14 +7,13 @@ Graph "OneBit_Slice_lay.sim": unit scale = 1, format = UCB
 Graph "./OneBit_Slice.sim": unit scale = 1, format = MIT
 format = NULL (assume MIT)
 format = NULL (assume MIT)
-format = NULL (assume MIT)
 	Number of devices: 115
 	Number of nets: 101
 
 These circuits contain some symmetry (37% nodes not yet matched).
 Gemini will attempt to find a valid match for symmetrical nodes.
-M##M#M#M##
+M##M##M##
 100 entries written to the dictionary file.
 180 (83%) matches were found by local matching
-All nodes were matched in 51 passes
-0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/OneBit_Slice.lvs.err.mag
+All nodes were matched in 53 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab2/OneBit_Slice.lvs.err.mag
