@@ -242,65 +242,41 @@ p Phi2 vdd ALU.net_1 24 100
 p Phi1 vdd net_7 24 100
 | device RegFile.pmos_1 -10 90
 p Phi1 vdd net_1 24 100
-| begin RegFile.RamCell 300 420
-| device RegFile.RamCell.pmos 470 290
-p notFBEn[0] RegFile.RamCell.net_1 RegFile.RamCell.net_2 24 200
-| device RegFile.RamCell.nmos 470 330
-n FBEn[0] RegFile.RamCell.net_1 RegFile.RamCell.net_2 24 100
-| device RegFile.RamCell.nmos_1 740 360
-n ARdEn[0] net_7 RegFile.RamCell.net_1 24 100
-| device RegFile.RamCell.nmos_2 810 460
-n BRdEn[0] net_1 RegFile.RamCell.net_1 24 100
-| device RegFile.RamCell.nmos_3 340 460
-n WriteEn[0] RegFile.RamCell.net_2 net_2 24 100
-| begin RegFile.RamCell.inverter 490 460
-| device RegFile.RamCell.inverter.nmos 550 360
-n RegFile.RamCell.net_2 gnd RegFile.RamCell.net_3 24 100
-| device RegFile.RamCell.inverter.pmos 550 200
-p RegFile.RamCell.net_2 vdd RegFile.RamCell.net_3 24 200
-| end RegFile.RamCell.inverter
-| begin RegFile.RamCell.inverter_1 610 460
-| device RegFile.RamCell.inverter_1.nmos 550 360
-n RegFile.RamCell.net_3 gnd RegFile.RamCell.net_1 24 100
-| device RegFile.RamCell.inverter_1.pmos 550 200
-p RegFile.RamCell.net_3 vdd RegFile.RamCell.net_1 24 200
-| end RegFile.RamCell.inverter_1
-| end RegFile.RamCell
-| begin RegFile.RamCell_1 670 420
-| device RegFile.RamCell_1.pmos 470 290
-p notFBEn[1] RegFile.RamCell_1.net_1 RegFile.RamCell_1.net_2 24 200
-| device RegFile.RamCell_1.nmos 470 330
-n FBEn[1] RegFile.RamCell_1.net_1 RegFile.RamCell_1.net_2 24 100
-| device RegFile.RamCell_1.nmos_1 740 360
-n ARdEn[1] net_7 RegFile.RamCell_1.net_1 24 100
-| device RegFile.RamCell_1.nmos_2 810 460
-n BRdEn[1] net_1 RegFile.RamCell_1.net_1 24 100
-| device RegFile.RamCell_1.nmos_3 340 460
-n WriteEn[1] RegFile.RamCell_1.net_2 net_2 24 100
-| begin RegFile.RamCell_1.inverter 490 460
-| device RegFile.RamCell_1.inverter.nmos 550 360
-n RegFile.RamCell_1.net_2 gnd RegFile.RamCell_1.net_3 24 100
-| device RegFile.RamCell_1.inverter.pmos 550 200
-p RegFile.RamCell_1.net_2 vdd RegFile.RamCell_1.net_3 24 200
-| end RegFile.RamCell_1.inverter
-| begin RegFile.RamCell_1.inverter_1 610 460
-| device RegFile.RamCell_1.inverter_1.nmos 550 360
-n RegFile.RamCell_1.net_3 gnd RegFile.RamCell_1.net_1 24 100
-| device RegFile.RamCell_1.inverter_1.pmos 550 200
-p RegFile.RamCell_1.net_3 vdd RegFile.RamCell_1.net_1 24 200
-| end RegFile.RamCell_1.inverter_1
-| end RegFile.RamCell_1
-| begin RegFile.RamCell_2 1030 420
+| begin RegFile.RamCell_45 300 420
+| device RegFile.RamCell_45.pmos 470 290
+p notFBEn[0] RegFile.RamCell_45.net_1 RegFile.RamCell_45.net_2 24 200
+| device RegFile.RamCell_45.nmos 470 330
+n FBEn[0] RegFile.RamCell_45.net_1 RegFile.RamCell_45.net_2 24 100
+| device RegFile.RamCell_45.nmos_1 740 360
+n ARdEn[0] net_7 RegFile.RamCell_45.net_1 24 100
+| device RegFile.RamCell_45.nmos_2 810 460
+n BRdEn[0] net_1 RegFile.RamCell_45.net_1 24 100
+| device RegFile.RamCell_45.nmos_3 340 460
+n WriteEn[0] RegFile.RamCell_45.net_2 net_2 24 100
+| begin RegFile.RamCell_45.inverter 490 460
+| device RegFile.RamCell_45.inverter.nmos 550 360
+n RegFile.RamCell_45.net_2 gnd RegFile.RamCell_45.net_3 24 100
+| device RegFile.RamCell_45.inverter.pmos 550 200
+p RegFile.RamCell_45.net_2 vdd RegFile.RamCell_45.net_3 24 200
+| end RegFile.RamCell_45.inverter
+| begin RegFile.RamCell_45.inverter_1 610 460
+| device RegFile.RamCell_45.inverter_1.nmos 550 360
+n RegFile.RamCell_45.net_3 gnd RegFile.RamCell_45.net_1 24 100
+| device RegFile.RamCell_45.inverter_1.pmos 550 200
+p RegFile.RamCell_45.net_3 vdd RegFile.RamCell_45.net_1 24 200
+| end RegFile.RamCell_45.inverter_1
+| end RegFile.RamCell_45
+| begin RegFile.RamCell_2 670 420
 | device RegFile.RamCell_2.pmos 470 290
-p notFBEn[2] RegFile.RamCell_2.net_1 RegFile.RamCell_2.net_2 24 200
+p notFBEn[1] RegFile.RamCell_2.net_1 RegFile.RamCell_2.net_2 24 200
 | device RegFile.RamCell_2.nmos 470 330
-n FBEn[2] RegFile.RamCell_2.net_1 RegFile.RamCell_2.net_2 24 100
+n FBEn[1] RegFile.RamCell_2.net_1 RegFile.RamCell_2.net_2 24 100
 | device RegFile.RamCell_2.nmos_1 740 360
-n ARdEn[2] net_7 RegFile.RamCell_2.net_1 24 100
+n ARdEn[1] net_7 RegFile.RamCell_2.net_1 24 100
 | device RegFile.RamCell_2.nmos_2 810 460
-n BRdEn[2] net_1 RegFile.RamCell_2.net_1 24 100
+n BRdEn[1] net_1 RegFile.RamCell_2.net_1 24 100
 | device RegFile.RamCell_2.nmos_3 340 460
-n WriteEn[2] RegFile.RamCell_2.net_2 net_2 24 100
+n WriteEn[1] RegFile.RamCell_2.net_2 net_2 24 100
 | begin RegFile.RamCell_2.inverter 490 460
 | device RegFile.RamCell_2.inverter.nmos 550 360
 n RegFile.RamCell_2.net_2 gnd RegFile.RamCell_2.net_3 24 100
@@ -314,28 +290,52 @@ n RegFile.RamCell_2.net_3 gnd RegFile.RamCell_2.net_1 24 100
 p RegFile.RamCell_2.net_3 vdd RegFile.RamCell_2.net_1 24 200
 | end RegFile.RamCell_2.inverter_1
 | end RegFile.RamCell_2
-| begin RegFile.RamCell_3 1370 420
-| device RegFile.RamCell_3.pmos 470 290
-p notFBEn[3] RegFile.RamCell_3.net_1 RegFile.RamCell_3.net_2 24 200
-| device RegFile.RamCell_3.nmos 470 330
-n FBEn[3] RegFile.RamCell_3.net_1 RegFile.RamCell_3.net_2 24 100
-| device RegFile.RamCell_3.nmos_1 740 360
-n ARdEn[3] net_7 RegFile.RamCell_3.net_1 24 100
-| device RegFile.RamCell_3.nmos_2 810 460
-n BRdEn[3] net_1 RegFile.RamCell_3.net_1 24 100
-| device RegFile.RamCell_3.nmos_3 340 460
-n WriteEn[3] RegFile.RamCell_3.net_2 net_2 24 100
-| begin RegFile.RamCell_3.inverter 490 460
-| device RegFile.RamCell_3.inverter.nmos 550 360
-n RegFile.RamCell_3.net_2 gnd RegFile.RamCell_3.net_3 24 100
-| device RegFile.RamCell_3.inverter.pmos 550 200
-p RegFile.RamCell_3.net_2 vdd RegFile.RamCell_3.net_3 24 200
-| end RegFile.RamCell_3.inverter
-| begin RegFile.RamCell_3.inverter_1 610 460
-| device RegFile.RamCell_3.inverter_1.nmos 550 360
-n RegFile.RamCell_3.net_3 gnd RegFile.RamCell_3.net_1 24 100
-| device RegFile.RamCell_3.inverter_1.pmos 550 200
-p RegFile.RamCell_3.net_3 vdd RegFile.RamCell_3.net_1 24 200
-| end RegFile.RamCell_3.inverter_1
-| end RegFile.RamCell_3
+| begin RegFile.RamCell_4 1030 420
+| device RegFile.RamCell_4.pmos 470 290
+p notFBEn[2] RegFile.RamCell_4.net_1 RegFile.RamCell_4.net_2 24 200
+| device RegFile.RamCell_4.nmos 470 330
+n FBEn[2] RegFile.RamCell_4.net_1 RegFile.RamCell_4.net_2 24 100
+| device RegFile.RamCell_4.nmos_1 740 360
+n ARdEn[2] net_7 RegFile.RamCell_4.net_1 24 100
+| device RegFile.RamCell_4.nmos_2 810 460
+n BRdEn[2] net_1 RegFile.RamCell_4.net_1 24 100
+| device RegFile.RamCell_4.nmos_3 340 460
+n WriteEn[2] RegFile.RamCell_4.net_2 net_2 24 100
+| begin RegFile.RamCell_4.inverter 490 460
+| device RegFile.RamCell_4.inverter.nmos 550 360
+n RegFile.RamCell_4.net_2 gnd RegFile.RamCell_4.net_3 24 100
+| device RegFile.RamCell_4.inverter.pmos 550 200
+p RegFile.RamCell_4.net_2 vdd RegFile.RamCell_4.net_3 24 200
+| end RegFile.RamCell_4.inverter
+| begin RegFile.RamCell_4.inverter_1 610 460
+| device RegFile.RamCell_4.inverter_1.nmos 550 360
+n RegFile.RamCell_4.net_3 gnd RegFile.RamCell_4.net_1 24 100
+| device RegFile.RamCell_4.inverter_1.pmos 550 200
+p RegFile.RamCell_4.net_3 vdd RegFile.RamCell_4.net_1 24 200
+| end RegFile.RamCell_4.inverter_1
+| end RegFile.RamCell_4
+| begin RegFile.RamCell_27 1370 420
+| device RegFile.RamCell_27.pmos 470 290
+p notFBEn[3] RegFile.RamCell_27.net_1 RegFile.RamCell_27.net_2 24 200
+| device RegFile.RamCell_27.nmos 470 330
+n FBEn[3] RegFile.RamCell_27.net_1 RegFile.RamCell_27.net_2 24 100
+| device RegFile.RamCell_27.nmos_1 740 360
+n ARdEn[3] net_7 RegFile.RamCell_27.net_1 24 100
+| device RegFile.RamCell_27.nmos_2 810 460
+n BRdEn[3] net_1 RegFile.RamCell_27.net_1 24 100
+| device RegFile.RamCell_27.nmos_3 340 460
+n WriteEn[3] RegFile.RamCell_27.net_2 net_2 24 100
+| begin RegFile.RamCell_27.inverter 490 460
+| device RegFile.RamCell_27.inverter.nmos 550 360
+n RegFile.RamCell_27.net_2 gnd RegFile.RamCell_27.net_3 24 100
+| device RegFile.RamCell_27.inverter.pmos 550 200
+p RegFile.RamCell_27.net_2 vdd RegFile.RamCell_27.net_3 24 200
+| end RegFile.RamCell_27.inverter
+| begin RegFile.RamCell_27.inverter_1 610 460
+| device RegFile.RamCell_27.inverter_1.nmos 550 360
+n RegFile.RamCell_27.net_3 gnd RegFile.RamCell_27.net_1 24 100
+| device RegFile.RamCell_27.inverter_1.pmos 550 200
+p RegFile.RamCell_27.net_3 vdd RegFile.RamCell_27.net_1 24 200
+| end RegFile.RamCell_27.inverter_1
+| end RegFile.RamCell_27
 | end RegFile

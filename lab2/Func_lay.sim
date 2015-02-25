@@ -1,12 +1,12 @@
 | units: 1.0  tech: mmi25  format: UCB
-A R input
-A S input
-A notR input
-A notS input
 A X[3] input
 A X[2] input
 A X[1] input
 A X[0] input
+A notS input
+A notR input
+A R input
+A S input
 A Y output
 n notS ndif_8910_13330# X[0] 24 200 891 1383
 n notR Y ndif_8910_13330# 24 200 891 1309

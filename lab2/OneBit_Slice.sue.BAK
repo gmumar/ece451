@@ -29,17 +29,16 @@ proc SCHEMATIC_OneBit_Slice {} {
   make inout -name SR -origin {-270 410}
   make OpSel -origin {400 310}
   make OpSel -origin {400 520}
-  make RegFile -origin {-30 390}
   make Shifter -origin {-490 410}
-  make ALU -origin {790 380}
   make input -orient R90 -name notCi_1 -origin {790 260}
   make output -name notCi -origin {890 380}
+  make ALU -origin {790 380}
+  make RegFile -origin {-30 390}
   make_wire 580 520 550 520
   make_wire -700 90 -700 410
   make_wire -700 410 -630 410
   make_wire -630 430 -650 430
   make_wire -490 520 -490 540
-  make_wire -350 410 -270 410
   make_wire -350 370 -330 370
   make_wire 660 310 660 360
   make_wire 550 500 640 500
@@ -75,6 +74,7 @@ proc SCHEMATIC_OneBit_Slice {} {
   make_wire 650 290 650 380
   make_wire 650 380 690 380
   make_wire 790 260 790 270
+  make_wire -350 410 -270 410
 }
 
 proc ICON_OneBit_Slice args {
