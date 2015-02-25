@@ -1,0 +1,165 @@
+| units: 1.0  tech: mmi25  format: UCB
+A M[3] input
+A M[2] input
+A M[1] input
+A M[0] input
+A Phi2 input
+A notCi_1 input
+A N[3] input
+A N[2] input
+A N[1] input
+A N[0] input
+A L[0] input
+A L[1] input
+A L[2] input
+A L[3] input
+A In2Select[0] input
+A In1Select[0] input
+A notPhi1 input
+A Phi1 input
+A In1Select[1] input
+A In2Select[1] input
+A D input
+A RAMINi input
+A notFBEn[1] input
+A FBEn[1] input
+A WriteEn[1] input
+A notFBEn[2] input
+A FBEn[2] input
+A WriteEn[2] input
+A BRdEn[2] input
+A ARdEn[2] input
+A notFBEn[3] input
+A FBEn[3] input
+A WriteEn[3] input
+A BRdEn[3] input
+A ARdEn[3] input
+A ARdEn[0] input
+A BRdEn[0] input
+A WriteEn[0] input
+A FBEn[0] input
+A notFBEn[0] input
+A ARdEn[1] input
+A BRdEn[1] input
+A shl input
+A shr input
+A notshl input
+A notshr input
+A notCi output
+A SL inout
+A SR inout
+p notshr SL RAMINi 24 200 -13089 4261
+p Phi1 OpSel_74/In1_1 vdd 24 100 -11967 4260
+p Phi1 vdd RegFile_79/Bi 24 100 -11869 4260
+p ALU_91/Ri ALU_91/notR vdd 24 200 -3968 4278
+p OpSel_75/#fet_55/s vdd OpSel_75/#fet!-type!pfet!-width!2.0_0/s 24 200 -3870 4278
+p notPhi1 OpSel_75/#fet!-type!pfet!-width!2.0_0/s OpSel_75/#fet!-type!pfet!-width!2.0_0/d 24 200 -3674 4276
+p OpSel_75/#fet!-type!pfet!-width!2.0_0/d ALU_91/Ri vdd 24 200 -3475 4277
+p ALU_91/Si ALU_91/notS vdd 24 200 -2102 4278
+p OpSel_74/#fet_55/s vdd OpSel_74/#fet!-type!pfet!-width!2.0_0/s 24 200 -2004 4278
+p notPhi1 OpSel_74/#fet!-type!pfet!-width!2.0_0/s OpSel_74/#fet!-type!pfet!-width!2.0_0/d 24 200 -1808 4276
+p OpSel_74/#fet!-type!pfet!-width!2.0_0/d ALU_91/Si vdd 24 200 -1609 4277
+p Phi2 ALU_91/Func_83/Y vdd 24 100 2064 4413
+p Phi2 vdd ALU_91/Func_82/Y 24 100 2162 4413
+p Phi2 vdd notCi 24 100 2368 4414
+p ALU_91/TFunc_95/S pdif_30680_43060# N[0] 24 400 3068 4356
+p ALU_91/TFunc_95/R ALU_91/TFunc_95/Y pdif_30680_43060# 24 400 3068 4282
+p notshl Shifter_87/F SL 24 200 -13089 4163
+p Phi1 vdd OpSel_75/#fet_55/s 24 100 -4507 4135
+p Phi1 vdd OpSel_74/#fet_55/s 24 100 -2641 4135
+p ALU_91/Func_83/Y ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 2062 4061
+p notCi_1 vdd ALU_91/TFunc_95/R 24 200 2160 4061
+p ALU_91/Func_82/Y vdd ALU_91/TFunc_95/S 24 200 2361 4062
+p ALU_91/TFunc_95/R pdif_30680_41340# ALU_91/TFunc_95/Y 24 400 3068 4184
+p ALU_91/Func_82/Y N[1] pdif_30680_41340# 24 400 3068 4110
+p shr SR RAMINi 24 200 -13086 3928
+p RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s vdd RegFile_79/RamCell_45/#fet_75/d 24 200 -10738 3912
+p RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s vdd RegFile_79/RamCell_2/#fet_75/d 24 200 -9159 3912
+p RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s vdd RegFile_79/RamCell_4/#fet_75/d 24 200 -7581 3912
+p RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s vdd RegFile_79/RamCell_27/#fet_75/d 24 200 -6002 3912
+p notCi_1 pdif_30680_38640# N[2] 24 400 3068 3914
+p shl Shifter_87/F SR 24 200 -13086 3830
+p ALU_91/TFunc_95/S ALU_91/TFunc_95/Y pdif_30680_38640# 24 400 3068 3840
+p RegFile_79/RamCell_45/#fet_75/d RegFile_79/RamCell1 vdd 24 200 -10738 3814
+p RegFile_79/RamCell_2/#fet_75/d RegFile_79/RamCell2 vdd 24 200 -9159 3814
+p RegFile_79/RamCell_4/#fet_75/d RegFile_79/RamCell3 vdd 24 200 -7581 3814
+p RegFile_79/RamCell_27/#fet_75/d RegFile_79/RamCell4 vdd 24 200 -6002 3814
+p notCi_1 pdif_30680_36920# ALU_91/TFunc_95/Y 24 400 3068 3742
+p notFBEn[0] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell1 24 200 -10738 3716
+p notFBEn[1] RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell2 24 200 -9159 3716
+p notFBEn[2] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell3 24 200 -7581 3716
+p notFBEn[3] RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell4 24 200 -6002 3716
+p ALU_91/Func_82/Y N[3] pdif_30680_36920# 24 400 3068 3668
+p ALU_91/TFunc_95/Y Shifter_87/F vdd 24 200 4862 3450
+n ALU_91/notS ndif_n5370_43070# M[0] 24 200 -537 4357
+n ALU_91/notS ndif_8050_43070# L[0] 24 200 805 4357
+n ALU_91/Func_82/Y ndif_40970_43060# N[0] 24 200 4097 4356
+n notshr SR RAMINi 24 100 -12685 4261
+n ALU_91/notR ALU_91/Func_82/Y ndif_n5370_43070# 24 200 -537 4283
+n ALU_91/notR ALU_91/Func_83/Y ndif_8050_43070# 24 200 805 4283
+n notCi_1 ALU_91/TFunc_95/Y ndif_40970_43060# 24 200 4097 4282
+n notshl Shifter_87/F SR 24 100 -12685 4163
+n ALU_91/Si ndif_n5370_41350# ALU_91/Func_82/Y 24 200 -537 4185
+n ALU_91/Si ndif_8050_41350# ALU_91/Func_83/Y 24 200 805 4185
+n ALU_91/TFunc_95/S ndif_40970_41340# ALU_91/TFunc_95/Y 24 200 4097 4184
+n ARdEn[0] RegFile_79/RamCell1 OpSel_74/In1_1 24 100 -11007 4148
+n ARdEn[1] RegFile_79/RamCell2 OpSel_74/In1_1 24 100 -9428 4148
+n ARdEn[2] RegFile_79/RamCell3 OpSel_74/In1_1 24 100 -7850 4148
+n ARdEn[3] RegFile_79/RamCell4 OpSel_74/In1_1 24 100 -6271 4148
+n ALU_91/notR M[1] ndif_n5370_41350# 24 200 -537 4111
+n ALU_91/notR L[1] ndif_8050_41350# 24 200 805 4111
+n notCi_1 N[1] ndif_40970_41340# 24 200 4097 4110
+n BRdEn[0] RegFile_79/Bi RegFile_79/RamCell1 24 100 -11007 4050
+n BRdEn[1] RegFile_79/Bi RegFile_79/RamCell2 24 100 -9428 4050
+n BRdEn[2] RegFile_79/Bi RegFile_79/RamCell3 24 100 -7850 4050
+n BRdEn[3] RegFile_79/Bi RegFile_79/RamCell4 24 100 -6271 4050
+n shr SL RAMINi 24 100 -12669 3928
+n RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s gnd RegFile_79/RamCell_45/#fet_75/d 24 100 -10399 3912
+n RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s gnd RegFile_79/RamCell_2/#fet_75/d 24 100 -8820 3912
+n RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s gnd RegFile_79/RamCell_4/#fet_75/d 24 100 -7242 3912
+n RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s gnd RegFile_79/RamCell_27/#fet_75/d 24 100 -5663 3912
+n shl Shifter_87/F SL 24 100 -12669 3830
+n FBEn[0] RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell1 24 100 -11010 3845
+n FBEn[1] RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell2 24 100 -9431 3845
+n FBEn[2] RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell3 24 100 -7853 3845
+n FBEn[3] RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s RegFile_79/RamCell4 24 100 -6274 3845
+n In1Select[1] D OpSel_75/#fet_55/s 24 100 -4523 3861
+n RegFile_79/RamCell_45/#fet_75/d RegFile_79/RamCell1 gnd 24 100 -10399 3814
+n RegFile_79/RamCell_2/#fet_75/d RegFile_79/RamCell2 gnd 24 100 -8820 3814
+n RegFile_79/RamCell_4/#fet_75/d RegFile_79/RamCell3 gnd 24 100 -7242 3814
+n RegFile_79/RamCell_27/#fet_75/d RegFile_79/RamCell4 gnd 24 100 -5663 3814
+n WriteEn[0] RAMINi RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s 24 100 -11010 3747
+n WriteEn[1] RAMINi RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s 24 100 -9431 3747
+n WriteEn[2] RAMINi RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s 24 100 -7853 3747
+n WriteEn[3] RAMINi RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s 24 100 -6274 3747
+n In2Select[1] OpSel_75/#fet_55/s ndif_n43030_37610# 24 200 -4327 3761
+n Phi1 ndif_n43030_37610# RegFile_79/Bi 24 200 -4253 3761
+n ALU_91/Ri ALU_91/notR gnd 24 100 -3968 3831
+n OpSel_75/#fet_55/s gnd OpSel_75/#fet!-type!pfet!-width!2.0_0/s 24 100 -3870 3831
+n Phi1 OpSel_75/#fet!-type!pfet!-width!2.0_0/s OpSel_75/#fet!-type!pfet!-width!2.0_0/d 24 100 -3671 3826
+n OpSel_75/#fet!-type!pfet!-width!2.0_0/d ALU_91/Ri gnd 24 100 -3475 3831
+n In1Select[0] gnd OpSel_74/#fet_55/s 24 100 -2657 3861
+n In2Select[0] OpSel_74/#fet_55/s ndif_n24370_37610# 24 200 -2461 3761
+n Phi1 ndif_n24370_37610# OpSel_74/In1_1 24 200 -2387 3761
+n ALU_91/Si ALU_91/notS gnd 24 100 -2102 3831
+n OpSel_74/#fet_55/s gnd OpSel_74/#fet!-type!pfet!-width!2.0_0/s 24 100 -2004 3831
+n Phi1 OpSel_74/#fet!-type!pfet!-width!2.0_0/s OpSel_74/#fet!-type!pfet!-width!2.0_0/d 24 100 -1805 3826
+n OpSel_74/#fet!-type!pfet!-width!2.0_0/d ALU_91/Si gnd 24 100 -1609 3831
+n ALU_91/notS ndif_n5370_38650# M[2] 24 200 -537 3915
+n ALU_91/notS ndif_8050_38650# L[2] 24 200 805 3915
+n ALU_91/Func_82/Y ndif_40970_38640# N[2] 24 200 4097 3914
+n ALU_91/Ri ALU_91/Func_82/Y ndif_n5370_38650# 24 200 -537 3841
+n ALU_91/Ri ALU_91/Func_83/Y ndif_8050_38650# 24 200 805 3841
+n ALU_91/Func_83/Y ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 2062 3802
+n notCi_1 gnd ALU_91/TFunc_95/R 24 100 2160 3802
+n ALU_91/Func_82/Y ALU_91/TFunc_95/S gnd 24 100 2361 3804
+n ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd notCi 24 100 2459 3804
+n ALU_91/TFunc_95/S notCi notCi_1 24 100 2557 3804
+n ALU_91/TFunc_95/R ALU_91/TFunc_95/Y ndif_40970_38640# 24 200 4097 3840
+n ALU_91/Ri ndif_n5370_36930# ALU_91/Func_82/Y 24 200 -537 3743
+n ALU_91/Ri ndif_8050_36930# ALU_91/Func_83/Y 24 200 805 3743
+n ALU_91/TFunc_95/R ndif_40970_36920# ALU_91/TFunc_95/Y 24 200 4097 3742
+n ALU_91/Si M[3] ndif_n5370_36930# 24 200 -537 3669
+n ALU_91/Si L[3] ndif_8050_36930# 24 200 805 3669
+n ALU_91/TFunc_95/S N[3] ndif_40970_36920# 24 200 4097 3668
+n ALU_91/TFunc_95/Y Shifter_87/F gnd 24 100 4862 3227
