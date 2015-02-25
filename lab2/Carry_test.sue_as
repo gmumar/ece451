@@ -1,32 +1,40 @@
 # SUE version MMI_SUE5.5.4 (auto-save)
 
 proc SCHEMATIC_Carry_test {} {
-  make global -name gnd -origin {260 50}
-  make global -name gnd -origin {330 130}
-  make pwl_source -name ci -edges 600ns -origin {330 50}
-  make output -name notCi -origin {770 0}
+  make global -name gnd -origin {210 50}
+  make global -name gnd -origin {290 130}
+  make pwl_source -name ci -edges 600ns -origin {290 50}
+  make output -name notCi -origin {780 -20}
   make global -name gnd -origin {400 260}
   make pwl_source -name notci -edges {200ns 600ns 800ns} -origin {400 130}
-  make output -name P -origin {770 20}
-  make global -name gnd -origin {470 350}
-  make output -name Ci_1 -origin {770 -20}
+  make output -name P -origin {780 0}
+  make global -name gnd -origin {490 350}
+  make output -name Ci_1 -origin {780 -40}
   make Carry -origin {620 0}
-  make pwl_source -name clk -initial_voltage vddp -pulse_voltage 0 -edges {100ns 200ns 300ns 400ns 500ns 600ns 700ns 800ns 900ns 1000ns 1100ns 1200ns 1300ns 1400ns} -origin {260 10}
-  make pwl_source -name bla -initial_voltage vddp -pulse_voltage 0 -edges {200ns 400ns 800ns 1000ns} -origin {470 210}
-  make_wire 260 -40 260 -30
-  make_wire 260 -40 490 -40
-  make_wire 330 90 330 130
+  make pwl_source -name clk -initial_voltage vddp -pulse_voltage 0 -edges {200ns 400ns 600ns 800ns 1000ns 1200ns 1400ns} -origin {210 10}
+  make pwl_source -name bla -initial_voltage vddp -pulse_voltage 0 -edges {200ns 400ns 800ns 1000ns} -origin {490 220}
   make_wire 400 170 400 260
-  make_wire 470 250 470 350
-  make_wire 330 -20 330 10
   make_wire 400 0 400 90
-  make_wire 470 20 470 170
-  make_wire 330 -20 490 -20
-  make_wire 400 0 490 0
-  make_wire 490 20 470 20
-  make_wire 750 -20 770 -20
-  make_wire 750 0 770 0
-  make_wire 750 20 770 20
+  make_wire 780 0 750 0
+  make_wire 750 -20 780 -20
+  make_wire 750 -40 780 -40
+  make_wire 210 -40 210 -30
+  make_wire 290 90 290 130
+  make_wire 290 -20 290 10
+  make_wire 490 260 490 350
+  make_wire 210 -40 470 -40
+  make_wire 470 -40 470 -20
+  make_wire 470 -20 490 -20
+  make_wire 290 -20 460 -20
+  make_wire 460 -20 460 0
+  make_wire 460 0 490 0
+  make_wire 400 0 440 0
+  make_wire 440 0 440 20
+  make_wire 440 20 490 20
+  make_wire 490 180 490 90
+  make_wire 490 90 790 90
+  make_wire 790 90 790 20
+  make_wire 790 20 750 20
 }
 
 proc ICON_Carry_test args {

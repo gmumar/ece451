@@ -54,26 +54,26 @@ m_2 out in vdd vdd p w=2e-06 l=2.5e-07 ad=1.9e-12 as=1.9e-12
 xinverter notci_1 ci_1 vdd gnd inverter
 xinverter_1 notp p vdd gnd inverter
 xinverter_2 notg net_1 vdd gnd inverter
-m_1 notci phi vdd vdd p w=2e-06 l=2.5e-07 ad=1.9e-12 as=1.9e-12 
-+ pd=5.9e-06 ps=5.9e-06
-m_2 notp phi vdd vdd p w=2e-06 l=2.5e-07 ad=1.9e-12 as=1.9e-12 
-+ pd=5.9e-06 ps=5.9e-06
-m_3 notg phi vdd vdd p w=2e-06 l=2.5e-07 ad=1.9e-12 as=1.9e-12 
-+ pd=5.9e-06 ps=5.9e-06
-m_4 notci_1 p notci gnd n w=1e-06 l=2.5e-07 ad=9.5e-13 as=9.5e-13 
+m_1 notci_1 p notci gnd n w=1e-06 l=2.5e-07 ad=9.5e-13 as=9.5e-13 
 + pd=3.9e-06 ps=3.9e-06
-m_5 notci net_1 gnd gnd n w=1e-06 l=2.5e-07 ad=9.5e-13 as=9.5e-13 
+m_2 notci net_1 gnd gnd n w=1e-06 l=2.5e-07 ad=9.5e-13 as=9.5e-13 
++ pd=3.9e-06 ps=3.9e-06
+m_3 notci phi vdd vdd p w=1e-06 l=2.5e-07 ad=9.5e-13 as=9.5e-13 
++ pd=3.9e-06 ps=3.9e-06
+m_4 notp phi vdd vdd p w=1e-06 l=2.5e-07 ad=9.5e-13 as=9.5e-13 
++ pd=3.9e-06 ps=3.9e-06
+m_5 notg phi vdd vdd p w=1e-06 l=2.5e-07 ad=9.5e-13 as=9.5e-13 
 + pd=3.9e-06 ps=3.9e-06
 .ends
-vci net_4 gnd pwl ( 0 0 599.9n 0 600.1n 2.5 )
-vnotci net_2 gnd pwl ( 0 0 199.9n 0 200.1n 2.5 599.9n 2.5 600.1n 0 
+xcarry ci_1 p net_4 notci net_3 net_1 net_2 vdd gnd carry
+vnotg net_1 gnd pwl ( 0 2.5 199.9n 2.5 200.1n 0 399.9n 0 400.1n 2.5 
++ 799.9n 2.5 800.1n 0 999.9n 0 1.0001u 2.5 )
+vnotp net_2 gnd pwl ( 0 0 199.9n 0 200.1n 2.5 599.9n 2.5 600.1n 0 
 + 799.9n 0 800.1n 2.5 )
-xcarry ci_1 p net_3 notci net_4 net_1 net_2 vdd gnd carry
-vclk net_3 gnd pwl ( 0 2.5 99.9n 2.5 100.1n 0 199.9n 0 200.1n 2.5 
+vnotci_1 net_3 gnd pwl ( 0 0 599.9n 0 600.1n 2.5 )
+vclk net_4 gnd pwl ( 0 2.5 99.9n 2.5 100.1n 0 199.9n 0 200.1n 2.5 
 + 299.9n 2.5 300.1n 0 399.9n 0 400.1n 2.5 499.9n 2.5 500.1n 0 599.9n 
 + 0 600.1n 2.5 699.9n 2.5 700.1n 0 799.9n 0 800.1n 2.5 899.9n 2.5 
 + 900.1n 0 999.9n 0 1.0001u 2.5 1.0999u 2.5 1.1001u 0 1.1999u 0 
 + 1.2001u 2.5 1.2999u 2.5 1.3001u 0 1.3999u 0 1.4001u 2.5 )
-vbla net_1 gnd pwl ( 0 2.5 199.9n 2.5 200.1n 0 399.9n 0 400.1n 2.5 
-+ 799.9n 2.5 800.1n 0 999.9n 0 1.0001u 2.5 )
 .end

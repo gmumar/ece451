@@ -54,20 +54,17 @@ proc SCHEMATIC_Carry {} {
 
 proc ICON_Carry args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
-  icon_term -type input -origin {-130 -40} -name Phi
-  icon_term -type input -origin {-130 -20} -name notCi_1
-  icon_term -type input -origin {-130 0} -name notP
+  icon_term -type input -origin {-130 -20} -name Phi
+  icon_term -type input -origin {-130 0} -name notCi_1
   icon_term -type input -origin {-130 20} -name notG
   icon_term -type output -origin {130 -40} -name Ci_1
   icon_term -type output -origin {130 -20} -name notCi
   icon_term -type output -origin {130 0} -name P
-  icon_term -type output -origin {130 20} -name notP
-  icon_term -type inout -origin {0 0} -name notP
+  icon_term -type inout -origin {130 20} -name notP
   icon_property -origin {0 0} -size large -anchor center -label Carry
   icon_line -130 -60 130 -60 130 60 -130 60 -130 -60
-  icon_property -origin {-120 -40} -label Phi
-  icon_property -origin {-120 -20} -label notCi_1
-  icon_property -origin {-120 0} -label notP
+  icon_property -origin {-120 -20} -label Phi
+  icon_property -origin {-120 0} -label notCi_1
   icon_property -origin {-120 20} -label notG
   icon_property -origin {120 -40} -anchor e -label Ci_1
   icon_property -origin {120 -20} -anchor e -label notCi

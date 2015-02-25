@@ -6,7 +6,6 @@ Graph "RegFile_lay.sim": unit scale = 1, format = UCB
 
 Graph "./RegFile.sim": unit scale = 1, format = MIT
 format = NULL (assume MIT)
-format = NULL (assume MIT)
 	Number of devices: 38
 	Number of nets: 39
 
