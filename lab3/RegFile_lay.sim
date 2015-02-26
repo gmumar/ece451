@@ -1,0 +1,63 @@
+| units: 1.0  tech: mmi25  format: UCB
+A Phi1 input
+A notFBEn[0] input
+A FBEn[0] input
+A WriteEn[0] input
+A BRdEn[0] input
+A ARdEn[0] input
+A notFBEn[1] input
+A FBEn[1] input
+A WriteEn[1] input
+A BRdEn[1] input
+A ARdEn[1] input
+A FBEn[2] input
+A notFBEn[2] input
+A WriteEn[2] input
+A BRdEn[2] input
+A ARdEn[2] input
+A notFBEn[3] input
+A FBEn[3] input
+A WriteEn[3] input
+A BRdEn[3] input
+A ARdEn[3] input
+A RAMINi input
+A Bi output
+A Ai output
+p Phi1 Ai vdd 24 100 3252 1698
+p Phi1 vdd Bi 24 100 3350 1698
+p RamCell_45/#fet!-type!pfet!-width!2.0_0/s vdd RamCell_45/#fet_75/d 24 200 4481 1350
+p RamCell_2/#fet!-type!pfet!-width!2.0_0/s vdd RamCell_2/#fet_75/d 24 200 6060 1350
+p RamCell_4/#fet!-type!pfet!-width!2.0_0/s vdd RamCell_4/#fet_75/d 24 200 7638 1350
+p RamCell_27/#fet!-type!pfet!-width!2.0_0/s vdd RamCell_27/#fet_75/d 24 200 9217 1350
+p RamCell_45/#fet_75/d RamCell1 vdd 24 200 4481 1252
+p RamCell_2/#fet_75/d RamCell2 vdd 24 200 6060 1252
+p RamCell_4/#fet_75/d RamCell3 vdd 24 200 7638 1252
+p RamCell_27/#fet_75/d RamCell4 vdd 24 200 9217 1252
+p notFBEn[0] RamCell_45/#fet!-type!pfet!-width!2.0_0/s RamCell1 24 200 4481 1154
+p notFBEn[1] RamCell_2/#fet!-type!pfet!-width!2.0_0/s RamCell2 24 200 6060 1154
+p notFBEn[2] RamCell_4/#fet!-type!pfet!-width!2.0_0/s RamCell3 24 200 7638 1154
+p notFBEn[3] RamCell_27/#fet!-type!pfet!-width!2.0_0/s RamCell4 24 200 9217 1154
+n ARdEn[0] RamCell1 Ai 24 100 4212 1586
+n ARdEn[1] RamCell2 Ai 24 100 5791 1586
+n ARdEn[2] RamCell3 Ai 24 100 7369 1586
+n ARdEn[3] RamCell4 Ai 24 100 8948 1586
+n BRdEn[0] Bi RamCell1 24 100 4212 1488
+n BRdEn[1] Bi RamCell2 24 100 5791 1488
+n BRdEn[2] Bi RamCell3 24 100 7369 1488
+n BRdEn[3] Bi RamCell4 24 100 8948 1488
+n RamCell_45/#fet!-type!pfet!-width!2.0_0/s gnd RamCell_45/#fet_75/d 24 100 4820 1350
+n RamCell_2/#fet!-type!pfet!-width!2.0_0/s gnd RamCell_2/#fet_75/d 24 100 6399 1350
+n RamCell_4/#fet!-type!pfet!-width!2.0_0/s gnd RamCell_4/#fet_75/d 24 100 7977 1350
+n RamCell_27/#fet!-type!pfet!-width!2.0_0/s gnd RamCell_27/#fet_75/d 24 100 9556 1350
+n FBEn[0] RamCell_45/#fet!-type!pfet!-width!2.0_0/s RamCell1 24 100 4209 1283
+n FBEn[1] RamCell_2/#fet!-type!pfet!-width!2.0_0/s RamCell2 24 100 5788 1283
+n FBEn[2] RamCell_4/#fet!-type!pfet!-width!2.0_0/s RamCell3 24 100 7366 1283
+n FBEn[3] RamCell_27/#fet!-type!pfet!-width!2.0_0/s RamCell4 24 100 8945 1283
+n RamCell_45/#fet_75/d RamCell1 gnd 24 100 4820 1252
+n RamCell_2/#fet_75/d RamCell2 gnd 24 100 6399 1252
+n RamCell_4/#fet_75/d RamCell3 gnd 24 100 7977 1252
+n RamCell_27/#fet_75/d RamCell4 gnd 24 100 9556 1252
+n WriteEn[0] RAMINi RamCell_45/#fet!-type!pfet!-width!2.0_0/s 24 100 4209 1185
+n WriteEn[1] RAMINi RamCell_2/#fet!-type!pfet!-width!2.0_0/s 24 100 5788 1185
+n WriteEn[2] RAMINi RamCell_4/#fet!-type!pfet!-width!2.0_0/s 24 100 7366 1185
+n WriteEn[3] RAMINi RamCell_27/#fet!-type!pfet!-width!2.0_0/s 24 100 8945 1185

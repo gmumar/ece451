@@ -1,0 +1,15 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "Func_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 8
+	Number of nets: 14
+
+Graph "./Func.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+	Number of devices: 8
+	Number of nets: 14
+
+13 entries written to the dictionary file.
+14 (63%) matches were found by local matching
+All nodes were matched in 9 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/Func.lvs.err.mag

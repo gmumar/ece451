@@ -1,0 +1,18 @@
+| units: 1.0  tech: mmi25  format: UCB
+A notFBEn input
+A FBEn input
+A WriteEn input
+A ARdEn input
+A BRdEn input
+A RAMINi input
+A Bi output
+A Ai output
+p #fet!-type!pfet!-width!2.0_0/s vdd #fet_75/d 24 200 899 938
+p #fet_75/d #fet_87/s vdd 24 200 899 840
+p notFBEn #fet!-type!pfet!-width!2.0_0/s #fet_87/s 24 200 899 742
+n ARdEn #fet_87/s Ai 24 100 630 1174
+n BRdEn Bi #fet_87/s 24 100 630 1076
+n #fet!-type!pfet!-width!2.0_0/s gnd #fet_75/d 24 100 1238 938
+n FBEn #fet!-type!pfet!-width!2.0_0/s #fet_87/s 24 100 627 871
+n #fet_75/d #fet_87/s gnd 24 100 1238 840
+n WriteEn RAMINi #fet!-type!pfet!-width!2.0_0/s 24 100 627 773

@@ -1,0 +1,18 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "RamCell_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 9
+	Number of nets: 14
+
+Graph "./RamCell.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+	Number of devices: 9
+	Number of nets: 14
+
+These circuits contain some symmetry (26% nodes not yet matched).
+Gemini will attempt to find a valid match for symmetrical nodes.
+M##
+13 entries written to the dictionary file.
+13 (56%) matches were found by local matching
+All nodes were matched in 13 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/RamCell.lvs.err.mag

@@ -1,0 +1,10 @@
+; Dictionary file for matching names in
+; Shifter_lay.sim and ./Shifter.sim
+= FiPlus1 FiPlus1
+= Fi_1 Fi_1
+= RAMIN RAMIN
+= F F
+= notshr notshr
+= shr shr
+= notshl notshl
+= shl shl
