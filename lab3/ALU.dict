@@ -1,11 +1,11 @@
 ; Dictionary file for matching names in
 ; ALU_lay.sim and ./ALU.sim
 = notCi_1 notCi_1
-= Carry_99/Ci_1 net_1
+= TFunc_95/R net_1
 = Func_83/Y net_4
 = Phi2 Phi2
 = vdd vdd
-= Carry_99/P net_3
+= TFunc_95/S net_3
 = notCi notCi
 = gnd gnd
 = Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s Carry.net_1

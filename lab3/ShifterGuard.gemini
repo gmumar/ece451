@@ -1,0 +1,16 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "ShifterGuard_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 40
+	Number of nets: 24
+
+Graph "./ShifterGuard.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+	Number of devices: 40
+	Number of nets: 24
+
+23 entries written to the dictionary file.
+58 (90%) matches were found by local matching
+All nodes were matched in 21 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab3/ShifterGuard.lvs.err.mag

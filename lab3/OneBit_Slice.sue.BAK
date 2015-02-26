@@ -64,13 +64,15 @@ proc SCHEMATIC_OneBit_Slice {} {
 
 proc ICON_OneBit_Slice args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
-  icon_term -type input -origin {-250 -40} -name notPhi1
-  icon_term -type input -origin {-250 -20} -name {In1Select[1:0]}
-  icon_term -type input -origin {-250 0} -name {In2Select[1:0]}
-  icon_term -type input -origin {-250 20} -name Phi1
-  icon_term -type input -origin {-250 40} -name RAMINi
-  icon_term -type output -origin {250 -20} -name Fi
-  icon_term -type output -origin {250 0} -name notCi
+  icon_term -type input -origin {-210 -60} -name notPhi1
+  icon_term -type input -origin {-210 -40} -name In1Select0
+  icon_term -type input -origin {-210 -20} -name In2Select0
+  icon_term -type input -origin {-210 0} -name Phi1
+  icon_term -type input -origin {-210 20} -name RAMINi
+  icon_term -type input -origin {-210 40} -name In1Select1
+  icon_term -type input -origin {-210 60} -name In2Select1
+  icon_term -type output -origin {210 -20} -name Fi
+  icon_term -type output -origin {210 0} -name notCi
   icon_term -type input -origin {-40 -160} -orient R90 -name {L[3:0]}
   icon_term -type input -origin {-20 -160} -orient R90 -name {M[3:0]}
   icon_term -type input -origin {0 -160} -orient R90 -name notCi_1
@@ -82,19 +84,17 @@ proc ICON_OneBit_Slice args {
   icon_term -type input -origin {0 160} -orient R90Y -name {ARdEn[3:0]}
   icon_term -type input -origin {20 160} -orient R90Y -name {BRdEn[3:0]}
   icon_term -type input -origin {40 160} -orient R90Y -name D
-  icon_term -type input -origin {0 0} -name In1Select0
-  icon_term -type input -origin {0 0} -name In2Select0
-  icon_term -type input -origin {0 0} -name In1Select1
-  icon_term -type input -origin {0 0} -name In2Select1
   icon_property -origin {0 0} -size large -anchor center -label OneBit_Slice
-  icon_line -250 -160 250 -160 250 160 -250 160 -250 -160
-  icon_property -origin {-240 -40} -label notPhi1
-  icon_property -origin {-240 -20} -label In1Select
-  icon_property -origin {-240 0} -label In2Select
-  icon_property -origin {-240 20} -label Phi1
-  icon_property -origin {-240 40} -label RAMINi
-  icon_property -origin {240 -20} -anchor e -label Fi
-  icon_property -origin {240 0} -anchor e -label notCi
+  icon_line -210 -160 210 -160 210 160 -210 160 -210 -160
+  icon_property -origin {-200 -60} -label notPhi1
+  icon_property -origin {-200 -40} -label In1Select0
+  icon_property -origin {-200 -20} -label In2Select0
+  icon_property -origin {-200 0} -label Phi1
+  icon_property -origin {-200 20} -label RAMINi
+  icon_property -origin {-200 40} -label In1Select1
+  icon_property -origin {-200 60} -label In2Select1
+  icon_property -origin {200 -20} -anchor e -label Fi
+  icon_property -origin {200 0} -anchor e -label notCi
   icon_property -origin {-40 -150} -rotate 1 -label L
   icon_property -origin {-20 -150} -rotate 1 -label M
   icon_property -origin {0 -150} -rotate 1 -label notCi_1
@@ -106,8 +106,8 @@ proc ICON_OneBit_Slice args {
   icon_property -origin {0 150} -anchor e -rotate 1 -label ARdEn
   icon_property -origin {20 150} -anchor e -rotate 1 -label BRdEn
   icon_property -origin {40 150} -anchor e -rotate 1 -label D
-  icon_property -origin {-250 380} -type user -name name
-  icon_property -origin {-250 400} -type user -name M
-  icon_property -origin {-250 420} -type user -name dpc
+  icon_property -origin {-210 380} -type user -name name
+  icon_property -origin {-210 400} -type user -name M
+  icon_property -origin {-210 420} -type user -name dpc
 }
 

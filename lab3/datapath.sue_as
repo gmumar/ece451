@@ -1,56 +1,306 @@
 # SUE version MMI_SUE5.5.4 (auto-save)
 
 proc SCHEMATIC_datapath {} {
+  make input -name shl -origin {-640 400}
+  make input -name notshl -origin {-670 500}
+  make input -orient RXY -name shr -origin {-300 400}
+  make input -orient RXY -name notshr -origin {-300 500}
+  make inout -name SL -origin {-300 420}
+  make inout -name SR -origin {-300 520}
+  make ShifterGuard -origin {-470 460}
+  make input -orient R90 -name Cin -origin {430 1800}
   make OneBit_Slice -origin {420 440}
-  make input -name shl -origin {-300 380}
-  make input -name notshl -origin {-330 480}
-  make input -orient RXY -name shr -origin {40 380}
-  make input -orient RXY -name notshr -origin {40 480}
-  make inout -name SL -origin {40 400}
-  make inout -name SR -origin {40 500}
-  make ShifterGuard -origin {-130 440}
-  make OneBit_Slice -origin {420 820}
-  make OneBit_Slice -origin {420 1200}
-  make OneBit_Slice -origin {420 1560}
-  make_wire 670 420 710 420
-  make_wire 710 420 710 230
-  make_wire -330 480 -300 480
-  make_wire -390 230 710 230
-  make_wire -390 460 -300 460
-  make_wire -390 230 -390 460
-  make_wire 40 460 150 460
-  make_wire 150 460 150 480
-  make_wire 150 480 170 480
-  make_wire 40 440 110 440
-  make_wire 110 440 110 860
-  make_wire 110 860 170 860
-  make_wire 40 420 80 420
-  make_wire 80 420 80 1240
-  make_wire 80 1240 170 1240
-  make_wire 40 360 130 360
-  make_wire 130 360 130 1600
-  make_wire 130 1600 170 1600
-  make_wire 670 800 820 800
-  make_wire 820 800 820 170
-  make_wire 820 170 -470 170
-  make_wire -470 170 -470 440
-  make_wire -470 440 -300 440
-  make_wire 670 1180 910 1180
-  make_wire 910 1180 910 110
-  make_wire 910 110 -590 110
-  make_wire -590 110 -590 420
-  make_wire -590 420 -300 420
-  make_wire 670 1560 780 1560
-  make_wire 780 1560 780 1010
-  make_wire 780 1010 420 1010
-  make_wire 420 1010 420 1040
-  make_wire 670 1200 840 1200
-  make_wire 840 1200 840 630
-  make_wire 840 630 420 630
-  make_wire 420 630 420 660
-  make_wire 680 820 760 820
-  make_wire 760 820 760 260
-  make_wire 760 260 420 260
+  make OneBit_Slice -origin {420 910}
+  make OneBit_Slice -origin {420 1420}
+  make OneBit_Slice -origin {430 1960}
+  make input -orient R90 -name notPhi1 -origin {170 380}
+  make input -orient R90 -name In1Select0 -origin {70 400}
+  make input -orient R90 -name In2Select0 -origin {130 420}
+  make input -orient R90 -name Phi1 -origin {190 440}
+  make input -orient R90 -name In1Select1 -origin {150 480}
+  make input -orient R90 -name In2Select1 -origin {100 500}
+  make input -name {notFBEn[3:0]} -origin {250 640}
+  make input -name {FBEn[3:0]} -origin {280 670}
+  make input -name {WriteEn[3:0]} -origin {320 700}
+  make input -name {ARdEn[3:0]} -origin {350 730}
+  make input -orient RXY -name {BRdEn[3:0]} -origin {440 670}
+  make input -orient RXY -name D -origin {460 630}
+  make input -orient RXY -name {L[3:0]} -origin {860 360}
+  make input -orient RXY -name {M[3:0]} -origin {970 430}
+  make input -orient RXY -name Phi2 -origin {1030 520}
+  make input -orient RXY -name {N[3:0]} -origin {1050 590}
+  make output -name Cout -origin {680 440}
+  make datapath -origin {130 -270}
+  make_wire 420 1230 420 1260
   make_wire 420 260 420 280
+  make_wire -670 500 -640 500
+  make_wire -730 480 -640 480
+  make_wire -300 380 -210 380
+  make_wire -730 250 -730 480
+  make_wire -840 420 -640 420
+  make_wire -910 440 -640 440
+  make_wire -910 130 -910 440
+  make_wire -790 460 -640 460
+  make_wire -790 190 -790 460
+  make_wire -840 30 -840 420
+  make_wire -730 250 710 250
+  make_wire 710 250 710 420
+  make_wire 630 440 680 440
+  make_wire 760 910 630 910
+  make_wire 630 1400 910 1400
+  make_wire 1080 1940 640 1940
+  make_wire 820 890 630 890
+  make_wire 630 420 710 420
+  make_wire -180 1360 210 1360
+  make_wire 210 1380 -140 1380
+  make_wire 210 850 -180 850
+  make_wire 210 870 -140 870
+  make_wire 210 890 -100 890
+  make_wire 210 1400 -100 1400
+  make_wire -210 380 -210 460
+  make_wire -210 460 210 460
+  make_wire 210 930 -40 930
+  make_wire -270 1980 220 1980
+  make_wire 210 910 -10 910
+  make_wire 210 1420 -10 1420
+  make_wire 210 950 30 950
+  make_wire 210 1460 30 1460
+  make_wire 210 970 80 970
+  make_wire 210 1480 80 1480
+  make_wire 360 1580 360 1600
+  make_wire 360 1600 250 1600
+  make_wire 380 1580 380 1630
+  make_wire 380 1630 280 1630
+  make_wire -300 460 -230 460
+  make_wire 420 1230 780 1230
+  make_wire -270 480 -270 1980
+  make_wire -300 480 -270 480
+  make_wire -840 30 1080 30
+  make_wire -180 1900 220 1900
+  make_wire 250 1600 250 2160
+  make_wire 80 2020 220 2020
+  make_wire 280 1630 280 2210
+  make_wire -10 1960 220 1960
+  make_wire -100 1940 220 1940
+  make_wire 30 2000 220 2000
+  make_wire -140 1920 220 1920
+  make_wire 280 2210 390 2210
+  make_wire 390 2120 390 2210
+  make_wire 250 630 360 630
+  make_wire 250 2160 370 2160
+  make_wire 370 2120 370 2160
+  make_wire 780 1230 780 1960
+  make_wire 640 1960 780 1960
+  make_wire 80 1480 80 2020
+  make_wire -230 1440 210 1440
+  make_wire -230 460 -230 1440
+  make_wire 420 730 840 730
+  make_wire -910 130 910 130
+  make_wire 30 1460 30 2000
+  make_wire 280 650 380 650
+  make_wire 30 480 30 950
+  make_wire 30 950 30 1460
+  make_wire 30 480 150 480
+  make_wire 150 480 210 480
+  make_wire 80 500 80 970
+  make_wire 80 970 80 1480
+  make_wire 80 500 100 500
+  make_wire 100 500 210 500
+  make_wire 820 190 820 890
+  make_wire -790 190 820 190
+  make_wire -140 400 -140 870
+  make_wire -140 870 -140 1380
+  make_wire -140 1380 -140 1920
+  make_wire -140 400 70 400
+  make_wire 70 400 210 400
+  make_wire -10 440 -10 910
+  make_wire -10 910 -10 1420
+  make_wire -10 1420 -10 1960
+  make_wire -10 440 190 440
+  make_wire 190 440 210 440
+  make_wire 250 1100 360 1100
+  make_wire 760 260 760 910
+  make_wire 420 260 760 260
+  make_wire -40 440 -40 930
+  make_wire -300 440 -40 440
+  make_wire -180 380 -180 850
+  make_wire -180 850 -180 1360
+  make_wire -180 1360 -180 1900
+  make_wire -180 380 170 380
+  make_wire 170 380 210 380
+  make_wire 280 1120 380 1120
+  make_wire -100 420 -100 890
+  make_wire -100 890 -100 1400
+  make_wire -100 1400 -100 1940
+  make_wire -100 420 130 420
+  make_wire 130 420 210 420
+  make_wire 360 600 360 630
+  make_wire 380 600 380 650
+  make_wire 400 600 400 680
+  make_wire 400 680 320 680
+  make_wire 320 2240 410 2240
+  make_wire 410 2240 410 2120
+  make_wire 400 1580 400 1660
+  make_wire 400 1660 320 1660
+  make_wire 320 1660 320 2240
+  make_wire 400 1140 320 1140
+  make_wire 250 1100 250 1600
+  make_wire 360 1070 360 1100
+  make_wire 280 1630 280 1120
+  make_wire 380 1070 380 1120
+  make_wire 400 1070 400 1140
+  make_wire 320 1660 320 1140
+  make_wire 420 600 420 700
+  make_wire 420 700 350 700
+  make_wire 350 2250 430 2250
+  make_wire 430 2250 430 2120
+  make_wire 420 1580 420 1680
+  make_wire 420 1680 350 1680
+  make_wire 350 1680 350 2250
+  make_wire 350 1160 350 1680
+  make_wire 420 1070 420 1160
+  make_wire 420 1160 350 1160
+  make_wire 440 690 700 690
+  make_wire 700 2150 450 2150
+  make_wire 450 2150 450 2120
+  make_wire 440 1580 440 1610
+  make_wire 440 1610 700 1610
+  make_wire 700 1610 700 2150
+  make_wire 700 1100 440 1100
+  make_wire 440 1100 440 1070
+  make_wire 700 1100 700 1610
+  make_wire 700 1100 700 690
+  make_wire 460 650 670 650
+  make_wire 670 2130 470 2130
+  make_wire 470 2130 470 2120
+  make_wire 460 1580 460 1600
+  make_wire 460 1600 670 1600
+  make_wire 670 1600 670 2130
+  make_wire 460 1070 460 1080
+  make_wire 460 1080 670 1080
+  make_wire 670 1080 670 1600
+  make_wire 670 1080 670 650
+  make_wire 250 640 250 630
+  make_wire 250 640 250 1100
+  make_wire 280 650 280 670
+  make_wire 280 1120 280 670
+  make_wire 320 680 320 700
+  make_wire 320 1140 320 700
+  make_wire 350 730 350 1160
+  make_wire 350 730 350 700
+  make_wire 440 670 440 600
+  make_wire 440 670 440 690
+  make_wire 460 630 460 600
+  make_wire 460 630 460 650
+  make_wire 380 280 380 150
+  make_wire 380 150 860 150
+  make_wire 860 660 380 660
+  make_wire 380 660 380 750
+  make_wire 860 1730 390 1730
+  make_wire 390 1730 390 1800
+  make_wire 380 1200 380 1260
+  make_wire 860 1200 860 660
+  make_wire 860 1200 860 1730
+  make_wire 860 1200 380 1200
+  make_wire 400 280 400 70
+  make_wire 400 70 970 70
+  make_wire 970 1760 410 1760
+  make_wire 410 1760 410 1800
+  make_wire 400 1260 400 1180
+  make_wire 400 1180 970 1180
+  make_wire 970 1180 970 1760
+  make_wire 400 750 400 710
+  make_wire 400 710 970 710
+  make_wire 970 710 970 1180
+  make_wire 420 730 420 750
+  make_wire 840 730 840 1420
+  make_wire 630 1420 840 1420
+  make_wire 440 280 440 100
+  make_wire 440 100 1030 100
+  make_wire 1030 1690 450 1690
+  make_wire 450 1690 450 1800
+  make_wire 440 750 440 800
+  make_wire 440 800 1030 800
+  make_wire 440 1260 440 1330
+  make_wire 440 1330 1030 1330
+  make_wire 1030 1330 1030 800
+  make_wire 1030 1330 1030 1690
+  make_wire 460 280 460 230
+  make_wire 460 230 1050 230
+  make_wire 1050 1660 470 1660
+  make_wire 470 1660 470 1800
+  make_wire 1050 1290 1050 1660
+  make_wire 460 1260 460 1290
+  make_wire 460 1290 1050 1290
+  make_wire 460 750 460 770
+  make_wire 460 770 1050 770
+  make_wire 1050 770 1050 1290
+  make_wire 860 360 860 150
+  make_wire 860 360 860 660
+  make_wire 910 1400 910 130
+  make_wire 970 430 970 710
+  make_wire 970 430 970 70
+  make_wire 1030 520 1030 800
+  make_wire 1030 520 1030 100
+  make_wire 1050 590 1050 770
+  make_wire 1050 590 1050 230
+  make_wire 1080 1940 1080 30
+}
+
+proc ICON_datapath args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-200 -60} -name shl
+  icon_term -type input -origin {-200 -40} -name notshl
+  icon_term -type input -origin {-200 -20} -name {notFBEn[3:0]}
+  icon_term -type input -origin {-200 0} -name {FBEn[3:0]}
+  icon_term -type input -origin {-200 20} -name {WriteEn[3:0]}
+  icon_term -type input -origin {-200 40} -name {ARdEn[3:0]}
+  icon_term -type input -origin {200 -100} -orient RX -name {L[3:0]}
+  icon_term -type input -origin {200 -80} -orient RX -name shr
+  icon_term -type inout -origin {200 -60} -name SL
+  icon_term -type input -origin {200 -40} -orient RX -name {M[3:0]}
+  icon_term -type output -origin {200 -20} -name Cout
+  icon_term -type input -origin {200 0} -orient RX -name notshr
+  icon_term -type input -origin {200 20} -orient RX -name Phi2
+  icon_term -type inout -origin {200 40} -name SR
+  icon_term -type input -origin {200 60} -orient RX -name {N[3:0]}
+  icon_term -type input -origin {200 80} -orient RX -name D
+  icon_term -type input -origin {200 100} -orient RX -name {BRdEn[3:0]}
+  icon_term -type input -origin {-60 -140} -orient R90 -name In1Select0
+  icon_term -type input -origin {-40 -140} -orient R90 -name In2Select1
+  icon_term -type input -origin {-20 -140} -orient R90 -name In2Select0
+  icon_term -type input -origin {0 -140} -orient R90 -name In1Select1
+  icon_term -type input -origin {20 -140} -orient R90 -name notPhi1
+  icon_term -type input -origin {40 -140} -orient R90 -name Phi1
+  icon_term -type input -origin {60 -140} -orient R90 -name Cin
+  icon_property -origin {0 0} -size large -anchor center -label datapath
+  icon_line -200 -140 200 -140 200 140 -200 140 -200 -140
+  icon_property -origin {-190 -60} -label shl
+  icon_property -origin {-190 -40} -label notshl
+  icon_property -origin {-190 -20} -label notFBEn
+  icon_property -origin {-190 0} -label FBEn
+  icon_property -origin {-190 20} -label WriteEn
+  icon_property -origin {-190 40} -label ARdEn
+  icon_property -origin {190 -100} -anchor e -label L
+  icon_property -origin {190 -80} -anchor e -label shr
+  icon_property -origin {190 -60} -anchor e -label SL
+  icon_property -origin {190 -40} -anchor e -label M
+  icon_property -origin {190 -20} -anchor e -label Cout
+  icon_property -origin {190 0} -anchor e -label notshr
+  icon_property -origin {190 20} -anchor e -label Phi2
+  icon_property -origin {190 40} -anchor e -label SR
+  icon_property -origin {190 60} -anchor e -label N
+  icon_property -origin {190 80} -anchor e -label D
+  icon_property -origin {190 100} -anchor e -label BRdEn
+  icon_property -origin {-60 -130} -rotate 1 -label In1Select0
+  icon_property -origin {-40 -130} -rotate 1 -label In2Select1
+  icon_property -origin {-20 -130} -rotate 1 -label In2Select0
+  icon_property -origin {0 -130} -rotate 1 -label In1Select1
+  icon_property -origin {20 -130} -rotate 1 -label notPhi1
+  icon_property -origin {40 -130} -rotate 1 -label Phi1
+  icon_property -origin {60 -130} -rotate 1 -label Cin
+  icon_property -origin {-200 360} -type user -name name
+  icon_property -origin {-200 380} -type user -name M
+  icon_property -origin {-200 400} -type user -name dpc
 }
 

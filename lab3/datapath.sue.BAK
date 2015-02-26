@@ -9,10 +9,6 @@ proc SCHEMATIC_datapath {} {
   make inout -name SR -origin {-300 520}
   make ShifterGuard -origin {-470 460}
   make input -orient R90 -name Cin -origin {430 1800}
-  make OneBit_Slice -origin {420 440}
-  make OneBit_Slice -origin {420 910}
-  make OneBit_Slice -origin {420 1420}
-  make OneBit_Slice -origin {430 1960}
   make input -orient R90 -name notPhi1 -origin {170 380}
   make input -orient R90 -name In1Select0 -origin {70 400}
   make input -orient R90 -name In2Select0 -origin {130 420}
@@ -24,12 +20,19 @@ proc SCHEMATIC_datapath {} {
   make input -name {WriteEn[3:0]} -origin {320 700}
   make input -name {ARdEn[3:0]} -origin {350 730}
   make input -orient RXY -name {BRdEn[3:0]} -origin {440 670}
-  make input -orient RXY -name D -origin {460 630}
   make input -orient RXY -name {L[3:0]} -origin {860 360}
   make input -orient RXY -name {M[3:0]} -origin {970 430}
   make input -orient RXY -name Phi2 -origin {1030 520}
   make input -orient RXY -name {N[3:0]} -origin {1050 590}
   make output -name Cout -origin {680 440}
+  make OneBit_Slice -name OneBit_Slice_43 -origin {420 440}
+  make OneBit_Slice -name OneBit_Slice_42 -origin {420 910}
+  make OneBit_Slice -name OneBit_Slice_41 -origin {420 1420}
+  make OneBit_Slice -name OneBit_Slice_40 -origin {430 1960}
+  make input -orient R270 -name {D[0]} -origin {470 2120}
+  make input -orient R270 -name {D[1]} -origin {460 1580}
+  make input -orient R270 -name {D[2]} -origin {460 1070}
+  make input -orient R270 -name {D[3]} -origin {460 600}
   make_wire 420 1230 420 1260
   make_wire 420 260 420 280
   make_wire -670 500 -640 500
@@ -169,16 +172,6 @@ proc SCHEMATIC_datapath {} {
   make_wire 440 1100 440 1070
   make_wire 700 1100 700 1610
   make_wire 700 1100 700 690
-  make_wire 460 650 670 650
-  make_wire 670 2130 470 2130
-  make_wire 470 2130 470 2120
-  make_wire 460 1580 460 1600
-  make_wire 460 1600 670 1600
-  make_wire 670 1600 670 2130
-  make_wire 460 1070 460 1080
-  make_wire 460 1080 670 1080
-  make_wire 670 1080 670 1600
-  make_wire 670 1080 670 650
   make_wire 250 640 250 630
   make_wire 250 640 250 1100
   make_wire 280 650 280 670
@@ -189,8 +182,6 @@ proc SCHEMATIC_datapath {} {
   make_wire 350 730 350 700
   make_wire 440 670 440 600
   make_wire 440 670 440 690
-  make_wire 460 630 460 600
-  make_wire 460 630 460 650
   make_wire 380 280 380 150
   make_wire 380 150 860 150
   make_wire 860 660 380 660
@@ -263,7 +254,6 @@ proc ICON_datapath args {
   icon_term -type input -origin {200 20} -orient RX -name Phi2
   icon_term -type inout -origin {200 40} -name SR
   icon_term -type input -origin {200 60} -orient RX -name {N[3:0]}
-  icon_term -type input -origin {200 80} -orient RX -name D
   icon_term -type input -origin {200 100} -orient RX -name {BRdEn[3:0]}
   icon_term -type input -origin {-60 -140} -orient R90 -name In1Select0
   icon_term -type input -origin {-40 -140} -orient R90 -name In2Select1
@@ -272,6 +262,7 @@ proc ICON_datapath args {
   icon_term -type input -origin {20 -140} -orient R90 -name notPhi1
   icon_term -type input -origin {40 -140} -orient R90 -name Phi1
   icon_term -type input -origin {60 -140} -orient R90 -name Cin
+  icon_term -type input -origin {200 80} -orient RX -name {D[3:0]}
   icon_property -origin {0 0} -size large -anchor center -label datapath
   icon_line -200 -140 200 -140 200 140 -200 140 -200 -140
   icon_property -origin {-190 -60} -label shl
