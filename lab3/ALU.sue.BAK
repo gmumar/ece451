@@ -17,10 +17,12 @@ proc SCHEMATIC_ALU {} {
   make TFunc -origin {1300 550}
   make Carry -origin {900 530}
   make output -name notCi -origin {1120 750}
+  make name_net_s -name notFi -origin {1430 550}
+  make name_net_s -name notP -origin {940 660}
+  make name_net_s -name notG -origin {720 550}
   make_wire 400 430 270 430
   make_wire 400 410 180 410
   make_wire 490 290 490 310
-  make_wire 620 550 770 550
   make_wire 1300 390 1300 450
   make_wire 1540 550 1570 550
   make_wire 400 390 330 390
@@ -37,7 +39,6 @@ proc SCHEMATIC_ALU {} {
   make_wire 180 750 400 750
   make_wire 180 410 180 540
   make_wire 180 540 180 750
-  make_wire 1400 550 1460 550
   make_wire 1060 550 1060 530
   make_wire 1060 530 1030 530
   make_wire 1060 550 1200 550
@@ -53,7 +54,6 @@ proc SCHEMATIC_ALU {} {
   make_wire 580 750 620 750
   make_wire 620 660 620 750
   make_wire 1040 660 1040 590
-  make_wire 1040 660 620 660
   make_wire 620 410 620 550
   make_wire 580 410 620 410
   make_wire 700 510 770 510
@@ -66,6 +66,12 @@ proc SCHEMATIC_ALU {} {
   make_wire 650 530 740 530
   make_wire 740 530 770 530
   make_wire 650 400 650 530
+  make_wire 1430 550 1400 550
+  make_wire 1430 550 1460 550
+  make_wire 940 660 1040 660
+  make_wire 940 660 620 660
+  make_wire 720 550 620 550
+  make_wire 720 550 770 550
 }
 
 proc ICON_ALU args {

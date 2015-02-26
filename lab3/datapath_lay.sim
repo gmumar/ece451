@@ -1,8 +1,8 @@
 | units: 1.0  tech: mmi25  format: UCB
+A notCin input
 A D[0] input
 A D[1] input
 A D[2] input
-A Cin input
 A N[1] input
 A N[0] input
 A N[2] input
@@ -47,7 +47,7 @@ A notshr input
 A notshl input
 A shr input
 A shl input
-A Cout output
+A notCout output
 A SR inout
 A SL inout
 p notshr SL OneBit_Slice_43/RAMINi 24 200 1480 6807
@@ -63,7 +63,7 @@ p notPhi1 OneBit_Slice_43/OpSel_74/#fet!-fingers!2!-contacts!all_2/d OneBit_Slic
 p OneBit_Slice_43/OpSel_74/#fet!-type!pfet!-width!2.0_0/d OneBit_Slice_43/ALU_91/Si vdd 24 200 12964 6824
 p Phi2 OneBit_Slice_43/ALU_91/Func_83/Y vdd 24 100 16637 6960
 p Phi2 vdd OneBit_Slice_43/ALU_91/Func_82/Y 24 100 16735 6960
-p Phi2 vdd Cout 24 100 16941 6961
+p Phi2 vdd notCout 24 100 16941 6961
 p OneBit_Slice_43/ALU_91/Carry_99/P pdif_176410_68530# N[0] 24 400 17641 6903
 p OneBit_Slice_43/ALU_91/Carry_99/Ci_1 OneBit_Slice_43/ALU_91/TFunc_95/Y pdif_176410_68530# 24 400 17641 6829
 p notshl ShifterGuard_63/F3 SL 24 200 1480 6709
@@ -199,7 +199,7 @@ p notshl ShifterGuard_63/F0 ShifterGuard_63/Shifter_97/Fi_1 24 200 1480 1189
 p Phi1 vdd OneBit_Slice_40/OpSel_75/#fet!-fingers!2!-width!2.0_0/d 24 100 10067 1160
 p Phi1 vdd OneBit_Slice_40/OpSel_74/#fet!-fingers!2!-width!2.0_0/d 24 100 11933 1160
 p OneBit_Slice_40/ALU_91/Func_83/Y OneBit_Slice_40/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 16636 1086
-p Cin vdd OneBit_Slice_40/ALU_91/Carry_99/Ci_1 24 200 16734 1086
+p notCin vdd OneBit_Slice_40/ALU_91/Carry_99/Ci_1 24 200 16734 1086
 p OneBit_Slice_40/ALU_91/Func_82/Y vdd OneBit_Slice_40/ALU_91/Carry_99/P 24 200 16935 1087
 p OneBit_Slice_40/ALU_91/Carry_99/Ci_1 pdif_176420_11590# OneBit_Slice_40/ALU_91/TFunc_95/Y 24 400 17642 1209
 p OneBit_Slice_40/ALU_91/Func_82/Y N[1] pdif_176420_11590# 24 400 17642 1135
@@ -208,7 +208,7 @@ p OneBit_Slice_40/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s vdd OneBi
 p OneBit_Slice_40/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s vdd OneBit_Slice_40/RegFile_79/RamCell_2/#fet_75/d 24 200 5415 937
 p OneBit_Slice_40/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s vdd OneBit_Slice_40/RegFile_79/RamCell_4/#fet_75/d 24 200 6993 937
 p OneBit_Slice_40/RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s vdd OneBit_Slice_40/RegFile_79/RamCell_27/#fet_75/d 24 200 8572 937
-p Cin pdif_176420_8890# N[2] 24 400 17642 939
+p notCin pdif_176420_8890# N[2] 24 400 17642 939
 p shl ShifterGuard_63/F0 ShifterGuard_63/Shifter_96/Fi_1 24 200 1483 856
 p OneBit_Slice_40/ALU_91/Carry_99/P OneBit_Slice_40/ALU_91/TFunc_95/Y pdif_176420_8890# 24 400 17642 865
 p OneBit_Slice_40/RegFile_79/RamCell_45/#fet_75/d OneBit_Slice_40/RegFile_79/RamCell1 vdd 24 200 3836 839
@@ -216,7 +216,7 @@ p OneBit_Slice_40/RegFile_79/RamCell_2/#fet_75/d OneBit_Slice_40/RegFile_79/RamC
 p OneBit_Slice_40/RegFile_79/RamCell_4/#fet_75/d OneBit_Slice_40/RegFile_79/RamCell3 vdd 24 200 6993 839
 p OneBit_Slice_40/RegFile_79/RamCell_27/#fet_75/d OneBit_Slice_40/RegFile_79/RamCell4 vdd 24 200 8572 839
 p shl ShifterGuard_63/Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d vdd 24 200 363 766
-p Cin pdif_176420_7170# OneBit_Slice_40/ALU_91/TFunc_95/Y 24 400 17642 767
+p notCin pdif_176420_7170# OneBit_Slice_40/ALU_91/TFunc_95/Y 24 400 17642 767
 p notFBEn[0] OneBit_Slice_40/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s OneBit_Slice_40/RegFile_79/RamCell1 24 200 3836 741
 p notFBEn[1] OneBit_Slice_40/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s OneBit_Slice_40/RegFile_79/RamCell2 24 200 5415 741
 p notFBEn[2] OneBit_Slice_40/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s OneBit_Slice_40/RegFile_79/RamCell3 24 200 6993 741
@@ -288,8 +288,8 @@ n OneBit_Slice_43/ALU_91/Ri OneBit_Slice_43/ALU_91/Func_83/Y ndif_153780_64120# 
 n OneBit_Slice_43/ALU_91/Func_83/Y OneBit_Slice_43/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 16635 6349
 n OneBit_Slice_42/notCi gnd OneBit_Slice_43/ALU_91/Carry_99/Ci_1 24 100 16733 6349
 n OneBit_Slice_43/ALU_91/Func_82/Y OneBit_Slice_43/ALU_91/Carry_99/P gnd 24 100 16934 6351
-n OneBit_Slice_43/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd Cout 24 100 17032 6351
-n OneBit_Slice_43/ALU_91/Carry_99/P Cout OneBit_Slice_42/notCi 24 100 17130 6351
+n OneBit_Slice_43/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd notCout 24 100 17032 6351
+n OneBit_Slice_43/ALU_91/Carry_99/P notCout OneBit_Slice_42/notCi 24 100 17130 6351
 n OneBit_Slice_43/ALU_91/Carry_99/Ci_1 OneBit_Slice_43/ALU_91/TFunc_95/Y ndif_186700_64110# 24 200 18670 6387
 n OneBit_Slice_43/ALU_91/Ri ndif_140360_62400# OneBit_Slice_43/ALU_91/Func_82/Y 24 200 14036 6290
 n OneBit_Slice_43/ALU_91/Ri ndif_153780_62400# OneBit_Slice_43/ALU_91/Func_83/Y 24 200 15378 6290
@@ -448,7 +448,7 @@ n OneBit_Slice_40/ALU_91/Func_82/Y ndif_186710_13310# N[0] 24 200 18671 1381
 n notshr ShifterGuard_63/Shifter_96/Fi_1 OneBit_Slice_40/RAMINi 24 100 1884 1287
 n OneBit_Slice_40/ALU_91/notR OneBit_Slice_40/ALU_91/Func_82/Y ndif_140370_13320# 24 200 14037 1308
 n OneBit_Slice_40/ALU_91/notR OneBit_Slice_40/ALU_91/Func_83/Y ndif_153790_13320# 24 200 15379 1308
-n Cin OneBit_Slice_40/ALU_91/TFunc_95/Y ndif_186710_13310# 24 200 18671 1307
+n notCin OneBit_Slice_40/ALU_91/TFunc_95/Y ndif_186710_13310# 24 200 18671 1307
 n notshl ShifterGuard_63/F0 ShifterGuard_63/Shifter_96/Fi_1 24 100 1884 1189
 n OneBit_Slice_40/ALU_91/Si ndif_140370_11600# OneBit_Slice_40/ALU_91/Func_82/Y 24 200 14037 1210
 n OneBit_Slice_40/ALU_91/Si ndif_153790_11600# OneBit_Slice_40/ALU_91/Func_83/Y 24 200 15379 1210
@@ -459,7 +459,7 @@ n ARdEn[2] OneBit_Slice_40/RegFile_79/RamCell3 OneBit_Slice_40/OpSel_74/In1_1 24
 n ARdEn[3] OneBit_Slice_40/RegFile_79/RamCell4 OneBit_Slice_40/OpSel_74/In1_1 24 100 8303 1173
 n OneBit_Slice_40/ALU_91/notR M[1] ndif_140370_11600# 24 200 14037 1136
 n OneBit_Slice_40/ALU_91/notR L[1] ndif_153790_11600# 24 200 15379 1136
-n Cin N[1] ndif_186710_11590# 24 200 18671 1135
+n notCin N[1] ndif_186710_11590# 24 200 18671 1135
 n BRdEn[0] OneBit_Slice_40/Bi OneBit_Slice_40/RegFile_79/RamCell1 24 100 3567 1075
 n BRdEn[1] OneBit_Slice_40/Bi OneBit_Slice_40/RegFile_79/RamCell2 24 100 5146 1075
 n BRdEn[2] OneBit_Slice_40/Bi OneBit_Slice_40/RegFile_79/RamCell3 24 100 6724 1075
@@ -503,10 +503,10 @@ n OneBit_Slice_40/ALU_91/Func_82/Y ndif_186710_8890# N[2] 24 200 18671 939
 n OneBit_Slice_40/ALU_91/Ri OneBit_Slice_40/ALU_91/Func_82/Y ndif_140370_8900# 24 200 14037 866
 n OneBit_Slice_40/ALU_91/Ri OneBit_Slice_40/ALU_91/Func_83/Y ndif_153790_8900# 24 200 15379 866
 n OneBit_Slice_40/ALU_91/Func_83/Y OneBit_Slice_40/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 16636 827
-n Cin gnd OneBit_Slice_40/ALU_91/Carry_99/Ci_1 24 100 16734 827
+n notCin gnd OneBit_Slice_40/ALU_91/Carry_99/Ci_1 24 100 16734 827
 n OneBit_Slice_40/ALU_91/Func_82/Y OneBit_Slice_40/ALU_91/Carry_99/P gnd 24 100 16935 829
 n OneBit_Slice_40/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd OneBit_Slice_40/notCi 24 100 17033 829
-n OneBit_Slice_40/ALU_91/Carry_99/P OneBit_Slice_40/notCi Cin 24 100 17131 829
+n OneBit_Slice_40/ALU_91/Carry_99/P OneBit_Slice_40/notCi notCin 24 100 17131 829
 n OneBit_Slice_40/ALU_91/Carry_99/Ci_1 OneBit_Slice_40/ALU_91/TFunc_95/Y ndif_186710_8890# 24 200 18671 865
 n OneBit_Slice_40/ALU_91/Ri ndif_140370_7180# OneBit_Slice_40/ALU_91/Func_82/Y 24 200 14037 768
 n OneBit_Slice_40/ALU_91/Ri ndif_153790_7180# OneBit_Slice_40/ALU_91/Func_83/Y 24 200 15379 768
