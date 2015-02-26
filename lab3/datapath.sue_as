@@ -1,0 +1,56 @@
+# SUE version MMI_SUE5.5.4 (auto-save)
+
+proc SCHEMATIC_datapath {} {
+  make OneBit_Slice -origin {420 440}
+  make input -name shl -origin {-300 380}
+  make input -name notshl -origin {-330 480}
+  make input -orient RXY -name shr -origin {40 380}
+  make input -orient RXY -name notshr -origin {40 480}
+  make inout -name SL -origin {40 400}
+  make inout -name SR -origin {40 500}
+  make ShifterGuard -origin {-130 440}
+  make OneBit_Slice -origin {420 820}
+  make OneBit_Slice -origin {420 1200}
+  make OneBit_Slice -origin {420 1560}
+  make_wire 670 420 710 420
+  make_wire 710 420 710 230
+  make_wire -330 480 -300 480
+  make_wire -390 230 710 230
+  make_wire -390 460 -300 460
+  make_wire -390 230 -390 460
+  make_wire 40 460 150 460
+  make_wire 150 460 150 480
+  make_wire 150 480 170 480
+  make_wire 40 440 110 440
+  make_wire 110 440 110 860
+  make_wire 110 860 170 860
+  make_wire 40 420 80 420
+  make_wire 80 420 80 1240
+  make_wire 80 1240 170 1240
+  make_wire 40 360 130 360
+  make_wire 130 360 130 1600
+  make_wire 130 1600 170 1600
+  make_wire 670 800 820 800
+  make_wire 820 800 820 170
+  make_wire 820 170 -470 170
+  make_wire -470 170 -470 440
+  make_wire -470 440 -300 440
+  make_wire 670 1180 910 1180
+  make_wire 910 1180 910 110
+  make_wire 910 110 -590 110
+  make_wire -590 110 -590 420
+  make_wire -590 420 -300 420
+  make_wire 670 1560 780 1560
+  make_wire 780 1560 780 1010
+  make_wire 780 1010 420 1010
+  make_wire 420 1010 420 1040
+  make_wire 670 1200 840 1200
+  make_wire 840 1200 840 630
+  make_wire 840 630 420 630
+  make_wire 420 630 420 660
+  make_wire 680 820 760 820
+  make_wire 760 820 760 260
+  make_wire 760 260 420 260
+  make_wire 420 260 420 280
+}
+

@@ -11,18 +11,18 @@ proc SCHEMATIC_ShifterGuard {} {
   make inverter -origin {1110 1020}
   make inout -name SR -origin {610 1360}
   make inout -name SL -origin {800 470}
-  make output -name {RAMIN[0]} -origin {750 1190}
-  make output -name {RAMIN[1]} -origin {750 950}
-  make output -name {RAMIN[2]} -origin {750 700}
-  make output -name {RAMIN[3]} -origin {750 450}
-  make input -name {F[3]} -origin {470 470}
-  make input -name {F[2]} -origin {470 720}
-  make input -name {F[0]} -origin {470 1210}
-  make input -name {F[1]} -origin {470 970}
   make input -name shl -origin {350 460}
   make input -name notshl -origin {380 1230}
   make input -orient RXY -name shr -origin {910 460}
   make input -orient RXY -name notshr -origin {850 1230}
+  make output -name RAMIN3 -origin {750 450}
+  make output -name RAMIN2 -origin {750 700}
+  make output -name RAMIN1 -origin {750 950}
+  make output -name RAMIN0 -origin {750 1190}
+  make input -name F3 -origin {470 470}
+  make input -name F2 -origin {470 720}
+  make input -name F1 -origin {470 970}
+  make input -name F0 -origin {470 1210}
   make_wire 470 1190 410 1190
   make_wire 410 1190 410 1380
   make_wire 410 1380 910 1380
@@ -99,6 +99,14 @@ proc SCHEMATIC_ShifterGuard {} {
 
 proc ICON_ShifterGuard args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type output -origin {0 0} -name RAMIN3
+  icon_term -type output -origin {0 0} -name RAMIN2
+  icon_term -type output -origin {0 0} -name RAMIN1
+  icon_term -type output -origin {0 0} -name RAMIN0
+  icon_term -type input -origin {0 0} -name F3
+  icon_term -type input -origin {0 0} -name F2
+  icon_term -type input -origin {0 0} -name F1
+  icon_term -type input -origin {0 0} -name F0
   icon_term -type input -origin {-40 -100} -orient R90 -name shl
   icon_term -type input -origin {210 0} -orient RX -name {F[3:0]}
   icon_term -type input -origin {-20 -100} -orient R90 -name notshl
