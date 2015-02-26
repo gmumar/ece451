@@ -35,22 +35,10 @@ proc SCHEMATIC_datapath {} {
   make input -orient R270 -name {D[3]} -origin {460 600}
   make_wire 420 1230 420 1260
   make_wire 420 260 420 280
-  make_wire -670 500 -640 500
-  make_wire -730 480 -640 480
-  make_wire -300 380 -210 380
-  make_wire -730 250 -730 480
-  make_wire -840 420 -640 420
-  make_wire -910 440 -640 440
-  make_wire -910 130 -910 440
-  make_wire -790 460 -640 460
-  make_wire -790 190 -790 460
-  make_wire -840 30 -840 420
-  make_wire -730 250 710 250
   make_wire 710 250 710 420
   make_wire 630 440 680 440
   make_wire 760 910 630 910
   make_wire 630 1400 910 1400
-  make_wire 1080 1940 640 1940
   make_wire 820 890 630 890
   make_wire 630 420 710 420
   make_wire -180 1360 210 1360
@@ -59,7 +47,6 @@ proc SCHEMATIC_datapath {} {
   make_wire 210 870 -140 870
   make_wire 210 890 -100 890
   make_wire 210 1400 -100 1400
-  make_wire -210 380 -210 460
   make_wire -210 460 210 460
   make_wire 210 930 -40 930
   make_wire -270 1980 220 1980
@@ -73,11 +60,7 @@ proc SCHEMATIC_datapath {} {
   make_wire 360 1600 250 1600
   make_wire 380 1580 380 1630
   make_wire 380 1630 280 1630
-  make_wire -300 460 -230 460
   make_wire 420 1230 780 1230
-  make_wire -270 480 -270 1980
-  make_wire -300 480 -270 480
-  make_wire -840 30 1080 30
   make_wire -180 1900 220 1900
   make_wire 250 1600 250 2160
   make_wire 80 2020 220 2020
@@ -95,9 +78,7 @@ proc SCHEMATIC_datapath {} {
   make_wire 640 1960 780 1960
   make_wire 80 1480 80 2020
   make_wire -230 1440 210 1440
-  make_wire -230 460 -230 1440
   make_wire 420 730 840 730
-  make_wire -910 130 910 130
   make_wire 30 1460 30 2000
   make_wire 280 650 380 650
   make_wire 30 480 30 950
@@ -109,7 +90,6 @@ proc SCHEMATIC_datapath {} {
   make_wire 80 500 100 500
   make_wire 100 500 210 500
   make_wire 820 190 820 890
-  make_wire -790 190 820 190
   make_wire -140 400 -140 870
   make_wire -140 870 -140 1380
   make_wire -140 1380 -140 1920
@@ -123,8 +103,6 @@ proc SCHEMATIC_datapath {} {
   make_wire 250 1100 360 1100
   make_wire 760 260 760 910
   make_wire 420 260 760 260
-  make_wire -40 440 -40 930
-  make_wire -300 440 -40 440
   make_wire -180 380 -180 850
   make_wire -180 850 -180 1360
   make_wire -180 1360 -180 1900
@@ -234,7 +212,29 @@ proc SCHEMATIC_datapath {} {
   make_wire 1030 520 1030 100
   make_wire 1050 590 1050 770
   make_wire 1050 590 1050 230
+  make_wire -300 480 -270 480
+  make_wire -270 480 -270 1980
+  make_wire -670 500 -640 500
+  make_wire -300 460 -230 460
+  make_wire -230 460 -230 1440
+  make_wire -300 440 -40 440
+  make_wire -40 440 -40 930
+  make_wire -300 380 -210 380
+  make_wire -210 380 -210 460
+  make_wire -730 250 -730 420
+  make_wire -730 250 710 250
+  make_wire -730 420 -640 420
+  make_wire -790 190 -790 440
+  make_wire -790 190 820 190
+  make_wire -790 440 -640 440
+  make_wire 1080 1940 640 1940
   make_wire 1080 1940 1080 30
+  make_wire -910 130 -910 460
+  make_wire -910 130 910 130
+  make_wire -840 30 -840 480
+  make_wire -840 30 1080 30
+  make_wire -840 480 -640 480
+  make_wire -910 460 -640 460
 }
 
 proc ICON_datapath args {
@@ -254,7 +254,7 @@ proc ICON_datapath args {
   icon_term -type input -origin {200 20} -orient RX -name Phi2
   icon_term -type inout -origin {200 40} -name SR
   icon_term -type input -origin {200 60} -orient RX -name {N[3:0]}
-  icon_term -type input -origin {200 100} -orient RX -name {BRdEn[3:0]}
+  icon_term -type input -origin {200 80} -orient RX -name {BRdEn[3:0]}
   icon_term -type input -origin {-60 -140} -orient R90 -name In1Select0
   icon_term -type input -origin {-40 -140} -orient R90 -name In2Select1
   icon_term -type input -origin {-20 -140} -orient R90 -name In2Select0
@@ -262,7 +262,7 @@ proc ICON_datapath args {
   icon_term -type input -origin {20 -140} -orient R90 -name notPhi1
   icon_term -type input -origin {40 -140} -orient R90 -name Phi1
   icon_term -type input -origin {60 -140} -orient R90 -name Cin
-  icon_term -type input -origin {200 80} -orient RX -name {D[3:0]}
+  icon_term -type input -origin {0 140} -orient R90Y -name {D[3:0]}
   icon_property -origin {0 0} -size large -anchor center -label datapath
   icon_line -200 -140 200 -140 200 140 -200 140 -200 -140
   icon_property -origin {-190 -60} -label shl
@@ -280,8 +280,7 @@ proc ICON_datapath args {
   icon_property -origin {190 20} -anchor e -label Phi2
   icon_property -origin {190 40} -anchor e -label SR
   icon_property -origin {190 60} -anchor e -label N
-  icon_property -origin {190 80} -anchor e -label D
-  icon_property -origin {190 100} -anchor e -label BRdEn
+  icon_property -origin {190 80} -anchor e -label BRdEn
   icon_property -origin {-60 -130} -rotate 1 -label In1Select0
   icon_property -origin {-40 -130} -rotate 1 -label In2Select1
   icon_property -origin {-20 -130} -rotate 1 -label In2Select0
@@ -289,6 +288,7 @@ proc ICON_datapath args {
   icon_property -origin {20 -130} -rotate 1 -label notPhi1
   icon_property -origin {40 -130} -rotate 1 -label Phi1
   icon_property -origin {60 -130} -rotate 1 -label Cin
+  icon_property -origin {0 130} -anchor e -rotate 1 -label D
   icon_property -origin {-200 360} -type user -name name
   icon_property -origin {-200 380} -type user -name M
   icon_property -origin {-200 400} -type user -name dpc

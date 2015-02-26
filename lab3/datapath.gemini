@@ -1,3 +1,4 @@
+Using equivalence file ./datapath.eq ...
 Gemini 2.7.2	1994/3/15
 
 Graph "datapath_lay.sim": unit scale = 1, format = UCB
@@ -10,12 +11,8 @@ format = NULL (assume MIT)
 format = NULL (assume MIT)
 	Number of devices: 468
 	Number of nets: 264
-The circuits are different.
 
-These circuits contain some symmetry (28% nodes not yet matched).
-Gemini will attempt to find a valid match for symmetrical nodes.
-M#M###
 263 entries written to the dictionary file.
-657 (89%) matches were found by local matching
-All nodes were matched in 93 passes
+686 (93%) matches were found by local matching
+All nodes were matched in 45 passes
 0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab3/datapath.lvs.err.mag

@@ -71,17 +71,17 @@ n notshr net_11 ShifterGuard.net_3 24 100
 | end ShifterGuard.Shifter
 | begin ShifterGuard.Shifter_1 610 970
 | device ShifterGuard.Shifter_1.pmos 400 270
-p notshl ShifterGuard.net_4 net_1 24 200
+p notshl ShifterGuard.net_4 net_5 24 200
 | device ShifterGuard.Shifter_1.nmos 400 310
-n shl ShifterGuard.net_4 net_1 24 100
+n shl ShifterGuard.net_4 net_5 24 100
 | device ShifterGuard.Shifter_1.pmos_1 570 270
 p notshr net_10 ShifterGuard.net_4 24 200
 | device ShifterGuard.Shifter_1.nmos_1 570 310
 n shr net_10 ShifterGuard.net_4 24 100
 | device ShifterGuard.Shifter_1.pmos_2 400 480
-p shl ShifterGuard.net_6 net_1 24 200
+p shl ShifterGuard.net_6 net_5 24 200
 | device ShifterGuard.Shifter_1.nmos_2 400 520
-n notshl ShifterGuard.net_6 net_1 24 100
+n notshl ShifterGuard.net_6 net_5 24 100
 | device ShifterGuard.Shifter_1.pmos_3 570 480
 p shr net_10 ShifterGuard.net_6 24 200
 | device ShifterGuard.Shifter_1.nmos_3 570 520
@@ -89,17 +89,17 @@ n notshr net_10 ShifterGuard.net_6 24 100
 | end ShifterGuard.Shifter_1
 | begin ShifterGuard.Shifter_2 610 720
 | device ShifterGuard.Shifter_2.pmos 400 270
-p notshl ShifterGuard.net_3 net_6 24 200
+p notshl ShifterGuard.net_3 net_1 24 200
 | device ShifterGuard.Shifter_2.nmos 400 310
-n shl ShifterGuard.net_3 net_6 24 100
+n shl ShifterGuard.net_3 net_1 24 100
 | device ShifterGuard.Shifter_2.pmos_1 570 270
 p notshr net_8 ShifterGuard.net_3 24 200
 | device ShifterGuard.Shifter_2.nmos_1 570 310
 n shr net_8 ShifterGuard.net_3 24 100
 | device ShifterGuard.Shifter_2.pmos_2 400 480
-p shl ShifterGuard.net_4 net_6 24 200
+p shl ShifterGuard.net_4 net_1 24 200
 | device ShifterGuard.Shifter_2.nmos_2 400 520
-n notshl ShifterGuard.net_4 net_6 24 100
+n notshl ShifterGuard.net_4 net_1 24 100
 | device ShifterGuard.Shifter_2.pmos_3 570 480
 p shr net_8 ShifterGuard.net_4 24 200
 | device ShifterGuard.Shifter_2.nmos_3 570 520
@@ -107,17 +107,17 @@ n notshr net_8 ShifterGuard.net_4 24 100
 | end ShifterGuard.Shifter_2
 | begin ShifterGuard.Shifter_3 610 1210
 | device ShifterGuard.Shifter_3.pmos 400 270
-p notshl ShifterGuard.net_6 net_5 24 200
+p notshl ShifterGuard.net_6 net_6 24 200
 | device ShifterGuard.Shifter_3.nmos 400 310
-n shl ShifterGuard.net_6 net_5 24 100
+n shl ShifterGuard.net_6 net_6 24 100
 | device ShifterGuard.Shifter_3.pmos_1 570 270
 p notshr net_7 ShifterGuard.net_6 24 200
 | device ShifterGuard.Shifter_3.nmos_1 570 310
 n shr net_7 ShifterGuard.net_6 24 100
 | device ShifterGuard.Shifter_3.pmos_2 400 480
-p shl ShifterGuard.net_5 net_5 24 200
+p shl ShifterGuard.net_5 net_6 24 200
 | device ShifterGuard.Shifter_3.nmos_2 400 520
-n notshl ShifterGuard.net_5 net_5 24 100
+n notshl ShifterGuard.net_5 net_6 24 100
 | device ShifterGuard.Shifter_3.pmos_3 570 480
 p shr net_7 ShifterGuard.net_5 24 200
 | device ShifterGuard.Shifter_3.nmos_3 570 520
@@ -248,9 +248,9 @@ n OneBit_Slice_43.net_1 OneBit_Slice_43.ALU.Func_1.net_3 M[3] 24 200
 | end OneBit_Slice_43.ALU.Func_1
 | begin OneBit_Slice_43.ALU.inverter 1490 550
 | device OneBit_Slice_43.ALU.inverter.nmos 550 360
-n OneBit_Slice_43.ALU.net_5 gnd net_5 24 100
+n OneBit_Slice_43.ALU.net_5 gnd net_4 24 100
 | device OneBit_Slice_43.ALU.inverter.pmos 550 200
-p OneBit_Slice_43.ALU.net_5 vdd net_5 24 200
+p OneBit_Slice_43.ALU.net_5 vdd net_4 24 200
 | end OneBit_Slice_43.ALU.inverter
 | begin OneBit_Slice_43.ALU.TFunc 1300 550
 | device OneBit_Slice_43.ALU.TFunc.nmos 400 390
@@ -800,9 +800,9 @@ n OneBit_Slice_41.net_1 OneBit_Slice_41.ALU.Func_1.net_3 M[3] 24 200
 | end OneBit_Slice_41.ALU.Func_1
 | begin OneBit_Slice_41.ALU.inverter 1490 550
 | device OneBit_Slice_41.ALU.inverter.nmos 550 360
-n OneBit_Slice_41.ALU.net_5 gnd net_6 24 100
+n OneBit_Slice_41.ALU.net_5 gnd net_5 24 100
 | device OneBit_Slice_41.ALU.inverter.pmos 550 200
-p OneBit_Slice_41.ALU.net_5 vdd net_6 24 200
+p OneBit_Slice_41.ALU.net_5 vdd net_5 24 200
 | end OneBit_Slice_41.ALU.inverter
 | begin OneBit_Slice_41.ALU.TFunc 1300 550
 | device OneBit_Slice_41.ALU.TFunc.nmos 400 390
@@ -1076,9 +1076,9 @@ n OneBit_Slice_40.net_1 OneBit_Slice_40.ALU.Func_1.net_3 M[3] 24 200
 | end OneBit_Slice_40.ALU.Func_1
 | begin OneBit_Slice_40.ALU.inverter 1490 550
 | device OneBit_Slice_40.ALU.inverter.nmos 550 360
-n OneBit_Slice_40.ALU.net_5 gnd net_4 24 100
+n OneBit_Slice_40.ALU.net_5 gnd net_6 24 100
 | device OneBit_Slice_40.ALU.inverter.pmos 550 200
-p OneBit_Slice_40.ALU.net_5 vdd net_4 24 200
+p OneBit_Slice_40.ALU.net_5 vdd net_6 24 200
 | end OneBit_Slice_40.ALU.inverter
 | begin OneBit_Slice_40.ALU.TFunc 1300 550
 | device OneBit_Slice_40.ALU.TFunc.nmos 400 390
