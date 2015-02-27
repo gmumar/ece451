@@ -7,7 +7,6 @@ proc SCHEMATIC_ShifterGuard {} {
   make Shifter -origin {610 1210}
   make nmos -orient R90 -origin {1070 1180}
   make pmos -orient R270 -origin {1070 1230}
-  make nand2 -origin {960 1020}
   make inverter -origin {1110 1020}
   make input -name shl -origin {350 460}
   make input -name notshl -origin {380 1230}
@@ -23,6 +22,7 @@ proc SCHEMATIC_ShifterGuard {} {
   make input -name F0 -origin {470 1210}
   make inout -name SL -origin {610 580}
   make inout -name SR -origin {1140 1210}
+  make nor2 -origin {960 1020}
   make_wire 470 1190 410 1190
   make_wire 410 1190 410 1380
   make_wire 410 1380 910 1380
@@ -31,9 +31,6 @@ proc SCHEMATIC_ShifterGuard {} {
   make_wire 910 1040 940 1040
   make_wire 910 1040 910 1380
   make_wire 870 1000 870 1170
-  make_wire 1160 1020 1210 1020
-  make_wire 1210 1020 1210 1120
-  make_wire 1210 1120 1070 1120
   make_wire 1070 1290 1070 1360
   make_wire 1050 1020 1050 910
   make_wire 1050 910 1270 910
@@ -90,6 +87,9 @@ proc SCHEMATIC_ShifterGuard {} {
   make_wire 1110 1210 1110 1180
   make_wire 1110 1210 1110 1230
   make_wire 1110 1210 1140 1210
+  make_wire 1210 1120 1070 1120
+  make_wire 1160 1020 1210 1020
+  make_wire 1210 1020 1210 1120
 }
 
 proc ICON_ShifterGuard args {
@@ -106,8 +106,8 @@ proc ICON_ShifterGuard args {
   icon_term -type output -origin {170 -20} -name RAMIN2
   icon_term -type output -origin {170 0} -name RAMIN1
   icon_term -type output -origin {170 20} -name RAMIN0
-  icon_term -type input -origin {170 40} -orient RX -name notshr
-  icon_term -type inout -origin {170 60} -name SR
+  icon_term -type inout -origin {170 40} -name SR
+  icon_term -type input -origin {170 60} -orient RX -name notshr
   icon_property -origin {0 0} -size large -anchor center -label ShifterGuard
   icon_line -170 -100 170 -100 170 100 -170 100 -170 -100
   icon_property -origin {-160 -60} -label shl
@@ -122,8 +122,8 @@ proc ICON_ShifterGuard args {
   icon_property -origin {160 -20} -anchor e -label RAMIN2
   icon_property -origin {160 0} -anchor e -label RAMIN1
   icon_property -origin {160 20} -anchor e -label RAMIN0
-  icon_property -origin {160 40} -anchor e -label notshr
-  icon_property -origin {160 60} -anchor e -label SR
+  icon_property -origin {160 40} -anchor e -label SR
+  icon_property -origin {160 60} -anchor e -label notshr
   icon_property -origin {-170 320} -type user -name name
   icon_property -origin {-170 340} -type user -name M
   icon_property -origin {-170 360} -type user -name dpc

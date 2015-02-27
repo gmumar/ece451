@@ -7,7 +7,6 @@ proc SCHEMATIC_ShifterGuard {} {
   make Shifter -origin {610 1210}
   make nmos -orient R90 -origin {1070 1180}
   make pmos -orient R270 -origin {1070 1230}
-  make nand2 -origin {960 1020}
   make inverter -origin {1110 1020}
   make input -name shl -origin {350 460}
   make input -name notshl -origin {380 1230}
@@ -23,6 +22,7 @@ proc SCHEMATIC_ShifterGuard {} {
   make input -name F0 -origin {470 1210}
   make inout -name SL -origin {610 580}
   make inout -name SR -origin {1140 1210}
+  make nor2 -origin {960 1020}
   make_wire 470 1190 410 1190
   make_wire 410 1190 410 1380
   make_wire 410 1380 910 1380
@@ -31,9 +31,6 @@ proc SCHEMATIC_ShifterGuard {} {
   make_wire 910 1040 940 1040
   make_wire 910 1040 910 1380
   make_wire 870 1000 870 1170
-  make_wire 1160 1020 1210 1020
-  make_wire 1210 1020 1210 1120
-  make_wire 1210 1120 1070 1120
   make_wire 1070 1290 1070 1360
   make_wire 1050 1020 1050 910
   make_wire 1050 910 1270 910
@@ -90,6 +87,9 @@ proc SCHEMATIC_ShifterGuard {} {
   make_wire 1110 1210 1110 1180
   make_wire 1110 1210 1110 1230
   make_wire 1110 1210 1140 1210
+  make_wire 1210 1120 1070 1120
+  make_wire 1160 1020 1210 1020
+  make_wire 1210 1020 1210 1120
 }
 
 proc ICON_ShifterGuard args {

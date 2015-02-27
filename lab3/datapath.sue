@@ -4,10 +4,7 @@ proc SCHEMATIC_datapath {} {
   make input -name shl -origin {-640 400}
   make input -name notshl -origin {-670 500}
   make input -orient RXY -name shr -origin {-300 400}
-  make input -orient RXY -name notshr -origin {-300 500}
   make inout -name SL -origin {-300 420}
-  make inout -name SR -origin {-300 520}
-  make ShifterGuard -origin {-470 460}
   make input -orient R90 -name notPhi1 -origin {-20 380}
   make input -orient R90 -name In1Select0 -origin {-110 400}
   make input -orient R90 -name In2Select0 -origin {-60 420}
@@ -33,14 +30,17 @@ proc SCHEMATIC_datapath {} {
   make name_net_s -name RAMIN2 -origin {-240 440}
   make name_net_s -name RAMIN1 -origin {-250 460}
   make name_net_s -name RAMIN0 -origin {-270 580}
-  make OneBit_Slice -name B3 -origin {420 440}
-  make OneBit_Slice -name B2 -origin {420 910}
-  make OneBit_Slice -name B1 -origin {420 1420}
-  make OneBit_Slice -name B0 -origin {430 1960}
   make name_net_s -name F3 -origin {680 420}
   make name_net_s -name F2 -origin {660 890}
   make name_net_s -name F0 -origin {670 1940}
   make name_net_s -name F1 -origin {680 1400}
+  make OneBit_Slice -name B3 -origin {420 440}
+  make OneBit_Slice -name B2 -origin {420 910}
+  make OneBit_Slice -name B1 -origin {420 1420}
+  make OneBit_Slice -name B0 -origin {430 1960}
+  make ShifterGuard -origin {-470 460}
+  make inout -name SR -origin {-300 500}
+  make input -orient RXY -name notshr -origin {-300 520}
   make_wire 420 1230 420 1260
   make_wire 420 260 420 280
   make_wire 710 250 710 420

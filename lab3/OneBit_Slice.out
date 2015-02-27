@@ -1,0 +1,150 @@
+
+Circuit: * FILE: OneBit_Slice.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+@ vds=2 vgs=2.74788 vbs=0.472738 Id=0.000914005
+WARNING: negative Gmb = -1.14861e-05 for pfet m:alu:tfunc:_13
+@ vds=2.02145 vgs=2.45182 vbs=0.509243 Id=0.00076768
+WARNING: negative Gmb = -2.58791e-06 for pfet m:alu:tfunc:_10
+@ vds=0.306765 vgs=6.96789 vbs=0.644492 Id=0.000759508
+WARNING: negative Gmb = -7.08542e-07 for nfet m:alu:tfunc:_3
+@ vds=4 vgs=2.46634 vbs=0.718522 Id=0.000440162
+WARNING: negative Gmb = -1.3179e-05 for pfet m:alu:inverter:_2
+@ vds=0.358919 vgs=8.07792 vbs=0.358919 Id=0.00061163
+WARNING: negative Gmb = -2.63162e-06 for nfet m:alu:inverter:_1
+@ vds=0.5 vgs=16.3625 vbs=0.174 Id=0.0017998
+WARNING: negative Gm = -2.00335e-05 for nfet m:alu:tfunc:_3
+WARNING: negative Gmb = -3.74215e-06 for nfet m:alu:tfunc:_3
+@ vds=0.5 vgs=12.1507 vbs=0.153618 Id=0.00175547
+WARNING: negative Gmb = -3.48311e-05 for nfet m:alu:tfunc:_1
+@ vds=0.5 vgs=16.3965 vbs=0.201883 Id=0.00179902
+WARNING: negative Gm = -2.00619e-05 for nfet m:alu:tfunc:_3
+WARNING: negative Gmb = -3.63225e-06 for nfet m:alu:tfunc:_3
+@ vds=0.5 vgs=16.4714 vbs=0 Id=0.00132026
+WARNING: negative Gm = -1.15563e-05 for nfet m:alu:inverter:_1
+WARNING: negative Gmb = -2.38508e-06 for nfet m:alu:inverter:_1
+@ vds=0.5 vgs=16.9847 vbs=0.254173 Id=0.00178691
+WARNING: negative Gm = -2.04648e-05 for nfet m:alu:tfunc:_1
+WARNING: negative Gmb = -3.44886e-06 for nfet m:alu:tfunc:_1
+@ vds=2 vgs=3.57734 vbs=0.421571 Id=0.0012836
+WARNING: negative Gmb = -3.87229e-06 for pfet m:alu:tfunc:_16
+@ vds=1.89176 vgs=2.45598 vbs=0.657559 Id=0.000760625
+WARNING: negative Gmb = -1.61462e-05 for pfet m:alu:tfunc:_11
+@ vds=1.89176 vgs=2.45598 vbs=0.657054 Id=0.000760633
+WARNING: negative Gmb = -1.61071e-05 for pfet m:alu:tfunc:_10
+@ vds=2 vgs=2.57117 vbs=0.437402 Id=0.000825927
+WARNING: negative Gmb = -3.8129e-07 for pfet m:alu:tfunc:_16
+
+Transient solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+gnd                                               0         -1.89792e-44
+vdd                                               0         -1.00072e-43
+in1select0                                        0                    0
+opsel:net_3                             4.78691e-39          1.87355e-45
+opsel:net_1                            -1.67702e-45         -9.70581e-54
+notphi1                                           0                    0
+opsel:net_2                             6.03832e-46          5.25701e-54
+phi1                                              0                    0
+si                                      4.73407e-50           1.1792e-58
+net_1                                  -3.56596e-50         -8.88236e-59
+a                                       6.71258e-40           1.8195e-45
+opsel:net_4                            -1.47418e-37         -3.73486e-45
+in2select0                                        0                    0
+d                                       4.22318e-38          3.59261e-48
+in1select1                                        0                    0
+opsel_1:net_3                           4.22744e-38          2.46269e-45
+opsel_1:net_1                          -1.68359e-45          -9.7438e-54
+opsel_1:net_2                           6.06196e-46          5.27759e-54
+ri                                       4.7326e-50          1.17883e-58
+net_2                                  -3.56595e-50         -8.88235e-59
+b                                       1.46813e-39          1.86729e-45
+opsel_1:net_4                          -1.50625e-37         -4.28446e-45
+in2select1                                        0                    0
+regfile_79:ramcell_45:net_2             7.92488e-40          2.48987e-49
+notfben[0]                                        0                    0
+regfile_79:ramcell_45:net_1             8.02933e-40          2.92289e-48
+fben[0]                                           0                    0
+arden[0]                                          0                    0
+brden[0]                                          0                    0
+ramini                                  7.97496e-40          2.46902e-49
+writeen[0]                                        0                    0
+regfile_79:ramcell_45:net_3             1.41504e-50           3.5247e-59
+regfile_79:ramcell_2:net_2              7.92488e-40          2.48987e-49
+notfben[1]                                        0                    0
+regfile_79:ramcell_2:net_1              8.02933e-40          2.92289e-48
+fben[1]                                           0                    0
+arden[1]                                          0                    0
+brden[1]                                          0                    0
+writeen[1]                                        0                    0
+regfile_79:ramcell_2:net_3              1.41504e-50           3.5247e-59
+regfile_79:ramcell_4:net_2              7.92488e-40          2.48987e-49
+notfben[2]                                        0                    0
+regfile_79:ramcell_4:net_1              8.02933e-40          2.92289e-48
+fben[2]                                           0                    0
+arden[2]                                          0                    0
+brden[2]                                          0                    0
+writeen[2]                                        0                    0
+regfile_79:ramcell_4:net_3              1.41504e-50           3.5247e-59
+regfile_79:ramcell_27:net_2             7.92488e-40          2.48987e-49
+notfben[3]                                        0                    0
+regfile_79:ramcell_27:net_1             8.02933e-40          2.92289e-48
+fben[3]                                           0                    0
+arden[3]                                          0                    0
+brden[3]                                          0                    0
+writeen[3]                                        0                    0
+regfile_79:ramcell_27:net_3             1.41504e-50           3.5247e-59
+l[0]                                    3.01089e-36          1.09105e-43
+alu:func:net_1                         -5.83862e-36         -4.91116e-43
+alu:net_3                               2.51723e-35          1.58975e-42
+l[1]                                     3.0109e-36          1.09105e-43
+alu:func:net_4                         -5.83864e-36         -4.91117e-43
+l[2]                                     3.0109e-36          1.09105e-43
+alu:func:net_2                         -5.83864e-36         -4.91117e-43
+alu:func:net_3                         -5.83863e-36         -4.91117e-43
+l[3]                                     3.0109e-36          1.09105e-43
+m[0]                                    3.01089e-36          1.09105e-43
+alu:func_1:net_1                       -5.83862e-36         -4.91116e-43
+alu:notp                                2.51723e-35          1.58975e-42
+m[1]                                     3.0109e-36          1.09105e-43
+alu:func_1:net_4                       -5.83864e-36         -4.91117e-43
+m[2]                                     3.0109e-36          1.09105e-43
+alu:func_1:net_2                       -5.83864e-36         -4.91117e-43
+alu:func_1:net_3                       -5.83863e-36         -4.91117e-43
+m[3]                                     3.0109e-36          1.09105e-43
+fi                                       1.7037e-49          4.25966e-58
+alu:notfi                               8.50368e-35          9.20871e-42
+n[0]                                   -1.28557e-35          4.53112e-43
+alu:tfunc:net_4                        -3.85267e-35         -1.84434e-42
+notci_1                                 2.31568e-50         -2.42955e-59
+n[1]                                   -1.29514e-35          4.49721e-43
+alu:tfunc:net_1                        -3.84105e-35         -1.84028e-42
+alu:net_2                               1.70346e-49          4.25962e-58
+n[2]                                    -1.2854e-35          4.53172e-43
+alu:tfunc:net_6                        -3.85287e-35         -1.84441e-42
+alu:net_1                              -2.20798e-50          -5.4998e-59
+n[3]                                   -1.29522e-35          4.49689e-43
+alu:tfunc:net_7                        -3.84094e-35         -1.84024e-42
+alu:tfunc:net_3                        -3.64975e-35         -9.12838e-43
+alu:tfunc:net_2                        -3.64715e-35         -9.11917e-43
+alu:tfunc:net_5                        -3.64979e-35         -9.12854e-43
+alu:tfunc:net_8                        -3.64713e-35         -9.11909e-43
+alu:carry:net_1                         1.70346e-49          4.25962e-58
+p                                                 0                    0
+notci                                  -1.77899e-51          2.42418e-59
+phi2                                              0                    0
+vdd#branch                             -2.52034e-44                    0
+vgnd#branch                             -6.0681e-45                    0
+
+
+CPU time since last call: 0.132 seconds.
+
+Total CPU time: 0.132 seconds.
+
+Current dynamic memory usage = 405504,
+Dynamic memory limit = -135041.
+
