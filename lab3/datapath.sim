@@ -72,9 +72,9 @@ p B3.OpSel.net_2 vdd B3.Si 24 200
 | end B3.OpSel.inverter_1
 | begin B3.OpSel.inverter_2 820 380
 | device B3.OpSel.inverter_2.nmos 550 360
-n B3.Si gnd B3.net_2 24 100
+n B3.Si gnd B3.net_1 24 100
 | device B3.OpSel.inverter_2.pmos 550 200
-p B3.Si vdd B3.net_2 24 200
+p B3.Si vdd B3.net_1 24 200
 | end B3.OpSel.inverter_2
 | device B3.OpSel.nmos_2 110 480
 n Phi1 B3.OpSel.net_4 gnd 24 200
@@ -104,9 +104,9 @@ p B3.OpSel_1.net_2 vdd B3.Ri 24 200
 | end B3.OpSel_1.inverter_1
 | begin B3.OpSel_1.inverter_2 820 380
 | device B3.OpSel_1.inverter_2.nmos 550 360
-n B3.Ri gnd B3.net_1 24 100
+n B3.Ri gnd B3.net_2 24 100
 | device B3.OpSel_1.inverter_2.pmos 550 200
-p B3.Ri vdd B3.net_1 24 200
+p B3.Ri vdd B3.net_2 24 200
 | end B3.OpSel_1.inverter_2
 | device B3.OpSel_1.nmos_2 110 480
 n Phi1 B3.OpSel_1.net_4 D[3] 24 200
@@ -220,31 +220,31 @@ p B3.RegFile_79.RamCell_27.net_3 vdd B3.RegFile_79.RamCell_27.net_1 24 200
 | begin B3.ALU 790 380
 | begin B3.ALU.Func 490 410
 | device B3.ALU.Func.nmos 470 250
-n B3.net_2 B3.ALU.Func.net_1 L[0] 24 200
+n B3.net_1 B3.ALU.Func.net_1 L[0] 24 200
 | device B3.ALU.Func.nmos_1 470 330
-n B3.net_1 B3.ALU.net_1 B3.ALU.Func.net_1 24 200
+n B3.net_2 B3.ALU.net_3 B3.ALU.Func.net_1 24 200
 | device B3.ALU.Func.nmos_2 660 330
-n B3.net_1 B3.ALU.Func.net_4 L[1] 24 200
+n B3.net_2 B3.ALU.Func.net_4 L[1] 24 200
 | device B3.ALU.Func.nmos_3 800 250
-n B3.net_2 B3.ALU.Func.net_2 L[2] 24 200
+n B3.net_1 B3.ALU.Func.net_2 L[2] 24 200
 | device B3.ALU.Func.nmos_4 660 410
-n B3.Si B3.ALU.net_1 B3.ALU.Func.net_4 24 200
+n B3.Si B3.ALU.net_3 B3.ALU.Func.net_4 24 200
 | device B3.ALU.Func.nmos_5 800 490
-n B3.Ri B3.ALU.net_1 B3.ALU.Func.net_2 24 200
+n B3.Ri B3.ALU.net_3 B3.ALU.Func.net_2 24 200
 | device B3.ALU.Func.nmos_6 920 490
-n B3.Ri B3.ALU.net_1 B3.ALU.Func.net_3 24 200
+n B3.Ri B3.ALU.net_3 B3.ALU.Func.net_3 24 200
 | device B3.ALU.Func.nmos_7 920 410
 n B3.Si B3.ALU.Func.net_3 L[3] 24 200
 | end B3.ALU.Func
 | begin B3.ALU.Func_1 490 750
 | device B3.ALU.Func_1.nmos 470 250
-n B3.net_2 B3.ALU.Func_1.net_1 M[0] 24 200
+n B3.net_1 B3.ALU.Func_1.net_1 M[0] 24 200
 | device B3.ALU.Func_1.nmos_1 470 330
-n B3.net_1 B3.ALU.notP B3.ALU.Func_1.net_1 24 200
+n B3.net_2 B3.ALU.notP B3.ALU.Func_1.net_1 24 200
 | device B3.ALU.Func_1.nmos_2 660 330
-n B3.net_1 B3.ALU.Func_1.net_4 M[1] 24 200
+n B3.net_2 B3.ALU.Func_1.net_4 M[1] 24 200
 | device B3.ALU.Func_1.nmos_3 800 250
-n B3.net_2 B3.ALU.Func_1.net_2 M[2] 24 200
+n B3.net_1 B3.ALU.Func_1.net_2 M[2] 24 200
 | device B3.ALU.Func_1.nmos_4 660 410
 n B3.Si B3.ALU.notP B3.ALU.Func_1.net_4 24 200
 | device B3.ALU.Func_1.nmos_5 800 490
@@ -264,42 +264,42 @@ p B3.ALU.notFi vdd F3 24 200
 | device B3.ALU.TFunc.nmos 400 390
 n B3.ALU.notP B3.ALU.TFunc.net_4 N[0] 24 200
 | device B3.ALU.TFunc.nmos_1 400 470
-n net_2 B3.ALU.notFi B3.ALU.TFunc.net_4 24 200
+n net_3 B3.ALU.notFi B3.ALU.TFunc.net_4 24 200
 | device B3.ALU.TFunc.nmos_2 590 470
-n net_2 B3.ALU.TFunc.net_1 N[1] 24 200
+n net_3 B3.ALU.TFunc.net_1 N[1] 24 200
 | device B3.ALU.TFunc.nmos_3 590 550
 n B3.ALU.net_2 B3.ALU.notFi B3.ALU.TFunc.net_1 24 200
 | device B3.ALU.TFunc.nmos_4 730 390
 n B3.ALU.notP B3.ALU.TFunc.net_6 N[2] 24 200
 | device B3.ALU.TFunc.nmos_5 730 630
-n B3.ALU.net_3 B3.ALU.notFi B3.ALU.TFunc.net_6 24 200
+n B3.ALU.net_1 B3.ALU.notFi B3.ALU.TFunc.net_6 24 200
 | device B3.ALU.TFunc.nmos_6 850 550
 n B3.ALU.net_2 B3.ALU.TFunc.net_7 N[3] 24 200
 | device B3.ALU.TFunc.nmos_7 850 630
-n B3.ALU.net_3 B3.ALU.notFi B3.ALU.TFunc.net_7 24 200
+n B3.ALU.net_1 B3.ALU.notFi B3.ALU.TFunc.net_7 24 200
 | device B3.ALU.TFunc.pmos 990 550
 p B3.ALU.net_2 N[0] B3.ALU.TFunc.net_3 24 400
 | device B3.ALU.TFunc.pmos_1 990 630
-p B3.ALU.net_3 B3.ALU.TFunc.net_3 B3.ALU.notFi 24 400
+p B3.ALU.net_1 B3.ALU.TFunc.net_3 B3.ALU.notFi 24 400
 | device B3.ALU.TFunc.pmos_2 1120 630
-p B3.ALU.net_3 B3.ALU.TFunc.net_2 B3.ALU.notFi 24 400
+p B3.ALU.net_1 B3.ALU.TFunc.net_2 B3.ALU.notFi 24 400
 | device B3.ALU.TFunc.pmos_3 1230 550
 p B3.ALU.net_2 B3.ALU.TFunc.net_5 B3.ALU.notFi 24 400
 | device B3.ALU.TFunc.pmos_4 1230 470
-p net_2 N[2] B3.ALU.TFunc.net_5 24 400
+p net_3 N[2] B3.ALU.TFunc.net_5 24 400
 | device B3.ALU.TFunc.pmos_5 1120 390
 p B3.ALU.notP N[1] B3.ALU.TFunc.net_2 24 400
 | device B3.ALU.TFunc.pmos_6 1340 470
-p net_2 B3.ALU.TFunc.net_8 B3.ALU.notFi 24 400
+p net_3 B3.ALU.TFunc.net_8 B3.ALU.notFi 24 400
 | device B3.ALU.TFunc.pmos_7 1340 390
 p B3.ALU.notP N[3] B3.ALU.TFunc.net_8 24 400
 | end B3.ALU.TFunc
 | begin B3.ALU.Carry 900 530
 | begin B3.ALU.Carry.inverter 730 390
 | device B3.ALU.Carry.inverter.nmos 550 360
-n net_2 gnd B3.ALU.net_3 24 100
+n net_3 gnd B3.ALU.net_1 24 100
 | device B3.ALU.Carry.inverter.pmos 550 200
-p net_2 vdd B3.ALU.net_3 24 200
+p net_3 vdd B3.ALU.net_1 24 200
 | end B3.ALU.Carry.inverter
 | begin B3.ALU.Carry.inverter_1 620 550
 | device B3.ALU.Carry.inverter_1.nmos 550 360
@@ -309,12 +309,12 @@ p B3.ALU.notP vdd B3.ALU.net_2 24 200
 | end B3.ALU.Carry.inverter_1
 | begin B3.ALU.Carry.inverter_2 620 670
 | device B3.ALU.Carry.inverter_2.nmos 550 360
-n B3.ALU.net_1 gnd B3.ALU.Carry.net_1 24 100
+n B3.ALU.net_3 gnd B3.ALU.Carry.net_1 24 100
 | device B3.ALU.Carry.inverter_2.pmos 550 200
-p B3.ALU.net_1 vdd B3.ALU.Carry.net_1 24 200
+p B3.ALU.net_3 vdd B3.ALU.Carry.net_1 24 200
 | end B3.ALU.Carry.inverter_2
 | device B3.ALU.Carry.nmos 730 470
-n B3.ALU.net_2 notCout net_2 24 100
+n B3.ALU.net_2 notCout net_3 24 100
 | device B3.ALU.Carry.nmos_1 860 670
 n B3.ALU.Carry.net_1 gnd notCout 24 100
 | device B3.ALU.Carry.pmos 860 250
@@ -322,7 +322,7 @@ p Phi2 vdd notCout 24 100
 | device B3.ALU.Carry.pmos_1 510 250
 p Phi2 vdd B3.ALU.notP 24 100
 | device B3.ALU.Carry.pmos_2 370 250
-p Phi2 vdd B3.ALU.net_1 24 100
+p Phi2 vdd B3.ALU.net_3 24 100
 | end B3.ALU.Carry
 | end B3.ALU
 | end B3
@@ -348,9 +348,9 @@ p B2.OpSel.net_2 vdd B2.Si 24 200
 | end B2.OpSel.inverter_1
 | begin B2.OpSel.inverter_2 820 380
 | device B2.OpSel.inverter_2.nmos 550 360
-n B2.Si gnd B2.net_2 24 100
+n B2.Si gnd B2.net_1 24 100
 | device B2.OpSel.inverter_2.pmos 550 200
-p B2.Si vdd B2.net_2 24 200
+p B2.Si vdd B2.net_1 24 200
 | end B2.OpSel.inverter_2
 | device B2.OpSel.nmos_2 110 480
 n Phi1 B2.OpSel.net_4 gnd 24 200
@@ -380,9 +380,9 @@ p B2.OpSel_1.net_2 vdd B2.Ri 24 200
 | end B2.OpSel_1.inverter_1
 | begin B2.OpSel_1.inverter_2 820 380
 | device B2.OpSel_1.inverter_2.nmos 550 360
-n B2.Ri gnd B2.net_1 24 100
+n B2.Ri gnd B2.net_2 24 100
 | device B2.OpSel_1.inverter_2.pmos 550 200
-p B2.Ri vdd B2.net_1 24 200
+p B2.Ri vdd B2.net_2 24 200
 | end B2.OpSel_1.inverter_2
 | device B2.OpSel_1.nmos_2 110 480
 n Phi1 B2.OpSel_1.net_4 D[2] 24 200
@@ -496,31 +496,31 @@ p B2.RegFile_79.RamCell_27.net_3 vdd B2.RegFile_79.RamCell_27.net_1 24 200
 | begin B2.ALU 790 380
 | begin B2.ALU.Func 490 410
 | device B2.ALU.Func.nmos 470 250
-n B2.net_2 B2.ALU.Func.net_1 L[0] 24 200
+n B2.net_1 B2.ALU.Func.net_1 L[0] 24 200
 | device B2.ALU.Func.nmos_1 470 330
-n B2.net_1 B2.ALU.net_1 B2.ALU.Func.net_1 24 200
+n B2.net_2 B2.ALU.net_3 B2.ALU.Func.net_1 24 200
 | device B2.ALU.Func.nmos_2 660 330
-n B2.net_1 B2.ALU.Func.net_4 L[1] 24 200
+n B2.net_2 B2.ALU.Func.net_4 L[1] 24 200
 | device B2.ALU.Func.nmos_3 800 250
-n B2.net_2 B2.ALU.Func.net_2 L[2] 24 200
+n B2.net_1 B2.ALU.Func.net_2 L[2] 24 200
 | device B2.ALU.Func.nmos_4 660 410
-n B2.Si B2.ALU.net_1 B2.ALU.Func.net_4 24 200
+n B2.Si B2.ALU.net_3 B2.ALU.Func.net_4 24 200
 | device B2.ALU.Func.nmos_5 800 490
-n B2.Ri B2.ALU.net_1 B2.ALU.Func.net_2 24 200
+n B2.Ri B2.ALU.net_3 B2.ALU.Func.net_2 24 200
 | device B2.ALU.Func.nmos_6 920 490
-n B2.Ri B2.ALU.net_1 B2.ALU.Func.net_3 24 200
+n B2.Ri B2.ALU.net_3 B2.ALU.Func.net_3 24 200
 | device B2.ALU.Func.nmos_7 920 410
 n B2.Si B2.ALU.Func.net_3 L[3] 24 200
 | end B2.ALU.Func
 | begin B2.ALU.Func_1 490 750
 | device B2.ALU.Func_1.nmos 470 250
-n B2.net_2 B2.ALU.Func_1.net_1 M[0] 24 200
+n B2.net_1 B2.ALU.Func_1.net_1 M[0] 24 200
 | device B2.ALU.Func_1.nmos_1 470 330
-n B2.net_1 B2.ALU.notP B2.ALU.Func_1.net_1 24 200
+n B2.net_2 B2.ALU.notP B2.ALU.Func_1.net_1 24 200
 | device B2.ALU.Func_1.nmos_2 660 330
-n B2.net_1 B2.ALU.Func_1.net_4 M[1] 24 200
+n B2.net_2 B2.ALU.Func_1.net_4 M[1] 24 200
 | device B2.ALU.Func_1.nmos_3 800 250
-n B2.net_2 B2.ALU.Func_1.net_2 M[2] 24 200
+n B2.net_1 B2.ALU.Func_1.net_2 M[2] 24 200
 | device B2.ALU.Func_1.nmos_4 660 410
 n B2.Si B2.ALU.notP B2.ALU.Func_1.net_4 24 200
 | device B2.ALU.Func_1.nmos_5 800 490
@@ -548,17 +548,17 @@ n B2.ALU.net_2 B2.ALU.notFi B2.ALU.TFunc.net_1 24 200
 | device B2.ALU.TFunc.nmos_4 730 390
 n B2.ALU.notP B2.ALU.TFunc.net_6 N[2] 24 200
 | device B2.ALU.TFunc.nmos_5 730 630
-n B2.ALU.net_3 B2.ALU.notFi B2.ALU.TFunc.net_6 24 200
+n B2.ALU.net_1 B2.ALU.notFi B2.ALU.TFunc.net_6 24 200
 | device B2.ALU.TFunc.nmos_6 850 550
 n B2.ALU.net_2 B2.ALU.TFunc.net_7 N[3] 24 200
 | device B2.ALU.TFunc.nmos_7 850 630
-n B2.ALU.net_3 B2.ALU.notFi B2.ALU.TFunc.net_7 24 200
+n B2.ALU.net_1 B2.ALU.notFi B2.ALU.TFunc.net_7 24 200
 | device B2.ALU.TFunc.pmos 990 550
 p B2.ALU.net_2 N[0] B2.ALU.TFunc.net_3 24 400
 | device B2.ALU.TFunc.pmos_1 990 630
-p B2.ALU.net_3 B2.ALU.TFunc.net_3 B2.ALU.notFi 24 400
+p B2.ALU.net_1 B2.ALU.TFunc.net_3 B2.ALU.notFi 24 400
 | device B2.ALU.TFunc.pmos_2 1120 630
-p B2.ALU.net_3 B2.ALU.TFunc.net_2 B2.ALU.notFi 24 400
+p B2.ALU.net_1 B2.ALU.TFunc.net_2 B2.ALU.notFi 24 400
 | device B2.ALU.TFunc.pmos_3 1230 550
 p B2.ALU.net_2 B2.ALU.TFunc.net_5 B2.ALU.notFi 24 400
 | device B2.ALU.TFunc.pmos_4 1230 470
@@ -573,9 +573,9 @@ p B2.ALU.notP N[3] B2.ALU.TFunc.net_8 24 400
 | begin B2.ALU.Carry 900 530
 | begin B2.ALU.Carry.inverter 730 390
 | device B2.ALU.Carry.inverter.nmos 550 360
-n net_1 gnd B2.ALU.net_3 24 100
+n net_1 gnd B2.ALU.net_1 24 100
 | device B2.ALU.Carry.inverter.pmos 550 200
-p net_1 vdd B2.ALU.net_3 24 200
+p net_1 vdd B2.ALU.net_1 24 200
 | end B2.ALU.Carry.inverter
 | begin B2.ALU.Carry.inverter_1 620 550
 | device B2.ALU.Carry.inverter_1.nmos 550 360
@@ -585,20 +585,20 @@ p B2.ALU.notP vdd B2.ALU.net_2 24 200
 | end B2.ALU.Carry.inverter_1
 | begin B2.ALU.Carry.inverter_2 620 670
 | device B2.ALU.Carry.inverter_2.nmos 550 360
-n B2.ALU.net_1 gnd B2.ALU.Carry.net_1 24 100
+n B2.ALU.net_3 gnd B2.ALU.Carry.net_1 24 100
 | device B2.ALU.Carry.inverter_2.pmos 550 200
-p B2.ALU.net_1 vdd B2.ALU.Carry.net_1 24 200
+p B2.ALU.net_3 vdd B2.ALU.Carry.net_1 24 200
 | end B2.ALU.Carry.inverter_2
 | device B2.ALU.Carry.nmos 730 470
-n B2.ALU.net_2 net_2 net_1 24 100
+n B2.ALU.net_2 net_3 net_1 24 100
 | device B2.ALU.Carry.nmos_1 860 670
-n B2.ALU.Carry.net_1 gnd net_2 24 100
+n B2.ALU.Carry.net_1 gnd net_3 24 100
 | device B2.ALU.Carry.pmos 860 250
-p Phi2 vdd net_2 24 100
+p Phi2 vdd net_3 24 100
 | device B2.ALU.Carry.pmos_1 510 250
 p Phi2 vdd B2.ALU.notP 24 100
 | device B2.ALU.Carry.pmos_2 370 250
-p Phi2 vdd B2.ALU.net_1 24 100
+p Phi2 vdd B2.ALU.net_3 24 100
 | end B2.ALU.Carry
 | end B2.ALU
 | end B2
@@ -624,9 +624,9 @@ p B1.OpSel.net_2 vdd B1.Si 24 200
 | end B1.OpSel.inverter_1
 | begin B1.OpSel.inverter_2 820 380
 | device B1.OpSel.inverter_2.nmos 550 360
-n B1.Si gnd B1.net_2 24 100
+n B1.Si gnd B1.net_1 24 100
 | device B1.OpSel.inverter_2.pmos 550 200
-p B1.Si vdd B1.net_2 24 200
+p B1.Si vdd B1.net_1 24 200
 | end B1.OpSel.inverter_2
 | device B1.OpSel.nmos_2 110 480
 n Phi1 B1.OpSel.net_4 gnd 24 200
@@ -656,9 +656,9 @@ p B1.OpSel_1.net_2 vdd B1.Ri 24 200
 | end B1.OpSel_1.inverter_1
 | begin B1.OpSel_1.inverter_2 820 380
 | device B1.OpSel_1.inverter_2.nmos 550 360
-n B1.Ri gnd B1.net_1 24 100
+n B1.Ri gnd B1.net_2 24 100
 | device B1.OpSel_1.inverter_2.pmos 550 200
-p B1.Ri vdd B1.net_1 24 200
+p B1.Ri vdd B1.net_2 24 200
 | end B1.OpSel_1.inverter_2
 | device B1.OpSel_1.nmos_2 110 480
 n Phi1 B1.OpSel_1.net_4 D[1] 24 200
@@ -772,31 +772,31 @@ p B1.RegFile_79.RamCell_27.net_3 vdd B1.RegFile_79.RamCell_27.net_1 24 200
 | begin B1.ALU 790 380
 | begin B1.ALU.Func 490 410
 | device B1.ALU.Func.nmos 470 250
-n B1.net_2 B1.ALU.Func.net_1 L[0] 24 200
+n B1.net_1 B1.ALU.Func.net_1 L[0] 24 200
 | device B1.ALU.Func.nmos_1 470 330
-n B1.net_1 B1.ALU.net_1 B1.ALU.Func.net_1 24 200
+n B1.net_2 B1.ALU.net_3 B1.ALU.Func.net_1 24 200
 | device B1.ALU.Func.nmos_2 660 330
-n B1.net_1 B1.ALU.Func.net_4 L[1] 24 200
+n B1.net_2 B1.ALU.Func.net_4 L[1] 24 200
 | device B1.ALU.Func.nmos_3 800 250
-n B1.net_2 B1.ALU.Func.net_2 L[2] 24 200
+n B1.net_1 B1.ALU.Func.net_2 L[2] 24 200
 | device B1.ALU.Func.nmos_4 660 410
-n B1.Si B1.ALU.net_1 B1.ALU.Func.net_4 24 200
+n B1.Si B1.ALU.net_3 B1.ALU.Func.net_4 24 200
 | device B1.ALU.Func.nmos_5 800 490
-n B1.Ri B1.ALU.net_1 B1.ALU.Func.net_2 24 200
+n B1.Ri B1.ALU.net_3 B1.ALU.Func.net_2 24 200
 | device B1.ALU.Func.nmos_6 920 490
-n B1.Ri B1.ALU.net_1 B1.ALU.Func.net_3 24 200
+n B1.Ri B1.ALU.net_3 B1.ALU.Func.net_3 24 200
 | device B1.ALU.Func.nmos_7 920 410
 n B1.Si B1.ALU.Func.net_3 L[3] 24 200
 | end B1.ALU.Func
 | begin B1.ALU.Func_1 490 750
 | device B1.ALU.Func_1.nmos 470 250
-n B1.net_2 B1.ALU.Func_1.net_1 M[0] 24 200
+n B1.net_1 B1.ALU.Func_1.net_1 M[0] 24 200
 | device B1.ALU.Func_1.nmos_1 470 330
-n B1.net_1 B1.ALU.notP B1.ALU.Func_1.net_1 24 200
+n B1.net_2 B1.ALU.notP B1.ALU.Func_1.net_1 24 200
 | device B1.ALU.Func_1.nmos_2 660 330
-n B1.net_1 B1.ALU.Func_1.net_4 M[1] 24 200
+n B1.net_2 B1.ALU.Func_1.net_4 M[1] 24 200
 | device B1.ALU.Func_1.nmos_3 800 250
-n B1.net_2 B1.ALU.Func_1.net_2 M[2] 24 200
+n B1.net_1 B1.ALU.Func_1.net_2 M[2] 24 200
 | device B1.ALU.Func_1.nmos_4 660 410
 n B1.Si B1.ALU.notP B1.ALU.Func_1.net_4 24 200
 | device B1.ALU.Func_1.nmos_5 800 490
@@ -816,42 +816,42 @@ p B1.ALU.notFi vdd F1 24 200
 | device B1.ALU.TFunc.nmos 400 390
 n B1.ALU.notP B1.ALU.TFunc.net_4 N[0] 24 200
 | device B1.ALU.TFunc.nmos_1 400 470
-n net_3 B1.ALU.notFi B1.ALU.TFunc.net_4 24 200
+n net_2 B1.ALU.notFi B1.ALU.TFunc.net_4 24 200
 | device B1.ALU.TFunc.nmos_2 590 470
-n net_3 B1.ALU.TFunc.net_1 N[1] 24 200
+n net_2 B1.ALU.TFunc.net_1 N[1] 24 200
 | device B1.ALU.TFunc.nmos_3 590 550
 n B1.ALU.net_2 B1.ALU.notFi B1.ALU.TFunc.net_1 24 200
 | device B1.ALU.TFunc.nmos_4 730 390
 n B1.ALU.notP B1.ALU.TFunc.net_6 N[2] 24 200
 | device B1.ALU.TFunc.nmos_5 730 630
-n B1.ALU.net_3 B1.ALU.notFi B1.ALU.TFunc.net_6 24 200
+n B1.ALU.net_1 B1.ALU.notFi B1.ALU.TFunc.net_6 24 200
 | device B1.ALU.TFunc.nmos_6 850 550
 n B1.ALU.net_2 B1.ALU.TFunc.net_7 N[3] 24 200
 | device B1.ALU.TFunc.nmos_7 850 630
-n B1.ALU.net_3 B1.ALU.notFi B1.ALU.TFunc.net_7 24 200
+n B1.ALU.net_1 B1.ALU.notFi B1.ALU.TFunc.net_7 24 200
 | device B1.ALU.TFunc.pmos 990 550
 p B1.ALU.net_2 N[0] B1.ALU.TFunc.net_3 24 400
 | device B1.ALU.TFunc.pmos_1 990 630
-p B1.ALU.net_3 B1.ALU.TFunc.net_3 B1.ALU.notFi 24 400
+p B1.ALU.net_1 B1.ALU.TFunc.net_3 B1.ALU.notFi 24 400
 | device B1.ALU.TFunc.pmos_2 1120 630
-p B1.ALU.net_3 B1.ALU.TFunc.net_2 B1.ALU.notFi 24 400
+p B1.ALU.net_1 B1.ALU.TFunc.net_2 B1.ALU.notFi 24 400
 | device B1.ALU.TFunc.pmos_3 1230 550
 p B1.ALU.net_2 B1.ALU.TFunc.net_5 B1.ALU.notFi 24 400
 | device B1.ALU.TFunc.pmos_4 1230 470
-p net_3 N[2] B1.ALU.TFunc.net_5 24 400
+p net_2 N[2] B1.ALU.TFunc.net_5 24 400
 | device B1.ALU.TFunc.pmos_5 1120 390
 p B1.ALU.notP N[1] B1.ALU.TFunc.net_2 24 400
 | device B1.ALU.TFunc.pmos_6 1340 470
-p net_3 B1.ALU.TFunc.net_8 B1.ALU.notFi 24 400
+p net_2 B1.ALU.TFunc.net_8 B1.ALU.notFi 24 400
 | device B1.ALU.TFunc.pmos_7 1340 390
 p B1.ALU.notP N[3] B1.ALU.TFunc.net_8 24 400
 | end B1.ALU.TFunc
 | begin B1.ALU.Carry 900 530
 | begin B1.ALU.Carry.inverter 730 390
 | device B1.ALU.Carry.inverter.nmos 550 360
-n net_3 gnd B1.ALU.net_3 24 100
+n net_2 gnd B1.ALU.net_1 24 100
 | device B1.ALU.Carry.inverter.pmos 550 200
-p net_3 vdd B1.ALU.net_3 24 200
+p net_2 vdd B1.ALU.net_1 24 200
 | end B1.ALU.Carry.inverter
 | begin B1.ALU.Carry.inverter_1 620 550
 | device B1.ALU.Carry.inverter_1.nmos 550 360
@@ -861,12 +861,12 @@ p B1.ALU.notP vdd B1.ALU.net_2 24 200
 | end B1.ALU.Carry.inverter_1
 | begin B1.ALU.Carry.inverter_2 620 670
 | device B1.ALU.Carry.inverter_2.nmos 550 360
-n B1.ALU.net_1 gnd B1.ALU.Carry.net_1 24 100
+n B1.ALU.net_3 gnd B1.ALU.Carry.net_1 24 100
 | device B1.ALU.Carry.inverter_2.pmos 550 200
-p B1.ALU.net_1 vdd B1.ALU.Carry.net_1 24 200
+p B1.ALU.net_3 vdd B1.ALU.Carry.net_1 24 200
 | end B1.ALU.Carry.inverter_2
 | device B1.ALU.Carry.nmos 730 470
-n B1.ALU.net_2 net_1 net_3 24 100
+n B1.ALU.net_2 net_1 net_2 24 100
 | device B1.ALU.Carry.nmos_1 860 670
 n B1.ALU.Carry.net_1 gnd net_1 24 100
 | device B1.ALU.Carry.pmos 860 250
@@ -874,7 +874,7 @@ p Phi2 vdd net_1 24 100
 | device B1.ALU.Carry.pmos_1 510 250
 p Phi2 vdd B1.ALU.notP 24 100
 | device B1.ALU.Carry.pmos_2 370 250
-p Phi2 vdd B1.ALU.net_1 24 100
+p Phi2 vdd B1.ALU.net_3 24 100
 | end B1.ALU.Carry
 | end B1.ALU
 | end B1
@@ -900,9 +900,9 @@ p B0.OpSel.net_2 vdd B0.Si 24 200
 | end B0.OpSel.inverter_1
 | begin B0.OpSel.inverter_2 820 380
 | device B0.OpSel.inverter_2.nmos 550 360
-n B0.Si gnd B0.net_2 24 100
+n B0.Si gnd B0.net_1 24 100
 | device B0.OpSel.inverter_2.pmos 550 200
-p B0.Si vdd B0.net_2 24 200
+p B0.Si vdd B0.net_1 24 200
 | end B0.OpSel.inverter_2
 | device B0.OpSel.nmos_2 110 480
 n Phi1 B0.OpSel.net_4 gnd 24 200
@@ -932,9 +932,9 @@ p B0.OpSel_1.net_2 vdd B0.Ri 24 200
 | end B0.OpSel_1.inverter_1
 | begin B0.OpSel_1.inverter_2 820 380
 | device B0.OpSel_1.inverter_2.nmos 550 360
-n B0.Ri gnd B0.net_1 24 100
+n B0.Ri gnd B0.net_2 24 100
 | device B0.OpSel_1.inverter_2.pmos 550 200
-p B0.Ri vdd B0.net_1 24 200
+p B0.Ri vdd B0.net_2 24 200
 | end B0.OpSel_1.inverter_2
 | device B0.OpSel_1.nmos_2 110 480
 n Phi1 B0.OpSel_1.net_4 D[0] 24 200
@@ -1048,31 +1048,31 @@ p B0.RegFile_79.RamCell_27.net_3 vdd B0.RegFile_79.RamCell_27.net_1 24 200
 | begin B0.ALU 790 380
 | begin B0.ALU.Func 490 410
 | device B0.ALU.Func.nmos 470 250
-n B0.net_2 B0.ALU.Func.net_1 L[0] 24 200
+n B0.net_1 B0.ALU.Func.net_1 L[0] 24 200
 | device B0.ALU.Func.nmos_1 470 330
-n B0.net_1 B0.ALU.net_1 B0.ALU.Func.net_1 24 200
+n B0.net_2 B0.ALU.net_3 B0.ALU.Func.net_1 24 200
 | device B0.ALU.Func.nmos_2 660 330
-n B0.net_1 B0.ALU.Func.net_4 L[1] 24 200
+n B0.net_2 B0.ALU.Func.net_4 L[1] 24 200
 | device B0.ALU.Func.nmos_3 800 250
-n B0.net_2 B0.ALU.Func.net_2 L[2] 24 200
+n B0.net_1 B0.ALU.Func.net_2 L[2] 24 200
 | device B0.ALU.Func.nmos_4 660 410
-n B0.Si B0.ALU.net_1 B0.ALU.Func.net_4 24 200
+n B0.Si B0.ALU.net_3 B0.ALU.Func.net_4 24 200
 | device B0.ALU.Func.nmos_5 800 490
-n B0.Ri B0.ALU.net_1 B0.ALU.Func.net_2 24 200
+n B0.Ri B0.ALU.net_3 B0.ALU.Func.net_2 24 200
 | device B0.ALU.Func.nmos_6 920 490
-n B0.Ri B0.ALU.net_1 B0.ALU.Func.net_3 24 200
+n B0.Ri B0.ALU.net_3 B0.ALU.Func.net_3 24 200
 | device B0.ALU.Func.nmos_7 920 410
 n B0.Si B0.ALU.Func.net_3 L[3] 24 200
 | end B0.ALU.Func
 | begin B0.ALU.Func_1 490 750
 | device B0.ALU.Func_1.nmos 470 250
-n B0.net_2 B0.ALU.Func_1.net_1 M[0] 24 200
+n B0.net_1 B0.ALU.Func_1.net_1 M[0] 24 200
 | device B0.ALU.Func_1.nmos_1 470 330
-n B0.net_1 B0.ALU.notP B0.ALU.Func_1.net_1 24 200
+n B0.net_2 B0.ALU.notP B0.ALU.Func_1.net_1 24 200
 | device B0.ALU.Func_1.nmos_2 660 330
-n B0.net_1 B0.ALU.Func_1.net_4 M[1] 24 200
+n B0.net_2 B0.ALU.Func_1.net_4 M[1] 24 200
 | device B0.ALU.Func_1.nmos_3 800 250
-n B0.net_2 B0.ALU.Func_1.net_2 M[2] 24 200
+n B0.net_1 B0.ALU.Func_1.net_2 M[2] 24 200
 | device B0.ALU.Func_1.nmos_4 660 410
 n B0.Si B0.ALU.notP B0.ALU.Func_1.net_4 24 200
 | device B0.ALU.Func_1.nmos_5 800 490
@@ -1100,17 +1100,17 @@ n B0.ALU.net_2 B0.ALU.notFi B0.ALU.TFunc.net_1 24 200
 | device B0.ALU.TFunc.nmos_4 730 390
 n B0.ALU.notP B0.ALU.TFunc.net_6 N[2] 24 200
 | device B0.ALU.TFunc.nmos_5 730 630
-n B0.ALU.net_3 B0.ALU.notFi B0.ALU.TFunc.net_6 24 200
+n B0.ALU.net_1 B0.ALU.notFi B0.ALU.TFunc.net_6 24 200
 | device B0.ALU.TFunc.nmos_6 850 550
 n B0.ALU.net_2 B0.ALU.TFunc.net_7 N[3] 24 200
 | device B0.ALU.TFunc.nmos_7 850 630
-n B0.ALU.net_3 B0.ALU.notFi B0.ALU.TFunc.net_7 24 200
+n B0.ALU.net_1 B0.ALU.notFi B0.ALU.TFunc.net_7 24 200
 | device B0.ALU.TFunc.pmos 990 550
 p B0.ALU.net_2 N[0] B0.ALU.TFunc.net_3 24 400
 | device B0.ALU.TFunc.pmos_1 990 630
-p B0.ALU.net_3 B0.ALU.TFunc.net_3 B0.ALU.notFi 24 400
+p B0.ALU.net_1 B0.ALU.TFunc.net_3 B0.ALU.notFi 24 400
 | device B0.ALU.TFunc.pmos_2 1120 630
-p B0.ALU.net_3 B0.ALU.TFunc.net_2 B0.ALU.notFi 24 400
+p B0.ALU.net_1 B0.ALU.TFunc.net_2 B0.ALU.notFi 24 400
 | device B0.ALU.TFunc.pmos_3 1230 550
 p B0.ALU.net_2 B0.ALU.TFunc.net_5 B0.ALU.notFi 24 400
 | device B0.ALU.TFunc.pmos_4 1230 470
@@ -1125,9 +1125,9 @@ p B0.ALU.notP N[3] B0.ALU.TFunc.net_8 24 400
 | begin B0.ALU.Carry 900 530
 | begin B0.ALU.Carry.inverter 730 390
 | device B0.ALU.Carry.inverter.nmos 550 360
-n notCin gnd B0.ALU.net_3 24 100
+n notCin gnd B0.ALU.net_1 24 100
 | device B0.ALU.Carry.inverter.pmos 550 200
-p notCin vdd B0.ALU.net_3 24 200
+p notCin vdd B0.ALU.net_1 24 200
 | end B0.ALU.Carry.inverter
 | begin B0.ALU.Carry.inverter_1 620 550
 | device B0.ALU.Carry.inverter_1.nmos 550 360
@@ -1137,20 +1137,20 @@ p B0.ALU.notP vdd B0.ALU.net_2 24 200
 | end B0.ALU.Carry.inverter_1
 | begin B0.ALU.Carry.inverter_2 620 670
 | device B0.ALU.Carry.inverter_2.nmos 550 360
-n B0.ALU.net_1 gnd B0.ALU.Carry.net_1 24 100
+n B0.ALU.net_3 gnd B0.ALU.Carry.net_1 24 100
 | device B0.ALU.Carry.inverter_2.pmos 550 200
-p B0.ALU.net_1 vdd B0.ALU.Carry.net_1 24 200
+p B0.ALU.net_3 vdd B0.ALU.Carry.net_1 24 200
 | end B0.ALU.Carry.inverter_2
 | device B0.ALU.Carry.nmos 730 470
-n B0.ALU.net_2 net_3 notCin 24 100
+n B0.ALU.net_2 net_2 notCin 24 100
 | device B0.ALU.Carry.nmos_1 860 670
-n B0.ALU.Carry.net_1 gnd net_3 24 100
+n B0.ALU.Carry.net_1 gnd net_2 24 100
 | device B0.ALU.Carry.pmos 860 250
-p Phi2 vdd net_3 24 100
+p Phi2 vdd net_2 24 100
 | device B0.ALU.Carry.pmos_1 510 250
 p Phi2 vdd B0.ALU.notP 24 100
 | device B0.ALU.Carry.pmos_2 370 250
-p Phi2 vdd B0.ALU.net_1 24 100
+p Phi2 vdd B0.ALU.net_3 24 100
 | end B0.ALU.Carry
 | end B0.ALU
 | end B0
