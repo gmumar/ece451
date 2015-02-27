@@ -40,6 +40,7 @@ proc SCHEMATIC_datapath {} {
   make OneBit_Slice -name B0 -origin {430 1960}
   make ShifterGuard -origin {-470 460}
   make inout -name SR -origin {-300 500}
+  make input -orient RXY -name notshr -origin {-300 520}
   make_wire 420 1230 420 1260
   make_wire 420 260 420 280
   make_wire 710 250 710 420

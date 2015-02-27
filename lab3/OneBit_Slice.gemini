@@ -12,8 +12,8 @@ format = NULL (assume MIT)
 
 These circuits contain some symmetry (33% nodes not yet matched).
 Gemini will attempt to find a valid match for symmetrical nodes.
-M#M#M##
+M#M###
 94 entries written to the dictionary file.
-169 (83%) matches were found by local matching
-All nodes were matched in 47 passes
+176 (87%) matches were found by local matching
+All nodes were matched in 55 passes
 0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab3/OneBit_Slice.lvs.err.mag
