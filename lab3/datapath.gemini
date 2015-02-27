@@ -14,5 +14,5 @@ format = NULL (assume MIT)
 
 263 entries written to the dictionary file.
 686 (93%) matches were found by local matching
-All nodes were matched in 45 passes
+All nodes were matched in 43 passes
 0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab3/datapath.lvs.err.mag

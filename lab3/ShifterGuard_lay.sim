@@ -1,18 +1,18 @@
 | units: 1.0  tech: mmi25  format: UCB
-A F3 input
-A F2 input
-A F1 input
-A F0 input
-A shl input
-A shr input
-A notshl input
 A notshr input
-A RAMIN3 output
-A RAMIN2 output
-A RAMIN1 output
+A notshl input
+A shr input
+A shl input
+A F0 input
+A F1 input
+A F2 input
+A F3 input
 A RAMIN0 output
-A SR inout
+A RAMIN1 output
+A RAMIN2 output
+A RAMIN3 output
 A SL inout
+A SR inout
 p notshr SL RAMIN3 24 200 -2314 1276
 p notshl F3 SL 24 200 -2314 1178
 p shr Shifter_99/Fi_1 RAMIN3 24 200 -2311 943
@@ -23,16 +23,16 @@ p shr Shifter_98/Fi_1 RAMIN2 24 200 -2311 -897
 p shl F2 Shifter_98/Fi_1 24 200 -2311 -995
 p notshr Shifter_98/Fi_1 RAMIN1 24 200 -2314 -2404
 p notshl F1 Shifter_98/Fi_1 24 200 -2314 -2502
-p shr Shifter_96/FiPlus1 RAMIN1 24 200 -2311 -2737
-p shl F1 Shifter_96/FiPlus1 24 200 -2311 -2835
-p notshr Shifter_96/FiPlus1 RAMIN0 24 200 -2314 -4244
-p notshl F0 Shifter_96/FiPlus1 24 200 -2314 -4342
+p shr Shifter_97/Fi_1 RAMIN1 24 200 -2311 -2737
+p shl F1 Shifter_97/Fi_1 24 200 -2311 -2835
+p notshr Shifter_97/Fi_1 RAMIN0 24 200 -2314 -4244
+p notshl F0 Shifter_97/Fi_1 24 200 -2314 -4342
 p shr Shifter_96/Fi_1 RAMIN0 24 200 -2311 -4577
 p shl F0 Shifter_96/Fi_1 24 200 -2311 -4675
-p shl Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d vdd 24 200 -3431 -4765
-p shr vdd Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d 24 200 -3431 -4863
-p Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d vdd Guard_59/#fet_75/s 24 200 -3427 -5060
-p Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d SR Shifter_96/Fi_1 24 200 -3392 -5257
+p shl pdif_n34280_n48150# Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s 24 400 -3428 -4765
+p shr vdd pdif_n34280_n48150# 24 400 -3428 -4839
+p Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s vdd Guard_59/#fet_0/s 24 200 -3427 -5060
+p Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s SR Shifter_96/Fi_1 24 200 -3392 -5257
 n notshr Shifter_99/Fi_1 RAMIN3 24 100 -1910 1276
 n notshl F3 Shifter_99/Fi_1 24 100 -1910 1178
 n shr SL RAMIN3 24 100 -1894 943
@@ -41,15 +41,15 @@ n notshr Shifter_98/Fi_1 RAMIN2 24 100 -1910 -564
 n notshl F2 Shifter_98/Fi_1 24 100 -1910 -662
 n shr Shifter_99/Fi_1 RAMIN2 24 100 -1894 -897
 n shl F2 Shifter_99/Fi_1 24 100 -1894 -995
-n notshr Shifter_96/FiPlus1 RAMIN1 24 100 -1910 -2404
-n notshl F1 Shifter_96/FiPlus1 24 100 -1910 -2502
+n notshr Shifter_97/Fi_1 RAMIN1 24 100 -1910 -2404
+n notshl F1 Shifter_97/Fi_1 24 100 -1910 -2502
 n shr Shifter_98/Fi_1 RAMIN1 24 100 -1894 -2737
 n shl F1 Shifter_98/Fi_1 24 100 -1894 -2835
 n notshr Shifter_96/Fi_1 RAMIN0 24 100 -1910 -4244
 n notshl F0 Shifter_96/Fi_1 24 100 -1910 -4342
-n shr Shifter_96/FiPlus1 RAMIN0 24 100 -1894 -4577
-n shl F0 Shifter_96/FiPlus1 24 100 -1894 -4675
-n shl ndif_n37510_n48230# gnd 24 200 -3751 -4773
-n shr Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d ndif_n37510_n48230# 24 200 -3751 -4847
-n Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d gnd Guard_59/#fet_75/s 24 100 -3651 -5060
-n Guard_59/#fet_75/s SR Shifter_96/Fi_1 24 100 -3653 -5256
+n shr Shifter_97/Fi_1 RAMIN0 24 100 -1894 -4577
+n shl F0 Shifter_97/Fi_1 24 100 -1894 -4675
+n shl Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s gnd 24 100 -3651 -4765
+n shr gnd Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s 24 100 -3651 -4863
+n Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s gnd Guard_59/#fet_0/s 24 100 -3648 -5060
+n Guard_59/#fet_0/s SR Shifter_96/Fi_1 24 100 -3653 -5256

@@ -1,25 +1,25 @@
 ; Dictionary file for matching names in
 ; ShifterGuard_lay.sim and ./ShifterGuard.sim
 = SR SR
-= Guard_59/#fet!-type!pfet!-fingers!2!-contacts!all!-width!2.0_0/d net_1
-= Guard_59/#fet_75/s net_5
-= Shifter_96/Fi_1 net_3
-= vdd vdd
+= Guard_59/#fet_0/s net_2
+= Shifter_96/Fi_1 net_6
+= Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s net_3
 = gnd gnd
-= ndif_n37510_n48230# nand2.net_1
-= shr shr
+= vdd vdd
+= pdif_n34280_n48150# nor2.net_1
 = shl shl
-= RAMIN0 RAMIN0
+= shr shr
 = F0 F0
-= notshr notshr
-= Shifter_96/FiPlus1 net_6
+= RAMIN0 RAMIN0
 = notshl notshl
+= Shifter_97/Fi_1 net_1
+= notshr notshr
 = RAMIN1 RAMIN1
 = F1 F1
-= Shifter_98/Fi_1 net_2
+= Shifter_98/Fi_1 net_4
 = RAMIN2 RAMIN2
 = F2 F2
-= Shifter_99/Fi_1 net_4
+= Shifter_99/Fi_1 net_5
 = RAMIN3 RAMIN3
 = F3 F3
 = SL SL
