@@ -28,7 +28,7 @@ vector Fbus F3:0
 vector notPbus B3.ALU.notP B2.ALU.notP B1.ALU.notP B0.ALU.notP
 vector OUT notCout 
 vector SHIFT SL SR
-stepsize 300\n"""
+stepsize 1000\n"""
 
 phi1=1 #1
 phi2=0
@@ -216,7 +216,7 @@ def sim(num2, num1,L,M,N):
 		print pvec("IN_ALU") + "1"
 		step();
 	
-	for i in range (2):
+	for i in range (3):
 		clk1();
 		clk2();
 		#printClk();
@@ -356,12 +356,15 @@ def shift(num1, direction,srl):
 	
 #def sim(R, S, L, M, N):
 
-#sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
 #sim(6,5,"0000","1110","1010"); #OR
 #sim(9, 5, "0000", "1000", "1010" );#And
 #sim(5, 6, "0000", "0110", "1010" );#XOR
-sim(0, 5, "0010", "0110", "0110" );#Sub
-sim(5, 0, "0010", "0110", "0110" );#Sub
+#sim(0, 5, "0010", "0110", "0110" );#Sub
+#sim(5, 0, "0010", "0110", "0110" );#Sub
 #sim(1, 2, "0100", "0110", "0110" );#Sub
 
 #SL SR

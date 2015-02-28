@@ -28,7 +28,7 @@ vector Fbus F3:0
 vector notPbus B3.ALU.notP B2.ALU.notP B1.ALU.notP B0.ALU.notP
 vector OUT notCout 
 vector SHIFT SL SR
-stepsize 300\n"""
+stepsize 1000\n"""
 
 phi1=1 #1
 phi2=0
@@ -356,7 +356,10 @@ def shift(num1, direction,srl):
 	
 #def sim(R, S, L, M, N):
 
-#sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
+sim(11, 6, "0111", "1001", "1001" );#Add
 #sim(6,5,"0000","1110","1010"); #OR
 #sim(9, 5, "0000", "1000", "1010" );#And
 #sim(5, 6, "0000", "0110", "1010" );#XOR
@@ -366,7 +369,7 @@ def shift(num1, direction,srl):
 
 #SL SR
 #shift(9,"0110","01"); # left
-shift(9,"1001","00"); # right
+#shift(9,"1001","00"); # right
 		
 #if ("-" in args[1]):
 #	print "subtraction";
