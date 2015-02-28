@@ -1,4 +1,4 @@
-set NETLIST_CACHE(OneBit_Slice,cells) {{schematic ALU /nfs/ug/homes-2/u/umarghul/ece451/lab3/ALU.sue} {schematic RegFile /nfs/ug/homes-2/u/umarghul/ece451/lab3/RegFile.sue} {schematic OpSel /nfs/ug/homes-2/u/umarghul/ece451/lab3/OpSel.sue}}
+set NETLIST_CACHE(OneBit_Slice,cells) {{schematic ALU /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab3/ALU.sue} {schematic RegFile /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab3/RegFile.sue} {schematic OpSel /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab3/OpSel.sue}}
 set netlist_props spice
 set netlist_level 1000
 set NETLIST_CACHE(OneBit_Slice,globals) {gnd vdd}

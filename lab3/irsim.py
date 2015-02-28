@@ -357,9 +357,9 @@ def shift(num1, direction,srl):
 #def sim(R, S, L, M, N):
 
 sim(11, 6, "0111", "1001", "1001" );#Add
-sim(11, 6, "0111", "1001", "1001" );#Add
-sim(11, 6, "0111", "1001", "1001" );#Add
-sim(11, 6, "0111", "1001", "1001" );#Add
+sim(0, 0, "0111", "1001", "1001" );#Add
+sim(10, 5, "0111", "1001", "1001" );#Add
+sim(1, 1, "0111", "1001", "1001" );#Add
 #sim(6,5,"0000","1110","1010"); #OR
 #sim(9, 5, "0000", "1000", "1010" );#And
 #sim(5, 6, "0000", "0110", "1010" );#XOR
@@ -379,6 +379,6 @@ sim(11, 6, "0111", "1001", "1001" );#Add
 #	clk2();
 #	step();
 
-print "ana Phi1 notPhi1 Phi2 notshl shl notshr shr ARdEnbus BRdEnbus FBEnbus notFBEnbus WriteEnbus In1Select0 In2Select0 In1Select1 In2Select1 Lbus Mbus Nbus notCin Dbus RAMINbus Abus Bbus Rbus Sbus Fbus notCout SL SR notPbus"
+print "ana Phi1 Phi2 CTRL_SHIFT ARdEnbus BRdEnbus FBEnbus notFBEnbus WriteEnbus CTRL_OP Lbus Mbus Nbus notCin Dbus RAMINbus Abus Bbus Rbus Sbus Fbus notCout SL SR notPbus"
 	
 

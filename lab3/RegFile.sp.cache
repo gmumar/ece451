@@ -1,4 +1,4 @@
-set NETLIST_CACHE(RegFile,cells) {{schematic RamCell /nfs/ug/homes-2/u/umarghul/ece451/lab3/RamCell.sue} {icon pmos /cad2/mmi_110708/sue/schematics/mspice/pmos.sue {}}}
+set NETLIST_CACHE(RegFile,cells) {{schematic RamCell /nfs/ug/homes-0/s/syedazaa/ECE451/git_folder/ece451/lab3/RamCell.sue} {icon pmos /cad2/mmi_110708/sue/schematics/mspice/pmos.sue {}}}
 set netlist_props spice
 set netlist_level 1000
 set NETLIST_CACHE(RegFile,globals) {vdd gnd}

@@ -28,10 +28,10 @@ proc SCHEMATIC_RegFile {} {
   make pmos -W 1 -origin {-10 90}
   make output -name Ai -origin {1580 180}
   make output -name Bi -origin {1580 210}
-  make RamCell -orient R270 -name RamCell_45 -origin {300 420}
-  make RamCell -orient R270 -name RamCell_2 -origin {670 420}
-  make RamCell -orient R270 -name RamCell_4 -origin {1030 420}
-  make RamCell -orient R270 -name RamCell_27 -origin {1370 420}
+  make RamCell -orient R270 -name RamCell1 -origin {670 420}
+  make RamCell -orient R270 -name RamCell2 -origin {1030 420}
+  make RamCell -orient R270 -name RamCell3 -origin {1370 420}
+  make RamCell -orient R270 -name cell0 -origin {300 420}
   make_wire 1030 210 670 210
   make_wire 60 0 60 20
   make_wire 670 270 670 210

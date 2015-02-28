@@ -7,7 +7,7 @@ vector BRdEnbus {BRdEn[3:0]}
 vector FBEnbus {FBEn[3:0]} 
 vector notFBEnbus {notFBEn[3:0]} 
 vector WriteEnbus {WriteEn[3:0]} 
-vector CTRL_OP In2Select0 In1Select0 In2Select1 In1Select1
+vector CTRL_MUX In1Select0 In2Select0 In1Select1 In2Select1
 vector Lbus {L[3:0]} 
 vector Mbus {M[3:0]} 
 vector Nbus {N[3:0]}
@@ -26,8 +26,8 @@ stepsize 1000
 
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 0110
-setvector CTRL_OP 1010
+setvector Dbus 0101
+setvector CTRL_MUX 0101
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -42,8 +42,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 0110
-setvector CTRL_OP 0000
+setvector Dbus 0101
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -58,8 +58,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 0110
-setvector CTRL_OP 0000
+setvector Dbus 0101
+setvector CTRL_MUX 0000
 setvector Lbus 0000
 setvector Mbus 1100
 setvector Nbus 1010
@@ -75,10 +75,10 @@ s
 setvector CLK1 01
 setvector CLK2 0
 setvector Dbus 0110
-setvector CTRL_OP 0000
-setvector Lbus 0000
-setvector Mbus 1100
-setvector Nbus 1010
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -90,8 +90,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 1011
-setvector CTRL_OP 0110
+setvector Dbus 0101
+setvector CTRL_MUX 1001
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -106,8 +106,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 1011
-setvector CTRL_OP 0000
+setvector Dbus 0101
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -122,11 +122,11 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 1011
-setvector CTRL_OP 0000
-setvector Lbus 0111
-setvector Mbus 1001
-setvector Nbus 1001
+setvector Dbus 0101
+setvector CTRL_MUX 0000
+setvector Lbus 0000
+setvector Mbus 0110
+setvector Nbus 1010
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -136,13 +136,28 @@ setvector notFBEnbus 0000
 setvector FBEnbus 1111
 setvector IN_ALU 1
 s
-
+setvector CLK1 01
+setvector CLK2 0
+setvector Dbus 0101
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
+setvector CTRL_SHIFT 1010
+setvector SHIFT 00
+setvector WriteEnbus 0000
+setvector BRdEnbus 0000
+setvector ARdEnbus 0000
+setvector notFBEnbus 0000
+setvector FBEnbus 1111
+setvector IN_ALU 1
+s
 | test 2 
 
 setvector CLK1 10
 setvector CLK2 0
 setvector Dbus 1010
-setvector CTRL_OP 1010
+setvector CTRL_MUX 0101
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -158,7 +173,7 @@ s
 setvector CLK1 01
 setvector CLK2 0
 setvector Dbus 1010
-setvector CTRL_OP 0000
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -174,7 +189,7 @@ s
 setvector CLK1 01
 setvector CLK2 1
 setvector Dbus 1010
-setvector CTRL_OP 0000
+setvector CTRL_MUX 0000
 setvector Lbus 0000
 setvector Mbus 1100
 setvector Nbus 1010
@@ -190,10 +205,10 @@ s
 setvector CLK1 01
 setvector CLK2 0
 setvector Dbus 1010
-setvector CTRL_OP 0000
-setvector Lbus 0000
-setvector Mbus 1100
-setvector Nbus 1010
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -206,7 +221,7 @@ s
 setvector CLK1 10
 setvector CLK2 0
 setvector Dbus 0101
-setvector CTRL_OP 0110
+setvector CTRL_MUX 1001
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -222,7 +237,7 @@ s
 setvector CLK1 01
 setvector CLK2 0
 setvector Dbus 0101
-setvector CTRL_OP 0000
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -238,10 +253,10 @@ s
 setvector CLK1 01
 setvector CLK2 1
 setvector Dbus 0101
-setvector CTRL_OP 0000
-setvector Lbus 0111
-setvector Mbus 1001
-setvector Nbus 1001
+setvector CTRL_MUX 0000
+setvector Lbus 0000
+setvector Mbus 0110
+setvector Nbus 1010
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -252,12 +267,28 @@ setvector FBEnbus 1111
 setvector IN_ALU 1
 s
 
+setvector CLK1 01
+setvector CLK2 0
+setvector Dbus 0101
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
+setvector CTRL_SHIFT 1010
+setvector SHIFT 00
+setvector WriteEnbus 0000
+setvector BRdEnbus 0000
+setvector ARdEnbus 0000
+setvector notFBEnbus 0000
+setvector FBEnbus 1111
+setvector IN_ALU 1
+s
 | Test 3
 
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 0000
-setvector CTRL_OP 1010
+setvector Dbus 0101
+setvector CTRL_MUX 0101
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -272,8 +303,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 0000
-setvector CTRL_OP 0000
+setvector Dbus 0101
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -288,8 +319,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 0000
-setvector CTRL_OP 0000
+setvector Dbus 0101
+setvector CTRL_MUX 0000
 setvector Lbus 0000
 setvector Mbus 1100
 setvector Nbus 1010
@@ -304,11 +335,11 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 0000
-setvector CTRL_OP 0000
-setvector Lbus 0000
-setvector Mbus 1100
-setvector Nbus 1010
+setvector Dbus 0101
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -320,8 +351,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 0000
-setvector CTRL_OP 0110
+setvector Dbus 0101
+setvector CTRL_MUX 1001
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -336,8 +367,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 0000
-setvector CTRL_OP 0000
+setvector Dbus 0101
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -352,11 +383,11 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 0000
-setvector CTRL_OP 0000
-setvector Lbus 0111
-setvector Mbus 1001
-setvector Nbus 1001
+setvector Dbus 0101
+setvector CTRL_MUX 0000
+setvector Lbus 0000
+setvector Mbus 0110
+setvector Nbus 1010
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -367,12 +398,28 @@ setvector FBEnbus 1111
 setvector IN_ALU 1
 s
 
+setvector CLK1 01
+setvector CLK2 0
+setvector Dbus 0101
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
+setvector CTRL_SHIFT 1010
+setvector SHIFT 00
+setvector WriteEnbus 0000
+setvector BRdEnbus 0000
+setvector ARdEnbus 0000
+setvector notFBEnbus 0000
+setvector FBEnbus 1111
+setvector IN_ALU 1
+s
 | Test 4
 
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 0010
-setvector CTRL_OP 1010
+setvector Dbus 1111
+setvector CTRL_MUX 0101
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -387,8 +434,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 0010
-setvector CTRL_OP 0000
+setvector Dbus 1111
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -403,8 +450,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 0010
-setvector CTRL_OP 0000
+setvector Dbus 1111
+setvector CTRL_MUX 0000
 setvector Lbus 0000
 setvector Mbus 1100
 setvector Nbus 1010
@@ -419,11 +466,11 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 0010
-setvector CTRL_OP 0000
-setvector Lbus 0000
-setvector Mbus 1100
-setvector Nbus 1010
+setvector Dbus 1111
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -435,8 +482,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 1000
-setvector CTRL_OP 0110
+setvector Dbus 0000
+setvector CTRL_MUX 1001
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -451,8 +498,8 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 1000
-setvector CTRL_OP 0000
+setvector Dbus 0000
+setvector CTRL_MUX 0000
 setvector Lbus 1111
 setvector Mbus 1111
 setvector Nbus 1111
@@ -467,11 +514,11 @@ setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 1000
-setvector CTRL_OP 0000
-setvector Lbus 0111
-setvector Mbus 1001
-setvector Nbus 1001
+setvector Dbus 0000
+setvector CTRL_MUX 0000
+setvector Lbus 0000
+setvector Mbus 0110
+setvector Nbus 1010
 setvector CTRL_SHIFT 1010
 setvector SHIFT 00
 setvector WriteEnbus 0000
@@ -482,4 +529,21 @@ setvector FBEnbus 1111
 setvector IN_ALU 1
 s
 
-ana Phi1 Phi2 CTRL_SHIFT ARdEnbus BRdEnbus FBEnbus notFBEnbus WriteEnbus CTRL_OP Lbus Mbus Nbus notCin Dbus RAMINbus Abus Bbus Rbus Sbus Fbus notCout SL SR notPbus
+setvector CLK1 01
+setvector CLK2 0
+setvector Dbus 0000
+setvector CTRL_MUX 0000
+setvector Lbus 1111
+setvector Mbus 1111
+setvector Nbus 1111
+setvector CTRL_SHIFT 1010
+setvector SHIFT 00
+setvector WriteEnbus 0000
+setvector BRdEnbus 0000
+setvector ARdEnbus 0000
+setvector notFBEnbus 0000
+setvector FBEnbus 1111
+setvector IN_ALU 1
+s
+
+ana Phi1 Phi2 CTRL_SHIFT ARdEnbus BRdEnbus FBEnbus notFBEnbus WriteEnbus CTRL_MUX Lbus Mbus Nbus notCin Dbus RAMINbus Abus Bbus Rbus Sbus Fbus notCout SL SR notPbus

@@ -27,12 +27,12 @@ proc SCHEMATIC_OneBit_Slice {} {
   make input -name In2Select0 -origin {250 330}
   make input -name In1Select1 -origin {250 500}
   make input -name In2Select1 -origin {250 540}
-  make RegFile -name RegFile_79 -origin {-30 390}
   make ALU -name ALU -origin {790 380}
   make name_net_s -name A -origin {130 370}
   make name_net_s -name B -origin {160 390}
   make name_net_s -name Ri -origin {630 340}
   make name_net_s -name Si -origin {670 360}
+  make RegFile -name RegFile -origin {-30 390}
   make_wire 580 520 550 520
   make_wire 660 310 660 360
   make_wire 550 500 640 500
