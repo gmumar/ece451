@@ -1,0 +1,39 @@
+| units: 1.0  tech: sue  format: MIT
+A In1 input
+A In1Select input
+A In2 input
+A In2Select input
+A Phi1 input
+A notPhi1 input
+A Out output
+A notOut output
+| device nmos 280 380
+n In1Select net_3 In1 24 100
+| begin inverter 480 380
+| device inverter.nmos 550 360
+n net_3 gnd net_1 24 100
+| device inverter.pmos 550 200
+p net_3 vdd net_1 24 200
+| end inverter
+| device pmos 600 360
+p notPhi1 net_2 net_1 24 200
+| device nmos_1 600 400
+n Phi1 net_2 net_1 24 100
+| begin inverter_1 710 380
+| device inverter_1.nmos 550 360
+n net_2 gnd Out 24 100
+| device inverter_1.pmos 550 200
+p net_2 vdd Out 24 200
+| end inverter_1
+| begin inverter_2 820 380
+| device inverter_2.nmos 550 360
+n Out gnd notOut 24 100
+| device inverter_2.pmos 550 200
+p Out vdd notOut 24 200
+| end inverter_2
+| device nmos_2 110 480
+n Phi1 net_4 In2 24 200
+| device nmos_3 330 480
+n In2Select net_3 net_4 24 200
+| device pmos_1 380 220
+p Phi1 vdd net_3 24 100

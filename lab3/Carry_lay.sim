@@ -1,0 +1,19 @@
+| units: 1.0  tech: mmi25  format: UCB
+A notCi input
+A Phi input
+A notCi_1 input
+A notG input
+A notP input
+A P output
+A Ci_1 output
+p Phi notG vdd 24 100 2286 1440
+p Phi vdd notP 24 100 2384 1440
+p Phi vdd notCi 24 100 2590 1441
+p notG #fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 2284 1088
+p notCi_1 vdd Ci_1 24 200 2382 1088
+p notP vdd P 24 200 2583 1089
+n notG #fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 2284 829
+n notCi_1 gnd Ci_1 24 100 2382 829
+n notP P gnd 24 100 2583 831
+n #fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd notCi 24 100 2681 831
+n P notCi notCi_1 24 100 2779 831

@@ -1,0 +1,34 @@
+| units: 1.0  tech: sue  format: MIT
+A Ci_1 output
+A P output
+A notCi output
+| begin Carry 620 0
+| begin Carry.inverter 730 390
+| device Carry.inverter.nmos 550 360
+n net_3 gnd Ci_1 24 100
+| device Carry.inverter.pmos 550 200
+p net_3 vdd Ci_1 24 200
+| end Carry.inverter
+| begin Carry.inverter_1 620 550
+| device Carry.inverter_1.nmos 550 360
+n net_2 gnd P 24 100
+| device Carry.inverter_1.pmos 550 200
+p net_2 vdd P 24 200
+| end Carry.inverter_1
+| begin Carry.inverter_2 620 670
+| device Carry.inverter_2.nmos 550 360
+n net_1 gnd Carry.net_1 24 100
+| device Carry.inverter_2.pmos 550 200
+p net_1 vdd Carry.net_1 24 200
+| end Carry.inverter_2
+| device Carry.nmos 730 470
+n P notCi net_3 24 100
+| device Carry.nmos_1 860 670
+n Carry.net_1 gnd notCi 24 100
+| device Carry.pmos 860 250
+p net_4 vdd notCi 24 100
+| device Carry.pmos_1 510 250
+p net_4 vdd net_2 24 100
+| device Carry.pmos_2 370 250
+p net_4 vdd net_1 24 100
+| end Carry

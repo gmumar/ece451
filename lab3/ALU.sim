@@ -1,0 +1,127 @@
+| units: 1.0  tech: sue  format: MIT
+A L[0] input
+A L[1] input
+A L[2] input
+A L[3] input
+A M[0] input
+A M[1] input
+A M[2] input
+A M[3] input
+A N[0] input
+A N[1] input
+A N[2] input
+A N[3] input
+A Phi2 input
+A Ri input
+A Si input
+A notCi_1 input
+A notR input
+A notS input
+A Fi output
+A notCi output
+| begin Func 490 410
+| device Func.nmos 470 250
+n notS Func.net_4 L[0] 24 200
+| device Func.nmos_1 470 330
+n notR net_1 Func.net_4 24 200
+| device Func.nmos_2 660 330
+n notR Func.net_1 L[1] 24 200
+| device Func.nmos_3 800 250
+n notS Func.net_3 L[2] 24 200
+| device Func.nmos_4 660 410
+n Si net_1 Func.net_1 24 200
+| device Func.nmos_5 800 490
+n Ri net_1 Func.net_3 24 200
+| device Func.nmos_6 920 490
+n Ri net_1 Func.net_2 24 200
+| device Func.nmos_7 920 410
+n Si Func.net_2 L[3] 24 200
+| end Func
+| begin Func_1 490 750
+| device Func_1.nmos 470 250
+n notS Func_1.net_4 M[0] 24 200
+| device Func_1.nmos_1 470 330
+n notR notP Func_1.net_4 24 200
+| device Func_1.nmos_2 660 330
+n notR Func_1.net_1 M[1] 24 200
+| device Func_1.nmos_3 800 250
+n notS Func_1.net_3 M[2] 24 200
+| device Func_1.nmos_4 660 410
+n Si notP Func_1.net_1 24 200
+| device Func_1.nmos_5 800 490
+n Ri notP Func_1.net_3 24 200
+| device Func_1.nmos_6 920 490
+n Ri notP Func_1.net_2 24 200
+| device Func_1.nmos_7 920 410
+n Si Func_1.net_2 M[3] 24 200
+| end Func_1
+| begin inverter 1490 550
+| device inverter.nmos 550 360
+n notFi gnd Fi 24 100
+| device inverter.pmos 550 200
+p notFi vdd Fi 24 200
+| end inverter
+| begin TFunc 1300 550
+| device TFunc.nmos 400 390
+n notP TFunc.net_4 N[0] 24 200
+| device TFunc.nmos_1 400 470
+n notCi_1 notFi TFunc.net_4 24 200
+| device TFunc.nmos_2 590 470
+n notCi_1 TFunc.net_1 N[1] 24 200
+| device TFunc.nmos_3 590 550
+n net_3 notFi TFunc.net_1 24 200
+| device TFunc.nmos_4 730 390
+n notP TFunc.net_6 N[2] 24 200
+| device TFunc.nmos_5 730 630
+n net_2 notFi TFunc.net_6 24 200
+| device TFunc.nmos_6 850 550
+n net_3 TFunc.net_7 N[3] 24 200
+| device TFunc.nmos_7 850 630
+n net_2 notFi TFunc.net_7 24 200
+| device TFunc.pmos 990 550
+p net_3 N[0] TFunc.net_3 24 400
+| device TFunc.pmos_1 990 630
+p net_2 TFunc.net_3 notFi 24 400
+| device TFunc.pmos_2 1120 630
+p net_2 TFunc.net_2 notFi 24 400
+| device TFunc.pmos_3 1230 550
+p net_3 TFunc.net_5 notFi 24 400
+| device TFunc.pmos_4 1230 470
+p notCi_1 N[2] TFunc.net_5 24 400
+| device TFunc.pmos_5 1120 390
+p notP N[1] TFunc.net_2 24 400
+| device TFunc.pmos_6 1340 470
+p notCi_1 TFunc.net_8 notFi 24 400
+| device TFunc.pmos_7 1340 390
+p notP N[3] TFunc.net_8 24 400
+| end TFunc
+| begin Carry 900 530
+| begin Carry.inverter 730 390
+| device Carry.inverter.nmos 550 360
+n notCi_1 gnd net_2 24 100
+| device Carry.inverter.pmos 550 200
+p notCi_1 vdd net_2 24 200
+| end Carry.inverter
+| begin Carry.inverter_1 620 550
+| device Carry.inverter_1.nmos 550 360
+n notP gnd net_3 24 100
+| device Carry.inverter_1.pmos 550 200
+p notP vdd net_3 24 200
+| end Carry.inverter_1
+| begin Carry.inverter_2 620 670
+| device Carry.inverter_2.nmos 550 360
+n net_1 gnd Carry.net_1 24 100
+| device Carry.inverter_2.pmos 550 200
+p net_1 vdd Carry.net_1 24 200
+| end Carry.inverter_2
+| device Carry.nmos 730 470
+n net_3 notCi notCi_1 24 100
+| device Carry.nmos_1 860 670
+n Carry.net_1 gnd notCi 24 100
+| device Carry.pmos 860 250
+p Phi2 vdd notCi 24 100
+| device Carry.pmos_1 510 250
+p Phi2 vdd notP 24 100
+| device Carry.pmos_2 370 250
+p Phi2 vdd net_1 24 100
+| end Carry

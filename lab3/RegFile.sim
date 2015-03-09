@@ -1,0 +1,125 @@
+| units: 1.0  tech: sue  format: MIT
+A ARdEn[0] input
+A ARdEn[1] input
+A ARdEn[2] input
+A ARdEn[3] input
+A BRdEn[0] input
+A BRdEn[1] input
+A BRdEn[2] input
+A BRdEn[3] input
+A FBEn[0] input
+A FBEn[1] input
+A FBEn[2] input
+A FBEn[3] input
+A Phi1 input
+A RAMINi input
+A WriteEn[0] input
+A WriteEn[1] input
+A WriteEn[2] input
+A WriteEn[3] input
+A notFBEn[0] input
+A notFBEn[1] input
+A notFBEn[2] input
+A notFBEn[3] input
+A Ai output
+A Bi output
+| device pmos 140 160
+p Phi1 vdd Ai 24 100
+| device pmos_1 -10 90
+p Phi1 vdd Bi 24 100
+| begin RamCell_45 300 420
+| device RamCell_45.pmos 470 290
+p notFBEn[0] RamCell_45.net_1 RamCell_45.net_2 24 200
+| device RamCell_45.nmos 470 330
+n FBEn[0] RamCell_45.net_1 RamCell_45.net_2 24 100
+| device RamCell_45.nmos_1 740 360
+n ARdEn[0] Ai RamCell_45.net_1 24 100
+| device RamCell_45.nmos_2 810 460
+n BRdEn[0] Bi RamCell_45.net_1 24 100
+| device RamCell_45.nmos_3 340 460
+n WriteEn[0] RamCell_45.net_2 RAMINi 24 100
+| begin RamCell_45.inverter 490 460
+| device RamCell_45.inverter.nmos 550 360
+n RamCell_45.net_2 gnd RamCell_45.net_3 24 100
+| device RamCell_45.inverter.pmos 550 200
+p RamCell_45.net_2 vdd RamCell_45.net_3 24 200
+| end RamCell_45.inverter
+| begin RamCell_45.inverter_1 610 460
+| device RamCell_45.inverter_1.nmos 550 360
+n RamCell_45.net_3 gnd RamCell_45.net_1 24 100
+| device RamCell_45.inverter_1.pmos 550 200
+p RamCell_45.net_3 vdd RamCell_45.net_1 24 200
+| end RamCell_45.inverter_1
+| end RamCell_45
+| begin RamCell_2 670 420
+| device RamCell_2.pmos 470 290
+p notFBEn[1] RamCell_2.net_1 RamCell_2.net_2 24 200
+| device RamCell_2.nmos 470 330
+n FBEn[1] RamCell_2.net_1 RamCell_2.net_2 24 100
+| device RamCell_2.nmos_1 740 360
+n ARdEn[1] Ai RamCell_2.net_1 24 100
+| device RamCell_2.nmos_2 810 460
+n BRdEn[1] Bi RamCell_2.net_1 24 100
+| device RamCell_2.nmos_3 340 460
+n WriteEn[1] RamCell_2.net_2 RAMINi 24 100
+| begin RamCell_2.inverter 490 460
+| device RamCell_2.inverter.nmos 550 360
+n RamCell_2.net_2 gnd RamCell_2.net_3 24 100
+| device RamCell_2.inverter.pmos 550 200
+p RamCell_2.net_2 vdd RamCell_2.net_3 24 200
+| end RamCell_2.inverter
+| begin RamCell_2.inverter_1 610 460
+| device RamCell_2.inverter_1.nmos 550 360
+n RamCell_2.net_3 gnd RamCell_2.net_1 24 100
+| device RamCell_2.inverter_1.pmos 550 200
+p RamCell_2.net_3 vdd RamCell_2.net_1 24 200
+| end RamCell_2.inverter_1
+| end RamCell_2
+| begin RamCell_4 1030 420
+| device RamCell_4.pmos 470 290
+p notFBEn[2] RamCell_4.net_1 RamCell_4.net_2 24 200
+| device RamCell_4.nmos 470 330
+n FBEn[2] RamCell_4.net_1 RamCell_4.net_2 24 100
+| device RamCell_4.nmos_1 740 360
+n ARdEn[2] Ai RamCell_4.net_1 24 100
+| device RamCell_4.nmos_2 810 460
+n BRdEn[2] Bi RamCell_4.net_1 24 100
+| device RamCell_4.nmos_3 340 460
+n WriteEn[2] RamCell_4.net_2 RAMINi 24 100
+| begin RamCell_4.inverter 490 460
+| device RamCell_4.inverter.nmos 550 360
+n RamCell_4.net_2 gnd RamCell_4.net_3 24 100
+| device RamCell_4.inverter.pmos 550 200
+p RamCell_4.net_2 vdd RamCell_4.net_3 24 200
+| end RamCell_4.inverter
+| begin RamCell_4.inverter_1 610 460
+| device RamCell_4.inverter_1.nmos 550 360
+n RamCell_4.net_3 gnd RamCell_4.net_1 24 100
+| device RamCell_4.inverter_1.pmos 550 200
+p RamCell_4.net_3 vdd RamCell_4.net_1 24 200
+| end RamCell_4.inverter_1
+| end RamCell_4
+| begin RamCell_27 1370 420
+| device RamCell_27.pmos 470 290
+p notFBEn[3] RamCell_27.net_1 RamCell_27.net_2 24 200
+| device RamCell_27.nmos 470 330
+n FBEn[3] RamCell_27.net_1 RamCell_27.net_2 24 100
+| device RamCell_27.nmos_1 740 360
+n ARdEn[3] Ai RamCell_27.net_1 24 100
+| device RamCell_27.nmos_2 810 460
+n BRdEn[3] Bi RamCell_27.net_1 24 100
+| device RamCell_27.nmos_3 340 460
+n WriteEn[3] RamCell_27.net_2 RAMINi 24 100
+| begin RamCell_27.inverter 490 460
+| device RamCell_27.inverter.nmos 550 360
+n RamCell_27.net_2 gnd RamCell_27.net_3 24 100
+| device RamCell_27.inverter.pmos 550 200
+p RamCell_27.net_2 vdd RamCell_27.net_3 24 200
+| end RamCell_27.inverter
+| begin RamCell_27.inverter_1 610 460
+| device RamCell_27.inverter_1.nmos 550 360
+n RamCell_27.net_3 gnd RamCell_27.net_1 24 100
+| device RamCell_27.inverter_1.pmos 550 200
+p RamCell_27.net_3 vdd RamCell_27.net_1 24 200
+| end RamCell_27.inverter_1
+| end RamCell_27

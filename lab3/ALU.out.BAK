@@ -1,0 +1,96 @@
+
+Circuit: * FILE: ALU.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+@ vds=2 vgs=2.74033 vbs=0.465192 Id=0.000910323
+WARNING: negative Gmb = -1.03863e-05 for pfet m:tfunc:_13
+@ vds=4 vgs=2.46634 vbs=0.718496 Id=0.000440163
+WARNING: negative Gmb = -1.31778e-05 for pfet m:inverter:_2
+@ vds=0.358817 vgs=8.07677 vbs=0.358817 Id=0.000611398
+WARNING: negative Gmb = -2.62737e-06 for nfet m:inverter:_1
+@ vds=0.5 vgs=16.3626 vbs=0.175178 Id=0.0017998
+WARNING: negative Gm = -2.00336e-05 for nfet m:tfunc:_3
+WARNING: negative Gmb = -3.73739e-06 for nfet m:tfunc:_3
+@ vds=0.5 vgs=13.0047 vbs=0.155951 Id=0.00184672
+WARNING: negative Gmb = -1.46927e-05 for nfet m:tfunc:_1
+@ vds=0.5 vgs=16.3965 vbs=0.201883 Id=0.00179902
+WARNING: negative Gm = -2.00619e-05 for nfet m:tfunc:_3
+WARNING: negative Gmb = -3.63225e-06 for nfet m:tfunc:_3
+@ vds=0.5 vgs=16.4714 vbs=0 Id=0.00132026
+WARNING: negative Gm = -1.15563e-05 for nfet m:inverter:_1
+WARNING: negative Gmb = -2.38508e-06 for nfet m:inverter:_1
+@ vds=0.5 vgs=16.9847 vbs=0.254171 Id=0.00178691
+WARNING: negative Gm = -2.04648e-05 for nfet m:tfunc:_1
+WARNING: negative Gmb = -3.44887e-06 for nfet m:tfunc:_1
+@ vds=2 vgs=3.57736 vbs=0.421571 Id=0.00128361
+WARNING: negative Gmb = -3.87195e-06 for pfet m:tfunc:_16
+@ vds=1.89175 vgs=2.45598 vbs=0.657565 Id=0.000760624
+WARNING: negative Gmb = -1.61466e-05 for pfet m:tfunc:_11
+@ vds=1.89175 vgs=2.45598 vbs=0.657059 Id=0.000760633
+WARNING: negative Gmb = -1.61075e-05 for pfet m:tfunc:_10
+@ vds=2 vgs=2.57115 vbs=0.437406 Id=0.000825918
+WARNING: negative Gmb = -3.80993e-07 for pfet m:tfunc:_16
+
+Transient solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+gnd                                               0         -1.39978e-44
+vdd                                               0         -7.69886e-44
+l[0]                                     2.3268e-36          8.43145e-44
+nots                                              0                    0
+func:net_1                             -4.51197e-36         -3.79521e-43
+notr                                              0                    0
+net_4                                   1.94522e-35          1.22851e-42
+l[1]                                     2.3268e-36          8.43145e-44
+func:net_4                             -4.51197e-36         -3.79521e-43
+l[2]                                     2.3268e-36          8.43145e-44
+func:net_2                             -4.51197e-36         -3.79521e-43
+si                                                0                    0
+ri                                                0                    0
+func:net_3                             -4.51197e-36         -3.79521e-43
+l[3]                                     2.3268e-36          8.43145e-44
+m[0]                                     2.3268e-36          8.43145e-44
+func_1:net_1                           -4.51197e-36         -3.79521e-43
+net_2                                   1.94522e-35          1.22851e-42
+m[1]                                     2.3268e-36          8.43145e-44
+func_1:net_4                           -4.51197e-36         -3.79521e-43
+m[2]                                     2.3268e-36          8.43145e-44
+func_1:net_2                           -4.51197e-36         -3.79521e-43
+func_1:net_3                           -4.51197e-36         -3.79521e-43
+m[3]                                     2.3268e-36          8.43145e-44
+fi                                       1.7037e-49          4.25966e-58
+net_5                                   8.50532e-35          9.21049e-42
+n[0]                                    -1.2858e-35          4.53204e-43
+tfunc:net_4                            -3.85342e-35          -1.8447e-42
+notci_1                                 2.31598e-50         -2.42986e-59
+n[1]                                   -1.29539e-35          4.49805e-43
+tfunc:net_1                            -3.84179e-35         -1.84063e-42
+net_3                                   1.70372e-49          4.25966e-58
+n[2]                                   -1.28564e-35          4.53264e-43
+tfunc:net_6                            -3.85363e-35         -1.84477e-42
+net_1                                  -2.20798e-50         -5.49981e-59
+n[3]                                   -1.29548e-35          4.49773e-43
+tfunc:net_7                            -3.84168e-35         -1.84059e-42
+tfunc:net_3                            -3.65045e-35         -9.13015e-43
+tfunc:net_2                            -3.64785e-35         -9.12092e-43
+tfunc:net_5                             -3.6505e-35         -9.13031e-43
+tfunc:net_8                            -3.64783e-35         -9.12084e-43
+carry:net_1                             1.70372e-49          4.25966e-58
+p                                                 0                    0
+notci                                  -1.77922e-51          2.42449e-59
+phi2                                              0                    0
+vdd#branch                             -2.45896e-44                    0
+vgnd#branch                             -6.6172e-45                    0
+
+
+CPU time since last call: 0.056 seconds.
+
+Total CPU time: 0.056 seconds.
+
+Current dynamic memory usage = 266240,
+Dynamic memory limit = -135169.
+
