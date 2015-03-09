@@ -1,0 +1,23 @@
+# MAX version Max5.7.11 OpenGL Accelerated , compiled 11:21:30  Jul  8 2011.
+
+# WARNING:
+#
+# The .max file format continues to evolve.
+#
+# Micro Magic, Inc. recommends you do not write or parse .max files directly.
+# Instead use the Max API (e.g. 'db_search' and 'db_paint' commands).
+# The API is also easier to interface to.  See 'Text Commands/Variables' under
+# the Max 'Help' menu for full documentation on the API.
+
+max 5
+tech mmi25
+resolution 0.001
+
+
+DEF
+
+SECTION VERSIONS {
+vMAIN 1424908470 34
+vDRC 0 0
+vBBOX 1424908470 34
+} SECTION VERSIONS

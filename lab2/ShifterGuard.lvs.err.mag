@@ -1,0 +1,518 @@
+magic
+tech scmos
+use /nfs/ug/homes-2/u/umarghul/ece451/lab2/ShifterGuard.lvs /nfs/ug/homes-2/u/umarghul/ece451/lab2/ShifterGuard.lvs_0
+transform 1 0 0 0 1 0
+box 0 0 10 10
+<< error_s >>
+rect -378 188 -375 191
+<< labels >>
+rlabel space -378 188 -378 188 2 [S]Shifter_99/RAMIN
+<< error_s >>
+rect -382 255 -379 258
+<< labels >>
+rlabel space -382 255 -382 255 2 [S]Shifter_99/RAMIN
+<< error_s >>
+rect -462 188 -459 191
+<< labels >>
+rlabel space -462 188 -462 188 2 [S]Shifter_99/RAMIN
+<< error_s >>
+rect -462 255 -459 258
+<< labels >>
+rlabel space -462 255 -462 255 2 [S]Shifter_99/RAMIN
+<< error_s >>
+rect -378 169 -375 172
+<< labels >>
+rlabel space -378 169 -378 169 2 [S]Shifter_99/F
+<< error_s >>
+rect -382 235 -379 238
+<< labels >>
+rlabel space -382 235 -382 235 2 [S]Shifter_99/F
+<< error_s >>
+rect -462 169 -459 172
+<< labels >>
+rlabel space -462 169 -462 169 2 [S]Shifter_99/F
+<< error_s >>
+rect -462 235 -459 238
+<< labels >>
+rlabel space -462 235 -462 235 2 [S]Shifter_99/F
+<< error_s >>
+rect -382 235 -379 238
+<< labels >>
+rlabel space -382 235 -382 235 2 [S]Shifter_99/Fi_1
+<< error_s >>
+rect -382 255 -379 258
+<< labels >>
+rlabel space -382 255 -382 255 2 [S]Shifter_99/Fi_1
+<< error_s >>
+rect -462 169 -459 172
+<< labels >>
+rlabel space -462 169 -462 169 2 [S]Shifter_99/Fi_1
+<< error_s >>
+rect -462 188 -459 191
+<< labels >>
+rlabel space -462 188 -462 188 2 [S]Shifter_99/Fi_1
+<< error_s >>
+rect -378 -199 -375 -196
+<< labels >>
+rlabel space -378 -199 -378 -199 2 [S]Shifter_98/FiPlus1
+<< error_s >>
+rect -378 -179 -375 -176
+<< labels >>
+rlabel space -378 -179 -378 -179 2 [S]Shifter_98/FiPlus1
+<< error_s >>
+rect -462 -132 -459 -129
+<< labels >>
+rlabel space -462 -132 -462 -132 2 [S]Shifter_98/FiPlus1
+<< error_s >>
+rect -462 -112 -459 -109
+<< labels >>
+rlabel space -462 -112 -462 -112 2 [S]Shifter_98/FiPlus1
+<< error_s >>
+rect -378 -179 -375 -176
+<< labels >>
+rlabel space -378 -179 -378 -179 2 [S]Shifter_98/RAMIN
+<< error_s >>
+rect -382 -112 -379 -109
+<< labels >>
+rlabel space -382 -112 -382 -112 2 [S]Shifter_98/RAMIN
+<< error_s >>
+rect -462 -179 -459 -176
+<< labels >>
+rlabel space -462 -179 -462 -179 2 [S]Shifter_98/RAMIN
+<< error_s >>
+rect -462 -112 -459 -109
+<< labels >>
+rlabel space -462 -112 -462 -112 2 [S]Shifter_98/RAMIN
+<< error_s >>
+rect -378 -199 -375 -196
+<< labels >>
+rlabel space -378 -199 -378 -199 2 [S]Shifter_98/F
+<< error_s >>
+rect -382 -132 -379 -129
+<< labels >>
+rlabel space -382 -132 -382 -132 2 [S]Shifter_98/F
+<< error_s >>
+rect -462 -199 -459 -196
+<< labels >>
+rlabel space -462 -199 -462 -199 2 [S]Shifter_98/F
+<< error_s >>
+rect -462 -132 -459 -129
+<< labels >>
+rlabel space -462 -132 -462 -132 2 [S]Shifter_98/F
+<< error_s >>
+rect -382 -132 -379 -129
+<< labels >>
+rlabel space -382 -132 -382 -132 2 [S]Shifter_98/Fi_1
+<< error_s >>
+rect -382 -112 -379 -109
+<< labels >>
+rlabel space -382 -112 -382 -112 2 [S]Shifter_98/Fi_1
+<< error_s >>
+rect -462 -199 -459 -196
+<< labels >>
+rlabel space -462 -199 -462 -199 2 [S]Shifter_98/Fi_1
+<< error_s >>
+rect -462 -179 -459 -176
+<< labels >>
+rlabel space -462 -179 -462 -179 2 [S]Shifter_98/Fi_1
+<< error_s >>
+rect -378 -567 -375 -564
+<< labels >>
+rlabel space -378 -567 -378 -567 2 [S]Shifter_97/FiPlus1
+<< error_s >>
+rect -378 -547 -375 -544
+<< labels >>
+rlabel space -378 -547 -378 -547 2 [S]Shifter_97/FiPlus1
+<< error_s >>
+rect -462 -500 -459 -497
+<< labels >>
+rlabel space -462 -500 -462 -500 2 [S]Shifter_97/FiPlus1
+<< error_s >>
+rect -462 -480 -459 -477
+<< labels >>
+rlabel space -462 -480 -462 -480 2 [S]Shifter_97/FiPlus1
+<< error_s >>
+rect -378 -547 -375 -544
+<< labels >>
+rlabel space -378 -547 -378 -547 2 [S]Shifter_97/RAMIN
+<< error_s >>
+rect -382 -480 -379 -477
+<< labels >>
+rlabel space -382 -480 -382 -480 2 [S]Shifter_97/RAMIN
+<< error_s >>
+rect -462 -547 -459 -544
+<< labels >>
+rlabel space -462 -547 -462 -547 2 [S]Shifter_97/RAMIN
+<< error_s >>
+rect -462 -480 -459 -477
+<< labels >>
+rlabel space -462 -480 -462 -480 2 [S]Shifter_97/RAMIN
+<< error_s >>
+rect -378 -567 -375 -564
+<< labels >>
+rlabel space -378 -567 -378 -567 2 [S]Shifter_97/F
+<< error_s >>
+rect -382 -500 -379 -497
+<< labels >>
+rlabel space -382 -500 -382 -500 2 [S]Shifter_97/F
+<< error_s >>
+rect -462 -567 -459 -564
+<< labels >>
+rlabel space -462 -567 -462 -567 2 [S]Shifter_97/F
+<< error_s >>
+rect -462 -500 -459 -497
+<< labels >>
+rlabel space -462 -500 -462 -500 2 [S]Shifter_97/F
+<< error_s >>
+rect -382 -500 -379 -497
+<< labels >>
+rlabel space -382 -500 -382 -500 2 [S]Shifter_97/Fi_1
+<< error_s >>
+rect -382 -480 -379 -477
+<< labels >>
+rlabel space -382 -480 -382 -480 2 [S]Shifter_97/Fi_1
+<< error_s >>
+rect -462 -567 -459 -564
+<< labels >>
+rlabel space -462 -567 -462 -567 2 [S]Shifter_97/Fi_1
+<< error_s >>
+rect -462 -547 -459 -544
+<< labels >>
+rlabel space -462 -547 -462 -547 2 [S]Shifter_97/Fi_1
+<< error_s >>
+rect -378 -935 -375 -932
+<< labels >>
+rlabel space -378 -935 -378 -935 2 [S]Shifter_96/FiPlus1
+<< error_s >>
+rect -378 -915 -375 -912
+<< labels >>
+rlabel space -378 -915 -378 -915 2 [S]Shifter_96/FiPlus1
+<< error_s >>
+rect -462 -868 -459 -865
+<< labels >>
+rlabel space -462 -868 -462 -868 2 [S]Shifter_96/FiPlus1
+<< error_s >>
+rect -462 -848 -459 -845
+<< labels >>
+rlabel space -462 -848 -462 -848 2 [S]Shifter_96/FiPlus1
+<< error_s >>
+rect -378 -915 -375 -912
+<< labels >>
+rlabel space -378 -915 -378 -915 2 [S]Shifter_96/RAMIN
+<< error_s >>
+rect -382 -848 -379 -845
+<< labels >>
+rlabel space -382 -848 -382 -848 2 [S]Shifter_96/RAMIN
+<< error_s >>
+rect -462 -915 -459 -912
+<< labels >>
+rlabel space -462 -915 -462 -915 2 [S]Shifter_96/RAMIN
+<< error_s >>
+rect -462 -848 -459 -845
+<< labels >>
+rlabel space -462 -848 -462 -848 2 [S]Shifter_96/RAMIN
+<< error_s >>
+rect -378 -935 -375 -932
+<< labels >>
+rlabel space -378 -935 -378 -935 2 [S]Shifter_96/F
+<< error_s >>
+rect -382 -868 -379 -865
+<< labels >>
+rlabel space -382 -868 -382 -868 2 [S]Shifter_96/F
+<< error_s >>
+rect -462 -935 -459 -932
+<< labels >>
+rlabel space -462 -935 -462 -935 2 [S]Shifter_96/F
+<< error_s >>
+rect -462 -868 -459 -865
+<< labels >>
+rlabel space -462 -868 -462 -868 2 [S]Shifter_96/F
+<< error_s >>
+rect -382 -868 -379 -865
+<< labels >>
+rlabel space -382 -868 -382 -868 2 [S]Shifter_96/Fi_1
+<< error_s >>
+rect -382 -848 -379 -845
+<< labels >>
+rlabel space -382 -848 -382 -848 2 [S]Shifter_96/Fi_1
+<< error_s >>
+rect -462 -935 -459 -932
+<< labels >>
+rlabel space -462 -935 -462 -935 2 [S]Shifter_96/Fi_1
+<< error_s >>
+rect -462 -915 -459 -912
+<< labels >>
+rlabel space -462 -915 -462 -915 2 [S]Shifter_96/Fi_1
+<< error_s >>
+rect -378 169 -375 172
+<< labels >>
+rlabel space -378 169 -378 169 2 [S]Shifter_99/FiPlus1
+<< error_s >>
+rect -378 188 -375 191
+<< labels >>
+rlabel space -378 188 -378 188 2 [S]Shifter_99/FiPlus1
+<< error_s >>
+rect -462 235 -459 238
+<< labels >>
+rlabel space -462 235 -462 235 2 [S]Shifter_99/FiPlus1
+<< error_s >>
+rect -462 255 -459 258
+<< labels >>
+rlabel space -462 255 -462 255 2 [S]Shifter_99/FiPlus1
+<< error_s >>
+rect -382 255 -379 258
+<< labels >>
+rlabel space -382 255 -382 255 4 [G]Shifter_99/notshr
+<< error_s >>
+rect -462 255 -459 258
+<< labels >>
+rlabel space -462 255 -462 255 4 [G]Shifter_99/notshr
+<< error_s >>
+rect -378 -935 -375 -932
+<< labels >>
+rlabel space -378 -935 -378 -935 4 [G]Shifter_96/shl
+<< error_s >>
+rect -462 -935 -459 -932
+<< labels >>
+rlabel space -462 -935 -462 -935 4 [G]Shifter_96/shl
+<< error_s >>
+rect -382 235 -379 238
+<< labels >>
+rlabel space -382 235 -382 235 4 [G]Shifter_99/notshl
+<< error_s >>
+rect -462 235 -459 238
+<< labels >>
+rlabel space -462 235 -462 235 4 [G]Shifter_99/notshl
+<< error_s >>
+rect -378 188 -375 191
+<< labels >>
+rlabel space -378 188 -378 188 4 [G]Shifter_99/shr
+<< error_s >>
+rect -462 188 -459 191
+<< labels >>
+rlabel space -462 188 -462 188 4 [G]Shifter_99/shr
+<< error_s >>
+rect -378 169 -375 172
+<< labels >>
+rlabel space -378 169 -378 169 4 [G]Shifter_99/shl
+<< error_s >>
+rect -462 169 -459 172
+<< labels >>
+rlabel space -462 169 -462 169 4 [G]Shifter_99/shl
+<< error_s >>
+rect -382 -112 -379 -109
+<< labels >>
+rlabel space -382 -112 -382 -112 4 [G]Shifter_98/notshr
+<< error_s >>
+rect -462 -112 -459 -109
+<< labels >>
+rlabel space -462 -112 -462 -112 4 [G]Shifter_98/notshr
+<< error_s >>
+rect -382 -132 -379 -129
+<< labels >>
+rlabel space -382 -132 -382 -132 4 [G]Shifter_98/notshl
+<< error_s >>
+rect -462 -132 -459 -129
+<< labels >>
+rlabel space -462 -132 -462 -132 4 [G]Shifter_98/notshl
+<< error_s >>
+rect -378 -179 -375 -176
+<< labels >>
+rlabel space -378 -179 -378 -179 4 [G]Shifter_98/shr
+<< error_s >>
+rect -462 -179 -459 -176
+<< labels >>
+rlabel space -462 -179 -462 -179 4 [G]Shifter_98/shr
+<< error_s >>
+rect -378 -199 -375 -196
+<< labels >>
+rlabel space -378 -199 -378 -199 4 [G]Shifter_98/shl
+<< error_s >>
+rect -462 -199 -459 -196
+<< labels >>
+rlabel space -462 -199 -462 -199 4 [G]Shifter_98/shl
+<< error_s >>
+rect -382 -480 -379 -477
+<< labels >>
+rlabel space -382 -480 -382 -480 4 [G]Shifter_97/notshr
+<< error_s >>
+rect -462 -480 -459 -477
+<< labels >>
+rlabel space -462 -480 -462 -480 4 [G]Shifter_97/notshr
+<< error_s >>
+rect -382 -500 -379 -497
+<< labels >>
+rlabel space -382 -500 -382 -500 4 [G]Shifter_97/notshl
+<< error_s >>
+rect -462 -500 -459 -497
+<< labels >>
+rlabel space -462 -500 -462 -500 4 [G]Shifter_97/notshl
+<< error_s >>
+rect -378 -547 -375 -544
+<< labels >>
+rlabel space -378 -547 -378 -547 4 [G]Shifter_97/shr
+<< error_s >>
+rect -462 -547 -459 -544
+<< labels >>
+rlabel space -462 -547 -462 -547 4 [G]Shifter_97/shr
+<< error_s >>
+rect -378 -567 -375 -564
+<< labels >>
+rlabel space -378 -567 -378 -567 4 [G]Shifter_97/shl
+<< error_s >>
+rect -462 -567 -459 -564
+<< labels >>
+rlabel space -462 -567 -462 -567 4 [G]Shifter_97/shl
+<< error_s >>
+rect -382 -848 -379 -845
+<< labels >>
+rlabel space -382 -848 -382 -848 4 [G]Shifter_96/notshr
+<< error_s >>
+rect -462 -848 -459 -845
+<< labels >>
+rlabel space -462 -848 -462 -848 4 [G]Shifter_96/notshr
+<< error_s >>
+rect -382 -868 -379 -865
+<< labels >>
+rlabel space -382 -868 -382 -868 4 [G]Shifter_96/notshl
+<< error_s >>
+rect -462 -868 -459 -865
+<< labels >>
+rlabel space -462 -868 -462 -868 4 [G]Shifter_96/notshl
+<< error_s >>
+rect -378 -915 -375 -912
+<< labels >>
+rlabel space -378 -915 -378 -915 4 [G]Shifter_96/shr
+<< error_s >>
+rect -462 -915 -459 -912
+<< labels >>
+rlabel space -462 -915 -462 -915 4 [G]Shifter_96/shr
+<< error_s >>
+rect -462 -935 -459 -932
+<< labels >>
+rlabel space -462 -935 -462 -935 8 D:
+<< error_s >>
+rect -462 -915 -459 -912
+<< labels >>
+rlabel space -462 -915 -462 -915 8 D:
+<< error_s >>
+rect -462 -868 -459 -865
+<< labels >>
+rlabel space -462 -868 -462 -868 8 D:
+<< error_s >>
+rect -462 -848 -459 -845
+<< labels >>
+rlabel space -462 -848 -462 -848 8 D:
+<< error_s >>
+rect -462 -567 -459 -564
+<< labels >>
+rlabel space -462 -567 -462 -567 8 D:
+<< error_s >>
+rect -462 -547 -459 -544
+<< labels >>
+rlabel space -462 -547 -462 -547 8 D:
+<< error_s >>
+rect -462 -500 -459 -497
+<< labels >>
+rlabel space -462 -500 -462 -500 8 D:
+<< error_s >>
+rect -462 -480 -459 -477
+<< labels >>
+rlabel space -462 -480 -462 -480 8 D:
+<< error_s >>
+rect -462 -199 -459 -196
+<< labels >>
+rlabel space -462 -199 -462 -199 8 D:
+<< error_s >>
+rect -462 -179 -459 -176
+<< labels >>
+rlabel space -462 -179 -462 -179 8 D:
+<< error_s >>
+rect -462 -132 -459 -129
+<< labels >>
+rlabel space -462 -132 -462 -132 8 D:
+<< error_s >>
+rect -462 -112 -459 -109
+<< labels >>
+rlabel space -462 -112 -462 -112 8 D:
+<< error_s >>
+rect -462 169 -459 172
+<< labels >>
+rlabel space -462 169 -462 169 8 D:
+<< error_s >>
+rect -462 188 -459 191
+<< labels >>
+rlabel space -462 188 -462 188 8 D:
+<< error_s >>
+rect -462 235 -459 238
+<< labels >>
+rlabel space -462 235 -462 235 8 D:
+<< error_s >>
+rect -462 255 -459 258
+<< labels >>
+rlabel space -462 255 -462 255 8 D:
+<< error_s >>
+rect -378 -935 -375 -932
+<< labels >>
+rlabel space -378 -935 -378 -935 8 D:
+<< error_s >>
+rect -378 -915 -375 -912
+<< labels >>
+rlabel space -378 -915 -378 -915 8 D:
+<< error_s >>
+rect -382 -868 -379 -865
+<< labels >>
+rlabel space -382 -868 -382 -868 8 D:
+<< error_s >>
+rect -382 -848 -379 -845
+<< labels >>
+rlabel space -382 -848 -382 -848 8 D:
+<< error_s >>
+rect -378 -567 -375 -564
+<< labels >>
+rlabel space -378 -567 -378 -567 8 D:
+<< error_s >>
+rect -378 -547 -375 -544
+<< labels >>
+rlabel space -378 -547 -378 -547 8 D:
+<< error_s >>
+rect -382 -500 -379 -497
+<< labels >>
+rlabel space -382 -500 -382 -500 8 D:
+<< error_s >>
+rect -382 -480 -379 -477
+<< labels >>
+rlabel space -382 -480 -382 -480 8 D:
+<< error_s >>
+rect -378 -199 -375 -196
+<< labels >>
+rlabel space -378 -199 -378 -199 8 D:
+<< error_s >>
+rect -378 -179 -375 -176
+<< labels >>
+rlabel space -378 -179 -378 -179 8 D:
+<< error_s >>
+rect -382 -132 -379 -129
+<< labels >>
+rlabel space -382 -132 -382 -132 8 D:
+<< error_s >>
+rect -382 -112 -379 -109
+<< labels >>
+rlabel space -382 -112 -382 -112 8 D:
+<< error_s >>
+rect -378 169 -375 172
+<< labels >>
+rlabel space -378 169 -378 169 8 D:
+<< error_s >>
+rect -378 188 -375 191
+<< labels >>
+rlabel space -378 188 -378 188 8 D:
+<< error_s >>
+rect -382 235 -379 238
+<< labels >>
+rlabel space -382 235 -382 235 8 D:
+<< error_s >>
+rect -382 255 -379 258
+<< labels >>
+rlabel space -382 255 -382 255 8 D:
+<< end >>

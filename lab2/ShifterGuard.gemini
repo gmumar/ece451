@@ -1,0 +1,372 @@
+Gemini 2.7.2	1994/3/15
+
+Graph "ShifterGuard_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 32
+	Number of nets: 33
+
+Graph "./ShifterGuard.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+format = NULL (assume MIT)
+	Number of devices: 40
+	Number of nets: 23
+
+The circuits are different.
+
+These circuits contain some symmetry (98% nodes not yet matched).
+Gemini will attempt to find a valid match for symmetrical nodes.
+0 entries written to the dictionary file.
+0 (0%) matches were found by local matching
+
+	Graph number 1: ShifterGuard_lay.sim 
+	--------------------------
+32 NETS could not be matched, possibly because of other unmatched nets:
+NET "Shifter_99/RAMIN" (index 2) 4 connections
+  n: (index 18) [g] Shifter_99/shr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+  n: (index 16) [g] Shifter_99/notshr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+  p: (index 2) [g] Shifter_99/shr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+  p: (index 0) [g] Shifter_99/notshr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+NET "Shifter_99/F" (index 5) 4 connections
+  n: (index 19) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+  n: (index 17) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+  p: (index 3) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+  p: (index 1) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+NET "Shifter_99/Fi_1" (index 7) 4 connections
+  n: (index 17) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+  n: (index 16) [g] Shifter_99/notshr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+  p: (index 3) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+  p: (index 2) [g] Shifter_99/shr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+NET "Shifter_98/FiPlus1" (index 10) 4 connections
+  n: (index 23) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+  n: (index 22) [g] Shifter_98/shr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+  p: (index 5) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+  p: (index 4) [g] Shifter_98/notshr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+NET "Shifter_98/RAMIN" (index 11) 4 connections
+  n: (index 22) [g] Shifter_98/shr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+  n: (index 20) [g] Shifter_98/notshr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+  p: (index 6) [g] Shifter_98/shr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+  p: (index 4) [g] Shifter_98/notshr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+NET "Shifter_98/F" (index 13) 4 connections
+  n: (index 23) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+  n: (index 21) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+  p: (index 7) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+  p: (index 5) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+NET "Shifter_98/Fi_1" (index 15) 4 connections
+  n: (index 21) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+  n: (index 20) [g] Shifter_98/notshr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+  p: (index 7) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+  p: (index 6) [g] Shifter_98/shr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+NET "Shifter_97/FiPlus1" (index 18) 4 connections
+  n: (index 27) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+  n: (index 26) [g] Shifter_97/shr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+  p: (index 9) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+  p: (index 8) [g] Shifter_97/notshr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+NET "Shifter_97/RAMIN" (index 19) 4 connections
+  n: (index 26) [g] Shifter_97/shr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+  n: (index 24) [g] Shifter_97/notshr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+  p: (index 10) [g] Shifter_97/shr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+  p: (index 8) [g] Shifter_97/notshr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+NET "Shifter_97/F" (index 21) 4 connections
+  n: (index 27) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+  n: (index 25) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+  p: (index 11) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+  p: (index 9) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+NET "Shifter_97/Fi_1" (index 23) 4 connections
+  n: (index 25) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+  n: (index 24) [g] Shifter_97/notshr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+  p: (index 11) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+  p: (index 10) [g] Shifter_97/shr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+NET "Shifter_96/FiPlus1" (index 26) 4 connections
+  n: (index 31) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+  n: (index 30) [g] Shifter_96/shr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+  p: (index 13) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+  p: (index 12) [g] Shifter_96/notshr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+NET "Shifter_96/RAMIN" (index 27) 4 connections
+  n: (index 30) [g] Shifter_96/shr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+  n: (index 28) [g] Shifter_96/notshr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+  p: (index 14) [g] Shifter_96/shr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+  p: (index 12) [g] Shifter_96/notshr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+NET "Shifter_96/F" (index 29) 4 connections
+  n: (index 31) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+  n: (index 29) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+  p: (index 15) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+  p: (index 13) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+NET "Shifter_96/Fi_1" (index 31) 4 connections
+  n: (index 29) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+  n: (index 28) [g] Shifter_96/notshr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+  p: (index 15) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+  p: (index 14) [g] Shifter_96/shr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+NET "Shifter_99/FiPlus1" (index 1) 4 connections
+  n: (index 19) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+  n: (index 18) [g] Shifter_99/shr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+  p: (index 1) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+  p: (index 0) [g] Shifter_99/notshr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+NET "Shifter_99/notshr" (index 0) 2 connections
+  n: (index 16) [g] Shifter_99/notshr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+  p: (index 0) [g] Shifter_99/notshr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+NET "Shifter_96/shl" (index 32) 2 connections
+  n: (index 31) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+  p: (index 15) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+NET "Shifter_99/notshl" (index 4) 2 connections
+  n: (index 17) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+  p: (index 1) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+NET "Shifter_99/shr" (index 6) 2 connections
+  n: (index 18) [g] Shifter_99/shr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+  p: (index 2) [g] Shifter_99/shr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+NET "Shifter_99/shl" (index 8) 2 connections
+  n: (index 19) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+  p: (index 3) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+NET "Shifter_98/notshr" (index 9) 2 connections
+  n: (index 20) [g] Shifter_98/notshr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+  p: (index 4) [g] Shifter_98/notshr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+NET "Shifter_98/notshl" (index 12) 2 connections
+  n: (index 21) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+  p: (index 5) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+NET "Shifter_98/shr" (index 14) 2 connections
+  n: (index 22) [g] Shifter_98/shr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+  p: (index 6) [g] Shifter_98/shr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+NET "Shifter_98/shl" (index 16) 2 connections
+  n: (index 23) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+  p: (index 7) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+NET "Shifter_97/notshr" (index 17) 2 connections
+  n: (index 24) [g] Shifter_97/notshr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+  p: (index 8) [g] Shifter_97/notshr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+NET "Shifter_97/notshl" (index 20) 2 connections
+  n: (index 25) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+  p: (index 9) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+NET "Shifter_97/shr" (index 22) 2 connections
+  n: (index 26) [g] Shifter_97/shr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+  p: (index 10) [g] Shifter_97/shr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+NET "Shifter_97/shl" (index 24) 2 connections
+  n: (index 27) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+  p: (index 11) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+NET "Shifter_96/notshr" (index 25) 2 connections
+  n: (index 28) [g] Shifter_96/notshr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+  p: (index 12) [g] Shifter_96/notshr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+NET "Shifter_96/notshl" (index 28) 2 connections
+  n: (index 29) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+  p: (index 13) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+NET "Shifter_96/shr" (index 30) 2 connections
+  n: (index 30) [g] Shifter_96/shr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+  p: (index 14) [g] Shifter_96/shr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+32 DEVICES could not be matched, possibly because of other unmatched devices:
+DEVICE p:     connections: (index 15) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+DEVICE p:     connections: (index 14) [g] Shifter_96/shr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+DEVICE p:     connections: (index 13) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+DEVICE p:     connections: (index 12) [g] Shifter_96/notshr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+DEVICE p:     connections: (index 11) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+DEVICE p:     connections: (index 10) [g] Shifter_97/shr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+DEVICE p:     connections: (index 9) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+DEVICE p:     connections: (index 8) [g] Shifter_97/notshr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+DEVICE p:     connections: (index 7) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+DEVICE p:     connections: (index 6) [g] Shifter_98/shr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+DEVICE p:     connections: (index 5) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+DEVICE p:     connections: (index 4) [g] Shifter_98/notshr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+DEVICE p:     connections: (index 3) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+DEVICE p:     connections: (index 2) [g] Shifter_99/shr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+DEVICE p:     connections: (index 1) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+DEVICE p:     connections: (index 0) [g] Shifter_99/notshr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+DEVICE n:     connections: (index 31) [g] Shifter_96/shl :: [s,d] Shifter_96/F, Shifter_96/FiPlus1
+DEVICE n:     connections: (index 30) [g] Shifter_96/shr :: [s,d] Shifter_96/FiPlus1, Shifter_96/RAMIN
+DEVICE n:     connections: (index 29) [g] Shifter_96/notshl :: [s,d] Shifter_96/F, Shifter_96/Fi_1
+DEVICE n:     connections: (index 28) [g] Shifter_96/notshr :: [s,d] Shifter_96/Fi_1, Shifter_96/RAMIN
+DEVICE n:     connections: (index 27) [g] Shifter_97/shl :: [s,d] Shifter_97/F, Shifter_97/FiPlus1
+DEVICE n:     connections: (index 26) [g] Shifter_97/shr :: [s,d] Shifter_97/FiPlus1, Shifter_97/RAMIN
+DEVICE n:     connections: (index 25) [g] Shifter_97/notshl :: [s,d] Shifter_97/F, Shifter_97/Fi_1
+DEVICE n:     connections: (index 24) [g] Shifter_97/notshr :: [s,d] Shifter_97/Fi_1, Shifter_97/RAMIN
+DEVICE n:     connections: (index 23) [g] Shifter_98/shl :: [s,d] Shifter_98/F, Shifter_98/FiPlus1
+DEVICE n:     connections: (index 22) [g] Shifter_98/shr :: [s,d] Shifter_98/FiPlus1, Shifter_98/RAMIN
+DEVICE n:     connections: (index 21) [g] Shifter_98/notshl :: [s,d] Shifter_98/F, Shifter_98/Fi_1
+DEVICE n:     connections: (index 20) [g] Shifter_98/notshr :: [s,d] Shifter_98/Fi_1, Shifter_98/RAMIN
+DEVICE n:     connections: (index 19) [g] Shifter_99/shl :: [s,d] Shifter_99/F, Shifter_99/FiPlus1
+DEVICE n:     connections: (index 18) [g] Shifter_99/shr :: [s,d] Shifter_99/FiPlus1, Shifter_99/RAMIN
+DEVICE n:     connections: (index 17) [g] Shifter_99/notshl :: [s,d] Shifter_99/F, Shifter_99/Fi_1
+DEVICE n:     connections: (index 16) [g] Shifter_99/notshr :: [s,d] Shifter_99/Fi_1, Shifter_99/RAMIN
+
+	Graph number 2: ./ShifterGuard.sim 
+	--------------------------
+5 NETS definitely do not match:
+NET "SR" (index 15) 6 connections
+  p: (index 33) [g] net_1 :: [s,d] net_3, SR
+  n: (index 32) [g] net_5 :: [s,d] net_3, SR
+  n: (index 27) [g] shr :: [s,d] RAMIN[0], SR
+  p: (index 26) [g] notshr :: [s,d] RAMIN[0], SR
+  n: (index 25) [g] shl :: [s,d] SR, F[0]
+  p: (index 24) [g] notshl :: [s,d] SR, F[0]
+NET "net_3" (index 9) 10 connections
+  p: (index 33) [g] net_1 :: [s,d] net_3, SR
+  n: (index 32) [g] net_5 :: [s,d] net_3, SR
+  n: (index 31) [g] notshr :: [s,d] RAMIN[0], net_3
+  p: (index 30) [g] shr :: [s,d] RAMIN[0], net_3
+  n: (index 29) [g] notshl :: [s,d] net_3, F[0]
+  p: (index 28) [g] shl :: [s,d] net_3, F[0]
+  n: (index 11) [g] shr :: [s,d] RAMIN[1], net_3
+  p: (index 10) [g] notshr :: [s,d] RAMIN[1], net_3
+  n: (index 9) [g] shl :: [s,d] net_3, F[1]
+  p: (index 8) [g] notshl :: [s,d] net_3, F[1]
+NET "net_5" (index 18) 3 connections
+  p: (index 39) [g] net_1 :: [s,d] vdd, net_5
+  n: (index 38) [g] net_1 :: [s,d] gnd, net_5
+  n: (index 32) [g] net_5 :: [s,d] net_3, SR
+NET "vdd" (index 20) 3 connections
+  p: (index 39) [g] net_1 :: [s,d] vdd, net_5
+  p: (index 36) [g] shl :: [s,d] vdd, net_1
+  p: (index 34) [g] shr :: [s,d] vdd, net_1
+NET "net_1" (index 19) 6 connections
+  p: (index 39) [g] net_1 :: [s,d] vdd, net_5
+  n: (index 38) [g] net_1 :: [s,d] gnd, net_5
+  p: (index 36) [g] shl :: [s,d] vdd, net_1
+  n: (index 35) [g] shr :: [s,d] nand2.net_1, net_1
+  p: (index 34) [g] shr :: [s,d] vdd, net_1
+  p: (index 33) [g] net_1 :: [s,d] net_3, SR
+17 NETS could not be matched, possibly because of other unmatched nets:
+NET "notshl" (index 0) 8 connections
+  n: (index 29) [g] notshl :: [s,d] net_3, F[0]
+  p: (index 24) [g] notshl :: [s,d] SR, F[0]
+  n: (index 21) [g] notshl :: [s,d] net_2, F[2]
+  p: (index 16) [g] notshl :: [s,d] net_4, F[2]
+  n: (index 13) [g] notshl :: [s,d] net_4, F[1]
+  p: (index 8) [g] notshl :: [s,d] net_3, F[1]
+  n: (index 5) [g] notshl :: [s,d] SL, F[3]
+  p: (index 0) [g] notshl :: [s,d] net_2, F[3]
+NET "notshr" (index 5) 8 connections
+  n: (index 31) [g] notshr :: [s,d] RAMIN[0], net_3
+  p: (index 26) [g] notshr :: [s,d] RAMIN[0], SR
+  n: (index 23) [g] notshr :: [s,d] RAMIN[2], net_2
+  p: (index 18) [g] notshr :: [s,d] RAMIN[2], net_4
+  n: (index 15) [g] notshr :: [s,d] RAMIN[1], net_4
+  p: (index 10) [g] notshr :: [s,d] RAMIN[1], net_3
+  n: (index 7) [g] notshr :: [s,d] RAMIN[3], SL
+  p: (index 2) [g] notshr :: [s,d] RAMIN[3], net_2
+NET "F[3]" (index 2) 4 connections
+  n: (index 5) [g] notshl :: [s,d] SL, F[3]
+  p: (index 4) [g] shl :: [s,d] SL, F[3]
+  n: (index 1) [g] shl :: [s,d] net_2, F[3]
+  p: (index 0) [g] notshl :: [s,d] net_2, F[3]
+NET "RAMIN[3]" (index 6) 4 connections
+  n: (index 7) [g] notshr :: [s,d] RAMIN[3], SL
+  p: (index 6) [g] shr :: [s,d] RAMIN[3], SL
+  n: (index 3) [g] shr :: [s,d] RAMIN[3], net_2
+  p: (index 2) [g] notshr :: [s,d] RAMIN[3], net_2
+NET "SL" (index 8) 4 connections
+  n: (index 7) [g] notshr :: [s,d] RAMIN[3], SL
+  p: (index 6) [g] shr :: [s,d] RAMIN[3], SL
+  n: (index 5) [g] notshl :: [s,d] SL, F[3]
+  p: (index 4) [g] shl :: [s,d] SL, F[3]
+NET "F[1]" (index 10) 4 connections
+  n: (index 13) [g] notshl :: [s,d] net_4, F[1]
+  p: (index 12) [g] shl :: [s,d] net_4, F[1]
+  n: (index 9) [g] shl :: [s,d] net_3, F[1]
+  p: (index 8) [g] notshl :: [s,d] net_3, F[1]
+NET "RAMIN[1]" (index 11) 4 connections
+  n: (index 15) [g] notshr :: [s,d] RAMIN[1], net_4
+  p: (index 14) [g] shr :: [s,d] RAMIN[1], net_4
+  n: (index 11) [g] shr :: [s,d] RAMIN[1], net_3
+  p: (index 10) [g] notshr :: [s,d] RAMIN[1], net_3
+NET "F[2]" (index 13) 4 connections
+  n: (index 21) [g] notshl :: [s,d] net_2, F[2]
+  p: (index 20) [g] shl :: [s,d] net_2, F[2]
+  n: (index 17) [g] shl :: [s,d] net_4, F[2]
+  p: (index 16) [g] notshl :: [s,d] net_4, F[2]
+NET "RAMIN[2]" (index 14) 4 connections
+  n: (index 23) [g] notshr :: [s,d] RAMIN[2], net_2
+  p: (index 22) [g] shr :: [s,d] RAMIN[2], net_2
+  n: (index 19) [g] shr :: [s,d] RAMIN[2], net_4
+  p: (index 18) [g] notshr :: [s,d] RAMIN[2], net_4
+NET "F[0]" (index 16) 4 connections
+  n: (index 29) [g] notshl :: [s,d] net_3, F[0]
+  p: (index 28) [g] shl :: [s,d] net_3, F[0]
+  n: (index 25) [g] shl :: [s,d] SR, F[0]
+  p: (index 24) [g] notshl :: [s,d] SR, F[0]
+NET "RAMIN[0]" (index 17) 4 connections
+  n: (index 31) [g] notshr :: [s,d] RAMIN[0], net_3
+  p: (index 30) [g] shr :: [s,d] RAMIN[0], net_3
+  n: (index 27) [g] shr :: [s,d] RAMIN[0], SR
+  p: (index 26) [g] notshr :: [s,d] RAMIN[0], SR
+NET "net_2" (index 1) 8 connections
+  n: (index 23) [g] notshr :: [s,d] RAMIN[2], net_2
+  p: (index 22) [g] shr :: [s,d] RAMIN[2], net_2
+  n: (index 21) [g] notshl :: [s,d] net_2, F[2]
+  p: (index 20) [g] shl :: [s,d] net_2, F[2]
+  n: (index 3) [g] shr :: [s,d] RAMIN[3], net_2
+  p: (index 2) [g] notshr :: [s,d] RAMIN[3], net_2
+  n: (index 1) [g] shl :: [s,d] net_2, F[3]
+  p: (index 0) [g] notshl :: [s,d] net_2, F[3]
+NET "net_4" (index 12) 8 connections
+  n: (index 19) [g] shr :: [s,d] RAMIN[2], net_4
+  p: (index 18) [g] notshr :: [s,d] RAMIN[2], net_4
+  n: (index 17) [g] shl :: [s,d] net_4, F[2]
+  p: (index 16) [g] notshl :: [s,d] net_4, F[2]
+  n: (index 15) [g] notshr :: [s,d] RAMIN[1], net_4
+  p: (index 14) [g] shr :: [s,d] RAMIN[1], net_4
+  n: (index 13) [g] notshl :: [s,d] net_4, F[1]
+  p: (index 12) [g] shl :: [s,d] net_4, F[1]
+NET "shl" (index 4) 10 connections
+  n: (index 37) [g] shl :: [s,d] gnd, nand2.net_1
+  p: (index 36) [g] shl :: [s,d] vdd, net_1
+  p: (index 28) [g] shl :: [s,d] net_3, F[0]
+  n: (index 25) [g] shl :: [s,d] SR, F[0]
+  p: (index 20) [g] shl :: [s,d] net_2, F[2]
+  n: (index 17) [g] shl :: [s,d] net_4, F[2]
+  p: (index 12) [g] shl :: [s,d] net_4, F[1]
+  n: (index 9) [g] shl :: [s,d] net_3, F[1]
+  p: (index 4) [g] shl :: [s,d] SL, F[3]
+  n: (index 1) [g] shl :: [s,d] net_2, F[3]
+NET "shr" (index 7) 10 connections
+  n: (index 35) [g] shr :: [s,d] nand2.net_1, net_1
+  p: (index 34) [g] shr :: [s,d] vdd, net_1
+  p: (index 30) [g] shr :: [s,d] RAMIN[0], net_3
+  n: (index 27) [g] shr :: [s,d] RAMIN[0], SR
+  p: (index 22) [g] shr :: [s,d] RAMIN[2], net_2
+  n: (index 19) [g] shr :: [s,d] RAMIN[2], net_4
+  p: (index 14) [g] shr :: [s,d] RAMIN[1], net_4
+  n: (index 11) [g] shr :: [s,d] RAMIN[1], net_3
+  p: (index 6) [g] shr :: [s,d] RAMIN[3], SL
+  n: (index 3) [g] shr :: [s,d] RAMIN[3], net_2
+NET "gnd" (index 22) 2 connections
+  n: (index 38) [g] net_1 :: [s,d] gnd, net_5
+  n: (index 37) [g] shl :: [s,d] gnd, nand2.net_1
+NET "nand2.net_1" (index 21) 2 connections
+  n: (index 37) [g] shl :: [s,d] gnd, nand2.net_1
+  n: (index 35) [g] shr :: [s,d] nand2.net_1, net_1
+40 DEVICES could not be matched, possibly because of other unmatched devices:
+DEVICE p:     connections: (index 39) [g] net_1 :: [s,d] vdd, net_5
+DEVICE p:     connections: (index 36) [g] shl :: [s,d] vdd, net_1
+DEVICE p:     connections: (index 34) [g] shr :: [s,d] vdd, net_1
+DEVICE p:     connections: (index 33) [g] net_1 :: [s,d] net_3, SR
+DEVICE p:     connections: (index 30) [g] shr :: [s,d] RAMIN[0], net_3
+DEVICE p:     connections: (index 28) [g] shl :: [s,d] net_3, F[0]
+DEVICE p:     connections: (index 26) [g] notshr :: [s,d] RAMIN[0], SR
+DEVICE p:     connections: (index 24) [g] notshl :: [s,d] SR, F[0]
+DEVICE p:     connections: (index 22) [g] shr :: [s,d] RAMIN[2], net_2
+DEVICE p:     connections: (index 20) [g] shl :: [s,d] net_2, F[2]
+DEVICE p:     connections: (index 18) [g] notshr :: [s,d] RAMIN[2], net_4
+DEVICE p:     connections: (index 16) [g] notshl :: [s,d] net_4, F[2]
+DEVICE p:     connections: (index 14) [g] shr :: [s,d] RAMIN[1], net_4
+DEVICE p:     connections: (index 12) [g] shl :: [s,d] net_4, F[1]
+DEVICE p:     connections: (index 10) [g] notshr :: [s,d] RAMIN[1], net_3
+DEVICE p:     connections: (index 8) [g] notshl :: [s,d] net_3, F[1]
+DEVICE p:     connections: (index 6) [g] shr :: [s,d] RAMIN[3], SL
+DEVICE p:     connections: (index 4) [g] shl :: [s,d] SL, F[3]
+DEVICE p:     connections: (index 2) [g] notshr :: [s,d] RAMIN[3], net_2
+DEVICE p:     connections: (index 0) [g] notshl :: [s,d] net_2, F[3]
+DEVICE n:     connections: (index 38) [g] net_1 :: [s,d] gnd, net_5
+DEVICE n:     connections: (index 37) [g] shl :: [s,d] gnd, nand2.net_1
+DEVICE n:     connections: (index 35) [g] shr :: [s,d] nand2.net_1, net_1
+DEVICE n:     connections: (index 32) [g] net_5 :: [s,d] net_3, SR
+DEVICE n:     connections: (index 31) [g] notshr :: [s,d] RAMIN[0], net_3
+DEVICE n:     connections: (index 29) [g] notshl :: [s,d] net_3, F[0]
+DEVICE n:     connections: (index 27) [g] shr :: [s,d] RAMIN[0], SR
+DEVICE n:     connections: (index 25) [g] shl :: [s,d] SR, F[0]
+DEVICE n:     connections: (index 23) [g] notshr :: [s,d] RAMIN[2], net_2
+DEVICE n:     connections: (index 21) [g] notshl :: [s,d] net_2, F[2]
+DEVICE n:     connections: (index 19) [g] shr :: [s,d] RAMIN[2], net_4
+DEVICE n:     connections: (index 17) [g] shl :: [s,d] net_4, F[2]
+DEVICE n:     connections: (index 15) [g] notshr :: [s,d] RAMIN[1], net_4
+DEVICE n:     connections: (index 13) [g] notshl :: [s,d] net_4, F[1]
+DEVICE n:     connections: (index 11) [g] shr :: [s,d] RAMIN[1], net_3
+DEVICE n:     connections: (index 9) [g] shl :: [s,d] net_3, F[1]
+DEVICE n:     connections: (index 7) [g] notshr :: [s,d] RAMIN[3], SL
+DEVICE n:     connections: (index 5) [g] notshl :: [s,d] SL, F[3]
+DEVICE n:     connections: (index 3) [g] shr :: [s,d] RAMIN[3], net_2
+DEVICE n:     connections: (index 1) [g] shl :: [s,d] net_2, F[3]
+32 devices and 32 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab2/ShifterGuard.lvs.err.mag

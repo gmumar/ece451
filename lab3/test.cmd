@@ -22,182 +22,1206 @@ vector Fbus F3:0
 vector notPbus B3.ALU.notP B2.ALU.notP B1.ALU.notP B0.ALU.notP
 vector OUT notCout 
 vector SHIFT SL SR
-stepsize 300
+stepsize 1000
 
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 1010
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector WriteEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
-s
-setvector CLK1 10
-setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 1010
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector WriteEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
-s
-setvector CLK1 10
-setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 0000
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector WriteEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 0000
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector WriteEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 1001
-setvector CTRL_OP 0000
-setvector Lbus 0000
-setvector Mbus 1100
-setvector Nbus 1010
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 1111
-setvector BRdEnbus 0000
-setvector ARdEnbus 0000
-setvector notFBEnbus 1111
-setvector FBEnbus 0000
-setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 0000
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 0000
-setvector BRdEnbus 0000
-setvector ARdEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
 s
 setvector CLK1 10
 setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 1001
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 0000
-setvector BRdEnbus 1111
-setvector ARdEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
-s
-setvector CLK1 10
-setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 1001
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 0000
-setvector BRdEnbus 1111
-setvector ARdEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
-s
-setvector CLK1 10
-setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 1001
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 0000
-setvector BRdEnbus 1111
-setvector ARdEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 1001
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 0000
-setvector BRdEnbus 1111
-setvector ARdEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 1
-setvector Dbus 1001
-setvector CTRL_OP 1001
-setvector Lbus 0000
-setvector Mbus 1100
-setvector Nbus 1010
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 0000
-setvector BRdEnbus 1111
-setvector ARdEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
 s
 setvector CLK1 01
 setvector CLK2 0
-setvector Dbus 1001
-setvector CTRL_OP 1001
-setvector Lbus 1111
-setvector Mbus 1111
-setvector Nbus 1111
-setvector CTRL_SHIFT 0110
-setvector SHIFT 01
-setvector WriteEnbus 0000
-setvector BRdEnbus 0000
-setvector ARdEnbus 0000
-setvector notFBEnbus 0000
-setvector FBEnbus 1111
-setvector IN_ALU 1
 s
-ana Phi1 notPhi1 Phi2 notshl shl notshr shr ARdEnbus BRdEnbus FBEnbus notFBEnbus WriteEnbus In1Select0 In2Select0 In1Select1 In2Select1 Lbus Mbus Nbus notCin Dbus RAMINbus Abus Bbus Rbus Sbus Fbus notCout SL SR notPbus
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 10
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+setvector CLK1 01
+setvector CLK2 1
+s
+setvector CLK1 01
+setvector CLK2 0
+s
+ana Phi1 notPhi1 Phi2 notshl shl notshr shr ARdEnbus BRdEnbus FBEnbus notFBEnbus WriteEnbus In1Select0 In2Select0 In1Select1 In2Select1 Lbus Mbus Nbus notCin Dbus RAMINbus Abus Bbus Rbus Sbus Fbus notCout SL SR notPbus {B3.ARdEn[3:0]}

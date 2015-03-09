@@ -16,6 +16,7 @@ proc SCHEMATIC_RamCell {} {
   make input -name BRdEn -origin {220 610}
   make output -name Ai -origin {880 360}
   make output -name Bi -origin {880 460}
+  make name_net_s -name ard -origin {350 580}
   make_wire 540 460 580 460
   make_wire 430 310 410 310
   make_wire 410 310 410 460
@@ -35,7 +36,6 @@ proc SCHEMATIC_RamCell {} {
   make_wire 510 310 510 330
   make_wire 210 390 470 390
   make_wire 740 420 740 580
-  make_wire 220 580 740 580
   make_wire 780 360 880 360
   make_wire 680 360 700 360
   make_wire 850 460 880 460
@@ -43,30 +43,32 @@ proc SCHEMATIC_RamCell {} {
   make_wire 680 460 770 460
   make_wire 810 520 810 610
   make_wire 220 610 810 610
+  make_wire 350 580 220 580
+  make_wire 350 580 740 580
 }
 
 proc ICON_RamCell args {
   icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
-  icon_term -type input -origin {-60 110} -orient R90Y -name notFBEn
-  icon_term -type input -origin {-40 110} -orient R90Y -name FBEn
-  icon_term -type input -origin {-20 110} -orient R90Y -name RAMINi
-  icon_term -type input -origin {0 110} -orient R90Y -name WriteEn
-  icon_term -type input -origin {20 110} -orient R90Y -name ARdEn
-  icon_term -type input -origin {40 110} -orient R90Y -name BRdEn
-  icon_term -type output -origin {-20 -110} -orient R90Y -name Ai
-  icon_term -type output -origin {0 -110} -orient R90Y -name Bi
+  icon_term -type input -origin {-150 -60} -name notFBEn
+  icon_term -type input -origin {-150 -40} -name FBEn
+  icon_term -type input -origin {-150 -20} -name RAMINi
+  icon_term -type input -origin {-150 0} -name WriteEn
+  icon_term -type input -origin {-150 20} -name ARdEn
+  icon_term -type input -origin {-150 40} -name BRdEn
+  icon_term -type output -origin {150 -20} -name Ai
+  icon_term -type output -origin {150 0} -name Bi
   icon_property -origin {0 0} -size large -anchor center -label RamCell
-  icon_line -80 -110 80 -110 80 110 -80 110 -80 -110
-  icon_property -origin {-60 100} -anchor e -rotate 1 -label notFBEn
-  icon_property -origin {-40 100} -anchor e -rotate 1 -label FBEn
-  icon_property -origin {-20 100} -anchor e -rotate 1 -label RAMINi
-  icon_property -origin {0 100} -anchor e -rotate 1 -label WriteEn
-  icon_property -origin {20 100} -anchor e -rotate 1 -label ARdEn
-  icon_property -origin {40 100} -anchor e -rotate 1 -label BRdEn
-  icon_property -origin {-20 -100} -rotate 1 -label Ai
-  icon_property -origin {0 -100} -rotate 1 -label Bi
-  icon_property -origin {-80 330} -type user -name name
-  icon_property -origin {-80 350} -type user -name M
-  icon_property -origin {-80 370} -type user -name dpc
+  icon_line -150 -80 150 -80 150 80 -150 80 -150 -80
+  icon_property -origin {-140 -60} -label notFBEn
+  icon_property -origin {-140 -40} -label FBEn
+  icon_property -origin {-140 -20} -label RAMINi
+  icon_property -origin {-140 0} -label WriteEn
+  icon_property -origin {-140 20} -label ARdEn
+  icon_property -origin {-140 40} -label BRdEn
+  icon_property -origin {140 -20} -anchor e -label Ai
+  icon_property -origin {140 0} -anchor e -label Bi
+  icon_property -origin {-150 300} -type user -name name
+  icon_property -origin {-150 320} -type user -name M
+  icon_property -origin {-150 340} -type user -name dpc
 }
 

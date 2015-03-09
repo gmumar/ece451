@@ -1,0 +1,484 @@
+
+Circuit: * FILE: datapath.sp
+
+Doing analysis at TEMP = 378.150000 and TNOM = 300.150000
+@ vds=0.5 vgs=7.61913 vbs=0.142315 Id=0.00126077
+WARNING: negative Gmb = -1.79626e-06 for nfet m:b1:alu:tfunc:_3
+@ vds=0.5 vgs=7.61913 vbs=0.142315 Id=0.00126077
+WARNING: negative Gmb = -1.79626e-06 for nfet m:b2:alu:tfunc:_3
+@ vds=0.5 vgs=7.61913 vbs=0.142315 Id=0.00126077
+WARNING: negative Gmb = -1.79626e-06 for nfet m:b3:alu:tfunc:_3
+@ vds=0.184615 vgs=7.80042 vbs=0.418068 Id=0.000500653
+WARNING: negative Gmb = -2.11056e-06 for nfet m:b0:alu:tfunc:_8
+@ vds=0.5 vgs=8.11581 vbs=0.141966 Id=0.00131368
+WARNING: negative Gmb = -5.15495e-06 for nfet m:b0:alu:tfunc:_6
+@ vds=0.5 vgs=9.25884 vbs=0.148189 Id=0.00143475
+WARNING: negative Gmb = -1.29439e-05 for nfet m:b0:alu:tfunc:_5
+@ vds=0.5 vgs=8.3179 vbs=0.148189 Id=0.00133507
+WARNING: negative Gmb = -6.52462e-06 for nfet m:b1:alu:tfunc:_5
+@ vds=0.5 vgs=8.3179 vbs=0.148189 Id=0.00133507
+WARNING: negative Gmb = -6.52462e-06 for nfet m:b2:alu:tfunc:_5
+@ vds=0.5 vgs=8.3179 vbs=0.148189 Id=0.00133507
+WARNING: negative Gmb = -6.52462e-06 for nfet m:b3:alu:tfunc:_5
+@ vds=2 vgs=4.3861 vbs=0.723995 Id=0.000792761
+WARNING: negative Gmb = -1.14184e-05 for pfet m:shifterguard:_2
+@ vds=3.17196 vgs=4.45834 vbs=0.334331 Id=0.000983283
+WARNING: negative Gmb = -2.606e-05 for pfet m:shifterguard:shifter_2:_1
+@ vds=2.86296 vgs=4.45949 vbs=0.334331 Id=0.000957679
+WARNING: negative Gmb = -1.59911e-05 for pfet m:shifterguard:shifter:_5
+@ vds=3.19217 vgs=4.7887 vbs=0.128801 Id=0.00107315
+WARNING: negative Gmb = -5.35204e-07 for pfet m:shifterguard:shifter:_1
+@ vds=4 vgs=4.772 vbs=0.116994 Id=0.00111787
+WARNING: negative Gmb = -1.12381e-05 for pfet m:shifterguard:shifter_3:_5
+@ vds=0.5 vgs=15.132 vbs=0.172502 Id=0.000284978
+WARNING: negative Gm = -4.5302e-06 for pfet m:shifterguard:shifter_3:_7
+@ vds=0.5 vgs=14.1577 vbs=0.184658 Id=0.000289618
+WARNING: negative Gm = -4.70651e-06 for pfet m:shifterguard:shifter_3:_5
+@ vds=0.5 vgs=16.1444 vbs=0.172868 Id=0.000280497
+WARNING: negative Gm = -4.3257e-06 for pfet m:shifterguard:shifter_3:_3
+@ vds=0.5 vgs=14.7264 vbs=0.184658 Id=0.000286967
+WARNING: negative Gm = -4.61249e-06 for pfet m:shifterguard:shifter_3:_1
+@ vds=0.5 vgs=15.1965 vbs=0.162337 Id=0.000284573
+WARNING: negative Gm = -4.51183e-06 for pfet m:shifterguard:shifter_2:_7
+@ vds=0.5 vgs=14.0875 vbs=0.162337 Id=0.000289688
+WARNING: negative Gm = -4.70251e-06 for pfet m:shifterguard:shifter_2:_5
+@ vds=0.5 vgs=13.7145 vbs=0.159221 Id=0.000291413
+WARNING: negative Gm = -4.74972e-06 for pfet m:shifterguard:shifter_2:_3
+@ vds=0.372952 vgs=13.5875 vbs=0.156755 Id=0.000218702
+WARNING: negative Gm = -3.68003e-06 for pfet m:shifterguard:shifter_2:_1
+@ vds=0.5 vgs=16.7508 vbs=0.173284 Id=0.000277917
+WARNING: negative Gm = -4.19692e-06 for pfet m:shifterguard:shifter_1:_7
+@ vds=0.5 vgs=16.7507 vbs=0.173284 Id=0.000277918
+WARNING: negative Gm = -4.19694e-06 for pfet m:shifterguard:shifter_1:_5
+@ vds=0.5 vgs=16.7581 vbs=0.16824 Id=0.000277835
+WARNING: negative Gm = -4.19283e-06 for pfet m:shifterguard:shifter_1:_3
+@ vds=0.5 vgs=16.7581 vbs=0.164038 Id=0.000277792
+WARNING: negative Gm = -4.19071e-06 for pfet m:shifterguard:shifter_1:_1
+@ vds=0.457444 vgs=13.2145 vbs=0.15587 Id=0.00026915
+WARNING: negative Gm = -4.4428e-06 for pfet m:shifterguard:shifter:_7
+@ vds=0.5 vgs=12.4109 vbs=0.15587 Id=0.000297623
+WARNING: negative Gm = -4.8042e-06 for pfet m:shifterguard:shifter:_5
+@ vds=0.434131 vgs=12.7571 vbs=0.154742 Id=0.000257573
+WARNING: negative Gm = -4.26717e-06 for pfet m:shifterguard:shifter:_3
+@ vds=0.412016 vgs=12.3229 vbs=0.153623 Id=0.000246407
+WARNING: negative Gm = -4.07415e-06 for pfet m:shifterguard:shifter:_1
+@ vds=3.20466 vgs=2.85295 vbs=0.352946 Id=0.000530109
+WARNING: negative Gmb = -5.30703e-07 for pfet m:shifterguard:shifter_1:_3
+@ vds=3.46112 vgs=4.77617 vbs=0.161116 Id=0.00109257
+WARNING: negative Gmb = -1.20898e-05 for pfet m:shifterguard:shifter_1:_5
+@ vds=2.82733 vgs=3.00279 vbs=0.502791 Id=0.000558554
+WARNING: negative Gmb = -1.45904e-05 for pfet m:shifterguard:shifter_2:_5
+@ vds=2.84039 vgs=3.00279 vbs=0.502791 Id=0.000558985
+WARNING: negative Gmb = -1.45732e-05 for pfet m:shifterguard:shifter_1:_1
+@ vds=1.68889 vgs=12.1107 vbs=0.449462 Id=0.00503612
+WARNING: negative Gmb = -5.82976e-05 for nfet m:b1:alu:tfunc:_3
+@ vds=1.68889 vgs=12.1107 vbs=0.449462 Id=0.00503612
+WARNING: negative Gmb = -5.82976e-05 for nfet m:b2:alu:tfunc:_3
+@ vds=1.68889 vgs=12.1107 vbs=0.449462 Id=0.00503612
+WARNING: negative Gmb = -5.82976e-05 for nfet m:b3:alu:tfunc:_3
+@ vds=0.282193 vgs=7.34287 vbs=0.135332 Id=0.000724884
+WARNING: negative Gmb = -7.18674e-07 for nfet m:b0:alu:tfunc:_8
+@ vds=0.938661 vgs=8.28153 vbs=0.498946 Id=0.0023124
+WARNING: negative Gmb = -7.14213e-06 for nfet m:b0:alu:tfunc:_6
+@ vds=0.5 vgs=8.78153 vbs=0.146639 Id=0.00138415
+WARNING: negative Gmb = -9.67069e-06 for nfet m:b0:alu:tfunc:_5
+@ vds=0.5 vgs=8.34447 vbs=0.146639 Id=0.00133789
+WARNING: negative Gmb = -6.70415e-06 for nfet m:b1:alu:tfunc:_5
+@ vds=0.5 vgs=8.34447 vbs=0.146639 Id=0.00133789
+WARNING: negative Gmb = -6.70415e-06 for nfet m:b2:alu:tfunc:_5
+@ vds=0.5 vgs=8.34447 vbs=0.146639 Id=0.00133789
+WARNING: negative Gmb = -6.70415e-06 for nfet m:b3:alu:tfunc:_5
+@ vds=4 vgs=4.7825 vbs=0.120007 Id=0.00112099
+WARNING: negative Gmb = -1.17354e-05 for pfet m:shifterguard:shifter_2:_5
+@ vds=4 vgs=4.78119 vbs=0.120007 Id=0.00112059
+WARNING: negative Gmb = -1.17209e-05 for pfet m:shifterguard:shifter_1:_1
+@ vds=2 vgs=2.88514 vbs=0.385144 Id=0.000498959
+WARNING: negative Gmb = -5.56824e-06 for pfet m:shifterguard:shifter:_5
+@ vds=0.5 vgs=14.7536 vbs=0.202143 Id=0.000287035
+WARNING: negative Gm = -4.61796e-06 for pfet m:shifterguard:shifter_3:_7
+@ vds=0.5 vgs=17.3704 vbs=0.197737 Id=0.000275597
+WARNING: negative Gm = -4.07488e-06 for pfet m:shifterguard:shifter_3:_3
+@ vds=0.5 vgs=15.8827 vbs=0.226199 Id=0.000282189
+WARNING: negative Gm = -4.40831e-06 for pfet m:shifterguard:shifter_3:_1
+@ vds=0.5 vgs=17.2742 vbs=0.18251 Id=0.000275841
+WARNING: negative Gm = -4.08865e-06 for pfet m:shifterguard:shifter_2:_7
+@ vds=0.5 vgs=17.2634 vbs=0.179536 Id=0.000275856
+WARNING: negative Gm = -4.08959e-06 for pfet m:shifterguard:shifter_2:_5
+@ vds=0.5 vgs=17.2634 vbs=0.178075 Id=0.000275842
+WARNING: negative Gm = -4.0889e-06 for pfet m:shifterguard:shifter_2:_3
+@ vds=0.5 vgs=17.2664 vbs=0.179536 Id=0.000275844
+WARNING: negative Gm = -4.08893e-06 for pfet m:shifterguard:shifter_2:_1
+@ vds=0.5 vgs=17.3177 vbs=0.192709 Id=0.000275763
+WARNING: negative Gm = -4.08398e-06 for pfet m:shifterguard:shifter_1:_7
+@ vds=0.5 vgs=17.288 vbs=0.189652 Id=0.000275855
+WARNING: negative Gm = -4.089e-06 for pfet m:shifterguard:shifter_1:_5
+@ vds=0.5 vgs=17.2827 vbs=0.186132 Id=0.000275842
+WARNING: negative Gm = -4.08851e-06 for pfet m:shifterguard:shifter_1:_3
+@ vds=0.5 vgs=17.2948 vbs=0.189652 Id=0.000275827
+WARNING: negative Gm = -4.08752e-06 for pfet m:shifterguard:shifter_1:_1
+@ vds=0.5 vgs=17.2651 vbs=0.178075 Id=0.000275835
+WARNING: negative Gm = -4.08854e-06 for pfet m:shifterguard:shifter:_7
+@ vds=0.5 vgs=17.2654 vbs=0.178075 Id=0.000275833
+WARNING: negative Gm = -4.08847e-06 for pfet m:shifterguard:shifter:_5
+@ vds=0.5 vgs=17.2616 vbs=0.175762 Id=0.000275826
+WARNING: negative Gm = -4.08819e-06 for pfet m:shifterguard:shifter:_3
+@ vds=0.5 vgs=17.2582 vbs=0.173345 Id=0.000275816
+WARNING: negative Gm = -4.08778e-06 for pfet m:shifterguard:shifter:_1
+@ vds=0.5 vgs=16.0162 vbs=0.175482 Id=0.00045705
+WARNING: negative Gm = -1.15042e-05 for pfet m:b1:alu:tfunc:_9
+@ vds=0.5 vgs=16.0162 vbs=0.175482 Id=0.00045705
+WARNING: negative Gm = -1.15042e-05 for pfet m:b2:alu:tfunc:_9
+@ vds=0.5 vgs=16.0162 vbs=0.175482 Id=0.00045705
+WARNING: negative Gm = -1.15042e-05 for pfet m:b3:alu:tfunc:_9
+@ vds=3.77078 vgs=4.58383 vbs=0.128263 Id=0.00105237
+WARNING: negative Gmb = -1.09191e-05 for pfet m:shifterguard:shifter_3:_1
+@ vds=2 vgs=3.07107 vbs=0.571073 Id=0.00054405
+WARNING: negative Gmb = -1.81091e-05 for pfet m:shifterguard:shifter_1:_5
+@ vds=4 vgs=3.51354 vbs=0.293185 Id=0.0014473
+WARNING: negative Gmb = -1.12712e-05 for pfet m:b0:alu:tfunc:_9
+@ vds=3.55244 vgs=3.20357 vbs=0.703574 Id=0.000632842
+WARNING: negative Gmb = -2.94759e-05 for pfet m:shifterguard:shifter_2:_7
+@ vds=0.5 vgs=15.207 vbs=0.162419 Id=0.000284527
+WARNING: negative Gm = -4.50986e-06 for pfet m:shifterguard:shifter_3:_7
+@ vds=2 vgs=3.46536 vbs=0.809475 Id=0.000630756
+WARNING: negative Gmb = -2.59539e-05 for pfet m:shifterguard:shifter_2:_7
+@ vds=1.465 vgs=3.46536 vbs=0.809475 Id=0.000544433
+WARNING: negative Gmb = -6.65855e-06 for pfet m:shifterguard:shifter_2:_3
+@ vds=3.06515 vgs=4.465 vbs=0.372729 Id=0.000976682
+WARNING: negative Gmb = -2.59685e-05 for pfet m:shifterguard:shifter_1:_5
+@ vds=1.84834 vgs=2.46225 vbs=0.714421 Id=0.000759941
+WARNING: negative Gmb = -2.06959e-05 for pfet m:b1:alu:tfunc:_16
+@ vds=1.84834 vgs=2.46225 vbs=0.714421 Id=0.000759941
+WARNING: negative Gmb = -2.06959e-05 for pfet m:b2:alu:tfunc:_16
+@ vds=1.84834 vgs=2.46225 vbs=0.714421 Id=0.000759941
+WARNING: negative Gmb = -2.06959e-05 for pfet m:b3:alu:tfunc:_16
+@ vds=4 vgs=4.29445 vbs=0.109654 Id=0.000975144
+WARNING: negative Gmb = -3.33858e-06 for pfet m:shifterguard:shifter:_5
+@ vds=3.38278 vgs=4.64888 vbs=0.114316 Id=0.00105274
+WARNING: negative Gmb = -6.19469e-06 for pfet m:shifterguard:shifter_1:_5
+@ vds=2.73018 vgs=4.46132 vbs=0.289997 Id=0.000942828
+WARNING: negative Gmb = -7.99022e-06 for pfet m:shifterguard:shifter_1:_5
+@ vds=0.5 vgs=9.90101 vbs=0.152539 Id=0.000307972
+WARNING: negative Gm = -1.69724e-06 for pfet m:shifterguard:shifter_3:_3
+@ vds=0.5 vgs=12.4197 vbs=0.160807 Id=0.000297645
+WARNING: negative Gm = -4.80824e-06 for pfet m:shifterguard:shifter_1:_7
+@ vds=0.5 vgs=12.4197 vbs=0.189683 Id=0.000298015
+WARNING: negative Gm = -4.82832e-06 for pfet m:shifterguard:shifter_1:_5
+@ vds=0.497861 vgs=15.9658 vbs=0.41238 Id=0.000282328
+WARNING: negative Gm = -4.45605e-06 for pfet m:shifterguard:shifter_1:_3
+@ vds=7.17487 vgs=4.18687 vbs=0.592574 Id=0.00198776
+WARNING: negative Gmb = -8.1441e-05 for pfet m:b1:alu:tfunc:_16
+@ vds=7.17487 vgs=4.18687 vbs=0.592574 Id=0.00198776
+WARNING: negative Gmb = -8.1441e-05 for pfet m:b2:alu:tfunc:_16
+@ vds=7.17487 vgs=4.18687 vbs=0.592574 Id=0.00198776
+WARNING: negative Gmb = -8.1441e-05 for pfet m:b3:alu:tfunc:_16
+@ vds=8.55338 vgs=2.36621 vbs=0.693517 Id=0.000960514
+WARNING: negative Gmb = -3.50877e-05 for pfet m:b1:alu:tfunc:_16
+@ vds=8.55338 vgs=2.36621 vbs=0.693517 Id=0.000960514
+WARNING: negative Gmb = -3.50877e-05 for pfet m:b2:alu:tfunc:_16
+@ vds=8.55338 vgs=2.36621 vbs=0.693517 Id=0.000960514
+WARNING: negative Gmb = -3.50877e-05 for pfet m:b3:alu:tfunc:_16
+@ vds=3.19866 vgs=3.99007 vbs=0.288296 Id=0.000853066
+WARNING: negative Gmb = -1.95926e-05 for pfet m:shifterguard:shifter_1:_5
+@ vds=1.86342 vgs=12.5873 vbs=0.328242 Id=0.00564028
+WARNING: negative Gmb = -7.39536e-05 for nfet m:b1:alu:tfunc:_3
+@ vds=1.86342 vgs=12.5873 vbs=0.328242 Id=0.00564028
+WARNING: negative Gmb = -7.39536e-05 for nfet m:b2:alu:tfunc:_3
+@ vds=1.86342 vgs=12.5873 vbs=0.328242 Id=0.00564028
+WARNING: negative Gmb = -7.39536e-05 for nfet m:b3:alu:tfunc:_3
+@ vds=0.5 vgs=9.0998 vbs=0.416352 Id=0.00141483
+WARNING: negative Gmb = -1.07821e-05 for nfet m:b1:alu:tfunc:_3
+@ vds=0.5 vgs=9.0998 vbs=0.416352 Id=0.00141483
+WARNING: negative Gmb = -1.07821e-05 for nfet m:b2:alu:tfunc:_3
+@ vds=0.5 vgs=9.0998 vbs=0.416352 Id=0.00141483
+WARNING: negative Gmb = -1.07821e-05 for nfet m:b3:alu:tfunc:_3
+@ vds=0.5 vgs=15.9961 vbs=-0 Id=0.000279128
+WARNING: negative Gm = -4.25132e-06 for pfet m:b0:alu:inverter:_2
+@ vds=0.5 vgs=15.5276 vbs=0.204906 Id=0.00181607
+WARNING: negative Gm = -1.91261e-05 for nfet m:b0:alu:tfunc:_6
+WARNING: negative Gmb = -3.61564e-06 for nfet m:b0:alu:tfunc:_6
+
+Transient solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+gnd                                               0          -1.7304e-43
+vdd                                               0         -9.05164e-43
+b3:a                                      2.029e-39          4.76813e-48
+in1select0                                        0                    0
+b3:opsel:net_1                          4.90533e-39          6.07945e-46
+b3:opsel:net_3                         -1.68335e-45         -9.74241e-54
+notphi1                                           0                    0
+b3:opsel:net_2                          6.06109e-46          5.27683e-54
+phi1                                              0                    0
+b3:si                                    4.7326e-50          1.17883e-58
+b3:net_2                               -3.56595e-50         -8.88235e-59
+b3:opsel:net_4                         -4.39791e-38         -1.15443e-45
+in2select0                                        0                    0
+b3:b                                      1.727e-39          4.08819e-48
+in1select1                                        0                    0
+b3:opsel_1:net_1                        3.44602e-39          8.59642e-46
+b3:opsel_1:net_3                        -1.6835e-45         -9.74331e-54
+b3:opsel_1:net_2                        6.06165e-46          5.27732e-54
+b3:ri                                    4.7326e-50          1.17883e-58
+b3:net_1                               -3.56595e-50         -8.88235e-59
+d[3]                                    9.77007e-39          9.32916e-46
+b3:opsel_1:net_4                       -6.61189e-38         -1.80727e-45
+in2select1                                        0                    0
+b3:regfile_79:ramcell_45:net_2          1.12536e-39          -7.1216e-50
+notfben[0]                                        0                    0
+b3:regfile_79:ramcell_45:net_1          1.27228e-39          5.30838e-48
+fben[0]                                           0                    0
+arden[0]                                          0                    0
+brden[0]                                          0                    0
+ramin3                                   1.0097e-39          2.49698e-48
+writeen[0]                                        0                    0
+b3:regfile_79:ramcell_45:net_3          1.44349e-50          3.59557e-59
+b3:regfile_79:ramcell_2:net_2           1.12536e-39          -7.1216e-50
+notfben[1]                                        0                    0
+b3:regfile_79:ramcell_2:net_1           1.27228e-39          5.30838e-48
+fben[1]                                           0                    0
+arden[1]                                          0                    0
+brden[1]                                          0                    0
+writeen[1]                                        0                    0
+b3:regfile_79:ramcell_2:net_3           1.44349e-50          3.59557e-59
+b3:regfile_79:ramcell_4:net_2           1.12536e-39          -7.1216e-50
+notfben[2]                                        0                    0
+b3:regfile_79:ramcell_4:net_1           1.27228e-39          5.30838e-48
+fben[2]                                           0                    0
+arden[2]                                          0                    0
+brden[2]                                          0                    0
+writeen[2]                                        0                    0
+b3:regfile_79:ramcell_4:net_3           1.44349e-50          3.59557e-59
+b3:regfile_79:ramcell_27:net_2          1.12536e-39          -7.1216e-50
+notfben[3]                                        0                    0
+b3:regfile_79:ramcell_27:net_1          1.27228e-39          5.30838e-48
+fben[3]                                           0                    0
+arden[3]                                          0                    0
+brden[3]                                          0                    0
+writeen[3]                                        0                    0
+b3:regfile_79:ramcell_27:net_3          1.44349e-50          3.59557e-59
+l[0]                                    2.46046e-35          2.19904e-42
+b3:alu:func:net_1                      -1.98567e-35         -1.19116e-42
+b3:alu:net_3                            3.22029e-35          2.64177e-42
+l[1]                                    2.46054e-35           2.1991e-42
+b3:alu:func:net_4                       -1.9857e-35         -1.19118e-42
+l[2]                                    2.46054e-35           2.1991e-42
+b3:alu:func:net_2                       -1.9857e-35         -1.19118e-42
+b3:alu:func:net_3                      -1.98526e-35         -1.19093e-42
+l[3]                                    2.45941e-35          2.19832e-42
+m[0]                                    2.46046e-35          2.19904e-42
+b3:alu:func_1:net_1                    -1.98567e-35         -1.19116e-42
+b3:alu:notp                             3.22029e-35          2.64177e-42
+m[1]                                    2.46054e-35           2.1991e-42
+b3:alu:func_1:net_4                     -1.9857e-35         -1.19118e-42
+m[2]                                    2.46054e-35           2.1991e-42
+b3:alu:func_1:net_2                     -1.9857e-35         -1.19118e-42
+b3:alu:func_1:net_3                    -1.98526e-35         -1.19093e-42
+m[3]                                    2.45941e-35          2.19832e-42
+f3                                        5.027e-40          3.97244e-49
+b3:alu:notfi                            1.21284e-34          1.58557e-41
+n[0]                                    3.61762e-34          3.76988e-41
+b3:alu:tfunc:net_4                     -1.60748e-34          -9.9272e-42
+net_2                                  -1.43131e-53         -1.48815e-62
+n[1]                                   -1.42386e-34         -7.66321e-42
+b3:alu:tfunc:net_1                     -3.67509e-35          -6.5545e-43
+b3:alu:net_2                            1.68997e-49          4.25734e-58
+n[2]                                    3.58208e-34           3.7379e-41
+b3:alu:tfunc:net_6                     -1.59874e-34         -9.86183e-42
+b3:alu:net_1                           -3.54497e-50         -8.83009e-59
+n[3]                                   -1.55642e-34         -8.85594e-42
+b3:alu:tfunc:net_7                     -3.34916e-35         -4.11685e-43
+b3:alu:tfunc:net_3                     -1.01584e-34         -4.26668e-42
+b3:alu:tfunc:net_2                     -5.38294e-35            -5.66e-43
+b3:alu:tfunc:net_5                     -1.01247e-34         -4.24059e-42
+b3:alu:tfunc:net_8                     -5.25735e-35         -4.68692e-43
+b3:alu:carry:net_1                      1.68997e-49          4.25734e-58
+notci_1                                 6.77597e-45         -2.51144e-53
+p                                                 0                    0
+notci                                   2.68709e-46          2.74816e-53
+notcout                                -1.43131e-53         -1.48815e-62
+phi2                                              0                    0
+b2:a                                    2.02921e-39          4.76858e-48
+b2:opsel:net_1                          4.90574e-39          6.07949e-46
+b2:opsel:net_3                         -1.68335e-45         -9.74241e-54
+b2:opsel:net_2                          6.06109e-46          5.27683e-54
+b2:si                                    4.7326e-50          1.17883e-58
+b2:net_2                               -3.56595e-50         -8.88235e-59
+b2:opsel:net_4                         -4.39789e-38         -1.15443e-45
+b2:b                                    1.72719e-39          4.08858e-48
+b2:opsel_1:net_1                         3.4463e-39          8.59644e-46
+b2:opsel_1:net_3                        -1.6835e-45         -9.74331e-54
+b2:opsel_1:net_2                        6.06165e-46          5.27732e-54
+b2:ri                                    4.7326e-50          1.17883e-58
+b2:net_1                               -3.56595e-50         -8.88235e-59
+d[2]                                    9.77016e-39          9.32915e-46
+b2:opsel_1:net_4                       -6.61188e-38         -1.80727e-45
+b2:regfile_79:ramcell_45:net_2          1.12554e-39         -7.11507e-50
+b2:regfile_79:ramcell_45:net_1          1.27242e-39          5.30884e-48
+ramin2                                   1.0098e-39          2.49647e-48
+b2:regfile_79:ramcell_45:net_3          1.44349e-50          3.59557e-59
+b2:regfile_79:ramcell_2:net_2           1.12554e-39         -7.11507e-50
+b2:regfile_79:ramcell_2:net_1           1.27242e-39          5.30884e-48
+b2:regfile_79:ramcell_2:net_3           1.44349e-50          3.59557e-59
+b2:regfile_79:ramcell_4:net_2           1.12554e-39         -7.11507e-50
+b2:regfile_79:ramcell_4:net_1           1.27242e-39          5.30884e-48
+b2:regfile_79:ramcell_4:net_3           1.44349e-50          3.59557e-59
+b2:regfile_79:ramcell_27:net_2          1.12554e-39         -7.11507e-50
+b2:regfile_79:ramcell_27:net_1          1.27242e-39          5.30884e-48
+b2:regfile_79:ramcell_27:net_3          1.44349e-50          3.59557e-59
+b2:alu:func:net_1                      -1.98567e-35         -1.19116e-42
+b2:alu:net_3                            3.22029e-35          2.64177e-42
+b2:alu:func:net_4                       -1.9857e-35         -1.19118e-42
+b2:alu:func:net_2                       -1.9857e-35         -1.19118e-42
+b2:alu:func:net_3                      -1.98526e-35         -1.19093e-42
+b2:alu:func_1:net_1                    -1.98567e-35         -1.19116e-42
+b2:alu:notp                             3.22029e-35          2.64177e-42
+b2:alu:func_1:net_4                     -1.9857e-35         -1.19118e-42
+b2:alu:func_1:net_2                     -1.9857e-35         -1.19118e-42
+b2:alu:func_1:net_3                    -1.98526e-35         -1.19093e-42
+f2                                      5.02797e-40          3.96572e-49
+b2:alu:notfi                            1.21284e-34          1.58557e-41
+b2:alu:tfunc:net_4                     -1.60748e-34          -9.9272e-42
+net_1                                  -1.43131e-53         -1.48815e-62
+b2:alu:tfunc:net_1                     -3.67509e-35          -6.5545e-43
+b2:alu:net_2                            1.68997e-49          4.25734e-58
+b2:alu:tfunc:net_6                     -1.59874e-34         -9.86183e-42
+b2:alu:net_1                           -3.54497e-50         -8.83009e-59
+b2:alu:tfunc:net_7                     -3.34916e-35         -4.11685e-43
+b2:alu:tfunc:net_3                     -1.01584e-34         -4.26668e-42
+b2:alu:tfunc:net_2                     -5.38294e-35            -5.66e-43
+b2:alu:tfunc:net_5                     -1.01247e-34         -4.24059e-42
+b2:alu:tfunc:net_8                     -5.25735e-35         -4.68692e-43
+b2:alu:carry:net_1                      1.68997e-49          4.25734e-58
+b1:a                                    2.02876e-39          4.76753e-48
+b1:opsel:net_1                          4.90524e-39          6.07944e-46
+b1:opsel:net_3                         -1.68335e-45         -9.74241e-54
+b1:opsel:net_2                          6.06109e-46          5.27683e-54
+b1:si                                    4.7326e-50          1.17883e-58
+b1:net_2                               -3.56595e-50         -8.88235e-59
+b1:opsel:net_4                         -4.39792e-38         -1.15443e-45
+b1:b                                    1.72674e-39          4.08753e-48
+b1:opsel_1:net_1                        3.44581e-39          8.59642e-46
+b1:opsel_1:net_3                        -1.6835e-45         -9.74331e-54
+b1:opsel_1:net_2                        6.06165e-46          5.27732e-54
+b1:ri                                    4.7326e-50          1.17883e-58
+b1:net_1                               -3.56595e-50         -8.88235e-59
+d[1]                                    9.76979e-39          9.32915e-46
+b1:opsel_1:net_4                       -6.61192e-38         -1.80727e-45
+b1:regfile_79:ramcell_45:net_2          1.12467e-39         -7.27413e-50
+b1:regfile_79:ramcell_45:net_1            1.272e-39          5.30853e-48
+ramin1                                  1.00864e-39          2.50081e-48
+b1:regfile_79:ramcell_45:net_3          1.44349e-50          3.59557e-59
+b1:regfile_79:ramcell_2:net_2           1.12467e-39         -7.27413e-50
+b1:regfile_79:ramcell_2:net_1             1.272e-39          5.30853e-48
+b1:regfile_79:ramcell_2:net_3           1.44349e-50          3.59557e-59
+b1:regfile_79:ramcell_4:net_2           1.12467e-39         -7.27413e-50
+b1:regfile_79:ramcell_4:net_1             1.272e-39          5.30853e-48
+b1:regfile_79:ramcell_4:net_3           1.44349e-50          3.59557e-59
+b1:regfile_79:ramcell_27:net_2          1.12467e-39         -7.27413e-50
+b1:regfile_79:ramcell_27:net_1            1.272e-39          5.30853e-48
+b1:regfile_79:ramcell_27:net_3          1.44349e-50          3.59557e-59
+b1:alu:func:net_1                      -1.98567e-35         -1.19116e-42
+b1:alu:net_3                            3.22029e-35          2.64177e-42
+b1:alu:func:net_4                       -1.9857e-35         -1.19118e-42
+b1:alu:func:net_2                       -1.9857e-35         -1.19118e-42
+b1:alu:func:net_3                      -1.98526e-35         -1.19093e-42
+b1:alu:func_1:net_1                    -1.98567e-35         -1.19116e-42
+b1:alu:notp                             3.22029e-35          2.64177e-42
+b1:alu:func_1:net_4                     -1.9857e-35         -1.19118e-42
+b1:alu:func_1:net_2                     -1.9857e-35         -1.19118e-42
+b1:alu:func_1:net_3                    -1.98526e-35         -1.19093e-42
+f1                                      5.01357e-40          3.95105e-49
+b1:alu:notfi                            1.21284e-34          1.58557e-41
+b1:alu:tfunc:net_4                     -1.60748e-34          -9.9272e-42
+net_3                                  -1.43131e-53         -1.48815e-62
+b1:alu:tfunc:net_1                     -3.67509e-35          -6.5545e-43
+b1:alu:net_2                            1.68997e-49          4.25734e-58
+b1:alu:tfunc:net_6                     -1.59874e-34         -9.86183e-42
+b1:alu:net_1                           -3.54497e-50         -8.83009e-59
+b1:alu:tfunc:net_7                     -3.34916e-35         -4.11685e-43
+b1:alu:tfunc:net_3                     -1.01584e-34         -4.26668e-42
+b1:alu:tfunc:net_2                     -5.38294e-35            -5.66e-43
+b1:alu:tfunc:net_5                     -1.01247e-34         -4.24059e-42
+b1:alu:tfunc:net_8                     -5.25735e-35         -4.68692e-43
+b1:alu:carry:net_1                      1.68997e-49          4.25734e-58
+b0:a                                     2.0264e-39           4.7621e-48
+b0:opsel:net_1                          4.90231e-39           6.0792e-46
+b0:opsel:net_3                         -1.68335e-45         -9.74241e-54
+b0:opsel:net_2                          6.06109e-46          5.27683e-54
+b0:si                                    4.7326e-50          1.17883e-58
+b0:net_2                               -3.56595e-50         -8.88235e-59
+b0:opsel:net_4                         -4.39806e-38         -1.15443e-45
+b0:b                                    1.72443e-39          4.08227e-48
+b0:opsel_1:net_1                        3.44317e-39          8.59629e-46
+b0:opsel_1:net_3                        -1.6835e-45         -9.74331e-54
+b0:opsel_1:net_2                        6.06165e-46          5.27732e-54
+b0:ri                                    4.7326e-50          1.17883e-58
+b0:net_1                               -3.56595e-50         -8.88235e-59
+d[0]                                    9.76794e-39          9.32917e-46
+b0:opsel_1:net_4                       -6.61212e-38         -1.80727e-45
+b0:regfile_79:ramcell_45:net_2           1.1205e-39         -7.98956e-50
+b0:regfile_79:ramcell_45:net_1          1.26985e-39          5.30643e-48
+ramin0                                  1.00332e-39          2.52057e-48
+b0:regfile_79:ramcell_45:net_3           1.4429e-50          3.59411e-59
+b0:regfile_79:ramcell_2:net_2            1.1205e-39         -7.98956e-50
+b0:regfile_79:ramcell_2:net_1           1.26985e-39          5.30643e-48
+b0:regfile_79:ramcell_2:net_3            1.4429e-50          3.59411e-59
+b0:regfile_79:ramcell_4:net_2            1.1205e-39         -7.98956e-50
+b0:regfile_79:ramcell_4:net_1           1.26985e-39          5.30643e-48
+b0:regfile_79:ramcell_4:net_3            1.4429e-50          3.59411e-59
+b0:regfile_79:ramcell_27:net_2           1.1205e-39         -7.98956e-50
+b0:regfile_79:ramcell_27:net_1          1.26985e-39          5.30643e-48
+b0:regfile_79:ramcell_27:net_3           1.4429e-50          3.59411e-59
+b0:alu:func:net_1                      -1.98567e-35         -1.19116e-42
+b0:alu:net_3                            3.22029e-35          2.64177e-42
+b0:alu:func:net_4                       -1.9857e-35         -1.19118e-42
+b0:alu:func:net_2                       -1.9857e-35         -1.19118e-42
+b0:alu:func:net_3                      -1.98526e-35         -1.19093e-42
+b0:alu:func_1:net_1                    -1.98567e-35         -1.19116e-42
+b0:alu:notp                             3.22029e-35          2.64177e-42
+b0:alu:func_1:net_4                     -1.9857e-35         -1.19118e-42
+b0:alu:func_1:net_2                     -1.9857e-35         -1.19118e-42
+b0:alu:func_1:net_3                    -1.98526e-35         -1.19093e-42
+f0                                      4.94794e-40           3.8928e-49
+b0:alu:notfi                            1.16161e-34          1.53811e-41
+b0:alu:tfunc:net_4                     -1.59559e-34         -9.83474e-42
+notcin                                            0                    0
+b0:alu:tfunc:net_1                      -3.5566e-35           -5.631e-43
+b0:alu:net_2                            1.68997e-49          4.25734e-58
+b0:alu:tfunc:net_6                     -1.58686e-34         -9.76942e-42
+b0:alu:net_1                            1.41216e-50          3.51752e-59
+b0:alu:tfunc:net_7                     -3.23043e-35         -3.19276e-43
+b0:alu:tfunc:net_3                     -1.00398e-34         -4.22002e-42
+b0:alu:tfunc:net_2                     -5.26432e-35         -5.19343e-43
+b0:alu:tfunc:net_5                     -1.00061e-34         -4.19393e-42
+b0:alu:tfunc:net_8                     -5.13873e-35         -4.22035e-43
+b0:alu:carry:net_1                      1.68997e-49          4.25734e-58
+notshl                                            0                    0
+sl                                      7.49978e-40          3.51681e-49
+shl                                               0                    0
+notshr                                            0                    0
+shr                                               0                    0
+shifterguard:net_3                      7.51123e-40          7.14307e-49
+shifterguard:net_4                      7.50601e-40          7.14473e-49
+shifterguard:net_6                      7.46973e-40           7.1075e-49
+shifterguard:net_5                      7.31288e-40          4.72262e-49
+sr                                      7.32764e-40          1.88708e-49
+shifterguard:net_1                     -9.20521e-50          -2.2929e-58
+shifterguard:net_2                     -8.37225e-45         -1.78149e-49
+shifterguard:nor2:net_1                 2.91159e-41          3.76016e-49
+vdd#branch                              -2.0903e-43                    0
+vgnd#branch                            -9.36406e-44                    0
+
+
+CPU time since last call: 6.352 seconds.
+
+Total CPU time: 6.352 seconds.
+
+Current dynamic memory usage = 1433600,
+Dynamic memory limit = -135169.
+

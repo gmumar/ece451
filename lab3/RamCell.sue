@@ -16,6 +16,7 @@ proc SCHEMATIC_RamCell {} {
   make input -name BRdEn -origin {220 610}
   make output -name Ai -origin {880 360}
   make output -name Bi -origin {880 460}
+  make name_net_s -name ARdEn -origin {350 580}
   make_wire 540 460 580 460
   make_wire 430 310 410 310
   make_wire 410 310 410 460
@@ -35,7 +36,6 @@ proc SCHEMATIC_RamCell {} {
   make_wire 510 310 510 330
   make_wire 210 390 470 390
   make_wire 740 420 740 580
-  make_wire 220 580 740 580
   make_wire 780 360 880 360
   make_wire 680 360 700 360
   make_wire 850 460 880 460
@@ -43,6 +43,8 @@ proc SCHEMATIC_RamCell {} {
   make_wire 680 460 770 460
   make_wire 810 520 810 610
   make_wire 220 610 810 610
+  make_wire 350 580 220 580
+  make_wire 350 580 740 580
 }
 
 proc ICON_RamCell args {
