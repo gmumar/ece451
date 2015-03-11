@@ -1,0 +1,75 @@
+view source
+view objects
+view variables
+view wave -undock
+
+delete wave *
+add wave /control/phi1
+add wave /control/phi2
+add wave /control/ctrl
+add wave /control/L
+add wave /control/M
+add wave /control/N
+add wave /control/ARdEn
+add wave /control/BRdEn
+add wave /control/WriteEn
+add wave /control/FBEn
+add wave /control/notFBEn
+add wave /control/ASelect
+add wave /control/BSelect
+add wave /control/DSelect
+add wave /control/zeroSelect
+add wave /control/shl
+add wave /control/notshl
+add wave /control/shr
+add wave /control/notshr
+
+restart -f
+
+force -freeze sim:/control/phi1 1 3.25ns, 0 {6.75ns} -r 20ns
+force -freeze sim:/control/phi2 1 10ns, 0 {19.5ns} -r 20ns
+run
+#run
+
+#first step
+# phi2 high 
+force -drive sim:/control/ctrl(6) 0 0
+force -drive sim:/control/ctrl(5) 1 0
+force -drive sim:/control/ctrl(4) 1 0
+force -drive sim:/control/ctrl(3) 0 0
+force -drive sim:/control/ctrl(2) 0 0
+force -drive sim:/control/ctrl(1) 0 0
+force -drive sim:/control/ctrl(0) 0 0
+run
+
+#phi1 high
+force -drive sim:/control/ctrl(6) 0 0
+force -drive sim:/control/ctrl(5) 0 0
+force -drive sim:/control/ctrl(4) 0 0
+force -drive sim:/control/ctrl(3) 0 0
+force -drive sim:/control/ctrl(2) 0 0
+force -drive sim:/control/ctrl(1) 0 0
+force -drive sim:/control/ctrl(0) 0 0
+run
+
+#second step
+# phi2 high, set opcode here 
+force -drive sim:/control/ctrl(6) 0 0
+force -drive sim:/control/ctrl(5) 0 0
+force -drive sim:/control/ctrl(4) 1 0
+force -drive sim:/control/ctrl(3) 0 0
+force -drive sim:/control/ctrl(2) 0 0
+force -drive sim:/control/ctrl(1) 0 0
+force -drive sim:/control/ctrl(0) 0 0
+run
+
+#phi1 high
+force -drive sim:/control/ctrl(6) 0 0
+force -drive sim:/control/ctrl(5) 0 0
+force -drive sim:/control/ctrl(4) 1 0
+force -drive sim:/control/ctrl(3) 0 0
+force -drive sim:/control/ctrl(2) 0 0
+force -drive sim:/control/ctrl(1) 0 0
+force -drive sim:/control/ctrl(0) 0 0
+run
+run

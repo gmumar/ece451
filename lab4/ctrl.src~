@@ -1,0 +1,58 @@
+create_clock -name "phi1" -period 20 -waveform {"3.25" "6.75"} {"phi1"}
+create_clock -name "phi2" -period 20 -waveform {"10" "19.5"} {"phi2"}
+
+set_max_delay 0.2 -from {"phi1"} -to {"notphi1_1"}
+
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[0]")
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[1]")
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[2]")
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[3]")
+
+
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[0]")
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[1]")
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[2]")
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[3]")
+
+
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"ASelect")
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"BSelect")
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"DSelect")
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"zeroSelect")
+
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[0]")
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[1]")
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[2]")
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[3]")
+
+
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[0]")
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[1]")
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[2]")
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[3]")
+
+
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[0]")
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[1]")
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[2]")
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[3]")
+
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"shl")
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"shr")
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"notshl")
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"notshr")
+
+
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[0]")
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[1]")
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[2]")
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[3]")
+
+
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[0]")
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[1]")
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[2]")
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[3]")
+
+
+

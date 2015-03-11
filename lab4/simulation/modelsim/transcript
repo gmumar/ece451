@@ -1,0 +1,2 @@
+# Compile of control.v was successful.
+vsim -do lab4_sim_run_msim_gate_vhdl.do -l msim_transcript -i work.control(structure)

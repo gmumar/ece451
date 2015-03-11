@@ -1,0 +1,1207 @@
+TimeQuest Timing Analyzer report for lab4_sim
+Mon Mar  9 20:09:49 2015
+Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Minimum Pulse Width: 'phi1'
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Minimum Pulse Width: 'phi1'
+ 24. Setup Times
+ 25. Hold Times
+ 26. Clock to Output Times
+ 27. Minimum Clock to Output Times
+ 28. Propagation Delay
+ 29. Minimum Propagation Delay
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Progagation Delay
+ 36. Minimum Progagation Delay
+ 37. Clock Transfers
+ 38. Report TCCS
+ 39. Report RSKM
+ 40. Unconstrained Paths
+ 41. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2012 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                      ;
++--------------------+---------------------------------------------------+
+; Quartus II Version ; Version 12.1 Build 177 11/07/2012 SJ Full Version ;
+; Revision Name      ; lab4_sim                                          ;
+; Device Family      ; Cyclone II                                        ;
+; Device Name        ; EP2C35F672C6                                      ;
+; Timing Models      ; Final                                             ;
+; Delay Model        ; Combined                                          ;
+; Rise/Fall Delays   ; Unavailable                                       ;
++--------------------+---------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2 processors           ; < 0.1%      ;
+;     3-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                           ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets  ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; phi1       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { phi1 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; phi1  ; -1.380 ; -1.380                ;
++-------+--------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'phi1'                                                                      ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; phi1  ; Rise       ; phi1                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; aaddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; aaddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; aaddr[0]~0|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; aaddr[0]~0|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; aaddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; aaddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; baddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; baddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; baddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; baddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; baddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; baddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; baddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; baddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opcode[0]                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opcode[0]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opcode[0]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opcode[0]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opcode[1]                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opcode[1]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opcode[1]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opcode[1]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opcode[2]                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opcode[2]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opcode[2]|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opcode[2]|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opsel[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opsel[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opsel[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opsel[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opsel[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opsel[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opsel[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opsel[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; phi1|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; phi1|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; phi1~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; phi1~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; phi1~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; phi1~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; shctl[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; shctl[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; shctl[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; shctl[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; shctl[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; shctl[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; shctl[1]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; shctl[1]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; waddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; waddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; waddr[0]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; waddr[0]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; waddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; waddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; waddr[1]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; waddr[1]|datac             ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ctrl[*]   ; phi1       ; 1.112  ; 1.112  ; Rise       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 0.880  ; 0.880  ; Rise       ; phi1            ;
+;  ctrl[1]  ; phi1       ; 1.060  ; 1.060  ; Rise       ; phi1            ;
+;  ctrl[2]  ; phi1       ; 1.112  ; 1.112  ; Rise       ; phi1            ;
+;  ctrl[3]  ; phi1       ; 1.030  ; 1.030  ; Rise       ; phi1            ;
+;  ctrl[4]  ; phi1       ; 0.841  ; 0.841  ; Rise       ; phi1            ;
+;  ctrl[5]  ; phi1       ; 0.823  ; 0.823  ; Rise       ; phi1            ;
+; ctrl[*]   ; phi1       ; 4.651  ; 4.651  ; Fall       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 4.099  ; 4.099  ; Fall       ; phi1            ;
+;  ctrl[1]  ; phi1       ; 4.021  ; 4.021  ; Fall       ; phi1            ;
+;  ctrl[2]  ; phi1       ; 4.501  ; 4.501  ; Fall       ; phi1            ;
+;  ctrl[3]  ; phi1       ; 3.993  ; 3.993  ; Fall       ; phi1            ;
+;  ctrl[4]  ; phi1       ; 4.121  ; 4.121  ; Fall       ; phi1            ;
+;  ctrl[5]  ; phi1       ; 4.651  ; 4.651  ; Fall       ; phi1            ;
+;  ctrl[6]  ; phi1       ; -0.058 ; -0.058 ; Fall       ; phi1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ctrl[*]   ; phi1       ; 0.016  ; 0.016  ; Rise       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 0.016  ; 0.016  ; Rise       ; phi1            ;
+;  ctrl[1]  ; phi1       ; -0.163 ; -0.163 ; Rise       ; phi1            ;
+;  ctrl[2]  ; phi1       ; -0.250 ; -0.250 ; Rise       ; phi1            ;
+;  ctrl[3]  ; phi1       ; -0.169 ; -0.169 ; Rise       ; phi1            ;
+;  ctrl[4]  ; phi1       ; -0.023 ; -0.023 ; Rise       ; phi1            ;
+;  ctrl[5]  ; phi1       ; -0.005 ; -0.005 ; Rise       ; phi1            ;
+; ctrl[*]   ; phi1       ; 0.726  ; 0.726  ; Fall       ; phi1            ;
+;  ctrl[0]  ; phi1       ; -3.274 ; -3.274 ; Fall       ; phi1            ;
+;  ctrl[1]  ; phi1       ; -3.311 ; -3.311 ; Fall       ; phi1            ;
+;  ctrl[2]  ; phi1       ; -3.809 ; -3.809 ; Fall       ; phi1            ;
+;  ctrl[3]  ; phi1       ; -3.318 ; -3.318 ; Fall       ; phi1            ;
+;  ctrl[4]  ; phi1       ; -3.303 ; -3.303 ; Fall       ; phi1            ;
+;  ctrl[5]  ; phi1       ; -3.729 ; -3.729 ; Fall       ; phi1            ;
+;  ctrl[6]  ; phi1       ; 0.726  ; 0.726  ; Fall       ; phi1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; ARdEn[*]    ; phi1       ; 10.257 ; 10.257 ; Rise       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 10.079 ; 10.079 ; Rise       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 10.235 ; 10.235 ; Rise       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 10.014 ; 10.014 ; Rise       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 10.257 ; 10.257 ; Rise       ; phi1            ;
+; ASelect     ; phi1       ; 9.300  ; 9.300  ; Rise       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 10.254 ; 10.254 ; Rise       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 10.254 ; 10.254 ; Rise       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 9.962  ; 9.962  ; Rise       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 10.049 ; 10.049 ; Rise       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 10.002 ; 10.002 ; Rise       ; phi1            ;
+; BSelect     ; phi1       ; 9.263  ; 9.263  ; Rise       ; phi1            ;
+; DSelect     ; phi1       ; 9.273  ; 9.273  ; Rise       ; phi1            ;
+; notphi1_1   ; phi1       ; 4.630  ; 4.630  ; Rise       ; phi1            ;
+; notphi1_2   ; phi1       ; 4.986  ; 4.986  ; Rise       ; phi1            ;
+; phi1_1      ; phi1       ; 4.646  ; 4.646  ; Rise       ; phi1            ;
+; phi1_2      ; phi1       ; 4.630  ; 4.630  ; Rise       ; phi1            ;
+; phi1_3      ; phi1       ; 4.650  ; 4.650  ; Rise       ; phi1            ;
+; zeroSelect  ; phi1       ; 9.300  ; 9.300  ; Rise       ; phi1            ;
+; ARdEn[*]    ; phi1       ; 7.350  ; 7.350  ; Fall       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 7.172  ; 7.172  ; Fall       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 7.338  ; 7.338  ; Fall       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 7.092  ; 7.092  ; Fall       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 7.350  ; 7.350  ; Fall       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 7.209  ; 7.209  ; Fall       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 7.209  ; 7.209  ; Fall       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 6.971  ; 6.971  ; Fall       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 7.003  ; 7.003  ; Fall       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 6.984  ; 6.984  ; Fall       ; phi1            ;
+; FBEn[*]     ; phi1       ; 10.367 ; 10.367 ; Fall       ; phi1            ;
+;  FBEn[0]    ; phi1       ; 8.070  ; 8.070  ; Fall       ; phi1            ;
+;  FBEn[1]    ; phi1       ; 7.831  ; 7.831  ; Fall       ; phi1            ;
+;  FBEn[2]    ; phi1       ; 8.100  ; 8.100  ; Fall       ; phi1            ;
+;  FBEn[3]    ; phi1       ; 10.367 ; 10.367 ; Fall       ; phi1            ;
+; L[*]        ; phi1       ; 10.355 ; 10.355 ; Fall       ; phi1            ;
+;  L[1]       ; phi1       ; 8.005  ; 8.005  ; Fall       ; phi1            ;
+;  L[2]       ; phi1       ; 7.762  ; 7.762  ; Fall       ; phi1            ;
+;  L[3]       ; phi1       ; 10.355 ; 10.355 ; Fall       ; phi1            ;
+; M[*]        ; phi1       ; 7.976  ; 7.976  ; Fall       ; phi1            ;
+;  M[0]       ; phi1       ; 7.748  ; 7.748  ; Fall       ; phi1            ;
+;  M[1]       ; phi1       ; 7.976  ; 7.976  ; Fall       ; phi1            ;
+;  M[2]       ; phi1       ; 7.962  ; 7.962  ; Fall       ; phi1            ;
+;  M[3]       ; phi1       ; 7.015  ; 7.015  ; Fall       ; phi1            ;
+; N[*]        ; phi1       ; 10.345 ; 10.345 ; Fall       ; phi1            ;
+;  N[0]       ; phi1       ; 7.761  ; 7.761  ; Fall       ; phi1            ;
+;  N[1]       ; phi1       ; 10.345 ; 10.345 ; Fall       ; phi1            ;
+;  N[2]       ; phi1       ; 7.786  ; 7.786  ; Fall       ; phi1            ;
+;  N[3]       ; phi1       ; 7.766  ; 7.766  ; Fall       ; phi1            ;
+; WriteEn[*]  ; phi1       ; 10.342 ; 10.342 ; Fall       ; phi1            ;
+;  WriteEn[0] ; phi1       ; 8.260  ; 8.260  ; Fall       ; phi1            ;
+;  WriteEn[1] ; phi1       ; 7.814  ; 7.814  ; Fall       ; phi1            ;
+;  WriteEn[2] ; phi1       ; 8.100  ; 8.100  ; Fall       ; phi1            ;
+;  WriteEn[3] ; phi1       ; 10.342 ; 10.342 ; Fall       ; phi1            ;
+; notFBEn[*]  ; phi1       ; 10.146 ; 10.146 ; Fall       ; phi1            ;
+;  notFBEn[0] ; phi1       ; 7.805  ; 7.805  ; Fall       ; phi1            ;
+;  notFBEn[1] ; phi1       ; 7.831  ; 7.831  ; Fall       ; phi1            ;
+;  notFBEn[2] ; phi1       ; 7.836  ; 7.836  ; Fall       ; phi1            ;
+;  notFBEn[3] ; phi1       ; 10.146 ; 10.146 ; Fall       ; phi1            ;
+; notphi1_1   ; phi1       ; 4.630  ; 4.630  ; Fall       ; phi1            ;
+; notphi1_2   ; phi1       ; 4.986  ; 4.986  ; Fall       ; phi1            ;
+; notshl      ; phi1       ; 6.458  ; 6.458  ; Fall       ; phi1            ;
+; notshr      ; phi1       ; 6.601  ; 6.601  ; Fall       ; phi1            ;
+; phi1_1      ; phi1       ; 4.646  ; 4.646  ; Fall       ; phi1            ;
+; phi1_2      ; phi1       ; 4.630  ; 4.630  ; Fall       ; phi1            ;
+; phi1_3      ; phi1       ; 4.650  ; 4.650  ; Fall       ; phi1            ;
+; shl         ; phi1       ; 6.458  ; 6.458  ; Fall       ; phi1            ;
+; shr         ; phi1       ; 6.621  ; 6.621  ; Fall       ; phi1            ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; ARdEn[*]    ; phi1       ; 7.092 ; 7.092 ; Rise       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 7.172 ; 7.172 ; Rise       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 7.338 ; 7.338 ; Rise       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 7.092 ; 7.092 ; Rise       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 7.350 ; 7.350 ; Rise       ; phi1            ;
+; ASelect     ; phi1       ; 9.300 ; 9.300 ; Rise       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 6.971 ; 6.971 ; Rise       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 7.209 ; 7.209 ; Rise       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 6.971 ; 6.971 ; Rise       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 7.003 ; 7.003 ; Rise       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 6.984 ; 6.984 ; Rise       ; phi1            ;
+; BSelect     ; phi1       ; 9.263 ; 9.263 ; Rise       ; phi1            ;
+; DSelect     ; phi1       ; 9.273 ; 9.273 ; Rise       ; phi1            ;
+; notphi1_1   ; phi1       ; 4.630 ; 4.630 ; Rise       ; phi1            ;
+; notphi1_2   ; phi1       ; 4.986 ; 4.986 ; Rise       ; phi1            ;
+; phi1_1      ; phi1       ; 4.646 ; 4.646 ; Rise       ; phi1            ;
+; phi1_2      ; phi1       ; 4.630 ; 4.630 ; Rise       ; phi1            ;
+; phi1_3      ; phi1       ; 4.650 ; 4.650 ; Rise       ; phi1            ;
+; zeroSelect  ; phi1       ; 9.300 ; 9.300 ; Rise       ; phi1            ;
+; ARdEn[*]    ; phi1       ; 7.092 ; 7.092 ; Fall       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 7.172 ; 7.172 ; Fall       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 7.338 ; 7.338 ; Fall       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 7.092 ; 7.092 ; Fall       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 7.350 ; 7.350 ; Fall       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 6.971 ; 6.971 ; Fall       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 7.209 ; 7.209 ; Fall       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 6.971 ; 6.971 ; Fall       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 7.003 ; 7.003 ; Fall       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 6.984 ; 6.984 ; Fall       ; phi1            ;
+; FBEn[*]     ; phi1       ; 7.022 ; 7.022 ; Fall       ; phi1            ;
+;  FBEn[0]    ; phi1       ; 7.326 ; 7.326 ; Fall       ; phi1            ;
+;  FBEn[1]    ; phi1       ; 7.022 ; 7.022 ; Fall       ; phi1            ;
+;  FBEn[2]    ; phi1       ; 7.277 ; 7.277 ; Fall       ; phi1            ;
+;  FBEn[3]    ; phi1       ; 9.567 ; 9.567 ; Fall       ; phi1            ;
+; L[*]        ; phi1       ; 6.755 ; 6.755 ; Fall       ; phi1            ;
+;  L[1]       ; phi1       ; 6.975 ; 6.975 ; Fall       ; phi1            ;
+;  L[2]       ; phi1       ; 6.755 ; 6.755 ; Fall       ; phi1            ;
+;  L[3]       ; phi1       ; 9.344 ; 9.344 ; Fall       ; phi1            ;
+; M[*]        ; phi1       ; 6.754 ; 6.754 ; Fall       ; phi1            ;
+;  M[0]       ; phi1       ; 6.754 ; 6.754 ; Fall       ; phi1            ;
+;  M[1]       ; phi1       ; 6.968 ; 6.968 ; Fall       ; phi1            ;
+;  M[2]       ; phi1       ; 6.954 ; 6.954 ; Fall       ; phi1            ;
+;  M[3]       ; phi1       ; 7.005 ; 7.005 ; Fall       ; phi1            ;
+; N[*]        ; phi1       ; 6.754 ; 6.754 ; Fall       ; phi1            ;
+;  N[0]       ; phi1       ; 6.754 ; 6.754 ; Fall       ; phi1            ;
+;  N[1]       ; phi1       ; 9.334 ; 9.334 ; Fall       ; phi1            ;
+;  N[2]       ; phi1       ; 6.786 ; 6.786 ; Fall       ; phi1            ;
+;  N[3]       ; phi1       ; 6.766 ; 6.766 ; Fall       ; phi1            ;
+; WriteEn[*]  ; phi1       ; 7.005 ; 7.005 ; Fall       ; phi1            ;
+;  WriteEn[0] ; phi1       ; 7.516 ; 7.516 ; Fall       ; phi1            ;
+;  WriteEn[1] ; phi1       ; 7.005 ; 7.005 ; Fall       ; phi1            ;
+;  WriteEn[2] ; phi1       ; 7.277 ; 7.277 ; Fall       ; phi1            ;
+;  WriteEn[3] ; phi1       ; 9.542 ; 9.542 ; Fall       ; phi1            ;
+; notFBEn[*]  ; phi1       ; 7.013 ; 7.013 ; Fall       ; phi1            ;
+;  notFBEn[0] ; phi1       ; 7.061 ; 7.061 ; Fall       ; phi1            ;
+;  notFBEn[1] ; phi1       ; 7.022 ; 7.022 ; Fall       ; phi1            ;
+;  notFBEn[2] ; phi1       ; 7.013 ; 7.013 ; Fall       ; phi1            ;
+;  notFBEn[3] ; phi1       ; 9.346 ; 9.346 ; Fall       ; phi1            ;
+; notphi1_1   ; phi1       ; 4.630 ; 4.630 ; Fall       ; phi1            ;
+; notphi1_2   ; phi1       ; 4.986 ; 4.986 ; Fall       ; phi1            ;
+; notshl      ; phi1       ; 6.458 ; 6.458 ; Fall       ; phi1            ;
+; notshr      ; phi1       ; 6.601 ; 6.601 ; Fall       ; phi1            ;
+; phi1_1      ; phi1       ; 4.646 ; 4.646 ; Fall       ; phi1            ;
+; phi1_2      ; phi1       ; 4.630 ; 4.630 ; Fall       ; phi1            ;
+; phi1_3      ; phi1       ; 4.650 ; 4.650 ; Fall       ; phi1            ;
+; shl         ; phi1       ; 6.458 ; 6.458 ; Fall       ; phi1            ;
+; shr         ; phi1       ; 6.621 ; 6.621 ; Fall       ; phi1            ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; phi2       ; FBEn[0]     ;       ; 6.469 ; 6.469 ;       ;
+; phi2       ; FBEn[1]     ;       ; 6.203 ; 6.203 ;       ;
+; phi2       ; FBEn[2]     ;       ; 6.471 ; 6.471 ;       ;
+; phi2       ; FBEn[3]     ;       ; 8.738 ; 8.738 ;       ;
+; phi2       ; L[1]        ;       ; 6.190 ; 6.190 ;       ;
+; phi2       ; L[2]        ;       ; 5.946 ; 5.946 ;       ;
+; phi2       ; L[3]        ;       ; 8.539 ; 8.539 ;       ;
+; phi2       ; M[0]        ;       ; 5.962 ; 5.962 ;       ;
+; phi2       ; M[1]        ;       ; 6.187 ; 6.187 ;       ;
+; phi2       ; M[2]        ;       ; 6.173 ; 6.173 ;       ;
+; phi2       ; M[3]        ;       ; 6.197 ; 6.197 ;       ;
+; phi2       ; N[0]        ;       ; 5.945 ; 5.945 ;       ;
+; phi2       ; N[1]        ;       ; 8.529 ; 8.529 ;       ;
+; phi2       ; N[2]        ;       ; 5.968 ; 5.968 ;       ;
+; phi2       ; N[3]        ;       ; 5.948 ; 5.948 ;       ;
+; phi2       ; WriteEn[0]  ; 6.659 ;       ;       ; 6.659 ;
+; phi2       ; WriteEn[1]  ; 6.186 ;       ;       ; 6.186 ;
+; phi2       ; WriteEn[2]  ; 6.471 ;       ;       ; 6.471 ;
+; phi2       ; WriteEn[3]  ; 8.713 ;       ;       ; 8.713 ;
+; phi2       ; notFBEn[0]  ; 6.204 ;       ;       ; 6.204 ;
+; phi2       ; notFBEn[1]  ; 6.203 ;       ;       ; 6.203 ;
+; phi2       ; notFBEn[2]  ; 6.207 ;       ;       ; 6.207 ;
+; phi2       ; notFBEn[3]  ; 8.517 ;       ;       ; 8.517 ;
+; phi2       ; phi2_1      ; 4.791 ;       ;       ; 4.791 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; phi2       ; FBEn[0]     ;       ; 6.469 ; 6.469 ;       ;
+; phi2       ; FBEn[1]     ;       ; 6.203 ; 6.203 ;       ;
+; phi2       ; FBEn[2]     ;       ; 6.471 ; 6.471 ;       ;
+; phi2       ; FBEn[3]     ;       ; 8.738 ; 8.738 ;       ;
+; phi2       ; L[1]        ;       ; 6.190 ; 6.190 ;       ;
+; phi2       ; L[2]        ;       ; 5.946 ; 5.946 ;       ;
+; phi2       ; L[3]        ;       ; 8.539 ; 8.539 ;       ;
+; phi2       ; M[0]        ;       ; 5.962 ; 5.962 ;       ;
+; phi2       ; M[1]        ;       ; 6.187 ; 6.187 ;       ;
+; phi2       ; M[2]        ;       ; 6.173 ; 6.173 ;       ;
+; phi2       ; M[3]        ;       ; 6.197 ; 6.197 ;       ;
+; phi2       ; N[0]        ;       ; 5.945 ; 5.945 ;       ;
+; phi2       ; N[1]        ;       ; 8.529 ; 8.529 ;       ;
+; phi2       ; N[2]        ;       ; 5.968 ; 5.968 ;       ;
+; phi2       ; N[3]        ;       ; 5.948 ; 5.948 ;       ;
+; phi2       ; WriteEn[0]  ; 6.659 ;       ;       ; 6.659 ;
+; phi2       ; WriteEn[1]  ; 6.186 ;       ;       ; 6.186 ;
+; phi2       ; WriteEn[2]  ; 6.471 ;       ;       ; 6.471 ;
+; phi2       ; WriteEn[3]  ; 8.713 ;       ;       ; 8.713 ;
+; phi2       ; notFBEn[0]  ; 6.204 ;       ;       ; 6.204 ;
+; phi2       ; notFBEn[1]  ; 6.203 ;       ;       ; 6.203 ;
+; phi2       ; notFBEn[2]  ; 6.207 ;       ;       ; 6.207 ;
+; phi2       ; notFBEn[3]  ; 8.517 ;       ;       ; 8.517 ;
+; phi2       ; phi2_1      ; 4.791 ;       ;       ; 4.791 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; phi1  ; -1.380 ; -1.380                ;
++-------+--------+-----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'phi1'                                                                      ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                     ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; phi1  ; Rise       ; phi1                       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; aaddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; aaddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]~0clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]~0clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[0]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[0]~0|combout         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; aaddr[0]~0|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; aaddr[0]~0|datad           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; aaddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; aaddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; aaddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; aaddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; baddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; baddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; baddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; baddr[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; baddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; baddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; baddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; baddr[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opcode[0]                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opcode[0]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opcode[0]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opcode[0]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opcode[1]                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opcode[1]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opcode[1]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opcode[1]|datad            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opcode[2]                  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opcode[2]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opcode[2]|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opcode[2]|datac            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opsel[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opsel[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opsel[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opsel[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; opsel[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; opsel[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; opsel[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; opsel[1]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; phi1|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; phi1|combout               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; phi1~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; phi1~clkctrl|inclk[0]      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; phi1~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; phi1~clkctrl|outclk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; shctl[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; shctl[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; shctl[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; shctl[0]|datad             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; shctl[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; shctl[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; shctl[1]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; shctl[1]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; waddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; waddr[0]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; waddr[0]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; waddr[0]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Fall       ; waddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Fall       ; waddr[1]                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; phi1  ; Rise       ; waddr[1]|datac             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; phi1  ; Rise       ; waddr[1]|datac             ;
++--------+--------------+----------------+------------------+-------+------------+----------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ctrl[*]   ; phi1       ; 0.744  ; 0.744  ; Rise       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 0.607  ; 0.607  ; Rise       ; phi1            ;
+;  ctrl[1]  ; phi1       ; 0.701  ; 0.701  ; Rise       ; phi1            ;
+;  ctrl[2]  ; phi1       ; 0.744  ; 0.744  ; Rise       ; phi1            ;
+;  ctrl[3]  ; phi1       ; 0.687  ; 0.687  ; Rise       ; phi1            ;
+;  ctrl[4]  ; phi1       ; 0.603  ; 0.603  ; Rise       ; phi1            ;
+;  ctrl[5]  ; phi1       ; 0.604  ; 0.604  ; Rise       ; phi1            ;
+; ctrl[*]   ; phi1       ; 2.448  ; 2.448  ; Fall       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 2.172  ; 2.172  ; Fall       ; phi1            ;
+;  ctrl[1]  ; phi1       ; 2.155  ; 2.155  ; Fall       ; phi1            ;
+;  ctrl[2]  ; phi1       ; 2.369  ; 2.369  ; Fall       ; phi1            ;
+;  ctrl[3]  ; phi1       ; 2.129  ; 2.129  ; Fall       ; phi1            ;
+;  ctrl[4]  ; phi1       ; 2.199  ; 2.199  ; Fall       ; phi1            ;
+;  ctrl[5]  ; phi1       ; 2.448  ; 2.448  ; Fall       ; phi1            ;
+;  ctrl[6]  ; phi1       ; -0.331 ; -0.331 ; Fall       ; phi1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ctrl[*]   ; phi1       ; -0.230 ; -0.230 ; Rise       ; phi1            ;
+;  ctrl[0]  ; phi1       ; -0.230 ; -0.230 ; Rise       ; phi1            ;
+;  ctrl[1]  ; phi1       ; -0.323 ; -0.323 ; Rise       ; phi1            ;
+;  ctrl[2]  ; phi1       ; -0.379 ; -0.379 ; Rise       ; phi1            ;
+;  ctrl[3]  ; phi1       ; -0.321 ; -0.321 ; Rise       ; phi1            ;
+;  ctrl[4]  ; phi1       ; -0.265 ; -0.265 ; Rise       ; phi1            ;
+;  ctrl[5]  ; phi1       ; -0.266 ; -0.266 ; Rise       ; phi1            ;
+; ctrl[*]   ; phi1       ; 0.599  ; 0.599  ; Fall       ; phi1            ;
+;  ctrl[0]  ; phi1       ; -1.831 ; -1.831 ; Fall       ; phi1            ;
+;  ctrl[1]  ; phi1       ; -1.863 ; -1.863 ; Fall       ; phi1            ;
+;  ctrl[2]  ; phi1       ; -2.086 ; -2.086 ; Fall       ; phi1            ;
+;  ctrl[3]  ; phi1       ; -1.857 ; -1.857 ; Fall       ; phi1            ;
+;  ctrl[4]  ; phi1       ; -1.861 ; -1.861 ; Fall       ; phi1            ;
+;  ctrl[5]  ; phi1       ; -2.057 ; -2.057 ; Fall       ; phi1            ;
+;  ctrl[6]  ; phi1       ; 0.599  ; 0.599  ; Fall       ; phi1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; ARdEn[*]    ; phi1       ; 5.397 ; 5.397 ; Rise       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 5.318 ; 5.318 ; Rise       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 5.385 ; 5.385 ; Rise       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 5.259 ; 5.259 ; Rise       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 5.397 ; 5.397 ; Rise       ; phi1            ;
+; ASelect     ; phi1       ; 4.954 ; 4.954 ; Rise       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 5.384 ; 5.384 ; Rise       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 5.384 ; 5.384 ; Rise       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 5.274 ; 5.274 ; Rise       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 5.311 ; 5.311 ; Rise       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 5.290 ; 5.290 ; Rise       ; phi1            ;
+; BSelect     ; phi1       ; 4.937 ; 4.937 ; Rise       ; phi1            ;
+; DSelect     ; phi1       ; 4.947 ; 4.947 ; Rise       ; phi1            ;
+; notphi1_1   ; phi1       ; 2.476 ; 2.476 ; Rise       ; phi1            ;
+; notphi1_2   ; phi1       ; 2.658 ; 2.658 ; Rise       ; phi1            ;
+; phi1_1      ; phi1       ; 2.492 ; 2.492 ; Rise       ; phi1            ;
+; phi1_2      ; phi1       ; 2.476 ; 2.476 ; Rise       ; phi1            ;
+; phi1_3      ; phi1       ; 2.496 ; 2.496 ; Rise       ; phi1            ;
+; zeroSelect  ; phi1       ; 4.954 ; 4.954 ; Rise       ; phi1            ;
+; ARdEn[*]    ; phi1       ; 3.830 ; 3.830 ; Fall       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 3.753 ; 3.753 ; Fall       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 3.826 ; 3.826 ; Fall       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 3.680 ; 3.680 ; Fall       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 3.830 ; 3.830 ; Fall       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 3.751 ; 3.751 ; Fall       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 3.751 ; 3.751 ; Fall       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 3.666 ; 3.666 ; Fall       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 3.699 ; 3.699 ; Fall       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 3.675 ; 3.675 ; Fall       ; phi1            ;
+; FBEn[*]     ; phi1       ; 5.414 ; 5.414 ; Fall       ; phi1            ;
+;  FBEn[0]    ; phi1       ; 4.292 ; 4.292 ; Fall       ; phi1            ;
+;  FBEn[1]    ; phi1       ; 4.162 ; 4.162 ; Fall       ; phi1            ;
+;  FBEn[2]    ; phi1       ; 4.321 ; 4.321 ; Fall       ; phi1            ;
+;  FBEn[3]    ; phi1       ; 5.414 ; 5.414 ; Fall       ; phi1            ;
+; L[*]        ; phi1       ; 5.388 ; 5.388 ; Fall       ; phi1            ;
+;  L[1]       ; phi1       ; 4.245 ; 4.245 ; Fall       ; phi1            ;
+;  L[2]       ; phi1       ; 4.121 ; 4.121 ; Fall       ; phi1            ;
+;  L[3]       ; phi1       ; 5.388 ; 5.388 ; Fall       ; phi1            ;
+; M[*]        ; phi1       ; 4.240 ; 4.240 ; Fall       ; phi1            ;
+;  M[0]       ; phi1       ; 4.137 ; 4.137 ; Fall       ; phi1            ;
+;  M[1]       ; phi1       ; 4.240 ; 4.240 ; Fall       ; phi1            ;
+;  M[2]       ; phi1       ; 4.226 ; 4.226 ; Fall       ; phi1            ;
+;  M[3]       ; phi1       ; 3.806 ; 3.806 ; Fall       ; phi1            ;
+; N[*]        ; phi1       ; 5.378 ; 5.378 ; Fall       ; phi1            ;
+;  N[0]       ; phi1       ; 4.120 ; 4.120 ; Fall       ; phi1            ;
+;  N[1]       ; phi1       ; 5.378 ; 5.378 ; Fall       ; phi1            ;
+;  N[2]       ; phi1       ; 4.145 ; 4.145 ; Fall       ; phi1            ;
+;  N[3]       ; phi1       ; 4.129 ; 4.129 ; Fall       ; phi1            ;
+; WriteEn[*]  ; phi1       ; 5.392 ; 5.392 ; Fall       ; phi1            ;
+;  WriteEn[0] ; phi1       ; 4.357 ; 4.357 ; Fall       ; phi1            ;
+;  WriteEn[1] ; phi1       ; 4.137 ; 4.137 ; Fall       ; phi1            ;
+;  WriteEn[2] ; phi1       ; 4.321 ; 4.321 ; Fall       ; phi1            ;
+;  WriteEn[3] ; phi1       ; 5.392 ; 5.392 ; Fall       ; phi1            ;
+; notFBEn[*]  ; phi1       ; 5.301 ; 5.301 ; Fall       ; phi1            ;
+;  notFBEn[0] ; phi1       ; 4.165 ; 4.165 ; Fall       ; phi1            ;
+;  notFBEn[1] ; phi1       ; 4.162 ; 4.162 ; Fall       ; phi1            ;
+;  notFBEn[2] ; phi1       ; 4.191 ; 4.191 ; Fall       ; phi1            ;
+;  notFBEn[3] ; phi1       ; 5.301 ; 5.301 ; Fall       ; phi1            ;
+; notphi1_1   ; phi1       ; 2.476 ; 2.476 ; Fall       ; phi1            ;
+; notphi1_2   ; phi1       ; 2.658 ; 2.658 ; Fall       ; phi1            ;
+; notshl      ; phi1       ; 3.558 ; 3.558 ; Fall       ; phi1            ;
+; notshr      ; phi1       ; 3.615 ; 3.615 ; Fall       ; phi1            ;
+; phi1_1      ; phi1       ; 2.492 ; 2.492 ; Fall       ; phi1            ;
+; phi1_2      ; phi1       ; 2.476 ; 2.476 ; Fall       ; phi1            ;
+; phi1_3      ; phi1       ; 2.496 ; 2.496 ; Fall       ; phi1            ;
+; shl         ; phi1       ; 3.558 ; 3.558 ; Fall       ; phi1            ;
+; shr         ; phi1       ; 3.635 ; 3.635 ; Fall       ; phi1            ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; ARdEn[*]    ; phi1       ; 3.680 ; 3.680 ; Rise       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 3.753 ; 3.753 ; Rise       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 3.826 ; 3.826 ; Rise       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 3.680 ; 3.680 ; Rise       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 3.830 ; 3.830 ; Rise       ; phi1            ;
+; ASelect     ; phi1       ; 4.954 ; 4.954 ; Rise       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 3.666 ; 3.666 ; Rise       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 3.751 ; 3.751 ; Rise       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 3.666 ; 3.666 ; Rise       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 3.699 ; 3.699 ; Rise       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 3.675 ; 3.675 ; Rise       ; phi1            ;
+; BSelect     ; phi1       ; 4.937 ; 4.937 ; Rise       ; phi1            ;
+; DSelect     ; phi1       ; 4.947 ; 4.947 ; Rise       ; phi1            ;
+; notphi1_1   ; phi1       ; 2.476 ; 2.476 ; Rise       ; phi1            ;
+; notphi1_2   ; phi1       ; 2.658 ; 2.658 ; Rise       ; phi1            ;
+; phi1_1      ; phi1       ; 2.492 ; 2.492 ; Rise       ; phi1            ;
+; phi1_2      ; phi1       ; 2.476 ; 2.476 ; Rise       ; phi1            ;
+; phi1_3      ; phi1       ; 2.496 ; 2.496 ; Rise       ; phi1            ;
+; zeroSelect  ; phi1       ; 4.954 ; 4.954 ; Rise       ; phi1            ;
+; ARdEn[*]    ; phi1       ; 3.680 ; 3.680 ; Fall       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 3.753 ; 3.753 ; Fall       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 3.826 ; 3.826 ; Fall       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 3.680 ; 3.680 ; Fall       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 3.830 ; 3.830 ; Fall       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 3.666 ; 3.666 ; Fall       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 3.751 ; 3.751 ; Fall       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 3.666 ; 3.666 ; Fall       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 3.699 ; 3.699 ; Fall       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 3.675 ; 3.675 ; Fall       ; phi1            ;
+; FBEn[*]     ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  FBEn[0]    ; phi1       ; 3.939 ; 3.939 ; Fall       ; phi1            ;
+;  FBEn[1]    ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  FBEn[2]    ; phi1       ; 3.943 ; 3.943 ; Fall       ; phi1            ;
+;  FBEn[3]    ; phi1       ; 5.040 ; 5.040 ; Fall       ; phi1            ;
+; L[*]        ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  L[1]       ; phi1       ; 3.786 ; 3.786 ; Fall       ; phi1            ;
+;  L[2]       ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  L[3]       ; phi1       ; 4.933 ; 4.933 ; Fall       ; phi1            ;
+; M[*]        ; phi1       ; 3.685 ; 3.685 ; Fall       ; phi1            ;
+;  M[0]       ; phi1       ; 3.685 ; 3.685 ; Fall       ; phi1            ;
+;  M[1]       ; phi1       ; 3.781 ; 3.781 ; Fall       ; phi1            ;
+;  M[2]       ; phi1       ; 3.768 ; 3.768 ; Fall       ; phi1            ;
+;  M[3]       ; phi1       ; 3.791 ; 3.791 ; Fall       ; phi1            ;
+; N[*]        ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  N[0]       ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  N[1]       ; phi1       ; 4.923 ; 4.923 ; Fall       ; phi1            ;
+;  N[2]       ; phi1       ; 3.693 ; 3.693 ; Fall       ; phi1            ;
+;  N[3]       ; phi1       ; 3.674 ; 3.674 ; Fall       ; phi1            ;
+; WriteEn[*]  ; phi1       ; 3.784 ; 3.784 ; Fall       ; phi1            ;
+;  WriteEn[0] ; phi1       ; 4.004 ; 4.004 ; Fall       ; phi1            ;
+;  WriteEn[1] ; phi1       ; 3.784 ; 3.784 ; Fall       ; phi1            ;
+;  WriteEn[2] ; phi1       ; 3.943 ; 3.943 ; Fall       ; phi1            ;
+;  WriteEn[3] ; phi1       ; 5.018 ; 5.018 ; Fall       ; phi1            ;
+; notFBEn[*]  ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  notFBEn[0] ; phi1       ; 3.812 ; 3.812 ; Fall       ; phi1            ;
+;  notFBEn[1] ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  notFBEn[2] ; phi1       ; 3.813 ; 3.813 ; Fall       ; phi1            ;
+;  notFBEn[3] ; phi1       ; 4.927 ; 4.927 ; Fall       ; phi1            ;
+; notphi1_1   ; phi1       ; 2.476 ; 2.476 ; Fall       ; phi1            ;
+; notphi1_2   ; phi1       ; 2.658 ; 2.658 ; Fall       ; phi1            ;
+; notshl      ; phi1       ; 3.558 ; 3.558 ; Fall       ; phi1            ;
+; notshr      ; phi1       ; 3.615 ; 3.615 ; Fall       ; phi1            ;
+; phi1_1      ; phi1       ; 2.492 ; 2.492 ; Fall       ; phi1            ;
+; phi1_2      ; phi1       ; 2.476 ; 2.476 ; Fall       ; phi1            ;
+; phi1_3      ; phi1       ; 2.496 ; 2.496 ; Fall       ; phi1            ;
+; shl         ; phi1       ; 3.558 ; 3.558 ; Fall       ; phi1            ;
+; shr         ; phi1       ; 3.635 ; 3.635 ; Fall       ; phi1            ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; phi2       ; FBEn[0]     ;       ; 3.353 ; 3.353 ;       ;
+; phi2       ; FBEn[1]     ;       ; 3.204 ; 3.204 ;       ;
+; phi2       ; FBEn[2]     ;       ; 3.337 ; 3.337 ;       ;
+; phi2       ; FBEn[3]     ;       ; 4.430 ; 4.430 ;       ;
+; phi2       ; L[1]        ;       ; 3.219 ; 3.219 ;       ;
+; phi2       ; L[2]        ;       ; 3.095 ; 3.095 ;       ;
+; phi2       ; L[3]        ;       ; 4.362 ; 4.362 ;       ;
+; phi2       ; M[0]        ;       ; 3.088 ; 3.088 ;       ;
+; phi2       ; M[1]        ;       ; 3.194 ; 3.194 ;       ;
+; phi2       ; M[2]        ;       ; 3.181 ; 3.181 ;       ;
+; phi2       ; M[3]        ;       ; 3.224 ; 3.224 ;       ;
+; phi2       ; N[0]        ;       ; 3.094 ; 3.094 ;       ;
+; phi2       ; N[1]        ;       ; 4.352 ; 4.352 ;       ;
+; phi2       ; N[2]        ;       ; 3.118 ; 3.118 ;       ;
+; phi2       ; N[3]        ;       ; 3.102 ; 3.102 ;       ;
+; phi2       ; WriteEn[0]  ; 3.418 ;       ;       ; 3.418 ;
+; phi2       ; WriteEn[1]  ; 3.179 ;       ;       ; 3.179 ;
+; phi2       ; WriteEn[2]  ; 3.337 ;       ;       ; 3.337 ;
+; phi2       ; WriteEn[3]  ; 4.408 ;       ;       ; 4.408 ;
+; phi2       ; notFBEn[0]  ; 3.226 ;       ;       ; 3.226 ;
+; phi2       ; notFBEn[1]  ; 3.204 ;       ;       ; 3.204 ;
+; phi2       ; notFBEn[2]  ; 3.207 ;       ;       ; 3.207 ;
+; phi2       ; notFBEn[3]  ; 4.317 ;       ;       ; 4.317 ;
+; phi2       ; phi2_1      ; 2.563 ;       ;       ; 2.563 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; phi2       ; FBEn[0]     ;       ; 3.353 ; 3.353 ;       ;
+; phi2       ; FBEn[1]     ;       ; 3.204 ; 3.204 ;       ;
+; phi2       ; FBEn[2]     ;       ; 3.337 ; 3.337 ;       ;
+; phi2       ; FBEn[3]     ;       ; 4.430 ; 4.430 ;       ;
+; phi2       ; L[1]        ;       ; 3.219 ; 3.219 ;       ;
+; phi2       ; L[2]        ;       ; 3.095 ; 3.095 ;       ;
+; phi2       ; L[3]        ;       ; 4.362 ; 4.362 ;       ;
+; phi2       ; M[0]        ;       ; 3.088 ; 3.088 ;       ;
+; phi2       ; M[1]        ;       ; 3.194 ; 3.194 ;       ;
+; phi2       ; M[2]        ;       ; 3.181 ; 3.181 ;       ;
+; phi2       ; M[3]        ;       ; 3.224 ; 3.224 ;       ;
+; phi2       ; N[0]        ;       ; 3.094 ; 3.094 ;       ;
+; phi2       ; N[1]        ;       ; 4.352 ; 4.352 ;       ;
+; phi2       ; N[2]        ;       ; 3.118 ; 3.118 ;       ;
+; phi2       ; N[3]        ;       ; 3.102 ; 3.102 ;       ;
+; phi2       ; WriteEn[0]  ; 3.418 ;       ;       ; 3.418 ;
+; phi2       ; WriteEn[1]  ; 3.179 ;       ;       ; 3.179 ;
+; phi2       ; WriteEn[2]  ; 3.337 ;       ;       ; 3.337 ;
+; phi2       ; WriteEn[3]  ; 4.408 ;       ;       ; 4.408 ;
+; phi2       ; notFBEn[0]  ; 3.226 ;       ;       ; 3.226 ;
+; phi2       ; notFBEn[1]  ; 3.204 ;       ;       ; 3.204 ;
+; phi2       ; notFBEn[2]  ; 3.207 ;       ;       ; 3.207 ;
+; phi2       ; notFBEn[3]  ; 4.317 ;       ;       ; 4.317 ;
+; phi2       ; phi2_1      ; 2.563 ;       ;       ; 2.563 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+;  phi1            ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; -1.38               ;
+;  phi1            ; N/A   ; N/A  ; N/A      ; N/A     ; -1.380              ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ctrl[*]   ; phi1       ; 1.112  ; 1.112  ; Rise       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 0.880  ; 0.880  ; Rise       ; phi1            ;
+;  ctrl[1]  ; phi1       ; 1.060  ; 1.060  ; Rise       ; phi1            ;
+;  ctrl[2]  ; phi1       ; 1.112  ; 1.112  ; Rise       ; phi1            ;
+;  ctrl[3]  ; phi1       ; 1.030  ; 1.030  ; Rise       ; phi1            ;
+;  ctrl[4]  ; phi1       ; 0.841  ; 0.841  ; Rise       ; phi1            ;
+;  ctrl[5]  ; phi1       ; 0.823  ; 0.823  ; Rise       ; phi1            ;
+; ctrl[*]   ; phi1       ; 4.651  ; 4.651  ; Fall       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 4.099  ; 4.099  ; Fall       ; phi1            ;
+;  ctrl[1]  ; phi1       ; 4.021  ; 4.021  ; Fall       ; phi1            ;
+;  ctrl[2]  ; phi1       ; 4.501  ; 4.501  ; Fall       ; phi1            ;
+;  ctrl[3]  ; phi1       ; 3.993  ; 3.993  ; Fall       ; phi1            ;
+;  ctrl[4]  ; phi1       ; 4.121  ; 4.121  ; Fall       ; phi1            ;
+;  ctrl[5]  ; phi1       ; 4.651  ; 4.651  ; Fall       ; phi1            ;
+;  ctrl[6]  ; phi1       ; -0.058 ; -0.058 ; Fall       ; phi1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ctrl[*]   ; phi1       ; 0.016  ; 0.016  ; Rise       ; phi1            ;
+;  ctrl[0]  ; phi1       ; 0.016  ; 0.016  ; Rise       ; phi1            ;
+;  ctrl[1]  ; phi1       ; -0.163 ; -0.163 ; Rise       ; phi1            ;
+;  ctrl[2]  ; phi1       ; -0.250 ; -0.250 ; Rise       ; phi1            ;
+;  ctrl[3]  ; phi1       ; -0.169 ; -0.169 ; Rise       ; phi1            ;
+;  ctrl[4]  ; phi1       ; -0.023 ; -0.023 ; Rise       ; phi1            ;
+;  ctrl[5]  ; phi1       ; -0.005 ; -0.005 ; Rise       ; phi1            ;
+; ctrl[*]   ; phi1       ; 0.726  ; 0.726  ; Fall       ; phi1            ;
+;  ctrl[0]  ; phi1       ; -1.831 ; -1.831 ; Fall       ; phi1            ;
+;  ctrl[1]  ; phi1       ; -1.863 ; -1.863 ; Fall       ; phi1            ;
+;  ctrl[2]  ; phi1       ; -2.086 ; -2.086 ; Fall       ; phi1            ;
+;  ctrl[3]  ; phi1       ; -1.857 ; -1.857 ; Fall       ; phi1            ;
+;  ctrl[4]  ; phi1       ; -1.861 ; -1.861 ; Fall       ; phi1            ;
+;  ctrl[5]  ; phi1       ; -2.057 ; -2.057 ; Fall       ; phi1            ;
+;  ctrl[6]  ; phi1       ; 0.726  ; 0.726  ; Fall       ; phi1            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++-------------+------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+------------+--------+--------+------------+-----------------+
+; ARdEn[*]    ; phi1       ; 10.257 ; 10.257 ; Rise       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 10.079 ; 10.079 ; Rise       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 10.235 ; 10.235 ; Rise       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 10.014 ; 10.014 ; Rise       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 10.257 ; 10.257 ; Rise       ; phi1            ;
+; ASelect     ; phi1       ; 9.300  ; 9.300  ; Rise       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 10.254 ; 10.254 ; Rise       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 10.254 ; 10.254 ; Rise       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 9.962  ; 9.962  ; Rise       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 10.049 ; 10.049 ; Rise       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 10.002 ; 10.002 ; Rise       ; phi1            ;
+; BSelect     ; phi1       ; 9.263  ; 9.263  ; Rise       ; phi1            ;
+; DSelect     ; phi1       ; 9.273  ; 9.273  ; Rise       ; phi1            ;
+; notphi1_1   ; phi1       ; 4.630  ; 4.630  ; Rise       ; phi1            ;
+; notphi1_2   ; phi1       ; 4.986  ; 4.986  ; Rise       ; phi1            ;
+; phi1_1      ; phi1       ; 4.646  ; 4.646  ; Rise       ; phi1            ;
+; phi1_2      ; phi1       ; 4.630  ; 4.630  ; Rise       ; phi1            ;
+; phi1_3      ; phi1       ; 4.650  ; 4.650  ; Rise       ; phi1            ;
+; zeroSelect  ; phi1       ; 9.300  ; 9.300  ; Rise       ; phi1            ;
+; ARdEn[*]    ; phi1       ; 7.350  ; 7.350  ; Fall       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 7.172  ; 7.172  ; Fall       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 7.338  ; 7.338  ; Fall       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 7.092  ; 7.092  ; Fall       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 7.350  ; 7.350  ; Fall       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 7.209  ; 7.209  ; Fall       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 7.209  ; 7.209  ; Fall       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 6.971  ; 6.971  ; Fall       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 7.003  ; 7.003  ; Fall       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 6.984  ; 6.984  ; Fall       ; phi1            ;
+; FBEn[*]     ; phi1       ; 10.367 ; 10.367 ; Fall       ; phi1            ;
+;  FBEn[0]    ; phi1       ; 8.070  ; 8.070  ; Fall       ; phi1            ;
+;  FBEn[1]    ; phi1       ; 7.831  ; 7.831  ; Fall       ; phi1            ;
+;  FBEn[2]    ; phi1       ; 8.100  ; 8.100  ; Fall       ; phi1            ;
+;  FBEn[3]    ; phi1       ; 10.367 ; 10.367 ; Fall       ; phi1            ;
+; L[*]        ; phi1       ; 10.355 ; 10.355 ; Fall       ; phi1            ;
+;  L[1]       ; phi1       ; 8.005  ; 8.005  ; Fall       ; phi1            ;
+;  L[2]       ; phi1       ; 7.762  ; 7.762  ; Fall       ; phi1            ;
+;  L[3]       ; phi1       ; 10.355 ; 10.355 ; Fall       ; phi1            ;
+; M[*]        ; phi1       ; 7.976  ; 7.976  ; Fall       ; phi1            ;
+;  M[0]       ; phi1       ; 7.748  ; 7.748  ; Fall       ; phi1            ;
+;  M[1]       ; phi1       ; 7.976  ; 7.976  ; Fall       ; phi1            ;
+;  M[2]       ; phi1       ; 7.962  ; 7.962  ; Fall       ; phi1            ;
+;  M[3]       ; phi1       ; 7.015  ; 7.015  ; Fall       ; phi1            ;
+; N[*]        ; phi1       ; 10.345 ; 10.345 ; Fall       ; phi1            ;
+;  N[0]       ; phi1       ; 7.761  ; 7.761  ; Fall       ; phi1            ;
+;  N[1]       ; phi1       ; 10.345 ; 10.345 ; Fall       ; phi1            ;
+;  N[2]       ; phi1       ; 7.786  ; 7.786  ; Fall       ; phi1            ;
+;  N[3]       ; phi1       ; 7.766  ; 7.766  ; Fall       ; phi1            ;
+; WriteEn[*]  ; phi1       ; 10.342 ; 10.342 ; Fall       ; phi1            ;
+;  WriteEn[0] ; phi1       ; 8.260  ; 8.260  ; Fall       ; phi1            ;
+;  WriteEn[1] ; phi1       ; 7.814  ; 7.814  ; Fall       ; phi1            ;
+;  WriteEn[2] ; phi1       ; 8.100  ; 8.100  ; Fall       ; phi1            ;
+;  WriteEn[3] ; phi1       ; 10.342 ; 10.342 ; Fall       ; phi1            ;
+; notFBEn[*]  ; phi1       ; 10.146 ; 10.146 ; Fall       ; phi1            ;
+;  notFBEn[0] ; phi1       ; 7.805  ; 7.805  ; Fall       ; phi1            ;
+;  notFBEn[1] ; phi1       ; 7.831  ; 7.831  ; Fall       ; phi1            ;
+;  notFBEn[2] ; phi1       ; 7.836  ; 7.836  ; Fall       ; phi1            ;
+;  notFBEn[3] ; phi1       ; 10.146 ; 10.146 ; Fall       ; phi1            ;
+; notphi1_1   ; phi1       ; 4.630  ; 4.630  ; Fall       ; phi1            ;
+; notphi1_2   ; phi1       ; 4.986  ; 4.986  ; Fall       ; phi1            ;
+; notshl      ; phi1       ; 6.458  ; 6.458  ; Fall       ; phi1            ;
+; notshr      ; phi1       ; 6.601  ; 6.601  ; Fall       ; phi1            ;
+; phi1_1      ; phi1       ; 4.646  ; 4.646  ; Fall       ; phi1            ;
+; phi1_2      ; phi1       ; 4.630  ; 4.630  ; Fall       ; phi1            ;
+; phi1_3      ; phi1       ; 4.650  ; 4.650  ; Fall       ; phi1            ;
+; shl         ; phi1       ; 6.458  ; 6.458  ; Fall       ; phi1            ;
+; shr         ; phi1       ; 6.621  ; 6.621  ; Fall       ; phi1            ;
++-------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; ARdEn[*]    ; phi1       ; 3.680 ; 3.680 ; Rise       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 3.753 ; 3.753 ; Rise       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 3.826 ; 3.826 ; Rise       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 3.680 ; 3.680 ; Rise       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 3.830 ; 3.830 ; Rise       ; phi1            ;
+; ASelect     ; phi1       ; 4.954 ; 4.954 ; Rise       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 3.666 ; 3.666 ; Rise       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 3.751 ; 3.751 ; Rise       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 3.666 ; 3.666 ; Rise       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 3.699 ; 3.699 ; Rise       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 3.675 ; 3.675 ; Rise       ; phi1            ;
+; BSelect     ; phi1       ; 4.937 ; 4.937 ; Rise       ; phi1            ;
+; DSelect     ; phi1       ; 4.947 ; 4.947 ; Rise       ; phi1            ;
+; notphi1_1   ; phi1       ; 2.476 ; 2.476 ; Rise       ; phi1            ;
+; notphi1_2   ; phi1       ; 2.658 ; 2.658 ; Rise       ; phi1            ;
+; phi1_1      ; phi1       ; 2.492 ; 2.492 ; Rise       ; phi1            ;
+; phi1_2      ; phi1       ; 2.476 ; 2.476 ; Rise       ; phi1            ;
+; phi1_3      ; phi1       ; 2.496 ; 2.496 ; Rise       ; phi1            ;
+; zeroSelect  ; phi1       ; 4.954 ; 4.954 ; Rise       ; phi1            ;
+; ARdEn[*]    ; phi1       ; 3.680 ; 3.680 ; Fall       ; phi1            ;
+;  ARdEn[0]   ; phi1       ; 3.753 ; 3.753 ; Fall       ; phi1            ;
+;  ARdEn[1]   ; phi1       ; 3.826 ; 3.826 ; Fall       ; phi1            ;
+;  ARdEn[2]   ; phi1       ; 3.680 ; 3.680 ; Fall       ; phi1            ;
+;  ARdEn[3]   ; phi1       ; 3.830 ; 3.830 ; Fall       ; phi1            ;
+; BRdEn[*]    ; phi1       ; 3.666 ; 3.666 ; Fall       ; phi1            ;
+;  BRdEn[0]   ; phi1       ; 3.751 ; 3.751 ; Fall       ; phi1            ;
+;  BRdEn[1]   ; phi1       ; 3.666 ; 3.666 ; Fall       ; phi1            ;
+;  BRdEn[2]   ; phi1       ; 3.699 ; 3.699 ; Fall       ; phi1            ;
+;  BRdEn[3]   ; phi1       ; 3.675 ; 3.675 ; Fall       ; phi1            ;
+; FBEn[*]     ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  FBEn[0]    ; phi1       ; 3.939 ; 3.939 ; Fall       ; phi1            ;
+;  FBEn[1]    ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  FBEn[2]    ; phi1       ; 3.943 ; 3.943 ; Fall       ; phi1            ;
+;  FBEn[3]    ; phi1       ; 5.040 ; 5.040 ; Fall       ; phi1            ;
+; L[*]        ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  L[1]       ; phi1       ; 3.786 ; 3.786 ; Fall       ; phi1            ;
+;  L[2]       ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  L[3]       ; phi1       ; 4.933 ; 4.933 ; Fall       ; phi1            ;
+; M[*]        ; phi1       ; 3.685 ; 3.685 ; Fall       ; phi1            ;
+;  M[0]       ; phi1       ; 3.685 ; 3.685 ; Fall       ; phi1            ;
+;  M[1]       ; phi1       ; 3.781 ; 3.781 ; Fall       ; phi1            ;
+;  M[2]       ; phi1       ; 3.768 ; 3.768 ; Fall       ; phi1            ;
+;  M[3]       ; phi1       ; 3.791 ; 3.791 ; Fall       ; phi1            ;
+; N[*]        ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  N[0]       ; phi1       ; 3.662 ; 3.662 ; Fall       ; phi1            ;
+;  N[1]       ; phi1       ; 4.923 ; 4.923 ; Fall       ; phi1            ;
+;  N[2]       ; phi1       ; 3.693 ; 3.693 ; Fall       ; phi1            ;
+;  N[3]       ; phi1       ; 3.674 ; 3.674 ; Fall       ; phi1            ;
+; WriteEn[*]  ; phi1       ; 3.784 ; 3.784 ; Fall       ; phi1            ;
+;  WriteEn[0] ; phi1       ; 4.004 ; 4.004 ; Fall       ; phi1            ;
+;  WriteEn[1] ; phi1       ; 3.784 ; 3.784 ; Fall       ; phi1            ;
+;  WriteEn[2] ; phi1       ; 3.943 ; 3.943 ; Fall       ; phi1            ;
+;  WriteEn[3] ; phi1       ; 5.018 ; 5.018 ; Fall       ; phi1            ;
+; notFBEn[*]  ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  notFBEn[0] ; phi1       ; 3.812 ; 3.812 ; Fall       ; phi1            ;
+;  notFBEn[1] ; phi1       ; 3.809 ; 3.809 ; Fall       ; phi1            ;
+;  notFBEn[2] ; phi1       ; 3.813 ; 3.813 ; Fall       ; phi1            ;
+;  notFBEn[3] ; phi1       ; 4.927 ; 4.927 ; Fall       ; phi1            ;
+; notphi1_1   ; phi1       ; 2.476 ; 2.476 ; Fall       ; phi1            ;
+; notphi1_2   ; phi1       ; 2.658 ; 2.658 ; Fall       ; phi1            ;
+; notshl      ; phi1       ; 3.558 ; 3.558 ; Fall       ; phi1            ;
+; notshr      ; phi1       ; 3.615 ; 3.615 ; Fall       ; phi1            ;
+; phi1_1      ; phi1       ; 2.492 ; 2.492 ; Fall       ; phi1            ;
+; phi1_2      ; phi1       ; 2.476 ; 2.476 ; Fall       ; phi1            ;
+; phi1_3      ; phi1       ; 2.496 ; 2.496 ; Fall       ; phi1            ;
+; shl         ; phi1       ; 3.558 ; 3.558 ; Fall       ; phi1            ;
+; shr         ; phi1       ; 3.635 ; 3.635 ; Fall       ; phi1            ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Progagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; phi2       ; FBEn[0]     ;       ; 6.469 ; 6.469 ;       ;
+; phi2       ; FBEn[1]     ;       ; 6.203 ; 6.203 ;       ;
+; phi2       ; FBEn[2]     ;       ; 6.471 ; 6.471 ;       ;
+; phi2       ; FBEn[3]     ;       ; 8.738 ; 8.738 ;       ;
+; phi2       ; L[1]        ;       ; 6.190 ; 6.190 ;       ;
+; phi2       ; L[2]        ;       ; 5.946 ; 5.946 ;       ;
+; phi2       ; L[3]        ;       ; 8.539 ; 8.539 ;       ;
+; phi2       ; M[0]        ;       ; 5.962 ; 5.962 ;       ;
+; phi2       ; M[1]        ;       ; 6.187 ; 6.187 ;       ;
+; phi2       ; M[2]        ;       ; 6.173 ; 6.173 ;       ;
+; phi2       ; M[3]        ;       ; 6.197 ; 6.197 ;       ;
+; phi2       ; N[0]        ;       ; 5.945 ; 5.945 ;       ;
+; phi2       ; N[1]        ;       ; 8.529 ; 8.529 ;       ;
+; phi2       ; N[2]        ;       ; 5.968 ; 5.968 ;       ;
+; phi2       ; N[3]        ;       ; 5.948 ; 5.948 ;       ;
+; phi2       ; WriteEn[0]  ; 6.659 ;       ;       ; 6.659 ;
+; phi2       ; WriteEn[1]  ; 6.186 ;       ;       ; 6.186 ;
+; phi2       ; WriteEn[2]  ; 6.471 ;       ;       ; 6.471 ;
+; phi2       ; WriteEn[3]  ; 8.713 ;       ;       ; 8.713 ;
+; phi2       ; notFBEn[0]  ; 6.204 ;       ;       ; 6.204 ;
+; phi2       ; notFBEn[1]  ; 6.203 ;       ;       ; 6.203 ;
+; phi2       ; notFBEn[2]  ; 6.207 ;       ;       ; 6.207 ;
+; phi2       ; notFBEn[3]  ; 8.517 ;       ;       ; 8.517 ;
+; phi2       ; phi2_1      ; 4.791 ;       ;       ; 4.791 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; phi2       ; FBEn[0]     ;       ; 3.353 ; 3.353 ;       ;
+; phi2       ; FBEn[1]     ;       ; 3.204 ; 3.204 ;       ;
+; phi2       ; FBEn[2]     ;       ; 3.337 ; 3.337 ;       ;
+; phi2       ; FBEn[3]     ;       ; 4.430 ; 4.430 ;       ;
+; phi2       ; L[1]        ;       ; 3.219 ; 3.219 ;       ;
+; phi2       ; L[2]        ;       ; 3.095 ; 3.095 ;       ;
+; phi2       ; L[3]        ;       ; 4.362 ; 4.362 ;       ;
+; phi2       ; M[0]        ;       ; 3.088 ; 3.088 ;       ;
+; phi2       ; M[1]        ;       ; 3.194 ; 3.194 ;       ;
+; phi2       ; M[2]        ;       ; 3.181 ; 3.181 ;       ;
+; phi2       ; M[3]        ;       ; 3.224 ; 3.224 ;       ;
+; phi2       ; N[0]        ;       ; 3.094 ; 3.094 ;       ;
+; phi2       ; N[1]        ;       ; 4.352 ; 4.352 ;       ;
+; phi2       ; N[2]        ;       ; 3.118 ; 3.118 ;       ;
+; phi2       ; N[3]        ;       ; 3.102 ; 3.102 ;       ;
+; phi2       ; WriteEn[0]  ; 3.418 ;       ;       ; 3.418 ;
+; phi2       ; WriteEn[1]  ; 3.179 ;       ;       ; 3.179 ;
+; phi2       ; WriteEn[2]  ; 3.337 ;       ;       ; 3.337 ;
+; phi2       ; WriteEn[3]  ; 4.408 ;       ;       ; 4.408 ;
+; phi2       ; notFBEn[0]  ; 3.226 ;       ;       ; 3.226 ;
+; phi2       ; notFBEn[1]  ; 3.204 ;       ;       ; 3.204 ;
+; phi2       ; notFBEn[2]  ; 3.207 ;       ;       ; 3.207 ;
+; phi2       ; notFBEn[3]  ; 4.317 ;       ;       ; 4.317 ;
+; phi2       ; phi2_1      ; 2.563 ;       ;       ; 2.563 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 9     ; 9    ;
+; Unconstrained Input Port Paths  ; 50    ; 50   ;
+; Unconstrained Output Ports      ; 45    ; 45   ;
+; Unconstrained Output Port Paths ; 117   ; 117  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 12.1 Build 177 11/07/2012 SJ Full Version
+    Info: Processing started: Mon Mar  9 20:09:46 2015
+Info: Command: quartus_sta lab4_sim -c lab4_sim
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 13 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'lab4_sim.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name phi1 phi1
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -1.380 phi1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380        -1.380 phi1 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 309 megabytes
+    Info: Processing ended: Mon Mar  9 20:09:49 2015
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

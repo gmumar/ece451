@@ -1,4 +1,4 @@
-/* ug227.eecg -- Mon Mar  9 10:02:20 2015
+/* ug243.eecg -- Wed Mar 11 15:49:46 2015
    Initial design_analyzer Variable Values */
 
 
@@ -894,3 +894,22 @@ alias view_cursor_number 	"x11_set_cursor_number"
 /* design_analyzer Command Log */ 
 
 
+read -format verilog {"/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v"} 
+create_schematic -size infinite    -gen_database  
+create_schematic -size infinite  -symbol_view    
+create_schematic -size infinite   -hier_view   
+create_clock -name "clk" -period 1.4 -waveform {   "0" "0.7" } {   "clk" } 
+compile  -map_effort medium 
+current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.db:FA" 
+create_schematic -size infinite    -gen_database  
+create_schematic -size infinite -schematic_view -symbol_view -hier_view   
+report_area 
+report_timing -path full -delay max -max_paths 1 -nworst 1  
+highlight_path -critical_path  
+plot_command = "lpr -Plw" 
+plot -xll -86581 -yll -7680 -xur 9419 -yur 45056 -sheet 1 
+plot_command = "cat >FA_optimal.ps" 
+plot -xll -86581 -yll -7680 -xur 9419 -yur 45056 -sheet 1 
+plot_command = "lpr -Plw" 
+report_timing -path full -delay max -max_paths 1 -nworst 1  
+report_timing -path full -delay max -max_paths 1 -nworst 1  

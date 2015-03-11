@@ -1,0 +1,1 @@
+set_max_delay 0.2 -from {"phi1"} -to {"notphi2"}

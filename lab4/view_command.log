@@ -14,4 +14,298 @@
              Version X-2005.09 for linux -- Sep 09, 2005
               Copyright (c) 1988-2005 by Synopsys, Inc.
                          ALL RIGHTS RESERVED
+design_analyzer> read -format verilog {"/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v"}
+Loading verilog file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/gtech.db'
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/standard.sldb'
+Loading db file '/cad2/ece451/synopsys/ece451_cells.db'
+Compiling source file /nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v
+
+Inferred memory devices in process
+	in routine FA line 8 in file
+		'/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        a_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        b_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        c_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine FA line 22 in file
+		'/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    carry_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     sum_out_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.db:FA'
+Loaded 1 design.
+{"FA"}
+design_analyzer> create_schematic -size infinite    -gen_database 
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/generic.sdb'
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/1_25.font'
+1
+design_analyzer> create_schematic -size infinite  -symbol_view   
+1
+design_analyzer> create_schematic -size infinite   -hier_view  
+1
+design_analyzer> create_clock -name "clk" -period 1.4 -waveform {   "0" "0.7" } {   "clk" }
+1
+design_analyzer> compile  -map_effort medium
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | X-2005.09-DWF_0509 |     *     |
+| Licensed DW Building Blocks             |                    |           |
+============================================================================
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FA'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    2152.4      0.00       0.0       0.0                          
+    0:00:01    2028.9      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    2028.9      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    2028.9      0.00       0.0       0.0                          
+    0:00:01    2028.9      0.00       0.0       0.0                          
+    0:00:01    2028.9      0.00       0.0       0.0                          
+    0:00:01    2028.9      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'FA' to database 'FA.db'
+
+Current design is 'FA'.
+1
+design_analyzer> current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.db:FA"
+Current design is 'FA'.
+"/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.db:FA"
+design_analyzer> create_schematic -size infinite    -gen_database 
+1
+design_analyzer> create_schematic -size infinite -schematic_view -symbol_view -hier_view  
+Generating schematic for design: FA
+The schematic for design 'FA' has 1 page(s).
+
+1
+design_analyzer> report_area
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : FA
+Version: X-2005.09
+Date   : Wed Mar 11 15:50:38 2015
+****************************************
+
+Library(s) Used:
+
+    ece451_cells (File: /cad2/ece451/synopsys/ece451_cells.db)
+
+Number of ports:                6
+Number of nets:                19
+Number of cells:               12
+Number of references:           8
+
+Combinational area:        599.759949
+Noncombinational area:    1428.839966
+Net Interconnect area:       0.275446  
+
+Total cell area:          2028.599976
+Total area:               2028.875366
+1
+design_analyzer> report_timing -path full -delay max -max_paths 1 -nworst 1 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FA
+Version: X-2005.09
+Date   : Wed Mar 11 15:50:38 2015
+****************************************
+
+Operating Conditions: nom_pvt   Library: ece451_cells
+Wire Load Model Mode: top
+
+  Startpoint: a_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sum_out_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FA                 q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  a_reg/C (fdp2)                           0.00       0.00 r
+  a_reg/Q (fdp2)                           0.66       0.66 f
+  U9/Q (xo2p2)                             0.34       0.99 f
+  U8/NQ (xn2p2)                            0.31       1.30 r
+  sum_out_reg/D (fdp1)                     0.00       1.30 r
+  data arrival time                                   1.30
+
+  clock clk (rise edge)                    1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  sum_out_reg/C (fdp1)                     0.00       1.40 r
+  library setup time                      -0.09       1.31
+  data required time                                  1.31
+  -----------------------------------------------------------
+  data required time                                  1.31
+  data arrival time                                  -1.30
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+design_analyzer> highlight_path -critical_path 
+1
+design_analyzer> plot_command = "lpr -Plw"
+"lpr -Plw"
+design_analyzer> plot -xll -86581 -yll -7680 -xur 9419 -yur 45056 -sheet 1
+1
+design_analyzer> plot_command = "cat >FA_optimal.ps"
+"cat >FA_optimal.ps"
+design_analyzer> plot -xll -86581 -yll -7680 -xur 9419 -yur 45056 -sheet 1
+1
+design_analyzer> plot_command = "lpr -Plw"
+"lpr -Plw"
+design_analyzer> report_timing -path full -delay max -max_paths 1 -nworst 1 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FA
+Version: X-2005.09
+Date   : Wed Mar 11 15:52:23 2015
+****************************************
+
+Operating Conditions: nom_pvt   Library: ece451_cells
+Wire Load Model Mode: top
+
+  Startpoint: a_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sum_out_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FA                 q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  a_reg/C (fdp2)                           0.00       0.00 r
+  a_reg/Q (fdp2)                           0.66       0.66 f
+  U9/Q (xo2p2)                             0.34       0.99 f
+  U8/NQ (xn2p2)                            0.31       1.30 r
+  sum_out_reg/D (fdp1)                     0.00       1.30 r
+  data arrival time                                   1.30
+
+  clock clk (rise edge)                    1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  sum_out_reg/C (fdp1)                     0.00       1.40 r
+  library setup time                      -0.09       1.31
+  data required time                                  1.31
+  -----------------------------------------------------------
+  data required time                                  1.31
+  data arrival time                                  -1.30
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+design_analyzer> report_timing -path full -delay max -max_paths 1 -nworst 1 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FA
+Version: X-2005.09
+Date   : Wed Mar 11 15:52:37 2015
+****************************************
+
+Operating Conditions: nom_pvt   Library: ece451_cells
+Wire Load Model Mode: top
+
+  Startpoint: a_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: sum_out_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FA                 q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  a_reg/C (fdp2)                           0.00       0.00 r
+  a_reg/Q (fdp2)                           0.66       0.66 f
+  U9/Q (xo2p2)                             0.34       0.99 f
+  U8/NQ (xn2p2)                            0.31       1.30 r
+  sum_out_reg/D (fdp1)                     0.00       1.30 r
+  data arrival time                                   1.30
+
+  clock clk (rise edge)                    1.40       1.40
+  clock network delay (ideal)              0.00       1.40
+  sum_out_reg/C (fdp1)                     0.00       1.40 r
+  library setup time                      -0.09       1.31
+  data required time                                  1.31
+  -----------------------------------------------------------
+  data required time                                  1.31
+  data arrival time                                  -1.30
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
 design_analyzer> 
+Thank you...

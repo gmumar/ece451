@@ -1,0 +1,121 @@
+|control
+phi1 => phi1.IN2
+phi2 => phi2.IN1
+ctrl[0] => aaddr[0].DATAIN
+ctrl[0] => shctl[0].DATAIN
+ctrl[1] => aaddr[1].DATAIN
+ctrl[1] => shctl[1].DATAIN
+ctrl[2] => baddr[0].DATAIN
+ctrl[2] => waddr[0].DATAIN
+ctrl[3] => baddr[1].DATAIN
+ctrl[3] => waddr[1].DATAIN
+ctrl[4] => opsel[0].DATAIN
+ctrl[4] => opcode[0].DATAIN
+ctrl[5] => opsel[1].DATAIN
+ctrl[5] => opcode[1].DATAIN
+ctrl[6] => opcode[2].DATAIN
+L[0] <= <VCC>
+L[1] <= L.DB_MAX_OUTPUT_PORT_TYPE
+L[2] <= L.DB_MAX_OUTPUT_PORT_TYPE
+L[3] <= L.DB_MAX_OUTPUT_PORT_TYPE
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[2] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[3] <= M.DB_MAX_OUTPUT_PORT_TYPE
+N[0] <= N.DB_MAX_OUTPUT_PORT_TYPE
+N[1] <= N.DB_MAX_OUTPUT_PORT_TYPE
+N[2] <= N.DB_MAX_OUTPUT_PORT_TYPE
+N[3] <= N.DB_MAX_OUTPUT_PORT_TYPE
+ARdEn[0] <= decoder:I1.port1
+ARdEn[1] <= decoder:I1.port1
+ARdEn[2] <= decoder:I1.port1
+ARdEn[3] <= decoder:I1.port1
+BRdEn[0] <= decoder:I2.port1
+BRdEn[1] <= decoder:I2.port1
+BRdEn[2] <= decoder:I2.port1
+BRdEn[3] <= decoder:I2.port1
+WriteEn[0] <= decoder:I3.port1
+WriteEn[1] <= decoder:I3.port1
+WriteEn[2] <= decoder:I3.port1
+WriteEn[3] <= decoder:I3.port1
+FBEn[0] <= decoder:I3.port1
+FBEn[1] <= decoder:I3.port1
+FBEn[2] <= decoder:I3.port1
+FBEn[3] <= decoder:I3.port1
+notFBEn[0] <= decoder:I3.port1
+notFBEn[1] <= decoder:I3.port1
+notFBEn[2] <= decoder:I3.port1
+notFBEn[3] <= decoder:I3.port1
+ASelect <= opsel[1].DB_MAX_OUTPUT_PORT_TYPE
+BSelect <= opsel[0].DB_MAX_OUTPUT_PORT_TYPE
+DSelect <= opsel[0].DB_MAX_OUTPUT_PORT_TYPE
+zeroSelect <= opsel[1].DB_MAX_OUTPUT_PORT_TYPE
+shl <= shctl[0].DB_MAX_OUTPUT_PORT_TYPE
+notshl <= shctl[0].DB_MAX_OUTPUT_PORT_TYPE
+shr <= shctl[1].DB_MAX_OUTPUT_PORT_TYPE
+notshr <= shctl[1].DB_MAX_OUTPUT_PORT_TYPE
+phi1_1 <= phi1.DB_MAX_OUTPUT_PORT_TYPE
+phi1_2 <= phi1.DB_MAX_OUTPUT_PORT_TYPE
+phi1_3 <= phi1.DB_MAX_OUTPUT_PORT_TYPE
+notphi1_1 <= phi1.DB_MAX_OUTPUT_PORT_TYPE
+notphi1_2 <= phi1.DB_MAX_OUTPUT_PORT_TYPE
+phi2_1 <= phi2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|control|decoder:I1
+a[0] => d[3].IN0
+a[0] => d[1].IN0
+a[0] => d.IN0
+a[0] => d[2].IN0
+a[1] => d[3].IN1
+a[1] => d[2].IN1
+a[1] => d.IN1
+a[1] => d[1].IN1
+x[0] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= x.DB_MAX_OUTPUT_PORT_TYPE
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+
+
+|control|decoder:I2
+a[0] => d[3].IN0
+a[0] => d[1].IN0
+a[0] => d.IN0
+a[0] => d[2].IN0
+a[1] => d[3].IN1
+a[1] => d[2].IN1
+a[1] => d.IN1
+a[1] => d[1].IN1
+x[0] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= x.DB_MAX_OUTPUT_PORT_TYPE
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+
+
+|control|decoder:I3
+a[0] => d[3].IN0
+a[0] => d[1].IN0
+a[0] => d.IN0
+a[0] => d[2].IN0
+a[1] => d[3].IN1
+a[1] => d[2].IN1
+a[1] => d.IN1
+a[1] => d[1].IN1
+x[0] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= x.DB_MAX_OUTPUT_PORT_TYPE
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+clk => x.OUTPUTSELECT
+
+

@@ -32,7 +32,7 @@ proc SCHEMATIC_OneBit_Slice {} {
   make name_net_s -name B -origin {160 390}
   make name_net_s -name Ri -origin {630 340}
   make name_net_s -name Si -origin {670 360}
-  make RegFile -name regfile -origin {-30 390}
+  make RegFile -name RegFile -origin {-30 390}
   make_wire 580 520 550 520
   make_wire 660 310 660 360
   make_wire 550 500 640 500
