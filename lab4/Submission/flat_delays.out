@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+Design : control
+Version: X-2005.09
+Date   : Mon Mar 16 10:09:24 2015
+****************************************
+
+Operating Conditions: nom_pvt   Library: ece451_cells
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+notphi1_1 (out)                     0.13 f            0.20         0.07
+L[2] (out)                          0.12 f            0.20         0.08
+L[1] (out)                          0.11 f            0.20         0.09
+L[3] (out)                          0.11 f            0.20         0.09
+M[0] (out)                          0.11 f            0.20         0.09
+M[1] (out)                          0.11 f            0.20         0.09
+M[2] (out)                          0.11 f            0.20         0.09
+M[3] (out)                          0.11 f            0.20         0.09
+ARdEn[0] (out)                      0.27 r            1.70         1.43
+ARdEn[1] (out)                      0.27 r            1.70         1.43
+ARdEn[2] (out)                      0.27 r            1.70         1.43
+ARdEn[3] (out)                      0.27 r            1.70         1.43
+BRdEn[0] (out)                      0.27 r            1.70         1.43
+BRdEn[1] (out)                      0.27 r            1.70         1.43
+BRdEn[2] (out)                      0.27 r            1.70         1.43
+BRdEn[3] (out)                      0.27 r            1.70         1.43
+N[3] (out)                          0.12 f            3.70         3.58
+N[0] (out)                          0.11 f            3.70         3.59
+N[1] (out)                          0.11 f            3.70         3.59
+N[2] (out)                          0.11 f            3.70         3.59
+WriteEn[0] (out)                    0.47 r            7.70         7.23
+WriteEn[1] (out)                    0.47 r            7.70         7.23
+WriteEn[2] (out)                    0.47 r            7.70         7.23
+WriteEn[3] (out)                    0.47 r            7.70         7.23
+shl (out)                           0.64 r           12.95        12.31
+shr (out)                           0.64 r           12.95        12.31
+notshl (out)                        0.56 f           12.95        12.39
+notshr (out)                        0.56 f           12.95        12.39
+DSelect (out)                       0.73 r           13.55        12.82
+zeroSelect (out)                    0.73 r           13.55        12.82
+ASelect (out)                       0.59 f           13.55        12.96
+BSelect (out)                       0.59 f           13.55        12.96
+
+1
+design_analyzer> 

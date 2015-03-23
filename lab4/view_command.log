@@ -14,51 +14,151 @@
              Version X-2005.09 for linux -- Sep 09, 2005
               Copyright (c) 1988-2005 by Synopsys, Inc.
                          ALL RIGHTS RESERVED
-design_analyzer> read -format verilog {"/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v"}
-Loading verilog file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v'
+design_analyzer> include /nfs/ug/homes-2/u/umarghul/ece451/lab4/uniquify.scr
+read -format verilog control.v
+Loading verilog file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'
 Detecting input file type automatically (-rtl or -netlist).
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
 Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/gtech.db'
 Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/standard.sldb'
 Loading db file '/cad2/ece451/synopsys/ece451_cells.db'
-Compiling source file /nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v
+Compiling source file /nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v
+Warning:  /nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v:124: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 114 in file
+	'/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           124            |    auto/auto     |
+===============================================
 
 Inferred memory devices in process
-	in routine FA line 8 in file
-		'/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|        a_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|        b_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|        c_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-===============================================================================
-
-Inferred memory devices in process
-	in routine FA line 22 in file
-		'/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.v'.
-===============================================================================
-|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
-===============================================================================
-|    carry_out_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-|     sum_out_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
-===============================================================================
+	in routine control line 73 in file
+		'/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|      baddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      opsel_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      waddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|     opcode_reg      | Latch |   3   |  Y  | N  | N  | N  | -  | -  | -  |
+|      shctl_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      aaddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
 Presto compilation completed successfully.
-Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.db:FA'
-Loaded 1 design.
-{"FA"}
-design_analyzer> create_schematic -size infinite    -gen_database 
-Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/generic.sdb'
-Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/1_25.font'
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder.db:decoder'
+Loaded 2 designs.
+{"decoder", "control"}
+current_design control
+Current design is 'control'.
+{"control"}
+uniquify
+  Uniquifying cell 'I3' in design 'control'.  New design is 'decoder_0'.
+  Uniquifying cell 'I2' in design 'control'.  New design is 'decoder_1'.
+  Uniquifying cell 'I1' in design 'control'.  New design is 'decoder_2'.
 1
-design_analyzer> create_schematic -size infinite  -symbol_view   
+include ctrl.scr
+create_clock -name "phi1" -period 20 -waveform {"3.25" "6.75"} {"phi1"}
 1
-design_analyzer> create_schematic -size infinite   -hier_view  
+create_clock -name "phi2" -period 20 -waveform {"10" "19.5"} {"phi2"}
 1
-design_analyzer> create_clock -name "clk" -period 1.4 -waveform {   "0" "0.7" } {   "clk" }
+
+set_max_delay 0.2 -from {"phi1"} -to {"notphi1_1"}
 1
-design_analyzer> compile  -map_effort medium
+
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[0]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[1]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[2]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"ARdEn[3]")
+1
+
+
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[0]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[1]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[2]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"BRdEn[3]")
+1
+
+
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"ASelect")
+1
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"BSelect")
+1
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"DSelect")
+1
+set_output_delay 3.2 -clock "phi1" -clock_fall find(port,"zeroSelect")
+1
+
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[0]")
+1
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[1]")
+1
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[2]")
+1
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"L[3]")
+1
+
+
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[0]")
+1
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[1]")
+1
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[2]")
+1
+set_output_delay 9.3 -clock "phi2" -clock_fall find(port,"M[3]")
+1
+
+
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[0]")
+1
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[1]")
+1
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[2]")
+1
+set_output_delay 5.8 -clock "phi2" -clock_fall find(port,"N[3]")
+1
+
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"shl")
+1
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"shr")
+1
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"notshl")
+1
+set_output_delay 3.3 -clock "phi2" -clock_fall find(port,"notshr")
+1
+
+
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[0]")
+1
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[1]")
+1
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[2]")
+1
+set_output_delay 1.8 -clock "phi2" -clock_fall -max find(port,"WriteEn[3]")
+1
+
+
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[0]")
+1
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[1]")
+1
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[2]")
+1
+set_output_delay 2.1 -clock "phi2" -clock_fall -min find(port,"WriteEn[3]")
+1
+
+
+
+1
+compile -map_effort high
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
 ============================================================================
@@ -68,11 +168,875 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 | Licensed DW Building Blocks             |                    |           |
 ============================================================================
 
+
+Information: There are 7 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
   Loading target library 'ece451_cells'
 
   Beginning Pass 1 Mapping
   ------------------------
-  Processing 'FA'
+  Processing 'decoder'
+  Processing 'control'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    9034.5      0.00       0.0       0.0                          
+    0:00:01    6917.7      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    6917.7      0.00       0.0       0.0                          
+    0:00:01    6882.4      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    6882.4      0.00       0.0       0.0                          
+    0:00:01    6882.4      0.00       0.0       0.0                          
+    0:00:01    6882.3      0.00       0.0       0.0                          
+    0:00:01    6864.7      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'control' to database 'control.db'
+
+Current design is 'control'.
+1
+characterize -cons {I1, I2, I3}
+Information: Updating design information... (UID-85)
+  Characterizing cell 'I1' on design 'decoder_2'
+  Characterizing cell 'I2' on design 'decoder_1'
+  Characterizing cell 'I3' on design 'decoder_0'
+1
+write -o top.db
+Writing to file /nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db
+1
+
+current_design decoder_0
+Current design is 'decoder_0'.
+{"decoder_0"}
+write_script > decoder_0.scr
+1
+write -o decoder_0.db
+Writing to file /nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_0.db
+1
+
+current_design decoder_1
+Current design is 'decoder_1'.
+{"decoder_1"}
+write_script > decoder_1.scr
+1
+write -o decoder_1.db
+Writing to file /nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_1.db
+1
+
+current_design decoder_2
+Current design is 'decoder_2'.
+{"decoder_2"}
+write_script > decoder_2.scr
+1
+write -o decoder_2.db
+Writing to file /nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_2.db
+1
+
+remove_design -designs
+Removing design 'decoder'
+Removing file 'control.db'
+         design 'control'
+         design 'decoder_0'
+         design 'decoder_1'
+         design 'decoder_2'
+1
+
+read decoder_0.db
+Loading db file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_0.db'
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_0.db:decoder_0'
+Loaded 1 design.
+{"decoder_0"}
+include decoder_0.scr
+/******************************************************
+
+ Created by write_script() on Wed Mar 18 14:33:43 2015
+
+******************************************************/
+
+/* Set the current_design */
+current_design decoder_0
+Current design is 'decoder_0'.
+{"decoder_0"}
+
+create_clock -name "phi2" -period 20 -waveform {10 19.5} find(port,"clk")
+1
+create_clock -name "phi1" -period 20 -waveform {3.25 6.75} 
+Warning: Creating virtual clock named 'phi1' with no sources. (UID-348)
+1
+set_input_delay 0 -rise -clock "phi2" find(port,"clk")
+1
+set_input_delay 0 -add_delay -fall -clock "phi2" -clock_fall find(port,"clk")
+1
+set_input_delay 0.69307 -rise -clock "phi1" -level_sensitive find(port,"a[0]")
+1
+set_input_delay 0.622108 -fall -clock "phi1" -level_sensitive find(port,"a[0]")
+1
+set_input_delay 0.693065 -rise -clock "phi1" -level_sensitive find(port,"a[1]")
+1
+set_input_delay 0.6221 -fall -clock "phi1" -level_sensitive find(port,"a[1]")
+1
+set_output_delay 1.8 -max -clock "phi2" -clock_fall find(port,"x[0]")
+1
+set_output_delay 2.1 -min -clock "phi2" -clock_fall find(port,"x[0]")
+1
+set_output_delay 0.139767 -add_delay -max -rise find(port,"x[0]")
+1
+set_output_delay 0.176377 -add_delay -max -fall find(port,"x[0]")
+1
+set_output_delay 0 -add_delay -min find(port,"x[0]")
+1
+set_output_delay 1.8 -max -clock "phi2" -clock_fall find(port,"x[1]")
+1
+set_output_delay 2.1 -min -clock "phi2" -clock_fall find(port,"x[1]")
+1
+set_output_delay 0.139767 -add_delay -max -rise find(port,"x[1]")
+1
+set_output_delay 0.176377 -add_delay -max -fall find(port,"x[1]")
+1
+set_output_delay 0 -add_delay -min find(port,"x[1]")
+1
+set_output_delay 1.8 -max -clock "phi2" -clock_fall find(port,"x[2]")
+1
+set_output_delay 2.1 -min -clock "phi2" -clock_fall find(port,"x[2]")
+1
+set_output_delay 0.139767 -add_delay -max -rise find(port,"x[2]")
+1
+set_output_delay 0.176379 -add_delay -max -fall find(port,"x[2]")
+1
+set_output_delay 0 -add_delay -min find(port,"x[2]")
+1
+set_output_delay 1.8 -max -clock "phi2" -clock_fall find(port,"x[3]")
+1
+set_output_delay 2.1 -min -clock "phi2" -clock_fall find(port,"x[3]")
+1
+set_output_delay 0.139767 -add_delay -max -rise find(port,"x[3]")
+1
+set_output_delay 0.17586 -add_delay -max -fall find(port,"x[3]")
+1
+set_output_delay 0 -add_delay -min find(port,"x[3]")
+1
+set_local_link_library {/cad2/ece451/synopsys/ece451_cells.db}
+Setting local link library '{/cad2/ece451/synopsys/ece451_cells.db}' on design 'decoder_0'
+1
+set_operating_conditions "nom_pvt" -library "ece451_cells"
+Using operating conditions 'nom_pvt' found in library 'ece451_cells'.
+1
+set_wire_load_model  -name "q35_27k" -library "ece451_cells"
+Design decoder_0: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_wire_load_mode "top" 
+1
+set_driving_cell -lib_cell latsp2 -library ece451_cells -pin Q -from_pin NS \
+-no_design_rule find(port,"a[1]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"a[1]")
+Port a[1]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_max_transition 2.983 find(port,"a[1]")
+1
+set_connection_class "default" find(port,"a[1]")
+1
+set_driving_cell -lib_cell latsp2 -library ece451_cells -pin Q -from_pin NS \
+-no_design_rule find(port,"a[0]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"a[0]")
+Port a[0]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_max_transition 2.983 find(port,"a[0]")
+1
+set_connection_class "default" find(port,"a[0]")
+1
+set_load -pin_load 0.0114 find(port,"x[3]")
+1
+set_port_fanout_number 3 find(port,"x[3]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[3]")
+Port x[3]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 1 find(port,"x[3]")
+1
+set_max_transition 5 find(port,"x[3]")
+1
+set_connection_class "default" find(port,"x[3]")
+1
+set_load -pin_load 0.0114 find(port,"x[2]")
+1
+set_port_fanout_number 3 find(port,"x[2]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[2]")
+Port x[2]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 1 find(port,"x[2]")
+1
+set_max_transition 5 find(port,"x[2]")
+1
+set_connection_class "default" find(port,"x[2]")
+1
+set_load -pin_load 0.0114 find(port,"x[1]")
+1
+set_port_fanout_number 3 find(port,"x[1]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[1]")
+Port x[1]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 1 find(port,"x[1]")
+1
+set_max_transition 5 find(port,"x[1]")
+1
+set_connection_class "default" find(port,"x[1]")
+1
+set_load -pin_load 0.0114 find(port,"x[0]")
+1
+set_port_fanout_number 3 find(port,"x[0]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[0]")
+Port x[0]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 1 find(port,"x[0]")
+1
+set_max_transition 5 find(port,"x[0]")
+1
+set_connection_class "default" find(port,"x[0]")
+1
+set_load -pin_load 0.1484 find(port,"clk")
+1
+set_port_fanout_number 13 find(port,"clk")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"clk")
+Port clk: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_max_transition 5 find(port,"clk")
+1
+set_connection_class "default" find(port,"clk")
+1
+1
+compile -map_effort high
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_0'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     600.4      0.00       0.0       0.0                          
+    0:00:01     424.0      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     424.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01     424.0      0.00       0.0       0.0                          
+    0:00:01     424.0      0.00       0.0       0.0                          
+    0:00:01     424.0      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'decoder_0' to database 'decoder_0.db'
+
+Current design is 'decoder_0'.
+1
+write -o decoder_0.db
+Writing to file /nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_0.db
+1
+
+read decoder_1.db
+Loading db file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_1.db'
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_1.db:decoder_1'
+Loaded 1 design.
+{"decoder_1"}
+include decoder_1.scr
+/******************************************************
+
+ Created by write_script() on Wed Mar 18 14:33:43 2015
+
+******************************************************/
+
+/* Set the current_design */
+current_design decoder_1
+Current design is 'decoder_1'.
+{"decoder_1"}
+
+create_clock -name "phi1" -period 20 -waveform {3.25 6.75} find(port,"clk")
+1
+create_clock -name "phi2" -period 20 -waveform {10 19.5} 
+Warning: Creating virtual clock named 'phi2' with no sources. (UID-348)
+1
+set_input_delay 0 -rise -clock "phi1" find(port,"clk")
+1
+set_input_delay 0 -add_delay -fall -clock "phi1" -clock_fall find(port,"clk")
+1
+set_input_delay 0.69307 -rise -clock "phi2" -level_sensitive find(port,"a[0]")
+1
+set_input_delay 0.622108 -fall -clock "phi2" -level_sensitive find(port,"a[0]")
+1
+set_input_delay 0.693065 -rise -clock "phi2" -level_sensitive find(port,"a[1]")
+1
+set_input_delay 0.6221 -fall -clock "phi2" -level_sensitive find(port,"a[1]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[0]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[1]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[2]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[3]")
+1
+set_local_link_library {/cad2/ece451/synopsys/ece451_cells.db}
+Setting local link library '{/cad2/ece451/synopsys/ece451_cells.db}' on design 'decoder_1'
+1
+set_operating_conditions "nom_pvt" -library "ece451_cells"
+Using operating conditions 'nom_pvt' found in library 'ece451_cells'.
+1
+set_wire_load_model  -name "q35_27k" -library "ece451_cells"
+Design decoder_1: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_wire_load_mode "top" 
+1
+set_driving_cell -lib_cell latsp2 -library ece451_cells -pin Q -from_pin NS \
+-no_design_rule find(port,"a[1]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"a[1]")
+Port a[1]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_max_transition 2.983 find(port,"a[1]")
+1
+set_connection_class "default" find(port,"a[1]")
+1
+set_driving_cell -lib_cell latsp2 -library ece451_cells -pin Q -from_pin NS \
+-no_design_rule find(port,"a[0]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"a[0]")
+Port a[0]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_max_transition 2.983 find(port,"a[0]")
+1
+set_connection_class "default" find(port,"a[0]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[3]")
+Port x[3]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[3]")
+1
+set_connection_class "default" find(port,"x[3]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[2]")
+Port x[2]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[2]")
+1
+set_connection_class "default" find(port,"x[2]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[1]")
+Port x[1]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[1]")
+1
+set_connection_class "default" find(port,"x[1]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[0]")
+Port x[0]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[0]")
+1
+set_connection_class "default" find(port,"x[0]")
+1
+set_load -pin_load 0.1338 find(port,"clk")
+1
+set_port_fanout_number 15 find(port,"clk")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"clk")
+Port clk: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_connection_class "default" find(port,"clk")
+1
+1
+compile -map_effort high
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_1'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00     600.3      0.00       0.0       0.0                          
+    0:00:00     423.9      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00     423.9      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00     423.9      0.00       0.0       0.0                          
+    0:00:00     423.9      0.00       0.0       0.0                          
+    0:00:00     423.9      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'decoder_1' to database 'decoder_1.db'
+
+Current design is 'decoder_1'.
+1
+write -o decoder_1.db
+Writing to file /nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_1.db
+1
+
+read decoder_2.db
+Loading db file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_2.db'
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_2.db:decoder_2'
+Loaded 1 design.
+{"decoder_2"}
+include decoder_2.scr
+/******************************************************
+
+ Created by write_script() on Wed Mar 18 14:33:43 2015
+
+******************************************************/
+
+/* Set the current_design */
+current_design decoder_2
+Current design is 'decoder_2'.
+{"decoder_2"}
+
+create_clock -name "phi1" -period 20 -waveform {3.25 6.75} find(port,"clk")
+1
+create_clock -name "phi2" -period 20 -waveform {10 19.5} 
+Warning: Creating virtual clock named 'phi2' with no sources. (UID-348)
+1
+set_input_delay 0 -rise -clock "phi1" find(port,"clk")
+1
+set_input_delay 0 -add_delay -fall -clock "phi1" -clock_fall find(port,"clk")
+1
+set_input_delay 0.69307 -rise -clock "phi2" -level_sensitive find(port,"a[0]")
+1
+set_input_delay 0.622108 -fall -clock "phi2" -level_sensitive find(port,"a[0]")
+1
+set_input_delay 0.693065 -rise -clock "phi2" -level_sensitive find(port,"a[1]")
+1
+set_input_delay 0.6221 -fall -clock "phi2" -level_sensitive find(port,"a[1]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[0]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[1]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[2]")
+1
+set_output_delay 1.8 -clock "phi1" -clock_fall find(port,"x[3]")
+1
+set_local_link_library {/cad2/ece451/synopsys/ece451_cells.db}
+Setting local link library '{/cad2/ece451/synopsys/ece451_cells.db}' on design 'decoder_2'
+1
+set_operating_conditions "nom_pvt" -library "ece451_cells"
+Using operating conditions 'nom_pvt' found in library 'ece451_cells'.
+1
+set_wire_load_model  -name "q35_27k" -library "ece451_cells"
+Design decoder_2: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_wire_load_mode "top" 
+1
+set_driving_cell -lib_cell latsp2 -library ece451_cells -pin Q -from_pin NS \
+-no_design_rule find(port,"a[1]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"a[1]")
+Port a[1]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_max_transition 2.983 find(port,"a[1]")
+1
+set_connection_class "default" find(port,"a[1]")
+1
+set_driving_cell -lib_cell latsp2 -library ece451_cells -pin Q -from_pin NS \
+-no_design_rule find(port,"a[0]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"a[0]")
+Port a[0]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_max_transition 2.983 find(port,"a[0]")
+1
+set_connection_class "default" find(port,"a[0]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[3]")
+Port x[3]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[3]")
+1
+set_connection_class "default" find(port,"x[3]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[2]")
+Port x[2]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[2]")
+1
+set_connection_class "default" find(port,"x[2]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[1]")
+Port x[1]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[1]")
+1
+set_connection_class "default" find(port,"x[1]")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"x[0]")
+Port x[0]: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_fanout_load 0 find(port,"x[0]")
+1
+set_connection_class "default" find(port,"x[0]")
+1
+set_load -pin_load 0.1338 find(port,"clk")
+1
+set_port_fanout_number 15 find(port,"clk")
+1
+set_wire_load_model -name "q35_27k" -library "ece451_cells"  find(port,"clk")
+Port clk: Using wire_load model 'q35_27k' found in library 'ece451_cells'.
+1
+set_connection_class "default" find(port,"clk")
+1
+1
+compile -map_effort high
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_2'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00     600.3      0.00       0.0       0.0                          
+    0:00:00     423.9      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00     423.9      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00     423.9      0.00       0.0       0.0                          
+    0:00:00     423.9      0.00       0.0       0.0                          
+    0:00:00     423.9      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'decoder_2' to database 'decoder_2.db'
+
+Current design is 'decoder_2'.
+1
+write -o decoder_2.db
+Writing to file /nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_2.db
+1
+
+read top.db
+Loading db file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db'
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control'
+Loaded 1 design.
+{"control"}
+read decoder_0.db
+Loading db file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_0.db'
+Warning: Overwriting design file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_0.db'. (DDB-24)
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_0.db:decoder_0'
+Loaded 1 design.
+{"decoder_0"}
+read decoder_1.db
+Loading db file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_1.db'
+Warning: Overwriting design file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_1.db'. (DDB-24)
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_1.db:decoder_1'
+Loaded 1 design.
+{"decoder_1"}
+read decoder_2.db
+Loading db file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_2.db'
+Warning: Overwriting design file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_2.db'. (DDB-24)
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder_2.db:decoder_2'
+Loaded 1 design.
+{"decoder_2"}
+
+current_design control
+Current design is 'control'.
+{"control"}
+compile -map_effort high
+
+Information: There are 12 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder'
+  Processing 'control'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    8434.6      0.00       0.0       0.0                          
+    0:00:00    6600.0      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    6600.0      0.00       0.0       0.0                          
+    0:00:00    6494.1      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    6494.1      0.00       0.0       0.0                          
+    0:00:00    6494.1      0.00       0.0       0.0                          
+    0:00:00    6494.1      0.00       0.0       0.0                          
+    0:00:00    6494.1      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'control' to database 'top.db'
+
+Current design is 'control'.
+1
+1
+design_analyzer> create_schematic -size infinite    -gen_database 
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/generic.sdb'
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/1_25.font'
+1
+design_analyzer> create_schematic -size infinite  -symbol_view   
+1
+design_analyzer> create_schematic -size infinite   -hier_view  
+1
+design_analyzer> create_schematic -size infinite -schematic_view    
+Generating schematic for design: control
+The schematic for design 'control' has 1 page(s).
+
+1
+design_analyzer> report_area
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : control
+Version: X-2005.09
+Date   : Wed Mar 18 14:34:05 2015
+****************************************
+
+Library(s) Used:
+
+    ece451_cells (File: /cad2/ece451/synopsys/ece451_cells.db)
+
+Number of ports:               55
+Number of nets:               100
+Number of cells:               61
+Number of references:          13
+
+Combinational area:       3739.679688
+Noncombinational area:    2751.839355
+Net Interconnect area:       2.599385  
+
+Total cell area:          6491.519531
+Total area:               6494.118652
+1
+design_analyzer> report_timing -path full -delay max -max_paths 1 -nworst 1 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : control
+Version: X-2005.09
+Date   : Wed Mar 18 14:34:05 2015
+****************************************
+
+Operating Conditions: nom_pvt   Library: ece451_cells
+Wire Load Model Mode: top
+
+  Startpoint: phi1 (clock source 'phi1')
+  Endpoint: ARdEn[0] (output port clocked by phi1)
+  Path Group: phi1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock phi1 (rise edge)                   3.25       3.25
+  phi1 (in)                                0.00       3.25 r
+  I1/clk (decoder_2)                       0.00       3.25 r
+  I1/U33/Q (an3p1)                         0.27       3.52 r
+  I1/x[0] (decoder_2)                      0.00       3.52 r
+  ARdEn[0] (out)                           0.00       3.52 r
+  data arrival time                                   3.52
+
+  clock phi1 (fall edge)                   6.75       6.75
+  clock network delay (ideal)              0.00       6.75
+  output external delay                   -1.80       4.95
+  data required time                                  4.95
+  -----------------------------------------------------------
+  data required time                                  4.95
+  data arrival time                                  -3.52
+  -----------------------------------------------------------
+  slack (MET)                                         1.43
+
+
+  Startpoint: phi2 (clock source 'phi2')
+  Endpoint: L[2] (output port clocked by phi2)
+  Path Group: phi2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock phi2 (rise edge)                  10.00      10.00
+  phi2 (in)                                0.00      10.00 r
+  U154/NQ (na3p1)                          0.12      10.12 f
+  L[2] (out)                               0.00      10.12 f
+  data arrival time                                  10.12
+
+  clock phi2 (fall edge)                  19.50      19.50
+  clock network delay (ideal)              0.00      19.50
+  output external delay                   -9.30      10.20
+  data required time                                 10.20
+  -----------------------------------------------------------
+  data required time                                 10.20
+  data arrival time                                 -10.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: phi1 (clock source 'phi1')
+  Endpoint: notphi1_1 (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  phi1 (in)                                0.00       0.00 r
+  U105/NQ (invp3)                          0.13       0.13 f
+  notphi1_1 (out)                          0.00       0.13 f
+  data arrival time                                   0.13
+
+  max_delay                                0.20       0.20
+  output external delay                    0.00       0.20
+  data required time                                  0.20
+  -----------------------------------------------------------
+  data required time                                  0.20
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+1
+design_analyzer> highlight_path -critical_path 
+create_schematic -instance -size infinite
+Generating schematic for design: decoder_2
+The schematic for design 'decoder_2' has 1 page(s).
+
+1
+1
+design_analyzer> compile  -map_effort medium
+
+Information: There are 12 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_2'
+  Processing 'decoder_1'
+  Processing 'decoder_0'
+  Processing 'control'
 
   Updating timing information
 
@@ -82,8 +1046,8 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:01    2152.4      0.00       0.0       0.0                          
-    0:00:01    2028.9      0.00       0.0       0.0                          
+    0:00:01    7587.6      0.00       0.0       0.0                          
+    0:00:01    6017.7      0.00       0.0       0.0                          
 
 
   Beginning Delay Optimization Phase
@@ -92,7 +1056,8 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:01    2028.9      0.00       0.0       0.0                          
+    0:00:01    6017.7      0.00       0.0       0.0                          
+    0:00:01    5911.8      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -101,25 +1066,264 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
    ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
     TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:01    2028.9      0.00       0.0       0.0                          
-    0:00:01    2028.9      0.00       0.0       0.0                          
-    0:00:01    2028.9      0.00       0.0       0.0                          
-    0:00:01    2028.9      0.00       0.0       0.0                          
+    0:00:01    5911.8      0.00       0.0       0.0                          
+    0:00:01    5911.8      0.00       0.0       0.0                          
+    0:00:01    5911.7      0.00       0.0       0.0                          
+    0:00:01    5911.7      0.00       0.0       0.0                          
 
   Optimization Complete
   ---------------------
-  Transferring design 'FA' to database 'FA.db'
+  Transferring design 'control' to database 'top.db'
 
-Current design is 'FA'.
+Current design is 'control'.
 1
-design_analyzer> current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.db:FA"
-Current design is 'FA'.
-"/nfs/ug/homes-2/u/umarghul/ece451/lab4/FA.db:FA"
-design_analyzer> create_schematic -size infinite    -gen_database 
-1
+design_analyzer> current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+Current design is 'control'.
+"/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
 design_analyzer> create_schematic -size infinite -schematic_view -symbol_view -hier_view  
-Generating schematic for design: FA
-The schematic for design 'FA' has 1 page(s).
+Generating schematic for design: control
+The schematic for design 'control' has 1 page(s).
+
+1
+design_analyzer> compile  -map_effort medium
+
+Information: There are 12 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_2'
+  Processing 'decoder_1'
+  Processing 'decoder_0'
+  Processing 'control'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    7552.3      0.00       0.0       0.0                          
+    0:00:00    5964.7      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    5964.7      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    5964.7      0.00       0.0       0.0                          
+    0:00:00    5964.7      0.00       0.0       0.0                          
+    0:00:00    5894.1      0.00       0.0       0.0                          
+    0:00:00    5894.1      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'control' to database 'top.db'
+
+Current design is 'control'.
+1
+design_analyzer> current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+Current design is 'control'.
+"/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+design_analyzer> create_schematic -size infinite -schematic_view -symbol_view -hier_view  
+Generating schematic for design: control
+The schematic for design 'control' has 1 page(s).
+
+1
+design_analyzer> compile  -map_effort high
+
+Information: There are 13 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_2'
+  Processing 'decoder_1'
+  Processing 'decoder_0'
+  Processing 'control'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7552.3      0.00       0.0       0.0                          
+    0:00:01    5964.7      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    5964.7      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    5964.7      0.00       0.0       0.0                          
+    0:00:01    5964.7      0.00       0.0       0.0                          
+    0:00:01    5894.1      0.00       0.0       0.0                          
+    0:00:01    5894.1      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'control' to database 'top.db'
+
+Current design is 'control'.
+1
+design_analyzer> current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+Current design is 'control'.
+"/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+design_analyzer> create_schematic -size infinite -schematic_view -symbol_view -hier_view  
+Generating schematic for design: control
+The schematic for design 'control' has 1 page(s).
+
+1
+design_analyzer> compile  -map_effort high
+
+Information: There are 13 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_2'
+  Processing 'decoder_1'
+  Processing 'decoder_0'
+  Processing 'control'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7552.3      0.00       0.0       0.0                          
+    0:00:01    5964.7      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    5964.7      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    5964.7      0.00       0.0       0.0                          
+    0:00:01    5964.7      0.00       0.0       0.0                          
+    0:00:01    5894.1      0.00       0.0       0.0                          
+    0:00:01    5894.1      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'control' to database 'top.db'
+
+Current design is 'control'.
+1
+design_analyzer> current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+Current design is 'control'.
+"/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+design_analyzer> create_schematic -size infinite -schematic_view -symbol_view -hier_view  
+Generating schematic for design: control
+The schematic for design 'control' has 1 page(s).
+
+1
+design_analyzer> compile  -map_effort low
+Warning: The compile -map_effort low is obsolete. Setting this variable now defaults to compile -map_effort medium. Please update your script accordingly. (OPT-1303)
+
+Information: There are 13 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+  Loading target library 'ece451_cells'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'decoder_2'
+  Processing 'decoder_1'
+  Processing 'decoder_0'
+  Processing 'control'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7552.3      0.00       0.0       0.0                          
+    0:00:01    7552.3      0.00       0.0       0.0                          
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7552.3      0.00       0.0       0.0                          
+    0:00:01    7358.2      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    7358.2      0.00       0.0       0.0                          
+    0:00:01    7358.2      0.00       0.0       0.0                          
+    0:00:01    7093.6      0.00       0.0       0.0                          
+    0:00:01    5876.4      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'control' to database 'top.db'
+
+Current design is 'control'.
+1
+design_analyzer> current_design = "/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+Current design is 'control'.
+"/nfs/ug/homes-2/u/umarghul/ece451/lab4/top.db:control"
+design_analyzer> create_schematic -size infinite -schematic_view -symbol_view -hier_view  
+Generating schematic for design: control
+The schematic for design 'control' has 1 page(s).
 
 1
 design_analyzer> report_area
@@ -127,26 +1331,26 @@ Information: Updating design information... (UID-85)
  
 ****************************************
 Report : area
-Design : FA
+Design : control
 Version: X-2005.09
-Date   : Wed Mar 11 15:50:38 2015
+Date   : Wed Mar 18 14:36:11 2015
 ****************************************
 
 Library(s) Used:
 
     ece451_cells (File: /cad2/ece451/synopsys/ece451_cells.db)
 
-Number of ports:                6
-Number of nets:                19
-Number of cells:               12
-Number of references:           8
+Number of ports:               55
+Number of nets:                85
+Number of cells:               47
+Number of references:          15
 
-Combinational area:        599.759949
-Noncombinational area:    1428.839966
-Net Interconnect area:       0.275446  
+Combinational area:       3122.279785
+Noncombinational area:    2751.839355
+Net Interconnect area:       2.292343  
 
-Total cell area:          2028.599976
-Total area:               2028.875366
+Total cell area:          5874.119629
+Total area:               5876.411621
 1
 design_analyzer> report_timing -path full -delay max -max_paths 1 -nworst 1 
  
@@ -155,157 +1359,165 @@ Report : timing
         -path full
         -delay max
         -max_paths 1
-Design : FA
+Design : control
 Version: X-2005.09
-Date   : Wed Mar 11 15:50:38 2015
+Date   : Wed Mar 18 14:36:11 2015
 ****************************************
 
 Operating Conditions: nom_pvt   Library: ece451_cells
 Wire Load Model Mode: top
 
-  Startpoint: a_reg (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: sum_out_reg
-            (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
+  Startpoint: phi1 (clock source 'phi1')
+  Endpoint: ARdEn[0] (output port clocked by phi1)
+  Path Group: phi1
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  FA                 q35_27k               ece451_cells
+  control            q35_27k               ece451_cells
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.00       0.00
-  a_reg/C (fdp2)                           0.00       0.00 r
-  a_reg/Q (fdp2)                           0.66       0.66 f
-  U9/Q (xo2p2)                             0.34       0.99 f
-  U8/NQ (xn2p2)                            0.31       1.30 r
-  sum_out_reg/D (fdp1)                     0.00       1.30 r
-  data arrival time                                   1.30
+  clock phi1 (rise edge)                   3.25       3.25
+  phi1 (in)                                0.00       3.25 r
+  I1/clk (decoder_2)                       0.00       3.25 r
+  I1/U94/Q (an3p1)                         0.27       3.52 r
+  I1/x[0] (decoder_2)                      0.00       3.52 r
+  ARdEn[0] (out)                           0.00       3.52 r
+  data arrival time                                   3.52
 
-  clock clk (rise edge)                    1.40       1.40
-  clock network delay (ideal)              0.00       1.40
-  sum_out_reg/C (fdp1)                     0.00       1.40 r
-  library setup time                      -0.09       1.31
-  data required time                                  1.31
+  clock phi1 (fall edge)                   6.75       6.75
+  clock network delay (ideal)              0.00       6.75
+  output external delay                   -1.80       4.95
+  data required time                                  4.95
   -----------------------------------------------------------
-  data required time                                  1.31
-  data arrival time                                  -1.30
+  data required time                                  4.95
+  data arrival time                                  -3.52
   -----------------------------------------------------------
-  slack (MET)                                         0.00
+  slack (MET)                                         1.43
+
+
+  Startpoint: phi2 (clock source 'phi2')
+  Endpoint: L[1] (output port clocked by phi2)
+  Path Group: phi2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock phi2 (rise edge)                  10.00      10.00
+  phi2 (in)                                0.00      10.00 r
+  U500/NQ (na2p1)                          0.11      10.11 f
+  L[1] (out)                               0.00      10.11 f
+  data arrival time                                  10.11
+
+  clock phi2 (fall edge)                  19.50      19.50
+  clock network delay (ideal)              0.00      19.50
+  output external delay                   -9.30      10.20
+  data required time                                 10.20
+  -----------------------------------------------------------
+  data required time                                 10.20
+  data arrival time                                 -10.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: phi1 (clock source 'phi1')
+  Endpoint: notphi1_1 (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  phi1 (in)                                0.00       0.00 r
+  U437/NQ (invp3)                          0.13       0.13 f
+  notphi1_1 (out)                          0.00       0.13 f
+  data arrival time                                   0.13
+
+  max_delay                                0.20       0.20
+  output external delay                    0.00       0.20
+  data required time                                  0.20
+  -----------------------------------------------------------
+  data required time                                  0.20
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
 
 
 1
 design_analyzer> highlight_path -critical_path 
-1
-design_analyzer> plot_command = "lpr -Plw"
-"lpr -Plw"
-design_analyzer> plot -xll -86581 -yll -7680 -xur 9419 -yur 45056 -sheet 1
-1
-design_analyzer> plot_command = "cat >FA_optimal.ps"
-"cat >FA_optimal.ps"
-design_analyzer> plot -xll -86581 -yll -7680 -xur 9419 -yur 45056 -sheet 1
-1
-design_analyzer> plot_command = "lpr -Plw"
-"lpr -Plw"
-design_analyzer> report_timing -path full -delay max -max_paths 1 -nworst 1 
- 
-****************************************
-Report : timing
-        -path full
-        -delay max
-        -max_paths 1
-Design : FA
-Version: X-2005.09
-Date   : Wed Mar 11 15:52:23 2015
-****************************************
-
-Operating Conditions: nom_pvt   Library: ece451_cells
-Wire Load Model Mode: top
-
-  Startpoint: a_reg (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: sum_out_reg
-            (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  FA                 q35_27k               ece451_cells
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.00       0.00
-  a_reg/C (fdp2)                           0.00       0.00 r
-  a_reg/Q (fdp2)                           0.66       0.66 f
-  U9/Q (xo2p2)                             0.34       0.99 f
-  U8/NQ (xn2p2)                            0.31       1.30 r
-  sum_out_reg/D (fdp1)                     0.00       1.30 r
-  data arrival time                                   1.30
-
-  clock clk (rise edge)                    1.40       1.40
-  clock network delay (ideal)              0.00       1.40
-  sum_out_reg/C (fdp1)                     0.00       1.40 r
-  library setup time                      -0.09       1.31
-  data required time                                  1.31
-  -----------------------------------------------------------
-  data required time                                  1.31
-  data arrival time                                  -1.30
-  -----------------------------------------------------------
-  slack (MET)                                         0.00
-
+create_schematic -instance -size infinite
+Generating schematic for design: decoder_2
+The schematic for design 'decoder_2' has 1 page(s).
 
 1
-design_analyzer> report_timing -path full -delay max -max_paths 1 -nworst 1 
- 
-****************************************
-Report : timing
-        -path full
-        -delay max
-        -max_paths 1
-Design : FA
-Version: X-2005.09
-Date   : Wed Mar 11 15:52:37 2015
-****************************************
+1
+design_analyzer> include /nfs/ug/homes-2/u/umarghul/ece451/lab4/uniquify.scr
+read -format verilog control.v
+Loading verilog file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v
+Warning:  /nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v:124: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
 
-Operating Conditions: nom_pvt   Library: ece451_cells
-Wire Load Model Mode: top
+Statistics for case statements in always block at line 114 in file
+	'/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           124            |    auto/auto     |
+===============================================
 
-  Startpoint: a_reg (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: sum_out_reg
-            (rising edge-triggered flip-flop clocked by clk)
-  Path Group: clk
-  Path Type: max
+Inferred memory devices in process
+	in routine control line 73 in file
+		'/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|      baddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      opsel_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      waddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|     opcode_reg      | Latch |   3   |  Y  | N  | N  | N  | -  | -  | -  |
+|      shctl_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      aaddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder.db:decoder'
+Loaded 2 designs.
+{"decoder", "control"}
+current_design control
+Error: 'control' doesn't specify a unique design
+	Please use complete specification: full_file_name:design_name (UID-13)
+Error: Design object list required for the '<design>' argument. (EQN-19)
+Usage: current_design
+	<design>   (design to be current; optional)
 
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  FA                 q35_27k               ece451_cells
+{"decoder"}
+uniquify
+1
+include ctrl.scr
+create_clock -name "phi1" -period 20 -waveform {"3.25" "6.75"} {"phi1"}
+Warning: Can't find object 'phi1' in design 'decoder'. (UID-95)
+Error: Design object list required for the '<source_objects>' argument. (EQN-19)
+Usage: create_clock
+	<source_objects>            (list of ports and/or pins)
+	-name <clock_name>         (name for the clock)
+	-period <period_value>     (period of the clock)
+	-waveform <edge_list>      (alternating rise, fall times for 1 period)
+	-add          (add to the existing clock in port_pin_list)
 
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  clock clk (rise edge)                    0.00       0.00
-  clock network delay (ideal)              0.00       0.00
-  a_reg/C (fdp2)                           0.00       0.00 r
-  a_reg/Q (fdp2)                           0.66       0.66 f
-  U9/Q (xo2p2)                             0.34       0.99 f
-  U8/NQ (xn2p2)                            0.31       1.30 r
-  sum_out_reg/D (fdp1)                     0.00       1.30 r
-  data arrival time                                   1.30
-
-  clock clk (rise edge)                    1.40       1.40
-  clock network delay (ideal)              0.00       1.40
-  sum_out_reg/C (fdp1)                     0.00       1.40 r
-  library setup time                      -0.09       1.31
-  data required time                                  1.31
-  -----------------------------------------------------------
-  data required time                                  1.31
-  data arrival time                                  -1.30
-  -----------------------------------------------------------
-  slack (MET)                                         0.00
-
-
+0
+1
+1
+design_analyzer> create_schematic -size infinite    -gen_database 
 1
 design_analyzer> 
 Thank you...

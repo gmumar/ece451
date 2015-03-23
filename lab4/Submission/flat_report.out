@@ -1,0 +1,123 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : control
+Version: X-2005.09
+Date   : Mon Mar 16 10:08:48 2015
+****************************************
+
+Library(s) Used:
+
+    ece451_cells (File: /cad2/ece451/synopsys/ece451_cells.db)
+
+Number of ports:               55
+Number of nets:               107
+Number of cells:               77
+Number of references:          11
+
+Combinational area:       3757.319580
+Noncombinational area:    2751.839355
+Net Interconnect area:       2.617903  
+
+Total cell area:          6509.159668
+Total area:               6511.776855
+1
+design_analyzer>  
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : control
+Version: X-2005.09
+Date   : Mon Mar 16 10:08:48 2015
+****************************************
+
+Operating Conditions: nom_pvt   Library: ece451_cells
+Wire Load Model Mode: top
+
+  Startpoint: phi1 (clock source 'phi1')
+  Endpoint: ARdEn[0] (output port clocked by phi1)
+  Path Group: phi1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock phi1 (rise edge)                   3.25       3.25
+  phi1 (in)                                0.00       3.25 r
+  I1/U34/Q (an3p1)                         0.27       3.52 r
+  ARdEn[0] (out)                           0.00       3.52 r
+  data arrival time                                   3.52
+
+  clock phi1 (fall edge)                   6.75       6.75
+  clock network delay (ideal)              0.00       6.75
+  output external delay                   -1.80       4.95
+  data required time                                  4.95
+  -----------------------------------------------------------
+  data required time                                  4.95
+  data arrival time                                  -3.52
+  -----------------------------------------------------------
+  slack (MET)                                         1.43
+
+
+  Startpoint: phi2 (clock source 'phi2')
+  Endpoint: L[2] (output port clocked by phi2)
+  Path Group: phi2
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock phi2 (rise edge)                  10.00      10.00
+  phi2 (in)                                0.00      10.00 r
+  U160/NQ (na3p1)                          0.12      10.12 f
+  L[2] (out)                               0.00      10.12 f
+  data arrival time                                  10.12
+
+  clock phi2 (fall edge)                  19.50      19.50
+  clock network delay (ideal)              0.00      19.50
+  output external delay                   -9.30      10.20
+  data required time                                 10.20
+  -----------------------------------------------------------
+  data required time                                 10.20
+  data arrival time                                 -10.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: phi1 (clock source 'phi1')
+  Endpoint: notphi1_1 (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  control            q35_27k               ece451_cells
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  phi1 (in)                                0.00       0.00 r
+  U106/NQ (invp3)                          0.13       0.13 f
+  notphi1_1 (out)                          0.00       0.13 f
+  data arrival time                                   0.13
+
+  max_delay                                0.20       0.20
+  output external delay                    0.00       0.20
+  data required time                                  0.20
+  -----------------------------------------------------------
+  data required time                                  0.20
+  data arrival time                                  -0.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+1
+design_analyzer> 

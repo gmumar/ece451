@@ -1,0 +1,93 @@
+
+                        Design Analyzer (TM)
+                        DC Professional (TM)
+                           DC Expert (TM)
+                            DC Ultra (TM)
+                         VHDL Compiler (TM)
+                          HDL Compiler (TM)
+                        Library Compiler (TM)
+                         Power Compiler (TM)
+                          DFT Compiler (TM)
+                            BSD Compiler
+                      DesignWare Developer (TM)
+
+             Version X-2005.09 for linux -- Sep 09, 2005
+              Copyright (c) 1988-2005 by Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+design_analyzer> read -format verilog {"/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v"}
+Loading verilog file '/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/gtech.db'
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/standard.sldb'
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Compiling source file /nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v
+Warning:  /nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v:124: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 114 in file
+	'/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           124            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine control line 73 in file
+		'/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|      baddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      opsel_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      waddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|     opcode_reg      | Latch |   3   |  Y  | N  | N  | N  | -  | -  | -  |
+|      shctl_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+|      aaddr_reg      | Latch |   2   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Current design is now '/nfs/ug/homes-2/u/umarghul/ece451/lab4/decoder.db:decoder'
+Loaded 2 designs.
+{"decoder", "control"}
+design_analyzer> create_schematic -size infinite    -gen_database 
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/generic.sdb'
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+Loading db file '/CMC/tools/synopsys/syn_vX-2005.09/libraries/syn/1_25.font'
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+1
+design_analyzer> Warning: Can't read link_library file 'your_library.db'. (UID-3)
+create_schematic -size infinite  -symbol_view   
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+1
+design_analyzer> create_schematic -size infinite   -hier_view  
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+1
+design_analyzer> create_schematic -size infinite -schematic_view    
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+Generating schematic for design: decoder
+The schematic for design 'decoder' has 1 page(s).
+
+1
+design_analyzer> Warning: Can't read link_library file 'your_library.db'. (UID-3)
+current_design "/nfs/ug/homes-2/u/umarghul/ece451/lab4/control.db:control"
+Current design is 'control'.
+{"control"}
+design_analyzer> create_schematic -size infinite  -symbol_view   
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+1
+design_analyzer> create_schematic -size infinite   -hier_view  
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+Warning: Can't read link_library file 'your_library.db'. (UID-3)
+Warning: Couldn't read symbol library 'your_library.sdb'. (UIS-33)
+1
+design_analyzer> 
+Thank you...

@@ -4,7 +4,7 @@ Uniquify
 /* Set constraints for control. */
 include ctrl.scr
 /* Compile. */
-compile -map_effort low
+compile -map_effort high
 Characterize -cons {I1, I2, I3}
 Write -o top.db
 
@@ -25,17 +25,17 @@ remove_design -designs
 
 read decoder_0.db
 include decoder_0.scr
-compile -map_effort low
+compile -map_effort high
 write -o decoder_0.db
 
 read decoder_1.db
 include decoder_1.scr
-compile -map_effort low
+compile -map_effort high
 write -o decoder_1.db
 
 read decoder_2.db
 include decoder_2.scr
-compile -map_effort low
+compile -map_effort high
 write -o decoder_2.db
 /* Repeat for decoder_1 and decoder_2. */
 read top.db
@@ -43,4 +43,4 @@ read decoder_0.db
 read decoder_1.db
 read decoder_2.db
 Current_design control
-compile -map_effort low
+compile -map_effort high
