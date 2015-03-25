@@ -1,0 +1,39 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Wed Mar 25 11:16:38 2015                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v09.12-s159_1 (64bit) 07/15/2010 13:17 (Linux 2.6)
+#@(#)CDS: NanoRoute v09.12-s013 NR100629-2344/USR64-UB (database version 2.30, 102.1.1) {superthreading v1.15}
+#@(#)CDS: CeltIC v09.12-s012_1 (64bit) 07/01/2010 05:52:50 (Linux 2.6.9-78.0.17.ELsmp)
+#@(#)CDS: AAE 09.12-e022 (64bit) 07/15/2010 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CTE 09.12-s069_1 (64bit) Jul 15 2010 05:35:17 (Linux 2.6.9-89.0.19.ELsmp)
+#@(#)CDS: CPE v09.12-s009
+
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign control.enc.dat control
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+uiSetTool move
+panCenter 6.075 25.612
+panCenter 4.693 27.212
+panCenter -0.227 26.529
+panCenter -0.623 27.815
+panCenter -1.042 24.201
+panCenter -1.426 21.739
+panCenter -1.600 20.523
+panCenter 8.892 0.865
+panCenter 8.519 1.428
+panCenter 9.172 2.357
+panCenter 9.925 1.177
+panCenter 11.568 1.137
+panCenter 81.238 -0.354
+selectMarker 2.8000 33.4700 154.0000 47.7300 -1 3 7
+editMove 13.142 25.804
+selectObject IO_Pin {M[0]}
