@@ -29,7 +29,7 @@
 = ShifterGuard_63/Guard_59/#fet!-type!pfet!-fingers!2!-width!4.0_0/s ShifterGuard.net_2
 = notCout notCout
 = Phi1 Phi1
-= OneBit_Slice_41/notCi_1 net_3
+= OneBit_Slice_40/notCi net_3
 = OneBit_Slice_40/ALU_91/Carry_99/P B0.ALU.net_2
 = ShifterGuard_63/Shifter_96/Fi_1 ShifterGuard.net_5
 = ShifterGuard_63/Guard_59/#fet_0/s ShifterGuard.net_1
@@ -38,7 +38,7 @@
 = OneBit_Slice_40/ALU_91/Func_82/Y B0.ALU.notP
 = shr shr
 = ShifterGuard_63/F0 F0
-= ShifterGuard_63/RAMIN0 RAMIN0
+= OneBit_Slice_40/RAMINi RAMIN0
 = notshl notshl
 = ShifterGuard_63/Shifter_96/FiPlus1 ShifterGuard.net_6
 = OneBit_Slice_40/ALU_91/TFunc_95/Y B0.ALU.notFi
@@ -47,7 +47,7 @@
 = OneBit_Slice_40/RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s B0.RegFile.RamCell3.net_2
 = OneBit_Slice_40/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s B0.RegFile.RamCell2.net_2
 = OneBit_Slice_40/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s B0.RegFile.RamCell1.net_2
-= ShifterGuard_63/RAMIN1 RAMIN1
+= OneBit_Slice_41/RAMINi RAMIN1
 = ShifterGuard_63/F1 F1
 = pdif_176420_7170# B0.ALU.TFunc.net_8
 = pdif_176420_8890# B0.ALU.TFunc.net_5
@@ -73,7 +73,7 @@
 = N[0] N[0]
 = OneBit_Slice_40/Bi B0.B
 = OneBit_Slice_40/OpSel_75/In1_1 B0.A
-= ShifterGuard_63/RAMIN2 RAMIN2
+= OneBit_Slice_42/RAMINi RAMIN2
 = ShifterGuard_63/F2 F2
 = OneBit_Slice_41/RegFile_79/RamCell_45/#fet_75/d B1.RegFile.cell0.net_3
 = OneBit_Slice_41/RegFile_79/RamCell1 B1.RegFile.cell0.net_1
@@ -112,7 +112,7 @@
 = ndif_121370_7860# B0.OpSel.net_4
 = In2Select0 In2Select0
 = OneBit_Slice_40/OpSel_74/#fet!-fingers!2!-contacts!all_2/d B0.OpSel.net_3
-= ShifterGuard_63/RAMIN3 RAMIN3
+= OneBit_Slice_43/RAMINi RAMIN3
 = ShifterGuard_63/F3 F3
 = OneBit_Slice_42/RegFile_79/RamCell_45/#fet_75/d B2.RegFile.cell0.net_3
 = OneBit_Slice_42/RegFile_79/RamCell1 B2.RegFile.cell0.net_1
@@ -126,7 +126,7 @@
 = OneBit_Slice_41/OpSel_74/#fet!-fingers!2!-width!2.0_0/d B1.OpSel.net_1
 = pdif_176420_30000# B1.ALU.TFunc.net_2
 = ndif_186710_27300# B1.ALU.TFunc.net_6
-= OneBit_Slice_42/notCi_1 net_1
+= OneBit_Slice_41/notCi net_1
 = pdif_176420_31720# B1.ALU.TFunc.net_3
 = ndif_186710_25580# B1.ALU.TFunc.net_7
 = D[0] D[0]
@@ -180,7 +180,7 @@
 = OneBit_Slice_41/OpSel_74/Out B1.Si
 = pdif_176410_48400# B2.ALU.TFunc.net_2
 = ndif_186700_45700# B2.ALU.TFunc.net_6
-= OneBit_Slice_43/notCi_1 net_2
+= OneBit_Slice_42/notCi net_2
 = pdif_176410_50120# B2.ALU.TFunc.net_3
 = ndif_186700_43980# B2.ALU.TFunc.net_7
 = ndif_140370_13320# B0.ALU.Func_1.net_1
