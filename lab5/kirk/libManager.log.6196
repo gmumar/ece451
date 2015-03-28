@@ -1,0 +1,29 @@
+\o Program:		@(#)$CDS: libManager.exe version Exp 03/23/2009 19:17 (ocelot-linux) $
+\o Sub version:		sub-version none
+\o Arguments:		-unmapped -mpssession icfb6162 -mpshost ug169.eecg 
+\o Working Directory:	ug169.eecg:/nfs/ug/homes-2/u/umarghul/ece451/lab5/kirk
+\o Extended color mode (TrueColor 32 0x61) in use.
+\o Warning: envSetVal: incorrect number of toggle values for variable
+\o 	'selectMatches'.  Should be 4.
+\o Cell filter set to ""
+\o View filter set to ""
+No main selection
+\o Library Manager customization server connected.
+MPS service: map window
+MPS service: map window
+MPS service: map window
+MPS service: map window
+MPS service: map window
+MPS service: map window
+\o Log file is "/nfs/ug/homes-2/u/umarghul/ece451/lab5/kirk/libManager.log.6196".
+Opening libManager window.
+MPS request: update library list
+MPS request: update library list
+MPS request: update library list
+MPS request: update library list
+MPS service: map window
+Main selection: design2 control layout
+\o Opening design file through session server.
+MPS request: edit design
+MPS service: shutdown
+\o libManager is exiting.

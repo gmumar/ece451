@@ -1,0 +1,16 @@
+Using equivalence file ./RegFile.eq ...
+Gemini 2.7.2	1994/3/15
+
+Graph "RegFile_lay.sim": unit scale = 1, format = UCB
+	Number of devices: 38
+	Number of nets: 39
+
+Graph "./RegFile.sim": unit scale = 1, format = MIT
+format = NULL (assume MIT)
+	Number of devices: 38
+	Number of nets: 39
+
+38 entries written to the dictionary file.
+56 (72%) matches were found by local matching
+All nodes were matched in 5 passes
+0 devices and 0 nets displayed in /nfs/ug/homes-2/u/umarghul/ece451/lab5/RegFile.lvs.err.mag

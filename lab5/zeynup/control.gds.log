@@ -1,0 +1,9 @@
+Reading GDS file /nfs/ug/homes-2/u/umarghul/ece451/lab5/zeynup/control.gds
+Current Time: Fri Mar 27 17:23:35 2015
+GDS file modification time: Fri Mar 27 17:23:12 2015
+Snapping (rounding) GDS-II input to 0.01 grid.
+Library written using GDS-II Release 5.0
+Library name: DESIGN3.DB
+Warning, GDS Import round off error in cell "control".
+	Maximum error = 0.005 microns
+

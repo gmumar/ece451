@@ -1,0 +1,6 @@
+DEFINE ece451_cells /cad2/ece451/dfII/ece451_cells
+DEFINE ece451_pads /cad2/ece451/dfII/ece451_pads
+DEFINE avTech /CMC/tools/cadence/ASSURA.linux/tools/assura/etc/avtech/avTech
+#Removed by ddDeleteObj: DEFINE design /nfs/ug/homes-2/u/umarghul/ece451/lab5/design
+DEFINE design /nfs/ug/homes-2/u/umarghul/ece451/lab5/design
+DEFINE design2 /nfs/ug/homes-2/u/umarghul/ece451/lab5/kirk/design2

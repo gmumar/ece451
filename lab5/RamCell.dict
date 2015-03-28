@@ -1,0 +1,15 @@
+; Dictionary file for matching names in
+; RamCell_lay.sim and ./RamCell.sim
+= #fet!-type!pfet!-width!2.0_0/s net_2
+= #fet_75/d net_3
+= #fet_87/s net_1
+= gnd gnd
+= notFBEn notFBEn
+= vdd vdd
+= FBEn FBEn
+= RAMINi RAMINi
+= WriteEn WriteEn
+= Bi Bi
+= Ai Ai
+= BRdEn BRdEn
+= ARdEn ARdEn
