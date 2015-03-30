@@ -1,85 +1,85 @@
 | units: 1.0  tech: mmi25  format: UCB
-A Phi2 input
-A Phi1 input
-A ctrl[0] input
-A ctrl[1] input
-A ctrl[2] input
-A ctrl[3] input
-A ctrl[4] input
-A ctrl[5] input
 A ctrl[6] input
-A F[0] output
-A F[1] output
-A F[2] output
+A ctrl[5] input
+A ctrl[4] input
+A ctrl[3] input
+A ctrl[2] input
+A ctrl[1] input
+A ctrl[0] input
+A Phi1 input
+A Phi2 input
 A F[3] output
-A rdata[0] inout
-A rdata[1] inout
-A rdata[2] inout
-A rdata[3] inout
-A S[0] inout
-A R[0] inout
-A R[1] inout
-A S[1] inout
-A R[2] inout
-A S[2] inout
-A S[3] inout
-A R[3] inout
-A A[3] inout
-A B[3] inout
-A RAMIN[3] inout
-A RAMIN[2] inout
-A B[2] inout
-A B[1] inout
-A RAMIN[1] inout
-A RAMIN[0] inout
-A B[0] inout
-A notFBEn[3] inout
-A datapath_87.SR inout
-A datapath_87.SL inout
-A notCin inout
-A D[0] inout
-A D[1] inout
-A D[2] inout
-A N[1] inout
-A N[0] inout
-A N[2] inout
-A N[3] inout
-A L[1] inout
-A L[2] inout
-A L[3] inout
-A M[0] inout
-A M[1] inout
-A M[2] inout
-A M[3] inout
-A In1Select0 inout
-A In2Select0 inout
-A notPhi1 inout
-A In1Select1 inout
-A In2Select1 inout
-A ARdEn[3] inout
-A BRdEn[3] inout
-A FBEn[3] inout
-A ARdEn[2] inout
-A BRdEn[2] inout
-A FBEn[2] inout
-A ARdEn[1] inout
-A BRdEn[1] inout
-A FBEn[1] inout
-A ARdEn[0] inout
-A BRdEn[0] inout
-A FBEn[0] inout
-A D[3] inout
-A notFBEn[2] inout
-A notFBEn[1] inout
-A notFBEn[0] inout
-A notshr inout
-A notshl inout
-A shr inout
-A shl inout
+A F[2] output
+A F[1] output
+A F[0] output
 A notCout inout
-A A[2] inout
-A A[1] inout
+A shl inout
+A shr inout
+A notshl inout
+A notshr inout
+A notFBEn[0] inout
+A notFBEn[1] inout
+A notFBEn[2] inout
+A D[3] inout
+A FBEn[0] inout
+A BRdEn[0] inout
+A ARdEn[0] inout
+A FBEn[1] inout
+A BRdEn[1] inout
+A ARdEn[1] inout
+A FBEn[2] inout
+A BRdEn[2] inout
+A ARdEn[2] inout
+A FBEn[3] inout
+A BRdEn[3] inout
+A ARdEn[3] inout
+A notPhi1 inout
+A In2Select1 inout
+A In1Select1 inout
+A In2Select0 inout
+A In1Select0 inout
+A M[3] inout
+A M[2] inout
+A M[1] inout
+A M[0] inout
+A L[3] inout
+A L[2] inout
+A L[1] inout
+A N[3] inout
+A N[2] inout
+A N[0] inout
+A N[1] inout
+A D[2] inout
+A D[1] inout
+A D[0] inout
+A notCin inout
+A datapath_87.SL inout
+A datapath_87.SR inout
+A notFBEn[3] inout
+A B[0] inout
+A RAMIN[0] inout
+A RAMIN[1] inout
+A B[1] inout
+A B[2] inout
+A RAMIN[2] inout
+A RAMIN[3] inout
+A B[3] inout
+A A[3] inout
+A R[3] inout
+A S[3] inout
+A S[2] inout
+A R[2] inout
+A S[1] inout
+A R[1] inout
+A R[0] inout
+A S[0] inout
+A rdata[3] inout
+A rdata[2] inout
+A rdata[1] inout
+A rdata[0] inout
 A A[0] inout
+A A[1] inout
+A A[2] inout
 p Phi1 vdd ndif_32210_53860# 35 390 3186 4576
 p Phi1 ndif_32210_53860# vdd 35 390 3321 4576
 p Phi1 vdd ndif_32210_53860# 35 390 3456 4576
@@ -562,7 +562,7 @@ p ndif_165110_28560# L[2] vdd 35 290 16766 -404
 p ndif_162010_33560# vdd L[2] 35 290 16901 -404
 p ndif_162010_33560# L[2] vdd 35 290 17036 -404
 p Phi1 vdd A[3] 24 100 2968 -1733
-p notshr datapath_87.SL RAMIN[3] 24 200 1816 -1797
+p notshr datapath_87.SL RAMIN[3] 24 100 1816 -1797
 p R[3] datapath_87.OneBit_Slice_43/OpSel_75/notOut_1 vdd 24 200 10941 -1779
 p datapath_87.OneBit_Slice_43/OpSel_75/#fet!-fingers!2!-width!2.0_0/d vdd datapath_87.OneBit_Slice_43/OpSel_75/#fet!-fingers!2!-contacts!all_2/d 24 200 11039 -1779
 p notPhi1 datapath_87.OneBit_Slice_43/OpSel_75/#fet!-fingers!2!-contacts!all_2/d datapath_87.OneBit_Slice_43/OpSel_75/#fet!-type!pfet!-width!2.0_0/d 24 200 11235 -1781
@@ -577,27 +577,27 @@ p Phi2 vdd notCout 24 100 17277 -1643
 p datapath_87.OneBit_Slice_43/ALU_91/Carry_99/P pdif_179770_n17510# N[0] 24 400 17977 -1701
 p datapath_87.OneBit_Slice_43/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y pdif_179770_n17510# 24 400 17977 -1775
 p Phi1 B[3] vdd 24 100 2968 -1831
-p notshl F[3] datapath_87.SL 24 200 1816 -1895
+p notshl F[3] datapath_87.SL 24 100 1816 -1895
 p Phi1 vdd datapath_87.OneBit_Slice_43/OpSel_75/#fet!-fingers!2!-width!2.0_0/d 24 100 10402 -1922
 p Phi1 vdd datapath_87.OneBit_Slice_43/OpSel_74/#fet!-fingers!2!-width!2.0_0/d 24 100 12268 -1922
 p datapath_87.OneBit_Slice_43/ALU_91/Func_83/Y datapath_87.OneBit_Slice_43/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 16971 -1996
-p datapath_87.OneBit_Slice_43/notCi_1 vdd datapath_87.OneBit_Slice_43/ALU_91/Carry_99/Ci_1 24 200 17069 -1996
+p datapath_87.OneBit_Slice_42/notCi vdd datapath_87.OneBit_Slice_43/ALU_91/Carry_99/Ci_1 24 200 17069 -1996
 p datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y vdd datapath_87.OneBit_Slice_43/ALU_91/Carry_99/P 24 200 17270 -1995
 p datapath_87.OneBit_Slice_43/ALU_91/Carry_99/Ci_1 pdif_179770_n19230# datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y 24 400 17977 -1873
 p datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y N[1] pdif_179770_n19230# 24 400 17977 -1947
-p shr datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 RAMIN[3] 24 200 1819 -2130
+p shr datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 RAMIN[3] 24 100 1819 -2130
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_43/RegFile_79/RamCell_45/#fet_75/d 24 200 4171 -2145
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_43/RegFile_79/RamCell_2/#fet_75/d 24 200 5750 -2145
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_43/RegFile_79/RamCell_4/#fet_75/d 24 200 7328 -2145
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_43/RegFile_79/RamCell_27/#fet_75/d 24 200 8907 -2145
-p datapath_87.OneBit_Slice_43/notCi_1 pdif_179770_n21930# N[2] 24 400 17977 -2143
-p shl F[3] datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 24 200 1819 -2228
+p datapath_87.OneBit_Slice_42/notCi pdif_179770_n21930# N[2] 24 400 17977 -2143
+p shl F[3] datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 24 100 1819 -2228
 p datapath_87.OneBit_Slice_43/ALU_91/Carry_99/P datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y pdif_179770_n21930# 24 400 17977 -2217
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_45/#fet_75/d datapath_87.OneBit_Slice_43/RegFile_79/RamCell1 vdd 24 200 4171 -2243
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_2/#fet_75/d rdata[3] vdd 24 200 5750 -2243
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_4/#fet_75/d datapath_87.OneBit_Slice_43/RegFile_79/RamCell3 vdd 24 200 7328 -2243
 p datapath_87.OneBit_Slice_43/RegFile_79/RamCell_27/#fet_75/d datapath_87.OneBit_Slice_43/RegFile_79/RamCell4 vdd 24 200 8907 -2243
-p datapath_87.OneBit_Slice_43/notCi_1 pdif_179770_n23650# datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y 24 400 17977 -2315
+p datapath_87.OneBit_Slice_42/notCi pdif_179770_n23650# datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y 24 400 17977 -2315
 p notFBEn[0] datapath_87.OneBit_Slice_43/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s datapath_87.OneBit_Slice_43/RegFile_79/RamCell1 24 200 4171 -2341
 p notFBEn[1] datapath_87.OneBit_Slice_43/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s rdata[3] 24 200 5750 -2341
 p notFBEn[2] datapath_87.OneBit_Slice_43/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s datapath_87.OneBit_Slice_43/RegFile_79/RamCell3 24 200 7328 -2341
@@ -605,7 +605,7 @@ p notFBEn[3] datapath_87.OneBit_Slice_43/RegFile_79/RamCell_27/#fet!-type!pfet!-
 p datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y N[3] pdif_179770_n23650# 24 400 17977 -2389
 p datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y F[3] vdd 24 200 19771 -2607
 p Phi1 vdd A[2] 24 100 2968 -3574
-p notshr datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 RAMIN[2] 24 200 1816 -3637
+p notshr datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 RAMIN[2] 24 100 1816 -3637
 p R[2] datapath_87.OneBit_Slice_42/OpSel_75/notOut_1 vdd 24 200 10941 -3620
 p datapath_87.OneBit_Slice_42/OpSel_75/#fet!-fingers!2!-width!2.0_0/d vdd datapath_87.OneBit_Slice_42/OpSel_75/#fet!-fingers!2!-contacts!all_2/d 24 200 11039 -3620
 p notPhi1 datapath_87.OneBit_Slice_42/OpSel_75/#fet!-fingers!2!-contacts!all_2/d datapath_87.OneBit_Slice_42/OpSel_75/#fet!-type!pfet!-width!2.0_0/d 24 200 11235 -3622
@@ -616,31 +616,31 @@ p notPhi1 datapath_87.OneBit_Slice_42/OpSel_74/#fet!-fingers!2!-contacts!all_2/d
 p datapath_87.OneBit_Slice_42/OpSel_74/#fet!-type!pfet!-width!2.0_0/d S[2] vdd 24 200 13300 -3621
 p Phi2 datapath_87.OneBit_Slice_42/ALU_91/Func_83/Y vdd 24 100 16973 -3485
 p Phi2 vdd datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y 24 100 17071 -3485
-p Phi2 vdd datapath_87.OneBit_Slice_43/notCi_1 24 100 17277 -3484
+p Phi2 vdd datapath_87.OneBit_Slice_42/notCi 24 100 17277 -3484
 p datapath_87.OneBit_Slice_42/ALU_91/Carry_99/P pdif_179770_n35920# N[0] 24 400 17977 -3542
 p datapath_87.OneBit_Slice_42/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y pdif_179770_n35920# 24 400 17977 -3616
 p Phi1 B[2] vdd 24 100 2968 -3672
-p notshl F[2] datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 24 200 1816 -3735
+p notshl F[2] datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 24 100 1816 -3735
 p Phi1 vdd datapath_87.OneBit_Slice_42/OpSel_75/#fet!-fingers!2!-width!2.0_0/d 24 100 10402 -3763
 p Phi1 vdd datapath_87.OneBit_Slice_42/OpSel_74/#fet!-fingers!2!-width!2.0_0/d 24 100 12268 -3763
 p datapath_87.OneBit_Slice_42/ALU_91/Func_83/Y datapath_87.OneBit_Slice_42/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 16971 -3837
-p datapath_87.OneBit_Slice_42/notCi_1 vdd datapath_87.OneBit_Slice_42/ALU_91/Carry_99/Ci_1 24 200 17069 -3837
+p datapath_87.OneBit_Slice_41/notCi vdd datapath_87.OneBit_Slice_42/ALU_91/Carry_99/Ci_1 24 200 17069 -3837
 p datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y vdd datapath_87.OneBit_Slice_42/ALU_91/Carry_99/P 24 200 17270 -3836
 p datapath_87.OneBit_Slice_42/ALU_91/Carry_99/Ci_1 pdif_179770_n37640# datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y 24 400 17977 -3714
 p datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y N[1] pdif_179770_n37640# 24 400 17977 -3788
-p shr datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 RAMIN[2] 24 200 1819 -3970
+p shr datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 RAMIN[2] 24 100 1819 -3970
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_42/RegFile_79/RamCell_45/#fet_75/d 24 200 4171 -3986
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_42/RegFile_79/RamCell_2/#fet_75/d 24 200 5750 -3986
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_42/RegFile_79/RamCell_4/#fet_75/d 24 200 7328 -3986
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_42/RegFile_79/RamCell_27/#fet_75/d 24 200 8907 -3986
-p datapath_87.OneBit_Slice_42/notCi_1 pdif_179770_n40340# N[2] 24 400 17977 -3984
-p shl F[2] datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 24 200 1819 -4068
+p datapath_87.OneBit_Slice_41/notCi pdif_179770_n40340# N[2] 24 400 17977 -3984
+p shl F[2] datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 24 100 1819 -4068
 p datapath_87.OneBit_Slice_42/ALU_91/Carry_99/P datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y pdif_179770_n40340# 24 400 17977 -4058
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_45/#fet_75/d datapath_87.OneBit_Slice_42/RegFile_79/RamCell1 vdd 24 200 4171 -4084
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_2/#fet_75/d rdata[2] vdd 24 200 5750 -4084
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_4/#fet_75/d datapath_87.OneBit_Slice_42/RegFile_79/RamCell3 vdd 24 200 7328 -4084
 p datapath_87.OneBit_Slice_42/RegFile_79/RamCell_27/#fet_75/d datapath_87.OneBit_Slice_42/RegFile_79/RamCell4 vdd 24 200 8907 -4084
-p datapath_87.OneBit_Slice_42/notCi_1 pdif_179770_n42060# datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y 24 400 17977 -4156
+p datapath_87.OneBit_Slice_41/notCi pdif_179770_n42060# datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y 24 400 17977 -4156
 p notFBEn[0] datapath_87.OneBit_Slice_42/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s datapath_87.OneBit_Slice_42/RegFile_79/RamCell1 24 200 4171 -4182
 p notFBEn[1] datapath_87.OneBit_Slice_42/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s rdata[2] 24 200 5750 -4182
 p notFBEn[2] datapath_87.OneBit_Slice_42/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s datapath_87.OneBit_Slice_42/RegFile_79/RamCell3 24 200 7328 -4182
@@ -648,7 +648,7 @@ p notFBEn[3] datapath_87.OneBit_Slice_42/RegFile_79/RamCell_27/#fet!-type!pfet!-
 p datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y N[3] pdif_179770_n42060# 24 400 17977 -4230
 p datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y F[2] vdd 24 200 19771 -4448
 p Phi1 vdd A[1] 24 100 2969 -5414
-p notshr datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 RAMIN[1] 24 200 1816 -5477
+p notshr datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 RAMIN[1] 24 100 1816 -5477
 p R[1] datapath_87.OneBit_Slice_41/OpSel_75/notOut_1 vdd 24 200 10942 -5460
 p datapath_87.OneBit_Slice_41/OpSel_75/#fet!-fingers!2!-width!2.0_0/d vdd datapath_87.OneBit_Slice_41/OpSel_75/#fet!-fingers!2!-contacts!all_2/d 24 200 11040 -5460
 p notPhi1 datapath_87.OneBit_Slice_41/OpSel_75/#fet!-fingers!2!-contacts!all_2/d datapath_87.OneBit_Slice_41/OpSel_75/#fet!-type!pfet!-width!2.0_0/d 24 200 11236 -5462
@@ -659,31 +659,31 @@ p notPhi1 datapath_87.OneBit_Slice_41/OpSel_74/#fet!-fingers!2!-contacts!all_2/d
 p datapath_87.OneBit_Slice_41/OpSel_74/#fet!-type!pfet!-width!2.0_0/d S[1] vdd 24 200 13301 -5461
 p Phi2 datapath_87.OneBit_Slice_41/ALU_91/Func_83/Y vdd 24 100 16974 -5325
 p Phi2 vdd datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y 24 100 17072 -5325
-p Phi2 vdd datapath_87.OneBit_Slice_42/notCi_1 24 100 17278 -5324
+p Phi2 vdd datapath_87.OneBit_Slice_41/notCi 24 100 17278 -5324
 p datapath_87.OneBit_Slice_41/ALU_91/Carry_99/P pdif_179780_n54320# N[0] 24 400 17978 -5382
 p datapath_87.OneBit_Slice_41/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y pdif_179780_n54320# 24 400 17978 -5456
 p Phi1 B[1] vdd 24 100 2969 -5512
-p notshl F[1] datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 24 200 1816 -5575
+p notshl F[1] datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 24 100 1816 -5575
 p Phi1 vdd datapath_87.OneBit_Slice_41/OpSel_75/#fet!-fingers!2!-width!2.0_0/d 24 100 10403 -5603
 p Phi1 vdd datapath_87.OneBit_Slice_41/OpSel_74/#fet!-fingers!2!-width!2.0_0/d 24 100 12269 -5603
 p datapath_87.OneBit_Slice_41/ALU_91/Func_83/Y datapath_87.OneBit_Slice_41/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 16972 -5677
-p datapath_87.OneBit_Slice_41/notCi_1 vdd datapath_87.OneBit_Slice_41/ALU_91/Carry_99/Ci_1 24 200 17070 -5677
+p datapath_87.OneBit_Slice_40/notCi vdd datapath_87.OneBit_Slice_41/ALU_91/Carry_99/Ci_1 24 200 17070 -5677
 p datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y vdd datapath_87.OneBit_Slice_41/ALU_91/Carry_99/P 24 200 17271 -5676
 p datapath_87.OneBit_Slice_41/ALU_91/Carry_99/Ci_1 pdif_179780_n56040# datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y 24 400 17978 -5554
 p datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y N[1] pdif_179780_n56040# 24 400 17978 -5628
-p shr datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 RAMIN[1] 24 200 1819 -5810
+p shr datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 RAMIN[1] 24 100 1819 -5810
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_41/RegFile_79/RamCell_45/#fet_75/d 24 200 4172 -5826
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_41/RegFile_79/RamCell_2/#fet_75/d 24 200 5751 -5826
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_41/RegFile_79/RamCell_4/#fet_75/d 24 200 7329 -5826
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_41/RegFile_79/RamCell_27/#fet_75/d 24 200 8908 -5826
-p datapath_87.OneBit_Slice_41/notCi_1 pdif_179780_n58740# N[2] 24 400 17978 -5824
-p shl F[1] datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 24 200 1819 -5908
+p datapath_87.OneBit_Slice_40/notCi pdif_179780_n58740# N[2] 24 400 17978 -5824
+p shl F[1] datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 24 100 1819 -5908
 p datapath_87.OneBit_Slice_41/ALU_91/Carry_99/P datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y pdif_179780_n58740# 24 400 17978 -5898
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_45/#fet_75/d datapath_87.OneBit_Slice_41/RegFile_79/RamCell1 vdd 24 200 4172 -5924
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_2/#fet_75/d rdata[1] vdd 24 200 5751 -5924
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_4/#fet_75/d datapath_87.OneBit_Slice_41/RegFile_79/RamCell3 vdd 24 200 7329 -5924
 p datapath_87.OneBit_Slice_41/RegFile_79/RamCell_27/#fet_75/d datapath_87.OneBit_Slice_41/RegFile_79/RamCell4 vdd 24 200 8908 -5924
-p datapath_87.OneBit_Slice_41/notCi_1 pdif_179780_n60460# datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y 24 400 17978 -5996
+p datapath_87.OneBit_Slice_40/notCi pdif_179780_n60460# datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y 24 400 17978 -5996
 p notFBEn[0] datapath_87.OneBit_Slice_41/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s datapath_87.OneBit_Slice_41/RegFile_79/RamCell1 24 200 4172 -6022
 p notFBEn[1] datapath_87.OneBit_Slice_41/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s rdata[1] 24 200 5751 -6022
 p notFBEn[2] datapath_87.OneBit_Slice_41/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s datapath_87.OneBit_Slice_41/RegFile_79/RamCell3 24 200 7329 -6022
@@ -691,7 +691,7 @@ p notFBEn[3] datapath_87.OneBit_Slice_41/RegFile_79/RamCell_27/#fet!-type!pfet!-
 p datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y N[3] pdif_179780_n60460# 24 400 17978 -6070
 p datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y F[1] vdd 24 200 19772 -6288
 p Phi1 vdd A[0] 24 100 2969 -7255
-p notshr datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 RAMIN[0] 24 200 1816 -7317
+p notshr datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 RAMIN[0] 24 100 1816 -7317
 p R[0] datapath_87.OneBit_Slice_40/OpSel_75/notOut_1 vdd 24 200 10942 -7301
 p datapath_87.OneBit_Slice_40/OpSel_75/#fet!-fingers!2!-width!2.0_0/d vdd datapath_87.OneBit_Slice_40/OpSel_75/#fet!-fingers!2!-contacts!all_2/d 24 200 11040 -7301
 p notPhi1 datapath_87.OneBit_Slice_40/OpSel_75/#fet!-fingers!2!-contacts!all_2/d datapath_87.OneBit_Slice_40/OpSel_75/#fet!-type!pfet!-width!2.0_0/d 24 200 11236 -7303
@@ -702,11 +702,11 @@ p notPhi1 datapath_87.OneBit_Slice_40/OpSel_74/#fet!-fingers!2!-contacts!all_2/d
 p datapath_87.OneBit_Slice_40/OpSel_74/#fet!-type!pfet!-width!2.0_0/d S[0] vdd 24 200 13301 -7302
 p Phi2 datapath_87.OneBit_Slice_40/ALU_91/Func_83/Y vdd 24 100 16974 -7166
 p Phi2 vdd datapath_87.OneBit_Slice_40/ALU_91/Func_82/Y 24 100 17072 -7166
-p Phi2 vdd datapath_87.OneBit_Slice_41/notCi_1 24 100 17278 -7165
+p Phi2 vdd datapath_87.OneBit_Slice_40/notCi 24 100 17278 -7165
 p datapath_87.OneBit_Slice_40/ALU_91/Carry_99/P pdif_179780_n72730# N[0] 24 400 17978 -7223
 p datapath_87.OneBit_Slice_40/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_40/ALU_91/TFunc_95/Y pdif_179780_n72730# 24 400 17978 -7297
 p Phi1 B[0] vdd 24 100 2969 -7353
-p notshl F[0] datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 24 200 1816 -7415
+p notshl F[0] datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 24 100 1816 -7415
 p Phi1 vdd datapath_87.OneBit_Slice_40/OpSel_75/#fet!-fingers!2!-width!2.0_0/d 24 100 10403 -7444
 p Phi1 vdd datapath_87.OneBit_Slice_40/OpSel_74/#fet!-fingers!2!-width!2.0_0/d 24 100 12269 -7444
 p datapath_87.OneBit_Slice_40/ALU_91/Func_83/Y datapath_87.OneBit_Slice_40/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s vdd 24 200 16972 -7518
@@ -714,13 +714,13 @@ p notCin vdd datapath_87.OneBit_Slice_40/ALU_91/Carry_99/Ci_1 24 200 17070 -7518
 p datapath_87.OneBit_Slice_40/ALU_91/Func_82/Y vdd datapath_87.OneBit_Slice_40/ALU_91/Carry_99/P 24 200 17271 -7517
 p datapath_87.OneBit_Slice_40/ALU_91/Carry_99/Ci_1 pdif_179780_n74450# datapath_87.OneBit_Slice_40/ALU_91/TFunc_95/Y 24 400 17978 -7395
 p datapath_87.OneBit_Slice_40/ALU_91/Func_82/Y N[1] pdif_179780_n74450# 24 400 17978 -7469
-p shr datapath_87.ShifterGuard_63/Shifter_96/Fi_1 RAMIN[0] 24 200 1819 -7650
+p shr datapath_87.ShifterGuard_63/Shifter_96/Fi_1 RAMIN[0] 24 100 1819 -7650
 p datapath_87.OneBit_Slice_40/RegFile_79/RamCell_45/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_40/RegFile_79/RamCell_45/#fet_75/d 24 200 4172 -7667
 p datapath_87.OneBit_Slice_40/RegFile_79/RamCell_2/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_40/RegFile_79/RamCell_2/#fet_75/d 24 200 5751 -7667
 p datapath_87.OneBit_Slice_40/RegFile_79/RamCell_4/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_40/RegFile_79/RamCell_4/#fet_75/d 24 200 7329 -7667
 p datapath_87.OneBit_Slice_40/RegFile_79/RamCell_27/#fet!-type!pfet!-width!2.0_0/s vdd datapath_87.OneBit_Slice_40/RegFile_79/RamCell_27/#fet_75/d 24 200 8908 -7667
 p notCin pdif_179780_n77150# N[2] 24 400 17978 -7665
-p shl F[0] datapath_87.ShifterGuard_63/Shifter_96/Fi_1 24 200 1819 -7748
+p shl F[0] datapath_87.ShifterGuard_63/Shifter_96/Fi_1 24 100 1819 -7748
 p datapath_87.OneBit_Slice_40/ALU_91/Carry_99/P datapath_87.OneBit_Slice_40/ALU_91/TFunc_95/Y pdif_179780_n77150# 24 400 17978 -7739
 p datapath_87.OneBit_Slice_40/RegFile_79/RamCell_45/#fet_75/d datapath_87.OneBit_Slice_40/RegFile_79/RamCell1 vdd 24 200 4172 -7765
 p datapath_87.OneBit_Slice_40/RegFile_79/RamCell_2/#fet_75/d rdata[0] vdd 24 200 5751 -7765
@@ -1097,7 +1097,7 @@ n datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y ndif_190060_n17510# N[0] 24 200 1
 n notshr datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 RAMIN[3] 24 100 2220 -1797
 n datapath_87.OneBit_Slice_43/OpSel_75/notOut_1 datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y ndif_143720_n17500# 24 200 14372 -1774
 n datapath_87.OneBit_Slice_43/OpSel_75/notOut_1 datapath_87.OneBit_Slice_43/ALU_91/Func_83/Y ndif_157140_n17500# 24 200 15714 -1774
-n datapath_87.OneBit_Slice_43/notCi_1 datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y ndif_190060_n17510# 24 200 19006 -1775
+n datapath_87.OneBit_Slice_42/notCi datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y ndif_190060_n17510# 24 200 19006 -1775
 n notshl F[3] datapath_87.ShifterGuard_63/Shifter_98/FiPlus1 24 100 2220 -1895
 n S[3] ndif_143720_n19220# datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y 24 200 14372 -1872
 n S[3] ndif_157140_n19220# datapath_87.OneBit_Slice_43/ALU_91/Func_83/Y 24 200 15714 -1872
@@ -1108,7 +1108,7 @@ n ARdEn[2] datapath_87.OneBit_Slice_43/RegFile_79/RamCell3 A[3] 24 100 7059 -190
 n ARdEn[3] datapath_87.OneBit_Slice_43/RegFile_79/RamCell4 A[3] 24 100 8638 -1909
 n datapath_87.OneBit_Slice_43/OpSel_75/notOut_1 M[1] ndif_143720_n19220# 24 200 14372 -1946
 n datapath_87.OneBit_Slice_43/OpSel_75/notOut_1 L[1] ndif_157140_n19220# 24 200 15714 -1946
-n datapath_87.OneBit_Slice_43/notCi_1 N[1] ndif_190060_n19230# 24 200 19006 -1947
+n datapath_87.OneBit_Slice_42/notCi N[1] ndif_190060_n19230# 24 200 19006 -1947
 n BRdEn[0] B[3] datapath_87.OneBit_Slice_43/RegFile_79/RamCell1 24 100 3902 -2007
 n BRdEn[1] B[3] rdata[3] 24 100 5481 -2007
 n BRdEn[2] B[3] datapath_87.OneBit_Slice_43/RegFile_79/RamCell3 24 100 7059 -2007
@@ -1151,10 +1151,10 @@ n datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y ndif_190060_n21930# N[2] 24 200 1
 n R[3] datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y ndif_143720_n21920# 24 200 14372 -2216
 n R[3] datapath_87.OneBit_Slice_43/ALU_91/Func_83/Y ndif_157140_n21920# 24 200 15714 -2216
 n datapath_87.OneBit_Slice_43/ALU_91/Func_83/Y datapath_87.OneBit_Slice_43/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 16971 -2255
-n datapath_87.OneBit_Slice_43/notCi_1 gnd datapath_87.OneBit_Slice_43/ALU_91/Carry_99/Ci_1 24 100 17069 -2255
+n datapath_87.OneBit_Slice_42/notCi gnd datapath_87.OneBit_Slice_43/ALU_91/Carry_99/Ci_1 24 100 17069 -2255
 n datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y datapath_87.OneBit_Slice_43/ALU_91/Carry_99/P gnd 24 100 17270 -2253
 n datapath_87.OneBit_Slice_43/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd notCout 24 100 17368 -2253
-n datapath_87.OneBit_Slice_43/ALU_91/Carry_99/P notCout datapath_87.OneBit_Slice_43/notCi_1 24 100 17466 -2253
+n datapath_87.OneBit_Slice_43/ALU_91/Carry_99/P notCout datapath_87.OneBit_Slice_42/notCi 24 100 17466 -2253
 n datapath_87.OneBit_Slice_43/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_43/ALU_91/TFunc_95/Y ndif_190060_n21930# 24 200 19006 -2217
 n R[3] ndif_143720_n23640# datapath_87.OneBit_Slice_43/ALU_91/Func_82/Y 24 200 14372 -2314
 n R[3] ndif_157140_n23640# datapath_87.OneBit_Slice_43/ALU_91/Func_83/Y 24 200 15714 -2314
@@ -1169,7 +1169,7 @@ n datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y ndif_190060_n35920# N[0] 24 200 1
 n notshr datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 RAMIN[2] 24 100 2220 -3637
 n datapath_87.OneBit_Slice_42/OpSel_75/notOut_1 datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y ndif_143720_n35910# 24 200 14372 -3615
 n datapath_87.OneBit_Slice_42/OpSel_75/notOut_1 datapath_87.OneBit_Slice_42/ALU_91/Func_83/Y ndif_157140_n35910# 24 200 15714 -3615
-n datapath_87.OneBit_Slice_42/notCi_1 datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y ndif_190060_n35920# 24 200 19006 -3616
+n datapath_87.OneBit_Slice_41/notCi datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y ndif_190060_n35920# 24 200 19006 -3616
 n notshl F[2] datapath_87.ShifterGuard_63/Shifter_97/FiPlus1 24 100 2220 -3735
 n S[2] ndif_143720_n37630# datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y 24 200 14372 -3713
 n S[2] ndif_157140_n37630# datapath_87.OneBit_Slice_42/ALU_91/Func_83/Y 24 200 15714 -3713
@@ -1180,7 +1180,7 @@ n ARdEn[2] datapath_87.OneBit_Slice_42/RegFile_79/RamCell3 A[2] 24 100 7059 -375
 n ARdEn[3] datapath_87.OneBit_Slice_42/RegFile_79/RamCell4 A[2] 24 100 8638 -3750
 n datapath_87.OneBit_Slice_42/OpSel_75/notOut_1 M[1] ndif_143720_n37630# 24 200 14372 -3787
 n datapath_87.OneBit_Slice_42/OpSel_75/notOut_1 L[1] ndif_157140_n37630# 24 200 15714 -3787
-n datapath_87.OneBit_Slice_42/notCi_1 N[1] ndif_190060_n37640# 24 200 19006 -3788
+n datapath_87.OneBit_Slice_41/notCi N[1] ndif_190060_n37640# 24 200 19006 -3788
 n BRdEn[0] B[2] datapath_87.OneBit_Slice_42/RegFile_79/RamCell1 24 100 3902 -3848
 n BRdEn[1] B[2] rdata[2] 24 100 5481 -3848
 n BRdEn[2] B[2] datapath_87.OneBit_Slice_42/RegFile_79/RamCell3 24 100 7059 -3848
@@ -1223,10 +1223,10 @@ n datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y ndif_190060_n40340# N[2] 24 200 1
 n R[2] datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y ndif_143720_n40330# 24 200 14372 -4057
 n R[2] datapath_87.OneBit_Slice_42/ALU_91/Func_83/Y ndif_157140_n40330# 24 200 15714 -4057
 n datapath_87.OneBit_Slice_42/ALU_91/Func_83/Y datapath_87.OneBit_Slice_42/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 16971 -4096
-n datapath_87.OneBit_Slice_42/notCi_1 gnd datapath_87.OneBit_Slice_42/ALU_91/Carry_99/Ci_1 24 100 17069 -4096
+n datapath_87.OneBit_Slice_41/notCi gnd datapath_87.OneBit_Slice_42/ALU_91/Carry_99/Ci_1 24 100 17069 -4096
 n datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y datapath_87.OneBit_Slice_42/ALU_91/Carry_99/P gnd 24 100 17270 -4094
-n datapath_87.OneBit_Slice_42/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd datapath_87.OneBit_Slice_43/notCi_1 24 100 17368 -4094
-n datapath_87.OneBit_Slice_42/ALU_91/Carry_99/P datapath_87.OneBit_Slice_43/notCi_1 datapath_87.OneBit_Slice_42/notCi_1 24 100 17466 -4094
+n datapath_87.OneBit_Slice_42/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd datapath_87.OneBit_Slice_42/notCi 24 100 17368 -4094
+n datapath_87.OneBit_Slice_42/ALU_91/Carry_99/P datapath_87.OneBit_Slice_42/notCi datapath_87.OneBit_Slice_41/notCi 24 100 17466 -4094
 n datapath_87.OneBit_Slice_42/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_42/ALU_91/TFunc_95/Y ndif_190060_n40340# 24 200 19006 -4058
 n R[2] ndif_143720_n42050# datapath_87.OneBit_Slice_42/ALU_91/Func_82/Y 24 200 14372 -4155
 n R[2] ndif_157140_n42050# datapath_87.OneBit_Slice_42/ALU_91/Func_83/Y 24 200 15714 -4155
@@ -1241,7 +1241,7 @@ n datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y ndif_190070_n54320# N[0] 24 200 1
 n notshr datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 RAMIN[1] 24 100 2220 -5477
 n datapath_87.OneBit_Slice_41/OpSel_75/notOut_1 datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y ndif_143730_n54310# 24 200 14373 -5455
 n datapath_87.OneBit_Slice_41/OpSel_75/notOut_1 datapath_87.OneBit_Slice_41/ALU_91/Func_83/Y ndif_157150_n54310# 24 200 15715 -5455
-n datapath_87.OneBit_Slice_41/notCi_1 datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y ndif_190070_n54320# 24 200 19007 -5456
+n datapath_87.OneBit_Slice_40/notCi datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y ndif_190070_n54320# 24 200 19007 -5456
 n notshl F[1] datapath_87.ShifterGuard_63/Shifter_96/FiPlus1 24 100 2220 -5575
 n S[1] ndif_143730_n56030# datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y 24 200 14373 -5553
 n S[1] ndif_157150_n56030# datapath_87.OneBit_Slice_41/ALU_91/Func_83/Y 24 200 15715 -5553
@@ -1252,7 +1252,7 @@ n ARdEn[2] datapath_87.OneBit_Slice_41/RegFile_79/RamCell3 A[1] 24 100 7060 -559
 n ARdEn[3] datapath_87.OneBit_Slice_41/RegFile_79/RamCell4 A[1] 24 100 8639 -5590
 n datapath_87.OneBit_Slice_41/OpSel_75/notOut_1 M[1] ndif_143730_n56030# 24 200 14373 -5627
 n datapath_87.OneBit_Slice_41/OpSel_75/notOut_1 L[1] ndif_157150_n56030# 24 200 15715 -5627
-n datapath_87.OneBit_Slice_41/notCi_1 N[1] ndif_190070_n56040# 24 200 19007 -5628
+n datapath_87.OneBit_Slice_40/notCi N[1] ndif_190070_n56040# 24 200 19007 -5628
 n BRdEn[0] B[1] datapath_87.OneBit_Slice_41/RegFile_79/RamCell1 24 100 3903 -5688
 n BRdEn[1] B[1] rdata[1] 24 100 5482 -5688
 n BRdEn[2] B[1] datapath_87.OneBit_Slice_41/RegFile_79/RamCell3 24 100 7060 -5688
@@ -1295,10 +1295,10 @@ n datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y ndif_190070_n58740# N[2] 24 200 1
 n R[1] datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y ndif_143730_n58730# 24 200 14373 -5897
 n R[1] datapath_87.OneBit_Slice_41/ALU_91/Func_83/Y ndif_157150_n58730# 24 200 15715 -5897
 n datapath_87.OneBit_Slice_41/ALU_91/Func_83/Y datapath_87.OneBit_Slice_41/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 16972 -5936
-n datapath_87.OneBit_Slice_41/notCi_1 gnd datapath_87.OneBit_Slice_41/ALU_91/Carry_99/Ci_1 24 100 17070 -5936
+n datapath_87.OneBit_Slice_40/notCi gnd datapath_87.OneBit_Slice_41/ALU_91/Carry_99/Ci_1 24 100 17070 -5936
 n datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y datapath_87.OneBit_Slice_41/ALU_91/Carry_99/P gnd 24 100 17271 -5934
-n datapath_87.OneBit_Slice_41/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd datapath_87.OneBit_Slice_42/notCi_1 24 100 17369 -5934
-n datapath_87.OneBit_Slice_41/ALU_91/Carry_99/P datapath_87.OneBit_Slice_42/notCi_1 datapath_87.OneBit_Slice_41/notCi_1 24 100 17467 -5934
+n datapath_87.OneBit_Slice_41/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd datapath_87.OneBit_Slice_41/notCi 24 100 17369 -5934
+n datapath_87.OneBit_Slice_41/ALU_91/Carry_99/P datapath_87.OneBit_Slice_41/notCi datapath_87.OneBit_Slice_40/notCi 24 100 17467 -5934
 n datapath_87.OneBit_Slice_41/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_41/ALU_91/TFunc_95/Y ndif_190070_n58740# 24 200 19007 -5898
 n R[1] ndif_143730_n60450# datapath_87.OneBit_Slice_41/ALU_91/Func_82/Y 24 200 14373 -5995
 n R[1] ndif_157150_n60450# datapath_87.OneBit_Slice_41/ALU_91/Func_83/Y 24 200 15715 -5995
@@ -1370,8 +1370,8 @@ n R[0] datapath_87.OneBit_Slice_40/ALU_91/Func_83/Y ndif_157150_n77140# 24 200 1
 n datapath_87.OneBit_Slice_40/ALU_91/Func_83/Y datapath_87.OneBit_Slice_40/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd 24 100 16972 -7777
 n notCin gnd datapath_87.OneBit_Slice_40/ALU_91/Carry_99/Ci_1 24 100 17070 -7777
 n datapath_87.OneBit_Slice_40/ALU_91/Func_82/Y datapath_87.OneBit_Slice_40/ALU_91/Carry_99/P gnd 24 100 17271 -7775
-n datapath_87.OneBit_Slice_40/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd datapath_87.OneBit_Slice_41/notCi_1 24 100 17369 -7775
-n datapath_87.OneBit_Slice_40/ALU_91/Carry_99/P datapath_87.OneBit_Slice_41/notCi_1 notCin 24 100 17467 -7775
+n datapath_87.OneBit_Slice_40/ALU_91/Carry_99/#fet!-type!pfet!-fingers!3!-contacts!all!-width!2.0_0/s gnd datapath_87.OneBit_Slice_40/notCi 24 100 17369 -7775
+n datapath_87.OneBit_Slice_40/ALU_91/Carry_99/P datapath_87.OneBit_Slice_40/notCi notCin 24 100 17467 -7775
 n datapath_87.OneBit_Slice_40/ALU_91/Carry_99/Ci_1 datapath_87.OneBit_Slice_40/ALU_91/TFunc_95/Y ndif_190070_n77150# 24 200 19007 -7739
 n R[0] ndif_143730_n78860# datapath_87.OneBit_Slice_40/ALU_91/Func_82/Y 24 200 14373 -7836
 n R[0] ndif_157150_n78860# datapath_87.OneBit_Slice_40/ALU_91/Func_83/Y 24 200 15715 -7836

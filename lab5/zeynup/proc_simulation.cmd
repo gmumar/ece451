@@ -29,7 +29,7 @@ stepsize 1000
 setvector CLK1 0
 setvector CLK2 0
 setvector CTRL 0110000
-setvector DATA 0001
+setvector DATA 0000
 setvector SL 0
 setvector SR 0
 setvector notCinBla 1
