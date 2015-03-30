@@ -1,0 +1,2 @@
+Ratio (H/W): 0.5
+Core Utilization: 0.85

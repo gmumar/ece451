@@ -1,0 +1,50 @@
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Fri Mar 27 19:58:06 2015
+
+Design Name: control
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (145.9220, 80.9000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Net VDD: special open.
+Net VSS: special open.
+
+VC Elapsed Time: 0:00:00.0
+
+Begin Summary 
+    7 Problem(s) (ENCVFC-200): Special Wires: Pieces of the net are not connected together.
+    7 total info(s) created.
+End Summary
+
+End Time: Fri Mar 27 19:58:06 2015
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 7 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 1.000M)
+
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 479.2) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 4400
+  VERIFY GEOMETRY ...... SubArea : 1 of 1
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  11 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 11 Viols. 0 Wrngs.
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 11
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 11 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********

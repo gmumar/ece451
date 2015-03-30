@@ -1,0 +1,24 @@
+==============================
+Floorplan/Placement Information
+==============================
+Total area of Standard cells: 7973.280 um^2  
+Total area of Standard cells(Subtracting Physical Cells): 7973.280 um^2  
+Total area of Macros: 0.000 um^2  
+Total area of Blockages: 0.000 um^2  
+Total area of Pad cells: 0.000 um^2  
+Total area of Core: 10631.023 um^2  
+Total area of Chip: 11805.090 um^2  
+Effective Utilization: 7.5333e-01  
+Number of Cell Rows: 6  
+% Pure Gate Density #1 (Subtracting BLOCKAGES): 75.000%  
+% Pure Gate Density #2 (Subtracting BLOCKAGES and Physical Cells): 75.000%  
+% Pure Gate Density #3 (Subtracting MACROS): 75.000%  
+% Pure Gate Density #4 (Subtracting MACROS and Physical Cells): 75.000%  
+% Pure Gate Density #5 (Subtracting MACROS and BLOCKAGES): 75.000%  
+% Pure Gate Density #6 (Subtracting MACROS and BLOCKAGES and Physical Cells): 75.000%  
+% Core Density (Counting Std Cells and MACROs): 75.000%  
+% Core Density #2(Subtracting Physical Cells): 75.000%  
+% Chip Density (Counting Std Cells and MACROs and IOs): 67.541%  
+% Chip Density #2(Subtracting Physical Cells): 67.541%  
+# Macros within 5 sites of IO pad: No  
+Macro halo defined?: No  
