@@ -5,7 +5,8 @@ vector Fbus {F[3:0]}
 vector DATA {D[3:0]}
 vector SL datapath_87.SL
 vector SR datapath_87.SR
-vector notCinBla notCin
+vector notCin_0 notCin
+vector notCout_0 notCout
 
 vector CTRL_MUX In1Select0 In2Select0 In1Select1 In2Select1
 vector CTRL_SHIFT notshl shl notshr shr
@@ -29,10 +30,10 @@ stepsize 1000
 setvector CLK1 0
 setvector CLK2 0
 setvector CTRL 0110000
-setvector DATA 0000
+setvector DATA 0110
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s 20
 
 setvector CLK1 0
@@ -40,7 +41,7 @@ setvector CLK2 1
 setvector CTRL 0110000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s
 s
 s
@@ -55,7 +56,7 @@ setvector CLK2 0
 setvector CTRL 0000000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s 500
 
 
@@ -64,7 +65,7 @@ setvector CLK2 0
 setvector CTRL 0000000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s
 
 
@@ -73,7 +74,7 @@ setvector CLK2 0
 setvector CTRL 0000000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s  500
 
 setvector CLK1 0
@@ -81,7 +82,7 @@ setvector CLK2 0
 setvector CTRL 0010000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s  500
 
 
@@ -91,7 +92,171 @@ setvector CLK2 1
 setvector CTRL 0010000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000100
+setvector DATA 1011
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0000100
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000100
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+| cycle 3
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+ 
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+| Add2
+| cycle 1
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector DATA 1010
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 20
+
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0010000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+
+| cycle 2
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0010000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
 s
 s
 s
@@ -107,7 +272,7 @@ setvector CTRL 0000100
 setvector DATA 0101
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s 500
 
 
@@ -116,7 +281,7 @@ setvector CLK2 0
 setvector CTRL 0000100
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s
 
 
@@ -125,7 +290,7 @@ setvector CLK2 0
 setvector CTRL 0000100
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s  500
 
 setvector CLK1 0
@@ -133,7 +298,7 @@ setvector CLK2 0
 setvector CTRL 0110000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s  500
 
 | cycle 3
@@ -142,7 +307,7 @@ setvector CLK2 1
 setvector CTRL 0110000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s
 s
 s
@@ -157,7 +322,7 @@ setvector CLK2 0
 setvector CTRL 0001000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s 500
 
 
@@ -166,7 +331,7 @@ setvector CLK2 0
 setvector CTRL 0001000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s
 
  
@@ -176,7 +341,7 @@ setvector CLK2 0
 setvector CTRL 0001000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
 s  500
 
 setvector CLK1 0
@@ -184,12 +349,341 @@ setvector CLK2 0
 setvector CTRL 0110000
 setvector SL 0
 setvector SR 0
-setvector notCinBla 1
+setvector notCin_0 1
+s  500
+
+| ADD3
+| cycle 1
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector DATA 0000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 20
+
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0010000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+
+| cycle 2
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0010000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000100
+setvector DATA 0000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0000100
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000100
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+| cycle 3
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+ 
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+| ADD4
+| cycle 1
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector DATA 0010
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 20
+
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0010000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+
+| cycle 2
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0010000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000100
+setvector DATA 1000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0000100
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0000100
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+| cycle 3
+setvector CLK1 0
+setvector CLK2 1
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+s
+s
+s
+
+setvector CLK1 0
+setvector CLK2 0
+s 500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s 500
+
+
+setvector CLK1 1
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s
+
+ 
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0001000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
+s  500
+
+setvector CLK1 0
+setvector CLK2 0
+setvector CTRL 0110000
+setvector SL 0
+setvector SR 0
+setvector notCin_0 1
 s  500
 
 
 
-ana CLK1 CLK2 CTRL DATA SL SR notCinBla Lbus Mbus Nbus CTRL_SHIFT ARdEnbus BRdEnbus FBEnbus WriteEnbus CTRL_MUX RAMINbus rdatabus Abus Bbus Rbus Sbus Fbus 
+
+ana CLK1 CLK2 CTRL DATA SL SR notCin_0 Lbus Mbus Nbus CTRL_SHIFT ARdEnbus BRdEnbus FBEnbus WriteEnbus CTRL_MUX RAMINbus Abus Bbus Rbus Sbus Fbus notCout_0
 
 
 
